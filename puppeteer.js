@@ -26,13 +26,13 @@ console.time('programExecution');
   // console.log('Team Count:', teamElements.length);
   const numberOfTeamsToLimit = 1;
   // Slice the teamElements array to select a specific number of teams
-   const limitedTeamElements = teamElements.slice(62, numberOfTeamsToLimit);
+  const limitedTeamElements = teamElements.slice(0, numberOfTeamsToLimit);
 
   let teamIndex = 1;
   // Iterate through teams
   // for (const teamElement of teamElements.slice(0, -1)) { // for whatever reason the last element is just empty
-    // Iterate through the limited teams
-   for (const teamElement of limitedTeamElements) {
+  // Iterate through the limited teams
+  for (const teamElement of limitedTeamElements) {
     teamElement.scrollIntoView();
     const teamInfo = await teamElement.$eval('.fancy-title :is(h2, h3) a', (link) => {
       const teamName = link.innerText.trim();
@@ -109,6 +109,27 @@ console.time('programExecution');
         });
         songInfo.bmsLabels = bmsLabels;
 
+        const songImpression = await songElement.$eval('.tleft.textOverflow', (impressionElement) => {
+          const impressionCount = impressionElement.querySelector('span').textContent.trim();
+          return impressionCount;
+        });
+
+        songInfo.songImpression = songImpression;
+
+        const entryNumber = await songElement.$eval('.pricing-action span small', (updateElement) => {
+          const entryText = updateElement.innerText.trim();
+          const regex = /No.(\d+)/;
+          const match = entryText.match(regex);
+
+          let entryString = null;
+          if (match) {
+            entryString = match[1];
+          }
+
+          return { entryString };
+        });
+        songInfo.entryNumber = entryNumber.entryString;
+
         const updateInfo = await songElement.$eval('.pricing-action span small', (updateElement) => {
           const updateText = updateElement.innerText.trim();
           const regex = /update : (\d{4}\/\d{2}\/\d{2} \d{2}:\d{2})/;
@@ -137,19 +158,9 @@ console.time('programExecution');
     teamInfo.songs = songs;
 
     teams.set(teamInfo.teamName, teamInfo);
-    teamSheetBody.values.push(
-      [
-        teamInfo.teamName,
-        teamInfo.bannerImageSrc === '' ? '' : `=IMAGE("${teamInfo.bannerImageSrc}")`,
-        teamInfo.emblemImageSrc === '' ? '' : `=IMAGE("${teamInfo.emblemImageSrc}")`,
-        teamInfo.teamImpression,
-        teamInfo.teamTotal,
-        teamInfo.teamMedian,
-      ],
-    )
     teamIndex += 1;
   }
-  console.log(teams);
+  // console.log(teams);
 
   // console.log('teamSheetBody', teamSheetBody);
   let songRow = [];
@@ -416,11 +427,11 @@ console.time('programExecution');
         }
 
       }
-    // songSheetBody.values.push(songRow);
+      // songSheetBody.values.push(songRow);
     }
 
   }
-  // console.dir(teams, { depth: null });
+  console.dir(teams, { depth: null });
 
   // await page.waitForTimeout(120000);
   await browser.close();
