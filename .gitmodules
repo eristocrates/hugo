@@ -1,0 +1,6 @@
+[submodule "themes/dark-theme-editor"]
+	path = themes/dark-theme-editor
+	url = https://github.com/JingWangTW/dark-theme-editor.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git

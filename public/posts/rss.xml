@@ -1,0 +1,126 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="//localhost:1313/posts/" rel="self" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="//localhost:1313/posts/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+
+        <description>Recent content</description>
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>2024-07-10 14:17:42 -0400 EDT</lastBuildDate>
+        
+
+        <link>//localhost:1313/posts/</link>
+
+        
+
+        <title>Posts · </title>
+
+        
+
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+                    
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                <guid isPermaLink="false">tag:localhost:1313,2024-07-10:/posts/my-first-post/</guid>
+
+                
+                    <link>//localhost:1313/posts/my-first-post/</link>
+                
+
+                
+                    <pubDate>Wed, 10 Jul 2024 14:17:42 EDT</pubDate>
+                
+
+                
+                    <title>My First Post</title>
+                
+            </item>
+        
+    </channel>
+</rss>
