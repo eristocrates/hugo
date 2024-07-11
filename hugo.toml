@@ -91,8 +91,6 @@ taxonomy = ["html"]
 term = ["html"]
 
 [params.paige]
-file_edit_url = "https://github.com/willfaught/paige/edit/master/exampleSite/content/%s"
-file_history_url = "https://github.com/willfaught/paige/commits/master/exampleSite/content/%s"
 site_description = "content for the most attractive and distinguished of eristocrats. But you can read too!"
 site_title = "the eristocracy"
 
