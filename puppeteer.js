@@ -1,8 +1,15 @@
 import puppeteer from 'puppeteer';
 import { writeFile } from 'fs';
+import cliProgress from 'cli-progress';
 
-console.time('programExecution');
 (async () => {
+  console.time('programExecution');
+  // Create a new progress bar instance and use shades_classic theme
+  const multibar = new cliProgress.MultiBar({
+    clearOnComplete: false,
+    hideCursor: true,
+    format: ' {bar} | {filename} | {value}/{total}',
+  }, cliProgress.Presets.shades_classic);
   const browser = await puppeteer.launch({
     headless: "new"
     /*
@@ -20,7 +27,6 @@ console.time('programExecution');
 
   // Navigate to the Event page
   await page.goto('https://manbow.nothing.sh/event/event.cgi?action=List_def&event=142#186');
-  console.log('\n\n\n****************************************************************************************************')
 
   const teams = new Map();
 
@@ -29,8 +35,9 @@ console.time('programExecution');
   const numberOfTeamsToLimit = 1;
   // Slice the teamElements array to select a specific number of teams
   const limitedTeamElements = teamElements.slice(0, numberOfTeamsToLimit);
+  const teamBar = multibar.create(limitedTeamElements.length, 0)
 
-  let teamIndex = 1;
+  let teamIndex = 1; // TODO is this needed?
   // Iterate through teams
   // for (const teamElement of teamElements.slice(0, -1)) { // for whatever reason the last element is just empty
   // Iterate through the limited teams
@@ -42,6 +49,7 @@ console.time('programExecution');
       const teamPageLink = link.href;
       return { teamName, bannerImageSrc, teamPageLink };
     });
+    teamBar.update({ filename: teamInfo.teamName });
 
     const emblemImageSrc = await teamElement.$eval('.header_emblem', (emblemElement) => {
       const dataBg = emblemElement.getAttribute('data-bg');
@@ -162,6 +170,7 @@ console.time('programExecution');
 
     teams.set(teamInfo.teamName, teamInfo);
     teamIndex += 1;
+    teamBar.increment();
   }
   // console.log(teams);
 
@@ -192,7 +201,7 @@ console.time('programExecution');
     const UPDATE = 15
 
     const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (element) => {
-      const teamLeader = element.querySelector('big').innerText.trim();
+      teamLeader = element.querySelector('big').innerText.trim();
       const teamLeaderCountry = element.querySelector('img').title;
       const textContent = element.textContent.trim();
 
@@ -201,18 +210,79 @@ console.time('programExecution');
 
       return { teamLeader, teamLeaderCountry, teamLeaderLanguage };
     });
-
-
-
-
-
     teamInfo.teamLeader = leaderSection.teamLeader;
     teamInfo.teamLeaderCountry = leaderSection.teamLeaderCountry;
     teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
 
+    const twitterSection = await sectionElements[TWITTER].$eval('p a', (element) => {
+      const twitterLink = element.href;
+      return { twitterLink };
+    });
+    teamInfo.twitterLink = twitterSection.twitterLink;
 
+    const websiteSection = await sectionElements[WEBSITE].$eval('p a', (element) => {
+      const websiteLink = element.href;
+      return { websiteLink };
+    });
+    teamInfo.websiteLink = websiteSection.websiteLink;
 
+    const conceptSection = await sectionElements[CONCEPT].$$eval('.col-md-3.center.bottommargin-lg', (elements) => {
+      let concepts = [];
+      let conceptImage = ''
+      let conceptName = ''
+      for (const element of elements) {
+        conceptImage = element.querySelector('img') ? element.querySelector('img').src : '';
+        const conceptName = element.querySelector('h3').textContent.trim();
 
+        concepts.push({ conceptImage, conceptName });
+      }
+      return { concepts };
+    });
+    teamInfo.concepts = conceptSection.concepts;
+
+    const worksSection = await sectionElements[WORKS].$eval('.counter', (element) => {
+      const works = element.textContent.trim();
+      return { works };
+    });
+    teamInfo.works = worksSection.works;
+
+    const declaredWorksSection = await sectionElements[DECLARED].$eval('.counter', (element) => {
+      const declaredWorks = element.textContent.trim();
+      return { declaredWorks };
+    });
+    teamInfo.declaredWorks = declaredWorksSection.declaredWorks;
+
+    const genreSection = await sectionElements[GENRE].$eval('p', (element) => {
+      const textContent = element.textContent.trim();
+      const genreMatch = textContent.match(/オリジナル \/ ([^)]+)/);
+      const genre = genreMatch ? genreMatch[1].trim() : '';
+      return { genre };
+    });
+    teamInfo.genre = genreSection.genre;
+
+    const sharedSection = await sectionElements[SHARED].$eval('p', (element) => {
+      const shared = element.textContent.trim();
+      return { shared };
+    });
+    teamInfo.shared = sharedSection.shared;
+
+    const reasonSection = await sectionElements[REASON].$eval('p', (element) => {
+      const reason = element.textContent.trim();
+      return { reason };
+    });
+    teamInfo.reason = reasonSection.reason;
+
+    const memberSection = await sectionElements[MEMBERS].$$eval('p', (elements) => {
+      const membersRaw = elements[0].textContent.trim();
+      const memberCount = elements[1].textContent.trim().match(/[\d]+/);
+
+      const membersProcessed = membersRaw.split(/[\n,/]/).map((member) => member.trim());
+
+      return { membersRaw, memberCount, membersProcessed };
+    });
+    teamInfo.membersRaw = memberSection.membersRaw;
+    teamInfo.memberCount = memberSection.memberCount;
+    teamInfo.membersProcessed = memberSection.membersProcessed;
 
     for (const [songName, songInfo] of teamInfo.songs.entries()) {
       const songPageLink = songInfo.songPageLink;
@@ -454,37 +524,37 @@ console.time('programExecution');
 
   // write to file
 
-// Convert Map to JSON-friendly structure
-const teamsObject = {};
+  // Convert Map to JSON-friendly structure
+  const teamsObject = {};
 
-teams.forEach((teamDetails, key) => {
-  const teamDetailsObject = { ...teamDetails }; // Copy main team details
+  teams.forEach((teamDetails, key) => {
+    const teamDetailsObject = { ...teamDetails }; // Copy main team details
 
-  // Handle nested songs Map
-  if (teamDetails.songs instanceof Map) {
-    teamDetailsObject.songs = Array.from(teamDetails.songs).reduce((acc, [songKey, songDetails]) => {
-      acc.push({ songKey, ...songDetails });
-      return acc;
-    }, []);
-  }
+    // Handle nested songs Map
+    if (teamDetails.songs instanceof Map) {
+      teamDetailsObject.songs = Array.from(teamDetails.songs).reduce((acc, [songKey, songDetails]) => {
+        acc.push({ songKey, ...songDetails });
+        return acc;
+      }, []);
+    }
 
-  teamsObject[key] = teamDetailsObject;
-});
+    teamsObject[key] = teamDetailsObject;
+  });
 
-// Write teams data to a JSON file
-writeFile('./data/bof142.json', JSON.stringify(teamsObject, null, 2), (err) => {
-  if (err) {
-    console.error('Error writing to file', err);
-  } else {
-    console.log('Successfully wrote to file');
-  }
-});
+  // Write teams data to a JSON file
+  writeFile('./data/bof142.json', JSON.stringify(teamsObject, null, 2), (err) => {
+    if (err) {
+      console.error('Error writing to file', err);
+    } else {
+      console.log('Successfully wrote to file');
+    }
+  });
 
 
 
 
   // await page.waitForTimeout(120000);
   await browser.close();
-
+  multibar.stop();
   console.timeEnd('programExecution'); // End the timer
 })();

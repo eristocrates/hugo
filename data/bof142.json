@@ -23,7 +23,7 @@
         "songImpression": "185",
         "entryNumber": "1",
         "updateDateTime": "2024-01-31T22:53:00.000Z",
-        "scrapedDateTime": "2024-07-12T05:00:04.658Z",
+        "scrapedDateTime": "2024-07-12T17:00:04.153Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420001_20231001214920_title.png",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/K-Z7o_tbBCw",
@@ -50,7 +50,7 @@
         "songImpression": "104",
         "entryNumber": "2",
         "updateDateTime": "2024-01-30T20:41:00.000Z",
-        "scrapedDateTime": "2024-07-12T05:00:04.686Z",
+        "scrapedDateTime": "2024-07-12T17:00:04.186Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420002_20231002005402_title.jpg",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/10hY8xtDtx8",
@@ -85,7 +85,7 @@
         "songImpression": "123",
         "entryNumber": "16",
         "updateDateTime": "2024-01-29T20:49:00.000Z",
-        "scrapedDateTime": "2024-07-12T05:00:04.756Z",
+        "scrapedDateTime": "2024-07-12T17:00:04.214Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420016_20230928202834_title.png",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/B929EkWv4dA",
@@ -112,7 +112,7 @@
         "songImpression": "136",
         "entryNumber": "23",
         "updateDateTime": "2024-01-31T22:56:00.000Z",
-        "scrapedDateTime": "2024-07-12T05:00:04.791Z",
+        "scrapedDateTime": "2024-07-12T17:00:04.245Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420023_20230927231641_title.jpg",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/DTdWCV9GasU",
@@ -128,6 +128,47 @@
     ],
     "teamLeader": "kei_iwata",
     "teamLeaderCountry": "JP",
-    "teamLeaderLanguage": "日本語"
+    "teamLeaderLanguage": "日本語",
+    "twitterLink": "https://twitter.com/rockfield_k",
+    "websiteLink": "https://shinnyoh-vulcan.net/",
+    "concepts": [
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member1_1420186_20230903005308.PNG",
+        "conceptName": "うみうし"
+      },
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member2_1420186_20230903005308.PNG",
+        "conceptName": "なまこ"
+      },
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member3_1420186_20230903005308.PNG",
+        "conceptName": "めんだこ"
+      },
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member4_1420186_20230903005308.PNG",
+        "conceptName": "えいにゃんこ"
+      }
+    ],
+    "works": "4",
+    "declaredWorks": "4",
+    "genre": "コメディ",
+    "shared": "悟空みたいな声が出せる",
+    "reason": "腕時計の摩擦がペリカンになったため",
+    "membersRaw": "saaa(BMS) / kei_iwata(BMS) / わかどり(BMS) / stuv(BMS) / qfeileadh(BMS) / すずあ(BGA) / KeiuO(BGA) / 内村徹(BGA) / もがみ(BGA) / kazari(BGA)",
+    "memberCount": [
+      "10"
+    ],
+    "membersProcessed": [
+      "saaa(BMS)",
+      "kei_iwata(BMS)",
+      "わかどり(BMS)",
+      "stuv(BMS)",
+      "qfeileadh(BMS)",
+      "すずあ(BGA)",
+      "KeiuO(BGA)",
+      "内村徹(BGA)",
+      "もがみ(BGA)",
+      "kazari(BGA)"
+    ]
   }
 }
