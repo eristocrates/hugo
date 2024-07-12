@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+import { writeFile } from 'fs';
 
 console.time('programExecution');
 (async () => {
@@ -169,45 +170,45 @@ console.time('programExecution');
   for (const [teamName, teamInfo] of teams.entries()) {
 
     // Navigate to the teamPageLink
-await page.goto(teamInfo.teamPageLink);
-const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');
+    await page.goto(teamInfo.teamPageLink);
+    const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');
 
-  // ghetto enums cause apparently javascript doesn't have em???
-  const LEADER = 0;
-  const TWITTER = 1;
-  const WEBSITE = 2;
-  const CONCEPT = 3;
-  const BLANK_WORKS = 4;
-  const WORKS = 5;
-  const DECLARED = 6;
-  const SONGS = 7;
-  const BLANK = 8;
-  const GENRE = 9;
-  const SHARED = 10;
-  const REASON = 11;
-  const MEMBERS = 12;
-  const COMMENT = 13;
-  const REGIST = 14;
-  const UPDATE = 15
+    // ghetto enums cause apparently javascript doesn't have em???
+    const LEADER = 0;
+    const TWITTER = 1;
+    const WEBSITE = 2;
+    const CONCEPT = 3;
+    const BLANK_WORKS = 4;
+    const WORKS = 5;
+    const DECLARED = 6;
+    const SONGS = 7;
+    const BLANK = 8;
+    const GENRE = 9;
+    const SHARED = 10;
+    const REASON = 11;
+    const MEMBERS = 12;
+    const COMMENT = 13;
+    const REGIST = 14;
+    const UPDATE = 15
 
-const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (element) => {
-  const teamLeader = element.querySelector('big').innerText.trim();
-  const teamLeaderCountry = element.querySelector('img').title;
-  const textContent = element.textContent.trim();
+    const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (element) => {
+      const teamLeader = element.querySelector('big').innerText.trim();
+      const teamLeaderCountry = element.querySelector('img').title;
+      const textContent = element.textContent.trim();
 
-  const teamLeaderLanguageMatch = textContent.match(/Language : ([^)]+)/);
-  const teamLeaderLanguage = teamLeaderLanguageMatch ? teamLeaderLanguageMatch[1].trim() : '';
+      const teamLeaderLanguageMatch = textContent.match(/Language : ([^)]+)/);
+      const teamLeaderLanguage = teamLeaderLanguageMatch ? teamLeaderLanguageMatch[1].trim() : '';
 
-  return { teamLeader, teamLeaderCountry, teamLeaderLanguage };
-});
-
-
+      return { teamLeader, teamLeaderCountry, teamLeaderLanguage };
+    });
 
 
 
-  teamInfo.teamLeader = leaderSection.teamLeader;
-  teamInfo.teamLeaderCountry = leaderSection.teamLeaderCountry;
-  teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
+
+
+    teamInfo.teamLeader = leaderSection.teamLeader;
+    teamInfo.teamLeaderCountry = leaderSection.teamLeaderCountry;
+    teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
 
 
 
@@ -449,7 +450,38 @@ const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (e
     }
 
   }
-  console.dir(teams, { depth: null });
+  // console.dir(teams, { depth: null });
+
+  // write to file
+
+// Convert Map to JSON-friendly structure
+const teamsObject = {};
+
+teams.forEach((teamDetails, key) => {
+  const teamDetailsObject = { ...teamDetails }; // Copy main team details
+
+  // Handle nested songs Map
+  if (teamDetails.songs instanceof Map) {
+    teamDetailsObject.songs = Array.from(teamDetails.songs).reduce((acc, [songKey, songDetails]) => {
+      acc.push({ songKey, ...songDetails });
+      return acc;
+    }, []);
+  }
+
+  teamsObject[key] = teamDetailsObject;
+});
+
+// Write teams data to a JSON file
+writeFile('./data/bof142.json', JSON.stringify(teamsObject, null, 2), (err) => {
+  if (err) {
+    console.error('Error writing to file', err);
+  } else {
+    console.log('Successfully wrote to file');
+  }
+});
+
+
+
 
   // await page.waitForTimeout(120000);
   await browser.close();

@@ -1,0 +1,133 @@
+{
+  "ウオウオ": {
+    "teamName": "ウオウオ",
+    "teamPageLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=142&team=186",
+    "emblemImageSrc": "https://manbow.nothing.sh/event/images_bofnt/upload/img_emblem_1420186_20230903005308.PNG",
+    "teamImpression": "548",
+    "teamTotal": "454600.45",
+    "teamMedian": "980",
+    "songs": [
+      {
+        "songKey": "MORNINGLOOM",
+        "songName": "MORNINGLOOM",
+        "genreName": "MORNING ROUTINE",
+        "artistName": "saaa(mov:すずあ)",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=142",
+        "totalPoints": "176237",
+        "medianPoints": "990",
+        "bmsLabels": [
+          "7K",
+          "14K",
+          "9K"
+        ],
+        "songImpression": "185",
+        "entryNumber": "1",
+        "updateDateTime": "2024-01-31T22:53:00.000Z",
+        "scrapedDateTime": "2024-07-12T05:00:04.658Z",
+        "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420001_20231001214920_title.png",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/K-Z7o_tbBCw",
+        "soundcloudLink": "https://soundcloud.com/saaa_1/bms-saaa-morningloom-bofnt",
+        "links": [
+          {
+            "linkUrl": "https://drive.google.com/file/d/182azEwfgGhlnJIlS1NhZx9QUgJaa5Ejp/view",
+            "linkDesc": ""
+          }
+        ],
+        "bemuseLink": ""
+      },
+      {
+        "songKey": "未来予想図に淡い希望を",
+        "songName": "未来予想図に淡い希望を",
+        "genreName": "Adolescent Pop Rock",
+        "artistName": "kei_iwata(mov:内村徹 / KeiuO)",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=2&event=142",
+        "totalPoints": "95099",
+        "medianPoints": "960",
+        "bmsLabels": [
+          "7K"
+        ],
+        "songImpression": "104",
+        "entryNumber": "2",
+        "updateDateTime": "2024-01-30T20:41:00.000Z",
+        "scrapedDateTime": "2024-07-12T05:00:04.686Z",
+        "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420002_20231002005402_title.jpg",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/10hY8xtDtx8",
+        "soundcloudLink": "",
+        "links": [
+          {
+            "linkUrl": "",
+            "linkDesc": "10/14 B譜面修正"
+          },
+          {
+            "linkUrl": "https://drive.google.com/file/d/1S_Vy5J3ij2m-y46cUGtI1GNPPVoTlq32/view?usp=sharing",
+            "linkDesc": "（HQ)"
+          },
+          {
+            "linkUrl": "https://drive.google.com/file/d/1vD-yCmm1mcF2ydFu5xEUVUSK3oB7IxBh/view?usp=sharing",
+            "linkDesc": "（LQ）"
+          }
+        ],
+        "bemuseLink": ""
+      },
+      {
+        "songKey": "Unit:Squash!",
+        "songName": "Unit:Squash!",
+        "genreName": "GameJam",
+        "artistName": "わかどり & もがみ",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=16&event=142",
+        "totalPoints": "116776",
+        "medianPoints": "980",
+        "bmsLabels": [
+          "7K"
+        ],
+        "songImpression": "123",
+        "entryNumber": "16",
+        "updateDateTime": "2024-01-29T20:49:00.000Z",
+        "scrapedDateTime": "2024-07-12T05:00:04.756Z",
+        "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420016_20230928202834_title.png",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/B929EkWv4dA",
+        "soundcloudLink": "",
+        "links": [
+          {
+            "linkUrl": "https://www.dropbox.com/scl/fi/70gfahyf419h5s5lc9b27/wakadori-unit_squash.zip?rlkey=zfep7htj0hv0ld1fmsy1jc4n7&dl=1",
+            "linkDesc": ""
+          }
+        ],
+        "bemuseLink": ""
+      },
+      {
+        "songKey": "エヴァネセント",
+        "songName": "エヴァネセント",
+        "genreName": "Progressive Metalcore",
+        "artistName": "stuv + qfeileadh(mov:kazari)",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=23&event=142",
+        "totalPoints": "195051",
+        "medianPoints": "990",
+        "bmsLabels": [
+          "7K"
+        ],
+        "songImpression": "136",
+        "entryNumber": "23",
+        "updateDateTime": "2024-01-31T22:56:00.000Z",
+        "scrapedDateTime": "2024-07-12T05:00:04.791Z",
+        "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420023_20230927231641_title.jpg",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/DTdWCV9GasU",
+        "soundcloudLink": "https://soundcloud.com/rayfin_ei/evanescent",
+        "links": [
+          {
+            "linkUrl": "https://drive.google.com/file/d/1pLeFF6ljgGh-roVtZCuadp7ExuRdl-KM/view?usp=sharing",
+            "linkDesc": ""
+          }
+        ],
+        "bemuseLink": ""
+      }
+    ],
+    "teamLeader": "kei_iwata",
+    "teamLeaderCountry": "JP",
+    "teamLeaderLanguage": "日本語"
+  }
+}
