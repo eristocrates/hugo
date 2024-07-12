@@ -17,6 +17,7 @@ console.time('programExecution');
 
   page.setDefaultNavigationTimeout(60000);
 
+  // Navigate to the Event page
   await page.goto('https://manbow.nothing.sh/event/event.cgi?action=List_def&event=142#186');
   console.log('\n\n\n****************************************************************************************************')
 
@@ -36,8 +37,9 @@ console.time('programExecution');
     teamElement.scrollIntoView();
     const teamInfo = await teamElement.$eval('.fancy-title :is(h2, h3) a', (link) => {
       const teamName = link.innerText.trim();
-      const bannerImageSrc = link.querySelector('img') ? link.querySelector('img').src : '';
-      return { teamName, bannerImageSrc };
+      const bannerImageSrc = link.querySelector('img') ? link.querySelector('img').erc : '';
+      const teamPageLink = link.href;
+      return { teamName, bannerImageSrc, teamPageLink };
     });
 
     const emblemImageSrc = await teamElement.$eval('.header_emblem', (emblemElement) => {
@@ -162,11 +164,55 @@ console.time('programExecution');
   }
   // console.log(teams);
 
-  // console.log('teamSheetBody', teamSheetBody);
-  let songRow = [];
 
   // Now, you can access songPageLink within the existing songs map
   for (const [teamName, teamInfo] of teams.entries()) {
+
+    // Navigate to the teamPageLink
+await page.goto(teamInfo.teamPageLink);
+const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');
+
+  // ghetto enums cause apparently javascript doesn't have em???
+  const LEADER = 0;
+  const TWITTER = 1;
+  const WEBSITE = 2;
+  const CONCEPT = 3;
+  const BLANK_WORKS = 4;
+  const WORKS = 5;
+  const DECLARED = 6;
+  const SONGS = 7;
+  const BLANK = 8;
+  const GENRE = 9;
+  const SHARED = 10;
+  const REASON = 11;
+  const MEMBERS = 12;
+  const COMMENT = 13;
+  const REGIST = 14;
+  const UPDATE = 15
+
+const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (element) => {
+  const teamLeader = element.querySelector('big').innerText.trim();
+  const teamLeaderCountry = element.querySelector('img').title;
+  const textContent = element.textContent.trim();
+
+  const teamLeaderLanguageMatch = textContent.match(/Language : ([^)]+)/);
+  const teamLeaderLanguage = teamLeaderLanguageMatch ? teamLeaderLanguageMatch[1].trim() : '';
+
+  return { teamLeader, teamLeaderCountry, teamLeaderLanguage };
+});
+
+
+
+
+
+  teamInfo.teamLeader = leaderSection.teamLeader;
+  teamInfo.teamLeaderCountry = leaderSection.teamLeaderCountry;
+  teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
+
+
+
+
+
     for (const [songName, songInfo] of teamInfo.songs.entries()) {
       const songPageLink = songInfo.songPageLink;
       // Navigate to songPageLink
@@ -400,34 +446,6 @@ console.time('programExecution');
       } catch (error) {
         songInfo.bemuseLink = '';
       }
-      songRow =
-        [
-          songInfo.jacketImageSrc === '' ? '' : `=IMAGE("${songInfo.jacketImageSrc}")`,
-          songInfo.bannerImageSrc === '' ? '' : `=IMAGE("${songInfo.bannerImageSrc}")`,
-          songInfo.songName,
-          songInfo.links[0] ? songInfo.links[0].linkUrl : '',
-          songInfo.links[0] ? songInfo.links[0].linkDesc : '',
-          songInfo.genreName,
-          songInfo.artistName,
-          songInfo.songPageLink,
-          songInfo.youtubeLink === '' ? '' : `${songInfo.youtubeLink}`,
-          songInfo.soundcloudLink === '' ? '' : `${songInfo.soundcloudLink}`,
-          songInfo.bemuseLink === '' ? '' : `${songInfo.bemuseLink}`,
-          songInfo.totalPoints,
-          songInfo.medianPoints,
-          songInfo.bmsLabels.join(', '),
-          songInfo.updateDateTime,
-          songInfo.scrapedDateTime,
-        ];
-      if (songInfo.links.length > 1) {
-        const extraLinks = songInfo.links.slice(1, songInfo.links.length);
-        for (const link of extraLinks) {
-          songRow.push(link.linkUrl);
-          songRow.push(link.linkDesc);
-        }
-
-      }
-      // songSheetBody.values.push(songRow);
     }
 
   }
