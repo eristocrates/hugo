@@ -23,7 +23,7 @@
         "songImpression": "185",
         "entryNumber": "1",
         "updateDateTime": "2024-01-31T22:53:00.000Z",
-        "scrapedDateTime": "2024-07-12T17:00:04.153Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.430Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420001_20231001214920_title.png",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/K-Z7o_tbBCw",
@@ -50,7 +50,7 @@
         "songImpression": "104",
         "entryNumber": "2",
         "updateDateTime": "2024-01-30T20:41:00.000Z",
-        "scrapedDateTime": "2024-07-12T17:00:04.186Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.518Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420002_20231002005402_title.jpg",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/10hY8xtDtx8",
@@ -85,7 +85,7 @@
         "songImpression": "123",
         "entryNumber": "16",
         "updateDateTime": "2024-01-29T20:49:00.000Z",
-        "scrapedDateTime": "2024-07-12T17:00:04.214Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.553Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420016_20230928202834_title.png",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/B929EkWv4dA",
@@ -112,7 +112,7 @@
         "songImpression": "136",
         "entryNumber": "23",
         "updateDateTime": "2024-01-31T22:56:00.000Z",
-        "scrapedDateTime": "2024-07-12T17:00:04.245Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.619Z",
         "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420023_20230927231641_title.jpg",
         "bannerImageSrc": "",
         "youtubeLink": "https://www.youtube.com/embed/DTdWCV9GasU",
@@ -169,6 +169,170 @@
       "内村徹(BGA)",
       "もがみ(BGA)",
       "kazari(BGA)"
-    ]
+    ],
+    "comment": "ラーメンライスｗｗｗｗｗｗｗｗｗｗｗｗｗｗㅤ　   ／⌒ヽ　　/　 ՞ةڼ◔)  　｜　  　/  ≡つ＝つ≡つ＝つ　　)　   ／⌒＼ ＝つ≡つ＝つ　／　＿／≡＼つ≡つ＝つ≡つ（　／　　　  ＝つ≡つ＝つ　＼＼ 　　∪",
+    "regist": "2023-09-03T04:53:08.000Z",
+    "update": "2023-09-03T04:53:08.000Z"
+  },
+  "飛行機雲と戦闘マシン": {
+    "teamName": "飛行機雲と戦闘マシン",
+    "bannerImageSrc": "",
+    "teamPageLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=142&team=96",
+    "emblemImageSrc": "",
+    "teamImpression": "320",
+    "teamTotal": "358164.5",
+    "teamMedian": "965.83",
+    "songs": [
+      {
+        "songKey": "\"Badger-A\"",
+        "songName": "\"Badger-A\"",
+        "genreName": "Cyber art",
+        "artistName": "Lemi.",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=17&event=142",
+        "totalPoints": "87049",
+        "medianPoints": "937.5",
+        "bmsLabels": [
+          "7K"
+        ],
+        "songImpression": "96",
+        "entryNumber": "17",
+        "updateDateTime": "2024-01-27T19:57:00.000Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.843Z",
+        "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420017_20231001233008_title.png",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/wkSEZRrP5u0",
+        "soundcloudLink": "https://soundcloud.com/lemi_0000/badger-a",
+        "links": [
+          {
+            "linkUrl": "https://drive.google.com/file/d/1kiSRr1b21ir2mjNvdQBh4UD9pB8kysZR/view?usp=sharing",
+            "linkDesc": ""
+          }
+        ],
+        "bemuseLink": ""
+      },
+      {
+        "songKey": "WILDANCE",
+        "songName": "WILDANCE",
+        "genreName": "EDM",
+        "artistName": "KAH(mov:自動車 原付)",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=24&event=142",
+        "totalPoints": "93169",
+        "medianPoints": "970",
+        "bmsLabels": [
+          "7K"
+        ],
+        "songImpression": "101",
+        "entryNumber": "24",
+        "updateDateTime": "2024-01-30T20:41:00.000Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.873Z",
+        "jacketImageSrc": "",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/7jS_wzOYt98",
+        "soundcloudLink": "https://soundcloud.com/kah_growsong/bmswildancebofnt",
+        "links": [
+          {
+            "linkUrl": "https://drive.google.com/file/d/1NQ4XCxwrcspszPT8vSvRf_RwZa_mfSPz/view?usp=sharing",
+            "linkDesc": "wav版"
+          },
+          {
+            "linkUrl": "https://drive.google.com/file/d/1l0tFtpze9FsDraYC4qIQ49osZGY3hS5G/view?usp=sharing",
+            "linkDesc": "ogg版"
+          }
+        ],
+        "bemuseLink": ""
+      },
+      {
+        "songKey": "花嵐、空に溶けて",
+        "songName": "花嵐、空に溶けて",
+        "genreName": "Gray",
+        "artistName": "DJ Raisei vs. Setca. feat. 咲良ゆの(mov:蒼)",
+        "songPageLink": "https://manbow.nothing.sh/event/event.cgi?action=More_def&num=25&event=142",
+        "totalPoints": "177946.5",
+        "medianPoints": "990",
+        "bmsLabels": [
+          "7K",
+          "9K"
+        ],
+        "songImpression": "123",
+        "entryNumber": "25",
+        "updateDateTime": "2024-01-31T22:56:00.000Z",
+        "scrapedDateTime": "2024-07-13T06:54:25.922Z",
+        "jacketImageSrc": "https://manbow.nothing.sh/event/upload/1420025_20231002171626_title.png",
+        "bannerImageSrc": "",
+        "youtubeLink": "https://www.youtube.com/embed/ytK6iG7NRKg",
+        "soundcloudLink": "https://soundcloud.com/raisei/sora?si=f3e8c9ee9ac24c1bbd3bf49ee42ef3c6",
+        "links": [
+          {
+            "linkUrl": "https://drive.google.com/file/d/1grL9tPQKdQIz0_selPxhID1mOXbQ5Qs1/view?usp=sharing",
+            "linkDesc": "本体:"
+          },
+          {
+            "linkUrl": "https://1drv.ms/u/s!An0iXKkQ4eugarE-3uYm3ZI4Hmo?e=4Wal1F",
+            "linkDesc": "※Google Driveが利用できない方向けにミラーリンクを用意いたしました。よろしければご利用ください。(2023/11/03)"
+          },
+          {
+            "linkUrl": "https://drive.google.com/file/d/1puZh1iddTnZijxZiaUu78GaH3DS4a5Yu/view?usp=sharing",
+            "linkDesc": "※IRに登録できない問題を修正しました。(2023/10/06)\nフォルダ内の\"KICK.ogg\"を削除してください。\nまた、2023/10/4 19:30までにダウンロードした方は以下のファイルに差し替えをお願いします。"
+          },
+          {
+            "linkUrl": "",
+            "linkDesc": "※正式版のBGAへと更新いたしました。(2023/10/5)\n2023/10/5 3:30までにダウンロードした方は以下のファイルに差し替えをお願いします。"
+          },
+          {
+            "linkUrl": "https://drive.google.com/file/d/1bkP0a4y93Ig4EsYhB9-DXzJFOLguyTNA/view?usp=sharing",
+            "linkDesc": "Beatoraja用mp4:"
+          },
+          {
+            "linkUrl": "https://drive.google.com/file/d/17I1mEe5YSubccD3HDXIoSNNiDFwOQwr-/view?usp=sharing",
+            "linkDesc": "LR2用wmv:"
+          }
+        ],
+        "bemuseLink": ""
+      }
+    ],
+    "teamLeader": "Setca.",
+    "teamLeaderCountry": "JP",
+    "teamLeaderLanguage": "日本語",
+    "twitterLink": "https://twitter.com/setcanon",
+    "websiteLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=142&team=96#",
+    "concepts": [
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member1_1420096_20230704084501.jpg",
+        "conceptName": "Setca."
+      },
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member2_1420096_20230704084501.jpg",
+        "conceptName": "DJ Raisei"
+      },
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member3_1420096_20230704084501.jpg",
+        "conceptName": "KAH"
+      },
+      {
+        "conceptImage": "https://manbow.nothing.sh/event/images_bofnt/upload/img_member4_1420096_20230704084501.jpg",
+        "conceptName": "Lemi."
+      }
+    ],
+    "works": "3",
+    "declaredWorks": "3",
+    "genre": "",
+    "shared": "",
+    "reason": "",
+    "membersRaw": "Setca.(BMS), DJ Raisei(BMS), KAH(BMS), Lemi(BMS),咲良ゆの(Vocal), 自動車 原付(BGA), 蒼(BGA)",
+    "memberCount": [
+      "7"
+    ],
+    "membersProcessed": [
+      "Setca.(BMS)",
+      "DJ Raisei(BMS)",
+      "KAH(BMS)",
+      "Lemi(BMS)",
+      "咲良ゆの(Vocal)",
+      "自動車 原付(BGA)",
+      "蒼(BGA)"
+    ],
+    "comment": "頑張って登録します。",
+    "regist": "2023-07-04T12:41:33.000Z",
+    "update": "2023-10-03T17:24:58.000Z"
   }
 }

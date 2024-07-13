@@ -2,13 +2,18 @@ import puppeteer from 'puppeteer';
 import { writeFile } from 'fs';
 import cliProgress from 'cli-progress';
 
+const waitForTimer = 500;
+const eventPageActions = 9;
+const songElementActions = 17;
+const teamPageActions = 32;
+const songPageActions = 15;
 (async () => {
   console.time('programExecution');
   // Create a new progress bar instance and use shades_classic theme
   const multibar = new cliProgress.MultiBar({
     clearOnComplete: false,
     hideCursor: true,
-    format: ' {bar} | {filename} | {value}/{total}',
+    format: ' {bar} {percentage}% | {filename} | {value}/{total}',
   }, cliProgress.Presets.shades_classic);
   const browser = await puppeteer.launch({
     headless: "new"
@@ -20,50 +25,57 @@ import cliProgress from 'cli-progress';
 
   const page = await browser.newPage();
 
-  await page.setViewport({ width: 1920, height: 1080 });
+  // await page.setViewport({ width: 1920, height: 1080 });
   // await page.setViewport({ width: 1080, height: 1920 });
 
-  page.setDefaultNavigationTimeout(60000);
+  page.setDefaultTimeout(8000);
 
-  // Navigate to the Event page
   await page.goto('https://manbow.nothing.sh/event/event.cgi?action=List_def&event=142#186');
 
   const teams = new Map();
 
   const teamElements = await page.$$('.team_information');
   // console.log('Team Count:', teamElements.length);
-  const numberOfTeamsToLimit = 1;
+  const numberOfTeamsToLimit = 2;
   // Slice the teamElements array to select a specific number of teams
   const limitedTeamElements = teamElements.slice(0, numberOfTeamsToLimit);
-  const teamBar = multibar.create(limitedTeamElements.length, 0)
+  // TODO remember to change this back to teamElements.length
+  const eventPageTotal = limitedTeamElements.length * eventPageActions
+  const eventPageBar = multibar.create(eventPageTotal, 0)
 
-  let teamIndex = 1; // TODO is this needed?
-  // Iterate through teams
+  let teamIndex = 1;
   // for (const teamElement of teamElements.slice(0, -1)) { // for whatever reason the last element is just empty
   // Iterate through the limited teams
   for (const teamElement of limitedTeamElements) {
-    teamElement.scrollIntoView();
     const teamInfo = await teamElement.$eval('.fancy-title :is(h2, h3) a', (link) => {
       const teamName = link.innerText.trim();
       const bannerImageSrc = link.querySelector('img') ? link.querySelector('img').erc : '';
       const teamPageLink = link.href;
       return { teamName, bannerImageSrc, teamPageLink };
     });
-    teamBar.update({ filename: teamInfo.teamName });
+    eventPageBar.update({ filename: `Event Page Team #${teamIndex}: ${teamInfo.teamName}` });
+    eventPageBar.increment();
 
     const emblemImageSrc = await teamElement.$eval('.header_emblem', (emblemElement) => {
       const dataBg = emblemElement.getAttribute('data-bg');
       const withoutPeriod = dataBg.substring(1);
       return withoutPeriod.length > 1 ? `https://manbow.nothing.sh/event${withoutPeriod}` : '';
     });
+    eventPageBar.increment();
     teamInfo.emblemImageSrc = emblemImageSrc;
+    eventPageBar.increment();
     teamInfo.teamImpression = await teamElement.$eval('#team_imp', (element) => element.innerText.trim());
+    eventPageBar.increment();
     teamInfo.teamTotal = await teamElement.$eval('#team_total', (element) => element.innerText.trim());
+    eventPageBar.increment();
     teamInfo.teamMedian = await teamElement.$eval('#team_med', (element) => element.innerText.trim());
+    eventPageBar.increment();
+
 
     // console.log(`Processed team #${teamIndex}: ${teamInfo.teamName}`);
 
     const songElements = await teamElement.$$('.pricing-box.best-price');
+    eventPageBar.increment();
 
     // Initialize an array to store song information for the current team
     const songs = new Map();
@@ -75,8 +87,10 @@ import cliProgress from 'cli-progress';
 
     let songIndex = 1;
     // Iterate through songs within the current team
+    const songElementTotal = songElements.length * songElementActions
+    const songElementBar = multibar.create(songElementTotal, 0);
     for (const songElement of songElements) {
-      songElement.scrollIntoView();
+      // songElement.scrollIntoView();
       debugger;
       // Song Information and Points Information
       let songName = '';
@@ -91,16 +105,24 @@ import cliProgress from 'cli-progress';
           continue;
         }
       }
+      songElementBar.update({ filename: `Song Element Team #${teamIndex}: ${teamInfo.teamName}: Song #${songIndex}: ${songName}` });
+      songElementBar.increment();
       try {
         const genreName = await songElement.$eval('h5', (h5) => h5.innerText.trim());
+        songElementBar.increment();
         const artistName = await songElement.$eval('.textOverflow:nth-child(3)', (textOverflow) => textOverflow.innerText.trim());
+        songElementBar.increment();
         const linkElement = await songElement.$('a');
         const songPageLink = linkElement ? await linkElement.getProperty('href').then(href => href.jsonValue()) : null;
+        songElementBar.increment();
 
         const pointsElements = await songElement.$$('xpath/ancestor::div[contains(@class, "col-sm-4")]');
+        songElementBar.increment();
         const spans = await pointsElements[0].$$('.bofu_meters span');
         const totalPoints = await spans[0].evaluate(span => span.innerText.replace('Total :', '').replace(' Point', '').trim());
+        songElementBar.increment();
         const medianPoints = await spans[1].evaluate(span => span.innerText.replace('Median :', '').replace(' Points', '').trim());
+        songElementBar.increment();
 
         const songInfo = {
           songName,
@@ -118,14 +140,18 @@ import cliProgress from 'cli-progress';
           const labels = Array.from(labelElement.querySelectorAll('strong')).map((label) => label.innerText.trim());
           return labels;
         });
+        songElementBar.increment();
         songInfo.bmsLabels = bmsLabels;
+        songElementBar.increment();
 
         const songImpression = await songElement.$eval('.tleft.textOverflow', (impressionElement) => {
           const impressionCount = impressionElement.querySelector('span').textContent.trim();
           return impressionCount;
         });
+        songElementBar.increment();
 
         songInfo.songImpression = songImpression;
+        songElementBar.increment();
 
         const entryNumber = await songElement.$eval('.pricing-action span small', (updateElement) => {
           const entryText = updateElement.innerText.trim();
@@ -139,7 +165,9 @@ import cliProgress from 'cli-progress';
 
           return { entryString };
         });
+        songElementBar.increment();
         songInfo.entryNumber = entryNumber.entryString;
+        songElementBar.increment();
 
         const updateInfo = await songElement.$eval('.pricing-action span small', (updateElement) => {
           const updateText = updateElement.innerText.trim();
@@ -153,45 +181,59 @@ import cliProgress from 'cli-progress';
 
           return { updateDateString };
         });
+        songElementBar.increment();
         songInfo.updateDateTime = new Date(updateInfo.updateDateString);
+        songElementBar.increment();
         songInfo.scrapedDateTime = new Date();
+        songElementBar.increment();
 
         // Push the extracted song information to the songs array
         songs.set(songInfo.songName, songInfo);
+        songElementBar.increment();
         songIndex += 1;
         // console.log(`Processed Song #${songIndex}: ${songInfo.songName}`);
       } catch (error) {
         console.log('An Error occured:', error);
         console.log(teamInfo.teamName);
-        // await page.waitForTimeout(60000);
       }
     }
     teamInfo.songs = songs;
+    eventPageBar.increment();
 
     teams.set(teamInfo.teamName, teamInfo);
+    eventPageBar.increment();
     teamIndex += 1;
-    teamBar.increment();
   }
   // console.log(teams);
 
 
+  const teamPageTotal = teams.size * teamPageActions;
+  const teamPageBar = multibar.create(teamPageTotal, 0);
+  let songPageTotal = 0;
+  const songPageBar = multibar.create(100, 0);
   // Now, you can access songPageLink within the existing songs map
   for (const [teamName, teamInfo] of teams.entries()) {
 
+    songPageTotal = songPageTotal + (teamInfo.songs.size * songPageActions);
+    songPageBar.setTotal(songPageTotal);
     // Navigate to the teamPageLink
     await page.goto(teamInfo.teamPageLink);
+    teamPageBar.update({ filename: `Team Page: ${teamName}` });
+    teamPageBar.increment();
+
     const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');
+    teamPageBar.increment();
 
     // ghetto enums cause apparently javascript doesn't have em???
     const LEADER = 0;
     const TWITTER = 1;
     const WEBSITE = 2;
     const CONCEPT = 3;
-    const BLANK_WORKS = 4;
+    // const BLANK_WORKS = 4;
     const WORKS = 5;
     const DECLARED = 6;
-    const SONGS = 7;
-    const BLANK = 8;
+    // const SONGS = 7;
+    // const BLANK = 8;
     const GENRE = 9;
     const SHARED = 10;
     const REASON = 11;
@@ -210,47 +252,60 @@ import cliProgress from 'cli-progress';
 
       return { teamLeader, teamLeaderCountry, teamLeaderLanguage };
     });
+    teamPageBar.increment();
     teamInfo.teamLeader = leaderSection.teamLeader;
+    teamPageBar.increment();
     teamInfo.teamLeaderCountry = leaderSection.teamLeaderCountry;
+    teamPageBar.increment();
     teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
+    teamPageBar.increment();
 
     const twitterSection = await sectionElements[TWITTER].$eval('p a', (element) => {
       const twitterLink = element.href;
       return { twitterLink };
     });
+    teamPageBar.increment();
     teamInfo.twitterLink = twitterSection.twitterLink;
+    teamPageBar.increment();
 
     const websiteSection = await sectionElements[WEBSITE].$eval('p a', (element) => {
       const websiteLink = element.href;
       return { websiteLink };
     });
+    teamPageBar.increment();
     teamInfo.websiteLink = websiteSection.websiteLink;
+    teamPageBar.increment();
 
     const conceptSection = await sectionElements[CONCEPT].$$eval('.col-md-3.center.bottommargin-lg', (elements) => {
       let concepts = [];
-      let conceptImage = ''
-      let conceptName = ''
+
       for (const element of elements) {
-        conceptImage = element.querySelector('img') ? element.querySelector('img').src : '';
+        const conceptImage = element.querySelector('img') ? element.querySelector('img').src : '';
         const conceptName = element.querySelector('h3').textContent.trim();
 
         concepts.push({ conceptImage, conceptName });
       }
       return { concepts };
     });
+    teamPageBar.increment();
     teamInfo.concepts = conceptSection.concepts;
+    teamPageBar.increment();
 
     const worksSection = await sectionElements[WORKS].$eval('.counter', (element) => {
       const works = element.textContent.trim();
       return { works };
     });
+    teamPageBar.increment();
     teamInfo.works = worksSection.works;
+    teamPageBar.increment();
 
     const declaredWorksSection = await sectionElements[DECLARED].$eval('.counter', (element) => {
       const declaredWorks = element.textContent.trim();
       return { declaredWorks };
     });
+    teamPageBar.increment();
     teamInfo.declaredWorks = declaredWorksSection.declaredWorks;
+    teamPageBar.increment();
 
     const genreSection = await sectionElements[GENRE].$eval('p', (element) => {
       const textContent = element.textContent.trim();
@@ -258,36 +313,75 @@ import cliProgress from 'cli-progress';
       const genre = genreMatch ? genreMatch[1].trim() : '';
       return { genre };
     });
+    teamPageBar.increment();
     teamInfo.genre = genreSection.genre;
+    teamPageBar.increment();
 
     const sharedSection = await sectionElements[SHARED].$eval('p', (element) => {
       const shared = element.textContent.trim();
       return { shared };
     });
+    teamPageBar.increment();
     teamInfo.shared = sharedSection.shared;
+    teamPageBar.increment();
 
     const reasonSection = await sectionElements[REASON].$eval('p', (element) => {
       const reason = element.textContent.trim();
       return { reason };
     });
+    teamPageBar.increment();
     teamInfo.reason = reasonSection.reason;
+    teamPageBar.increment();
 
     const memberSection = await sectionElements[MEMBERS].$$eval('p', (elements) => {
       const membersRaw = elements[0].textContent.trim();
       const memberCount = elements[1].textContent.trim().match(/[\d]+/);
-
       const membersProcessed = membersRaw.split(/[\n,/]/).map((member) => member.trim());
-
       return { membersRaw, memberCount, membersProcessed };
     });
+    teamPageBar.increment();
     teamInfo.membersRaw = memberSection.membersRaw;
+    teamPageBar.increment();
     teamInfo.memberCount = memberSection.memberCount;
+    teamPageBar.increment();
     teamInfo.membersProcessed = memberSection.membersProcessed;
+    teamPageBar.increment();
 
+    const commentSection = await sectionElements[COMMENT].$eval('p', (element) => {
+      const comment = element.textContent;
+      return { comment };
+    });
+    teamPageBar.increment();
+    teamInfo.comment = commentSection.comment;
+    teamPageBar.increment();
+
+    const registSection = await sectionElements[REGIST].$eval('strong', (element) => {
+      const regist = element.textContent.trim();
+      return { regist };
+    });
+    teamPageBar.increment();
+    teamInfo.regist = new Date(registSection.regist);
+    teamPageBar.increment();
+
+    const updateSection = await sectionElements[UPDATE].$eval('strong', (element) => {
+      const update = element.textContent.trim();
+      return { update };
+    });
+    teamPageBar.increment();
+    teamInfo.update = new Date(updateSection.update);
+    teamPageBar.increment();
+
+
+
+
+
+    // song Page Scraping
     for (const [songName, songInfo] of teamInfo.songs.entries()) {
       const songPageLink = songInfo.songPageLink;
+      songPageBar.update({ filename: `Song Page: ${songName}` });
       // Navigate to songPageLink
       await page.goto(songPageLink);
+      songPageBar.increment();
 
       // Use Puppeteer to extract the jacket source
       try {
@@ -299,6 +393,7 @@ import cliProgress from 'cli-progress';
       } catch (error) {
         songInfo.jacketImageSrc = '';
       }
+      songPageBar.increment();
 
       try {
         // Use Puppeteer to extract the banner source
@@ -316,6 +411,7 @@ import cliProgress from 'cli-progress';
       } catch (error) {
         songInfo.bannerImageSrc = '';
       }
+      songPageBar.increment();
 
 
       // Extract youtube link.
@@ -327,13 +423,15 @@ import cliProgress from 'cli-progress';
           return iframe.getAttribute('src');
         });
       }
+      songPageBar.increment();
       songInfo.youtubeLink = youtubeLink;
+      songPageBar.increment();
 
       // Extract soundcloud link.
       debugger;
       try {
         // Wait for the iframe to load
-        await page.waitForSelector('.m_audition iframe');
+        await page.waitForSelector('.m_audition iframe', {timeout: waitForTimer});
 
         // Get the iframe element
         const iframeElement = await page.$('.m_audition iframe');
@@ -349,12 +447,14 @@ import cliProgress from 'cli-progress';
       } catch (error) {
         songInfo.soundcloudLink = '';
       }
+      songPageBar.increment();
 
 
       // Extract only the linkUrls
       const linkUrls = await page.$$eval('blockquote p a', (elements) => {
         return elements.map((element) => element.getAttribute('href'));
       });
+      songPageBar.increment();
 
       // console.log('Link URLs:', linkUrls);
 
@@ -384,6 +484,7 @@ import cliProgress from 'cli-progress';
 
         return textWithoutEntities;
       });
+      songPageBar.increment();
 
 
       // console.log('Paragraph Text:', paragraphTexts);
@@ -418,11 +519,11 @@ import cliProgress from 'cli-progress';
           inlineUrlDescs.push(linkElement)
         }
       }
+      songPageBar.increment();
 
       // handle link descriptions above the link
       const aboveUrlDescs = [];
       try {
-
         for (let i = 0; i < inlineUrlDescs.length; i++) {
           // match above descriptions to a link directly below
 
@@ -458,6 +559,7 @@ import cliProgress from 'cli-progress';
         console.log('No Link Found: ', songPageLink)
         // technically this could apply whatever text is there as a description with no url, but i don't have the patience for it atm
       }
+      songPageBar.increment();
 
       // handle multiline descs
       const multilineUrlDescs = [];
@@ -493,6 +595,7 @@ import cliProgress from 'cli-progress';
           multilineUrlDescs.push({ linkUrl, linkDesc });
         }
       }
+      songPageBar.increment();
 
       // Handle any pending items
       if (pendingUrl) {
@@ -500,10 +603,13 @@ import cliProgress from 'cli-progress';
       } else if (pendingDesc) {
         multilineUrlDescs.push({ linkUrl: '', linkDesc: pendingDesc });
       }
+      songPageBar.increment();
 
       // Replace the original 'links' array with the modified 'newLinks' array
       links = multilineUrlDescs;
+      songPageBar.increment();
       songInfo.links = links;
+      songPageBar.increment();
       // console.log('Link Descriptions:', linkDescs);
 
       let bemuseLink = '';
@@ -517,8 +623,8 @@ import cliProgress from 'cli-progress';
       } catch (error) {
         songInfo.bemuseLink = '';
       }
+      songPageBar.increment();
     }
-
   }
   // console.dir(teams, { depth: null });
 
@@ -546,7 +652,7 @@ import cliProgress from 'cli-progress';
     if (err) {
       console.error('Error writing to file', err);
     } else {
-      console.log('Successfully wrote to file');
+      // console.log('Successfully wrote to file');
     }
   });
 
