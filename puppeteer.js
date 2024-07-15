@@ -6,7 +6,12 @@ const waitForTimer = 500;
 const eventPageActions = 9;
 const songElementActions = 17;
 const teamPageActions = 32;
-const songPageActions = 15;
+const songPageActions = 21;
+const navigationTimeout = 60000;
+// TODO rehaul progress bar to track every action in a single function
+// TODO revamp try-catch for error handling
+// TODO use logging module to log errors to a file
+// TODO scrap in parallel for better performance
 (async () => {
   console.time('programExecution');
   // Create a new progress bar instance and use shades_classic theme
@@ -15,6 +20,7 @@ const songPageActions = 15;
     hideCursor: true,
     format: ' {bar} {percentage}% | {filename} | {value}/{total}',
   }, cliProgress.Presets.shades_classic);
+
   const browser = await puppeteer.launch({
     headless: "new"
     /*
@@ -28,7 +34,7 @@ const songPageActions = 15;
   // await page.setViewport({ width: 1920, height: 1080 });
   // await page.setViewport({ width: 1080, height: 1920 });
 
-  page.setDefaultTimeout(8000);
+  page.setDefaultTimeout(navigationTimeout);
 
   await page.goto('https://manbow.nothing.sh/event/event.cgi?action=List_def&event=142#186');
 
@@ -49,7 +55,7 @@ const songPageActions = 15;
   for (const teamElement of limitedTeamElements) {
     const teamInfo = await teamElement.$eval('.fancy-title :is(h2, h3) a', (link) => {
       const teamName = link.innerText.trim();
-      const bannerImageSrc = link.querySelector('img') ? link.querySelector('img').erc : '';
+      const bannerImageSrc = link.querySelector('img') ? link.querySelector('img').src : '';
       const teamPageLink = link.href;
       return { teamName, bannerImageSrc, teamPageLink };
     });
@@ -153,36 +159,40 @@ const songPageActions = 15;
         songInfo.songImpression = songImpression;
         songElementBar.increment();
 
-        const entryNumber = await songElement.$eval('.pricing-action span small', (updateElement) => {
-          const entryText = updateElement.innerText.trim();
-          const regex = /No.(\d+)/;
-          const match = entryText.match(regex);
+        const entryCompositionUpdateElement = await songElement.$eval('.pricing-action span small', (element) => {
+          const text = element.innerText.trim();
+          const entryRegex = /No.(\d+)/;
+          const compositionRegex = /(Original|Copy|Arrange|Remix)/
+          const updateRegex = /update : (\d{4}\/\d{2}\/\d{2} \d{2}:\d{2})/;
+
+          const entryMatch = text.match(entryRegex);
 
           let entryString = null;
-          if (match) {
-            entryString = match[1];
+          if (entryMatch) {
+            entryString = entryMatch[1];
           }
 
-          return { entryString };
-        });
-        songElementBar.increment();
-        songInfo.entryNumber = entryNumber.entryString;
-        songElementBar.increment();
+          const compositionMatch = text.match(compositionRegex);
+          let compositionString = null;
+          if (compositionMatch) {
+            compositionString = compositionMatch[1];
+          }
 
-        const updateInfo = await songElement.$eval('.pricing-action span small', (updateElement) => {
-          const updateText = updateElement.innerText.trim();
-          const regex = /update : (\d{4}\/\d{2}\/\d{2} \d{2}:\d{2})/;
-          const match = updateText.match(regex);
+          const updateMatch = text.match(updateRegex);
 
           let updateDateString = null;
-          if (match) {
-            updateDateString = match[1];
+          if (updateMatch) {
+            updateDateString = updateMatch[1];
           }
 
-          return { updateDateString };
+          return { entryString, compositionString, updateDateString };
         });
         songElementBar.increment();
-        songInfo.updateDateTime = new Date(updateInfo.updateDateString);
+        songInfo.entryNumber = entryCompositionUpdateElement.entryString;
+        songElementBar.increment();
+        songInfo.compositionType = entryCompositionUpdateElement.compositionString;
+        songElementBar.increment();
+        songInfo.updateDateTime = new Date(entryCompositionUpdateElement.updateDateString);
         songElementBar.increment();
         songInfo.scrapedDateTime = new Date();
         songElementBar.increment();
@@ -244,18 +254,20 @@ const songPageActions = 15;
 
     const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (element) => {
       teamLeader = element.querySelector('big').innerText.trim();
-      const teamLeaderCountry = element.querySelector('img').title;
+      const teamLeaderCountryCode = element.querySelector('img').title;
+      const teamLeaderCountryFlag = element.querySelector('img').src;
       const textContent = element.textContent.trim();
 
       const teamLeaderLanguageMatch = textContent.match(/Language : ([^)]+)/);
       const teamLeaderLanguage = teamLeaderLanguageMatch ? teamLeaderLanguageMatch[1].trim() : '';
 
-      return { teamLeader, teamLeaderCountry, teamLeaderLanguage };
+      return { teamLeader, teamLeaderCountryCode, teamLeaderCountryFlag, teamLeaderLanguage };
     });
     teamPageBar.increment();
     teamInfo.teamLeader = leaderSection.teamLeader;
     teamPageBar.increment();
-    teamInfo.teamLeaderCountry = leaderSection.teamLeaderCountry;
+    teamInfo.teamLeaderCountryCode = leaderSection.teamLeaderCountryCode;
+    teamInfo.teamLeaderCountryFlag = leaderSection.teamLeaderCountryFlag;
     teamPageBar.increment();
     teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
     teamPageBar.increment();
@@ -352,7 +364,7 @@ const songPageActions = 15;
       return { comment };
     });
     teamPageBar.increment();
-    teamInfo.comment = commentSection.comment;
+    teamInfo.teamComment = commentSection.comment;
     teamPageBar.increment();
 
     const registSection = await sectionElements[REGIST].$eval('strong', (element) => {
@@ -396,23 +408,81 @@ const songPageActions = 15;
       songPageBar.increment();
 
       try {
-        // Use Puppeteer to extract the banner source
-        const bannerImageElement = await page.$x("//div[contains(@style, 'upload')]/@style");
-        if (bannerImageElement.length > 0) {
-          const styleAttribute = await bannerImageElement[0].getProperty('textContent');
-          // console.log('Style Attribute String:', styleAttribute.toString());
-          // Use a regular expression to match URLs containing "upload"
-          const uploadUrlMatch = (styleAttribute.toString()).match(/url\("([^"]*upload[^"]*)"\)/);
-          // console.log('Upload Url Match 1', uploadUrlMatch[1]);
-          songInfo.bannerImageSrc = `https://manbow.nothing.sh/event${uploadUrlMatch[1].substring(1)}`;
+        // Use Puppeteer to select the div with the specified class and style attribute
+        const styleElement = await page.$('.section.parallax.nomargin.notopborder');
+
+        if (styleElement) {
+          // Extract the style attribute value
+          const styleAttribute = await page.evaluate(el => el.getAttribute('style'), styleElement);
+
+          if (styleAttribute) {
+            // Convert the style attribute to a string
+            const styleString = styleAttribute.toString();
+
+            // Use a regular expression to find all URLs within the style attribute
+            const urlMatches = styleString.match(/url\("([^"]*upload[^"]*)"\)/);
+
+          } else {
+            songInfo.bannerImageSrc = urlMatches;
+          }
         } else {
           songInfo.bannerImageSrc = '';
         }
       } catch (error) {
         songInfo.bannerImageSrc = '';
       }
+
       songPageBar.increment();
 
+      const specialElement = await page.$('span.badge.rounded-pill');
+      let isSpecial = false;
+      let specialTitle = '';
+      if (specialElement) {
+        isSpecial = true;
+        specialTitle = await specialElement.$eval('big', (element) => element.textContent.trim());
+      }
+      songInfo.isSpecial = isSpecial;
+      songInfo.specialTitle = specialTitle;
+      songPageBar.increment();
+
+
+      const bpmLevelBgaElement = await page.$eval('.col_two_third.nobottommargin, .col_full.nobottommargin', (element) => {
+        bpmMatches = element.textContent.match(/bpm : ([^\/]+)/);
+        let bpm = '';
+        let bpmAverage = '';
+        let bpmLower = '';
+        let bpmUpper = '';
+        if (bpmMatches[1].split('～').length > 1) {
+          bpmLower = bpmMatches[1].split('～')[0].trim();
+          bpmUpper = bpmMatches[1].split('～')[1].trim();
+          bpmAverage = String((Number(bpmUpper) + Number(bpmLower)) / 2)
+          // TODO investigate bms file to see if i can evaluate the most common bpm
+        } else {
+          bpm = bpmMatches[1].trim();
+        }
+
+        levelMatches = element.textContent.match(/Level : ([^\/]+)/);
+        let levelLower = '';
+        let levelUpper = '';
+        if (levelMatches[1].split('～').length > 1) {
+          levelLower = levelMatches[1].split('～')[0].trim();
+          levelUpper = levelMatches[1].split('～')[1].trim();
+        }
+
+        bgaStatus = element.textContent.match(/BGA : (.*)/)[1].trim();
+        return { bpm, bpmLower, bpmUpper, bpmAverage, levelLower, levelUpper, bgaStatus };
+      });
+
+      songInfo.bpm = bpmLevelBgaElement.bpm;
+      songInfo.bpmLower = bpmLevelBgaElement.bpmLower;
+      songInfo.bpmUpper = bpmLevelBgaElement.bpmUpper;
+      songInfo.Average = bpmLevelBgaElement.bpmAverage;
+      songInfo.levelLower = bpmLevelBgaElement.levelLower.replace("★x", "").trim();
+      songInfo.levelUpper = bpmLevelBgaElement.levelUpper.replace("★x", "").trim();
+      songInfo.bgaStatus = bpmLevelBgaElement.bgaStatus;
+      songPageBar.increment();
+      songPageBar.increment();
+      songPageBar.increment();
 
       // Extract youtube link.
       let youtubeLink = ''; // Initialize to a default value
@@ -427,27 +497,6 @@ const songPageActions = 15;
       songInfo.youtubeLink = youtubeLink;
       songPageBar.increment();
 
-      // Extract soundcloud link.
-      debugger;
-      try {
-        // Wait for the iframe to load
-        await page.waitForSelector('.m_audition iframe', {timeout: waitForTimer});
-
-        // Get the iframe element
-        const iframeElement = await page.$('.m_audition iframe');
-
-        // Extract the src attribute of the iframe
-        const soundcloudSrc = await page.evaluate(iframe => iframe.src, iframeElement);
-        const soundcloudUrlSrc = new URL(soundcloudSrc);
-        // Get the value of the 'url' parameter
-        const urlParam = soundcloudUrlSrc.searchParams.get('url');
-        // Extract the necessary part of the URL
-        const soundcloudLink = new URL(urlParam).toString();
-        songInfo.soundcloudLink = soundcloudLink;
-      } catch (error) {
-        songInfo.soundcloudLink = '';
-      }
-      songPageBar.increment();
 
 
       // Extract only the linkUrls
@@ -612,6 +661,39 @@ const songPageActions = 15;
       songPageBar.increment();
       // console.log('Link Descriptions:', linkDescs);
 
+
+
+      const tags = await page.$$eval('div.bmsinfo2 span.label', (labels) => {
+        return labels.map((label) => label.textContent);
+      })
+      songInfo.tags = tags;
+
+      songPageBar.increment();
+
+
+      // Extract soundcloud link.
+      debugger;
+      try {
+        // Wait for the iframe to load
+        await page.waitForSelector('.m_audition iframe', { timeout: waitForTimer });
+
+        // Get the iframe element
+        const iframeElement = await page.$('.m_audition iframe');
+
+        // Extract the src attribute of the iframe
+        const soundcloudSrc = await page.evaluate(iframe => iframe.src, iframeElement);
+        const soundcloudUrlSrc = new URL(soundcloudSrc);
+        // Get the value of the 'url' parameter
+        const urlParam = soundcloudUrlSrc.searchParams.get('url');
+        // Extract the necessary part of the URL
+        const soundcloudLink = new URL(urlParam).toString();
+        songInfo.soundcloudLink = soundcloudLink;
+      } catch (error) {
+        songInfo.soundcloudLink = '';
+      }
+      songPageBar.increment();
+
+
       let bemuseLink = '';
       try {
         // Use Puppeteer to extract the Bemuse link
@@ -624,7 +706,40 @@ const songPageActions = 15;
         songInfo.bemuseLink = '';
       }
       songPageBar.increment();
+
+      let commentText = ''
+      try {
+        // First attempt to select the <p> element using the first XPath selector
+        commentText = await page.$eval(
+          'div.col_full:nth-child(4) > div:nth-child(8) > p:nth-child(2)',
+          pElement => pElement.textContent.trim()
+        );
+
+      } catch (error) {
+        // console.error('First attempt failed. Trying the second XPath selector.');
+
+        try {
+          // Second attempt to select the <p> element using the second XPath selector
+          commentText = await page.$eval(
+            'div.col_full:nth-child(4) > div:nth-child(9) > p:nth-child(2)',
+            pElement => pElement.textContent.trim()
+          );
+
+        } catch (error) {
+          // console.error('Both attempts failed. Error:', error);
+        }
+      }
+
+      songInfo.songComment = commentText;
+      songPageBar.increment();
+
+
+
     }
+
+
+
+
   }
   // console.dir(teams, { depth: null });
 
