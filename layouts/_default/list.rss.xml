@@ -1,0 +1,155 @@
+{{ $page := . }}
+
+{{ $copyright := site.Copyright | markdownify | plainify | htmlUnescape }}
+{{ $description := or $page.Description (i18n "paige_recent_content") }}
+{{ $format := "Mon, 02 Jan 2006 15:04:05 MST" }}
+{{ $language := site.LanguageCode | default site.Language.Lang }}
+{{ $lastbuilddate := false }}
+{{ $limit := site.Config.Services.RSS.Limit }}
+{{ $link := ($page.AlternativeOutputFormats.Get "html").Permalink }}
+{{ $managingeditor := $page.Param "paige.feed.rss.managing_editor" }}
+{{ $subpages := slice }}
+{{ $webmaster := $page.Param "paige.feed.rss.web_master" }}
+
+{{ range $page.RegularPagesRecursive.ByPublishDate.Reverse }}
+    {{ if or (and (not $lastbuilddate) (not .Lastmod.IsZero)) (and $lastbuilddate (lt $lastbuilddate .Lastmod)) }}
+        {{ $lastbuilddate = .Lastmod }}
+    {{ end }}
+
+    {{ if not (.Param "paige.feed.hide_page") }}
+        {{ $subpages = $subpages | append . }}
+    {{ end }}
+{{ end }}
+
+{{ if gt $limit 0 }}
+    {{ $subpages = $subpages | first $limit }}
+{{ end }}
+
+{{ $titles := slice ($page.Title | markdownify) }}
+
+{{ range .Ancestors }}
+    {{ $titles = $titles | append (.Title | markdownify) }}
+{{ end }}
+
+{{ $title := delimit $titles " · " }}
+
+{{ if not $title }}
+    {{ warnf "layouts/_default/list.rss.xml: page %s does not have a title" $page.RelPermalink }}
+{{ end }}
+
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<rss version="2.0" {{ with $language }} xml:lang="{{ . }}" {{ end }} xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        {{ range $page.OutputFormats }}
+            {{ $rel := .Rel }}
+
+            {{ if eq .Permalink $page.Permalink }}
+                {{ $rel = "self" }}
+            {{ else if eq $rel "canonical" }}
+                {{ $rel = "alternate" }}
+            {{ end }}
+
+            {{ if or (eq $rel "alternate") (eq $rel "enclosure") (eq $rel "related") (eq $rel "self") (eq $rel "via") }}
+                {{ printf `<link href="%s" rel="%s" type="%s"/>` .Permalink $rel .MediaType | safeHTML }}
+            {{ end }}
+        {{ end }}
+
+        {{ range $t := $page.Translations }}
+            {{ range .OutputFormats }}
+                {{ if or (eq .Rel "alternate") (eq .Rel "enclosure") (eq .Rel "related") (eq .Rel "via") }}
+                    {{ printf `<link href="%s" hreflang="%s" rel="%s" type="%s"/>` .Permalink $t.Lang .Rel .MediaType | safeHTML }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+        {{ with $copyright }}
+            <copyright>{{ . }}</copyright>
+        {{ end }}
+
+        <description>{{ $description }}</description>
+
+        {{ with $language }}
+            <language>{{ . }}</language>
+        {{ end }}
+
+        {{ with $lastbuilddate }}
+            <lastBuildDate>{{ . }}</lastBuildDate>
+        {{ end }}
+
+        <link>{{ $link }}</link>
+
+        {{ with $managingeditor }}
+            <managingEditor>{{ . }}</managingEditor>
+        {{ end }}
+
+        <title>{{ $title }}</title>
+
+        {{ with $webmaster }}
+            <webMaster>{{ . }}</webMaster>
+        {{ end }}
+
+        {{ range $subpage := $subpages }}
+            <item>
+                {{ $author := "" }}
+                {{ $authors := partial "paige/authors.html" . }}
+                {{ $description := .Content }}
+                {{ $guid := printf "tag:%s,%s:%s" (urls.Parse site.BaseURL).Host (.PublishDate.Format "2006-01-02") (cond (.Params.id | not) .RelPermalink .Params.id) }}
+                {{ $paramlink := and .Params.link (not (.Param "paige.feed.link_to_page")) | not | not }}
+                {{ $pubdate := .PublishDate.Format $format }}
+                {{ $title := .Title | markdownify | plainify | htmlUnescape }}
+
+                {{ $link := cond $paramlink .Params.link .Permalink }}
+
+                {{ with $authors }}
+                    {{ $primary := index . 0 }}
+
+                    {{ if and $primary.Params.email $primary.Title }}
+                        {{ $author = printf "%s (%s)" $primary.Params.email $primary.Title }}
+                    {{ else if $primary.Params.email }}
+                        {{ $author = $primary.Params.email }}
+                    {{ end }}
+                {{ end }}
+
+                {{ if and $description $paramlink }}
+                    {{ $pagelink := or (.Param "paige.feed.page_link" | markdownify) "⏎" }}
+                    {{ $footer := printf `<p><a href="%s" title="%s">%s</a></p>` .Permalink (htmlEscape $title) $pagelink }}
+
+                    {{ $description = print $description $footer }}
+                {{ end }}
+
+                {{ if not $description }}
+                    {{ $description = .Description | markdownify}}
+                {{ end }}
+
+                {{ $description = $description | replaceRE `<a href="#fn:(\d+)" class="footnote-ref" role="doc-noteref">` (printf `<a href="%s#fn:$1" class="footnote-ref" role="doc-noteref">` .Permalink) }}
+                {{ $description = $description | replaceRE `<a href="#fnref:(\d+)" class="footnote-backref" role="doc-backlink">` (printf `<a href="%s#fnref:$1" class="footnote-backref" role="doc-backlink">` .Permalink) }}
+
+                {{ if and (not $description) (not $title) }}
+                    {{ warnf "layouts/_default/rss.xml: page %s does not have a title or description" .RelPermalink }}
+                {{ end }}
+
+                {{ with $author }}
+                    <author>{{ . }}</author>
+                {{ end }}
+
+                {{ with $description }}
+                    <description>{{ printf "<![CDATA[%s]]>" . | safeHTML }}</description>
+                {{ end }}
+
+                <guid isPermaLink="false">{{ $guid }}</guid>
+
+                {{ with $link }}
+                    <link>{{ . }}</link>
+                {{ end }}
+
+                {{ with $pubdate }}
+                    <pubDate>{{ . }}</pubDate>
+                {{ end }}
+
+                {{ with $title }}
+                    <title>{{ . }}</title>
+                {{ end }}
+            </item>
+        {{ end }}
+    </channel>
+</rss>

@@ -1,0 +1,52 @@
+{{ $page := . }}
+
+{{ $class := slice }}
+{{ $draft := $page.Draft }}
+{{ $expired := and $page.ExpiryDate (lt $page.ExpiryDate now) }}
+{{ $future := and $page.PublishDate (gt $page.PublishDate now) }}
+{{ $modified := and $page.PublishDate $page.Lastmod (lt $page.PublishDate $page.Lastmod) }}
+
+{{ if $draft }}
+    {{ $class = $class | append "paige-draft" "paige-unpublished" }}
+{{ end }}
+
+{{ if $expired }}
+    {{ $class = $class | append "paige-expired" "paige-unpublished" }}
+{{ end }}
+
+{{ if $future }}
+    {{ $class = $class | append "paige-future" "paige-unpublished" }}
+{{ end }}
+
+{{ if $modified }}
+    {{ $class = $class | append "paige-modified" }}
+{{ end }}
+
+{{ if not (or $draft $expired $future) }}
+    {{ $class = $class | append "paige-published" }}
+{{ end }}
+
+{{ with $page.Kind }}
+    {{ if eq . "home" }}
+        {{ $class = $class | append "paige-home" }}
+    {{ else if eq . "section" }}
+        {{ $class = $class | append "paige-list" }}
+    {{ else if eq . "page" }}
+        {{ $class = $class | append "paige-single" }}
+    {{ else if eq . "taxonomy" }}
+        {{ $class = $class | append "paige-taxonomy" }}
+    {{ else if eq . "term" }}
+        {{ $class = $class | append "paige-term" }}
+    {{ end }}
+{{ end }}
+
+{{ $class = delimit ($class | uniq) " " }}
+
+<article {{ with $class }} class="{{ . }}" {{ end }} id="paige-article">
+    <div class="align-items-center d-flex flex-column mb-0">
+        {{ partial "paige/metadata.html" $page }}
+        {{ partial "paige/alert.html" $page }}
+        {{ partial "paige/toc.html" $page }}
+        {{ partial "paige/content.html" $page }}
+    </div>
+</article>

@@ -1,0 +1,40 @@
+{{ $params := . }}
+
+{{ $context := $params.context }}
+{{ $crossorigin := $params.crossorigin | default "anonymous" }}
+{{ $href := $params.href }}
+{{ $includepaths := $params.includepaths }}
+{{ $integrity := $params.integrity }}
+{{ $page := $params.page }}
+{{ $referrerpolicy := $params.referrerpolicy | default "no-referrer" }}
+{{ $sass := $params.sass }}
+{{ $template := $params.template }}
+
+{{ $enablesourcemap := not hugo.IsProduction }}
+{{ $outputstyle := cond hugo.IsProduction "compressed" "" }}
+
+{{ if not $href }}
+    {{ errorf "layouts/partials/paige/link.html: no href" }}
+{{ end }}
+
+{{ with partial "paige/resource.html" (dict "page" $page "url" $href) }}
+    {{ $resource := . }}
+
+    {{ if $template }}
+        {{ $split := path.Split $href }}
+        {{ $join := path.Join $split.Dir (print (printf "%#v" $context | sha1) "-" $split.File) }}
+        {{ $resource = resources.ExecuteAsTemplate $join $context . }}
+    {{ end }}
+
+    {{ if $sass }}
+        {{ $resource = $resource | toCSS (dict "enableSourceMap" $enablesourcemap "includePaths" $includepaths "outputStyle" $outputstyle "transpiler" "dartsass") }}
+    {{ end }}
+
+    {{ $resource = $resource | minify | fingerprint }}
+    {{ $href = $resource.RelPermalink }}
+    {{ $integrity = $resource.Data.Integrity }}
+{{ else }}
+    {{ $href = relLangURL $href }}
+{{ end }}
+
+<link {{ with $crossorigin }} crossorigin="{{ . }}" {{ end }} href="{{ $href | safeURL }}" {{ with $integrity }} integrity="{{ . }}" {{ end }} {{ with $referrerpolicy }} referrerpolicy="{{ . }}" {{ end }} rel="stylesheet">

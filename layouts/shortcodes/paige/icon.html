@@ -1,0 +1,23 @@
+{{ $class := .Get 0 | default (.Get "class") }}
+{{ $title := .Get "title" }}
+{{ $url := .Get "url" }}
+
+{{ $target := partial "paige/target.html" (dict "page" .Page "url" $url) }}
+
+{{ if not $class }}
+    {{ errorf "layouts/shortcodes/paige/icon.html: no class" }}
+{{ end }}
+
+{{/* The markup below cannot be indented due to nested shortcodes within Markdown. */}}
+
+<span class="paige-icon">
+{{- with $url -}}
+<a href="{{ . }}" {{ with $target }} target="{{ . }}" {{ end }}>
+{{- end -}}
+
+<i class="{{ $class }}" {{ with $title }} title="{{ . }}" {{ end }}>{{ with $title }}<span class="visually-hidden">{{ . }}</span>{{ end }}</i>
+
+{{- if $url -}}
+</a>
+{{- end -}}
+</span>

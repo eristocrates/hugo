@@ -460,6 +460,35 @@ table {
 
 
 
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;  
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;  
+    z-index: 1;  
+}
+
+
+
 </style>
 
 
@@ -537,108 +566,12 @@ table {
                         <ul class="dropdown-menu">
                             
                                 <li>
-                                    <a class=" dropdown-item" href="/bof/eventlist" >EventList</a>
+                                    <a class=" dropdown-item" href="/bof/event142" >BOF:NT</a>
                                 </li>
 
                                 
                             
                         </ul>
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/layouts/"    >Layouts</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/shortcodes/"    >Shortcodes</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/customizations/"    >Customizations</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/authors/"    >Authors</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/series/"    >Series</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/categories/"    >Categories</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/tags/"    >Tags</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link  "  href="/search/"    >Search</a>
-
                     
                 </li>
             
@@ -705,11 +638,11 @@ table {
     
 
     
-        <p class="mb-0 text-center text-secondary" id="paige-copyright">© Will Faught</p>
+        <p class="mb-0 text-center text-secondary" id="paige-copyright">made with hugo by eristocrates</p>
     
 
     <p class="mb-0 text-center" id="paige-credit">
-        <a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige" >Paige Theme</a>
+        <a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige" >Paige Theme By Will Faught</a>
     </p>
 
     

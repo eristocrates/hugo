@@ -1,0 +1,102 @@
+{{ $page := . }}
+
+{{ $authors := partial "paige/authors.html" $page }}
+{{ $categories := $page.GetTerms "categories" }}
+{{ $date := $page.PublishDate }}
+{{ $dateformat := $page.Param "paige.date_format" | default ":date_long" }}
+{{ $description := $page.Description | markdownify | plainify | htmlUnescape }}
+{{ $draft := $page.Draft }}
+{{ $expired := and $page.ExpiryDate (lt $page.ExpiryDate now) }}
+{{ $flags := slice }}
+{{ $future := and $page.PublishDate (gt $page.PublishDate now) }}
+{{ $modified := and $page.PublishDate $page.Lastmod (lt $page.PublishDate $page.Lastmod) }}
+{{ $readingtime := $page.ReadingTime }}
+{{ $series := $page.GetTerms "series" }}
+{{ $summary := $page.Summary | markdownify | plainify | htmlUnescape }}
+{{ $tags := $page.GetTerms "tags" }}
+{{ $textkeywords := eq ($page.Param "paige.keyword_style" | default "text") "text" }}
+{{ $title := $page.Title | markdownify | plainify | htmlUnescape }}
+{{ $titlelink := $page.RelPermalink }}
+
+{{ if $draft }}
+    {{ $flags = $flags | append "paige-draft" "paige-unpublished" }}
+{{ end }}
+
+{{ if $expired }}
+    {{ $flags = $flags | append "paige-expired" "paige-unpublished" }}
+{{ end }}
+
+{{ if $future }}
+    {{ $flags = $flags | append "paige-future" "paige-unpublished" }}
+{{ end }}
+
+{{ if $modified }}
+    {{ $flags = $flags | append "paige-modified" }}
+{{ end }}
+
+{{ if not (or $draft $expired $future) }}
+    {{ $flags = $flags | append "paige-published" }}
+{{ end }}
+
+{{ $flags = delimit ($flags | uniq) " " }}
+{{ $class := delimit (slice "mb-3" "paige-page" "w-100" | append $flags | uniq | sort) " " }}
+
+<div class="{{ $class }}">
+    {{ with $title }}
+        <p class="mb-0 paige-title text-center"><a href="{{ $titlelink }}">{{ . }}</a></p>
+    {{ end }}
+
+    {{ with $description }}
+        <p class="mb-0 paige-description text-center">{{ . }}</p>
+    {{ end }}
+
+    {{ with $summary }}
+        <p class="fst-italic mb-0 paige-summary text-center">{{ . }}</p>
+    {{ end }}
+
+    {{ if or $categories $tags }}
+        <p class="mb-0 paige-keywords text-center text-secondary">
+            {{ range $i, $term := sort (append $categories $tags) "LinkTitle" -}}
+                {{- if $textkeywords -}}
+                    {{- if gt $i 0 }} · {{ end -}}
+
+                    <a class="link-secondary" href="{{ .RelPermalink | safeURL }}">{{ .Title }}</a>
+                {{- else -}}
+                    {{- if gt $i 0 }} {{ end -}}
+
+                    <a class="badge paige-keyword text-bg-secondary text-decoration-none" href="{{ .RelPermalink | safeURL }}">{{ .Title }}</a>
+                {{- end -}}
+            {{- end }}
+        </p>
+    {{ end }}
+
+    {{ with $series }}
+        <p class="mb-0 paige-series text-center text-secondary">
+            {{ range $i, $series := . -}}
+                {{- if gt $i 0 }} · {{ end -}}
+
+                <a class="link-secondary" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- end }}
+        </p>
+    {{ end }}
+
+    {{ with $authors }}
+        <p class="mb-0 paige-authors text-center text-secondary">
+            {{ range $i, $author := . -}}
+                {{- if gt $i 0 }} · {{ end -}}
+
+                <a class="link-secondary" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- end }}
+        </p>
+    {{ end }}
+
+    {{ with $date }}
+        <p class="mb-0 paige-date text-center text-secondary">
+            <time datetime="{{ .Format `2006-01-02` }}">{{ time.Format $dateformat . }}</time>
+        </p>
+    {{ end }}
+
+    {{ with $readingtime }}
+        <p class="mb-0 paige-reading-time text-center text-secondary">{{ . }} {{ i18n "paige_minutes" . }}</p>
+    {{ end }}
+</div>

@@ -1,0 +1,8 @@
++++
+title = 'A mirror site project'
+date = 2024-07-10T14:17:42-04:00
+draft = true
+[paige]
+site_title = "THE BMS OF FIGHTERS"
+site_description = "The Be-Music Source of Fighters"
++++

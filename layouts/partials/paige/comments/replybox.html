@@ -1,0 +1,15 @@
+{{ $page := . }}
+
+{{ if $page.Param "paige.comments.replybox" }}
+    <div class="mb-3" id="paige-comments">
+        <div id="replybox"></div>
+        <script>
+        window.replybox = {
+            site: "{{ $page.Param "paige.comments.replybox.account_id" | safeJS }}",
+            identifier: "{{ $page.RelPermalink | safeJS }}"
+        };
+        </script>
+        <script src="https://cdn.getreplybox.com/js/embed.js"></script>
+        <noscript>{{ i18n "paige_noscript" }}</noscript>
+    </div>
+{{ end }}

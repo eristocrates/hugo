@@ -1,0 +1,17 @@
+{{ $page := . }}
+
+{{ if or $page.Ancestors site.Menus.main }}
+    <header class="my-3" id="paige-header">
+        {{ if templates.Exists "partials/paige/header-first.html" }}
+            {{ partial "paige/header-first.html" $page }}
+        {{ end }}
+
+        {{ partial "paige/site.html" $page }}
+        {{ partial "paige/menu.html" $page }}
+        {{ partial "paige/breadcrumbs.html" . }}
+
+        {{ if templates.Exists "partials/paige/header-last.html" }}
+            {{ partial "paige/header-last.html" $page }}
+        {{ end }}
+    </header>
+{{ end }}

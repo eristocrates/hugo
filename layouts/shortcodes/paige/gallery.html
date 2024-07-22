@@ -1,0 +1,100 @@
+{{ $align := .Get "align" | default "center" }}
+{{ $breakpoints := .Get "breakpoints" }}
+{{ $class := .Get "class" }}
+{{ $densities := .Get "densities" }}
+{{ $fetchpriority := .Get "fetchpriority" }}
+{{ $height := .Get "height" }}
+{{ $images := .Get 0 | default (.Get "images") }}
+{{ $justify := .Get "justify" | default "center" }}
+{{ $linked := .Get "linked" }}
+{{ $loading := .Get "loading" }}
+{{ $maxheight := .Get "maxheight" }}
+{{ $maxwidth := .Get "maxwidth" }}
+{{ $page := .Page }}
+{{ $process := .Get "process" }}
+{{ $style := .Get "style" }}
+{{ $type := .Get "type" | default "rows" }}
+{{ $width := .Get "width" }}
+
+{{ $inner := chomp .InnerDeindent }}
+{{ $resources := slice }}
+
+{{ if and (not $images) (not $inner) }}
+    {{ errorf "layouts/shortcodes/paige/gallery.html: no content" }}
+{{ end }}
+
+{{ if not $inner }}
+    {{ with $images }}
+        {{ with $.Page.Resources.Match . }}
+            {{ $resources = . }}
+        {{ else }}
+            {{ $resources = resources.Match . }}
+        {{ end }}
+    {{ else }}
+        {{ with .Page.Resources.ByType "image" }}
+            {{ $resources = . }}
+        {{ else }}
+            {{ $resources = resources.ByType "image" }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{/* The markup below cannot be indented due to nested shortcodes within Markdown. */}}
+
+<div class="paige-gallery">
+{{ if eq $type "grid" }}
+<div class="container-fluid overflow-hidden px-0">
+<div class="align-items-{{ $align }} gx-3 gy-3 justify-content-{{ $justify }} row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+{{ with $inner }}
+{{ . }}
+{{ else }}
+{{ range $resources }}
+{{ partial "paige/image.html" (dict
+    "breakpoints" $breakpoints
+    "class" (printf "img-fluid %s" $class)
+    "densities" $densities
+    "fetchpriority" $fetchpriority
+    "height" $height
+    "linked" $linked
+    "loading" $loading
+    "maxheight" $maxheight
+    "maxwidth" $maxwidth
+    "page" $page
+    "process" $process
+    "resource" .
+    "style" (print $style "; height: auto; max-width: 100%")
+    "width" $width
+) }}
+{{ end }}
+{{ end }}
+</div>
+</div>
+{{ else if eq $type "rows" }}
+<div class="align-items-{{ $align }} column-gap-3 d-flex flex-wrap justify-content-{{ $justify }} row-gap-3">
+{{ with $inner }}
+{{ . }}
+{{ else }}
+{{ range $resources }}
+{{ partial "paige/image.html" (dict
+    "breakpoints" $breakpoints
+    "class" (printf "img-fluid %s" $class)
+    "densities" $densities
+    "fetchpriority" $fetchpriority
+    "height" $height
+    "linked" $linked
+    "loading" $loading
+    "maxheight" $maxheight
+    "maxwidth" $maxwidth
+    "page" $page
+    "process" $process
+    "resource" .
+    "style" (print $style "; height: auto; max-width: 100%")
+    "width" $width
+) }}
+{{ end }}
+{{ end }}
+</div>
+{{ else }}
+{{ errorf "layouts/shortcodes/paige/gallery.html: invalid type: %q" $type }}
+{{ end }}
+</div>

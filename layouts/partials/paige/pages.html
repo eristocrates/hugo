@@ -1,0 +1,170 @@
+{{ $page := . }}
+
+{{ define "pagination" }}
+    {{ $params := . }}
+
+    {{ $page := .page }}
+    {{ $pager := .pager }}
+
+    {{ if or $pager.HasPrev $pager.HasNext }}
+        <div id="paige-pagination">
+            <div class="d-flex justify-content-center">
+                <nav aria-label="{{ i18n `paige_page_list_navigation` }}">
+                    <ul class="pagination">
+                        {{ with $page.Paginator }}
+                            <li class="page-item {{ if eq .PageNumber .First.PageNumber }} disabled {{ end }}">
+                                <a aria-label="{{ i18n `paige_first` }}" class="page-link" href="{{ .First.URL }}"><span aria-hidden="true">&laquo;</span></a>
+                            </li>
+
+                            <li class="page-item {{ if not .Prev }} disabled {{ end }}">
+                                <a {{ if .Prev }} aria-label="{{ i18n `paige_previous` }}" {{ end }} class="page-link" {{ with .Prev }} href="{{ .URL }}" {{ end }}>
+                                    <span aria-hidden="true">&lsaquo;</span>
+                                </a>
+                            </li>
+
+                            <li class="page-item {{ if not .Next }} disabled {{ end }}">
+                                <a {{ if .Next }} aria-label="{{ i18n `paige_next` }}" {{ end }} class="page-link" {{ with .Next }} href="{{ .URL }}" {{ end }}>
+                                    <span aria-hidden="true">&rsaquo;</span>
+                                </a>
+                            </li>
+
+                            <li class="page-item {{ if eq .PageNumber .Last.PageNumber }} disabled {{ end }}">
+                                <a aria-label="{{ i18n `paige_last` }}" class="page-link" href="{{ .Last.URL }}"><span aria-hidden="true">&raquo;</span></a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    {{ end }}
+{{ end }}
+
+{{ $collections := slice }}
+{{ $pages := $page.RegularPages }}
+{{ $sections := $page.Sections }}
+
+{{ if $page.IsHome }}
+    {{ range $name, $taxonomy := site.Taxonomies }}
+        {{ if $taxonomy.Page }}
+            {{ $collections = $collections | append $taxonomy.Page }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if and (not $pages) (in (slice "taxonomy" "term") $page.Kind) }}
+    {{ $pages = $page.Pages }}
+{{ end }}
+
+{{ with $collections }}
+    {{ $ordered := slice }}
+    {{ $weights := .GroupBy "Weight" }}
+
+    {{ range $i, $e := $weights }}
+        {{ if eq $e.Key 0 }}
+            {{ $weights = slice | append (first $i $weights) | append (after (add $i 1) $weights) | append $e }}
+            {{ break }}
+        {{ end }}
+    {{ end }}
+
+    {{ range $weights }}
+        {{ range (sort (.Pages.GroupBy "PublishDate") "Key").Reverse }}
+            {{ range .Pages.ByTitle }}
+                {{ $ordered = $ordered | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    <div id="paige-collections">
+        {{ if or $sections $pages }}
+            <h2 class="h5 text-center" id="paige-collections-header">{{ i18n "paige_collections" }}</h2>
+        {{ end }}
+
+        {{ if or $sections $pages }}
+            {{ range $ordered }}
+                {{ partial "paige/page.html" . }}
+            {{ end }}
+        {{ else }}
+            {{ $pager := $page.Paginate $ordered }}
+
+            {{ range $pager.Pages }}
+                {{ partial "paige/page.html" . }}
+            {{ end }}
+
+            {{ template "pagination" (dict "page" $page "pager" $pager) }}
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ with $sections }}
+    {{ $ordered := slice }}
+    {{ $weights := .GroupBy "Weight" }}
+
+    {{ range $i, $e := $weights }}
+        {{ if eq $e.Key 0 }}
+            {{ $weights = slice | append (first $i $weights) | append (after (add $i 1) $weights) | append $e }}
+            {{ break }}
+        {{ end }}
+    {{ end }}
+
+    {{ range $weights }}
+        {{ range (sort (.Pages.GroupBy "PublishDate") "Key").Reverse }}
+            {{ range .Pages.ByTitle }}
+                {{ $ordered = $ordered | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    <div id="paige-sections">
+        {{ if or $collections $pages }}
+            <h2 class="h5 text-center" id="paige-sections-header">{{ i18n "paige_sections" }}</h2>
+        {{ end }}
+
+        {{ if $pages }}
+            {{ range $ordered }}
+                {{ partial "paige/page.html" . }}
+            {{ end }}
+        {{ else }}
+            {{ $pager := $page.Paginate $ordered }}
+
+            {{ range $pager.Pages }}
+                {{ partial "paige/page.html" . }}
+            {{ end }}
+
+            {{ template "pagination" (dict "page" $page "pager" $pager) }}
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ with $pages }}
+    {{ $ordered := slice }}
+    {{ $weights := .GroupBy "Weight" }}
+
+    {{ range $i, $e := $weights }}
+        {{ if eq $e.Key 0 }}
+            {{ $weights = slice | append (first $i $weights) | append (after (add $i 1) $weights) | append $e }}
+            {{ break }}
+        {{ end }}
+    {{ end }}
+
+    {{ range $weights }}
+        {{ range (sort (.Pages.GroupBy "PublishDate") "Key").Reverse }}
+            {{ range .Pages.ByTitle }}
+                {{ $ordered = $ordered | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    <div id="paige-pages">
+        {{ if or $collections $sections }}
+            <h2 class="h5 text-center" id="paige-pages-header">{{ i18n "paige_pages" }}</h2>
+        {{ end }}
+
+        {{ $pager := $page.Paginate $ordered }}
+
+        {{ range $pager.Pages }}
+            {{ partial "paige/page.html" . }}
+        {{ end }}
+
+        {{ template "pagination" (dict "page" $page "pager" $pager) }}
+    </div>
+{{ end }}

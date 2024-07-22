@@ -4,7 +4,7 @@ const config = {
     url: 'https://example.com/test',
     navigationTimeout: 30000,
     waitForTimer: 500,
-    numberOfTeamsToLimit:  100,
+    numberOfTeamsToLimit: 2,
   },
   full: {
     url: 'https://example.com/full',
@@ -25,11 +25,15 @@ const commonConfig = {
     urlPrefix: 'https://manbow.nothing.sh/event/event.cgi?',
     bofnt: {
       eventKey: 142,
-      fullName : 'BOF:NT [THE BMS OF FIGHTERS : NT -Twinkle Dream Traveler-]',
+      shortName: "bofnt",
+      fullName: '[THE BMS OF FIGHTERS : NT]',
+      subTitle: "-Twinkle Dream Traveler-",
     },
     bofet: {
       eventKey: 140,
-      fullName : 'BOF:ET [THE BMS OF FIGHTERS : ET -Summer Dream Traveler-]',
+      shortName: "bofet",
+      fullName: '[THE BMS OF FIGHTERS : ET]',
+      subTitle: "-Summer Dream Traveler-",
     },
   }
 };

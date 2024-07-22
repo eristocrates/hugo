@@ -286,9 +286,17 @@ async function saveData() {
 
     teamsObject[key] = teamDetailsObject;
   });
-
+  const latestEventObject = {
+    [config.latestEvent.eventKey]: {
+      fullName: config.latestEvent.fullName,
+      shortName: config.latestEvent.shortName,
+      subTitle: config.latestEvent.subTitle,
+      lastScrapeTime: new Date(),
+      teams: teamsObject
+    }
+  };
   // Write teams data to a JSON file
-  writeFile(`./data/event${config.latestEvent.eventKey}.json`, JSON.stringify(teamsObject, null, 2), (err) => {
+  writeFile(`./data/event${config.latestEvent.eventKey}.json`, JSON.stringify(latestEventObject, null, 2), (err) => {
     if (err) {
       log('error', `Error writing to file: ${err}`);
     } else {
@@ -328,6 +336,7 @@ async function saveData() {
 
   page.setDefaultTimeout(config.navigationTimeout);
 
+  // TODO scrape media from event information page
   await page.goto(`https://manbow.nothing.sh/event/event.cgi?action=List_def&event=${config.latestEvent.eventKey}`);
 
 
@@ -491,7 +500,8 @@ async function saveData() {
     teamInfo.songs = songs;
     eventPageBar.increment();
 
-    teams.set(teamInfo.teamName, teamInfo);
+    const teamKey = teamInfo.teamPageLink.match(/team=([\d]+)/)[1].trim();
+    teams.set(teamKey, teamInfo);
     eventPageBar.increment();
     teamIndex += 1;
   }
@@ -524,7 +534,7 @@ async function saveData() {
 
     // Navigate to the teamPageLink
     await page.goto(teamInfo.teamPageLink);
-    teamPageBar.update({ filename: `Teams: ${teamName}` });
+    teamPageBar.update({ filename: `Teams: ${teamInfo.teamName}` });
     teamPageBar.increment();
 
     const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');

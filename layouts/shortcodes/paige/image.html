@@ -1,0 +1,42 @@
+{{ $alt := .Get "alt" }}
+{{ $breakpoints := .Get "breakpoints" }}
+{{ $class := .Get "class" }}
+{{ $densities := .Get "densities" }}
+{{ $fetchpriority := .Get "fetchpriority" }}
+{{ $height := .Get "height" }}
+{{ $link := .Get "link" }}
+{{ $linked := .Get "linked" }}
+{{ $loading := .Get "loading" }}
+{{ $maxheight := .Get "maxheight" }}
+{{ $maxwidth := .Get "maxwidth" }}
+{{ $process := .Get "process" }}
+{{ $sizes := .Get "sizes" }}
+{{ $src := .Get 0 | default (.Get "src") }}
+{{ $srcset := .Get "srcset" }}
+{{ $style := .Get "style" }}
+{{ $title := .Get "title" }}
+{{ $width := .Get "width" }}
+
+<div class="paige-image">
+    {{ partial "paige/image.html" (dict
+        "alt" $alt
+        "breakpoints" $breakpoints
+        "class" (printf "img-fluid %s" $class)
+        "densities" $densities
+        "fetchpriority" $fetchpriority
+        "height" $height
+        "link" $link
+        "linked" $linked
+        "loading" $loading
+        "maxheight" $maxheight
+        "maxwidth" $maxwidth
+        "page" .Page
+        "process" $process
+        "sizes" $sizes
+        "src" $src
+        "srcset" $srcset
+        "style" $style
+        "title" $title
+        "width" $width
+    ) }}
+</div>
