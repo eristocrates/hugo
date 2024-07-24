@@ -23,4 +23,4 @@ The first project I wanted to tackle was creating a less cumbersome version of t
 
 Not that I expect this site of mine to be the pinnacle of web design, but manbow's site can be pretty tough to deal with for anyone not used to japanese web design
 I'll even consider mirroring somethings from their site, as well as automating periodic scraping so this site can stay up do date during events. I'm the type to put function over aesthetics, so plz bear with me while I figure out how to get it all working.
-Anywho, here's the [bof](/bof) link list
+Anywho, here's the [bof event list](/bof)

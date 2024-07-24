@@ -1,0 +1,38 @@
+{{ $markdownDir := "resources/markdown/" }}
+{{ range $filename, $_ := site.Data }}
+	{{ range $eventKey, $eventProperties := . }}
+
+		{{ $eventParams := dict
+    "logoUrl" (printf "https://www.bmsoffighters.net/%s/img/%s.png" $eventProperties.shortName $eventProperties.shortName)
+    "videoUrl" (printf "https://www.bmsoffighters.net/%s/img/%s.mp4" $eventProperties.shortName $eventProperties.shortName)
+    "paige.site_title" "[THE BMS OF MIRRORS]"
+    "paige.site_description" "-Website Dream Traveler-"
+    "fullName" $eventProperties.fullName
+    "shortName" $eventProperties.shortName
+    "subTitle" $eventProperties.subTitle
+    "lastScrapeTime" $eventProperties.lastScrapeTime
+    "teams" $eventProperties.teams
+    }}
+
+		{{ $content := dict
+    "mediaType" "text/markdown"
+    "value" "test content from /bof/_content.gotmpl"
+    }}
+
+
+		{{ $eventPage := dict
+    "kind" "section"
+    "path" (printf "event%s" $eventKey)
+    "url" (printf "/event%s" $eventKey)
+    "params" $eventParams
+    "title" $eventProperties.fullName
+    "type" "eventPage"
+    "description" $eventProperties.subTitle
+    "date" $eventProperties.lastScrape
+    "content" $content
+    }}
+
+		{{ $.AddPage $eventPage }}
+
+	{{ end }}
+{{ end }}

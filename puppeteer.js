@@ -10,14 +10,14 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// $env:MODE='test'
-// $env:MODE='production'
-// TODO rehaul progress bar to track every action in a single function
-// TODO revamp try-catch for error handling
+// TODO rehaul program for main event list entry point, and scraping of all data for each event
+// TODO seperate scraping strategies by various types of pages associated with an event, including larger event vs smaller event page types
+// TODO rehaul progress bar to track every await, loop, and assignment
+// TODO establish variable assignment convention to happen as late as possible and grouped together
+// TODO revamp try-catches for error handling that will assist me in make the scraper event agnostic
+// TODO xpath rewrite?
 // TODO use logging module to log errors to a file
 // TODO scrape in parallel for better performance
-// TODO rehaul program for main event list entry point, and scraping of all data for each event
-// TODO seperate scraping by page, including larger event vs smaller event page types
 // TODO collect regex matches for reusability
 // TODO properly use StringJpDate on other arrays
 
@@ -287,6 +287,7 @@ async function saveData() {
     teamsObject[key] = teamDetailsObject;
   });
   const latestEventObject = {
+    // TODO add logo and video
     [config.latestEvent.eventKey]: {
       fullName: config.latestEvent.fullName,
       shortName: config.latestEvent.shortName,
@@ -345,7 +346,7 @@ async function saveData() {
   // Apply the limit if in test mode
   const teamElements = config.numberOfTeamsToLimit
     ? allTeamElements.slice(0, config.numberOfTeamsToLimit)
-    : allTeamElements.slice(0, -1); // for whatever reason the last element is just empty
+    : allTeamElements.slice(0, -1); // for whatever reason the last element is just empty?
 
   const eventPageTotal = teamElements.length * config.actions.eventPage
   const eventPageBar = multibar.create(eventPageTotal, 0)
@@ -447,7 +448,6 @@ async function saveData() {
         songInfo.bmsLabels = bmsLabels;
 
 
-        // TODO scrape impression stars? maybe even more for impression visualizer
 
         const entryCompositionUpdateElement = await songElement.$eval('.pricing-action span small', (element) => {
           const text = element.innerText.trim();
@@ -537,6 +537,7 @@ async function saveData() {
     teamPageBar.update({ filename: `Teams: ${teamInfo.teamName}` });
     teamPageBar.increment();
 
+    // TODO redo this with the ability to select section by name
     const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');
     teamPageBar.increment();
 
@@ -560,8 +561,8 @@ async function saveData() {
 
     const leaderSection = await sectionElements[LEADER].$eval('p:nth-of-type(2)', (element) => {
       teamLeader = element.querySelector('big').innerText.trim();
-      const teamLeaderCountryCode = element.querySelector('img').title;
-      const teamLeaderCountryFlag = element.querySelector('img').src;
+      const teamLeaderCountryCode = element.querySelector('img') ? element.querySelector('img').title : '';
+      const teamLeaderCountryFlag = element.querySelector('img') ? element.querySelector('img').src : '';
       const textContent = element.textContent.trim();
 
       const teamLeaderLanguageMatch = textContent.match(/Language : ([^)]+)/);
@@ -578,18 +579,30 @@ async function saveData() {
     teamInfo.teamLeaderLanguage = leaderSection.teamLeaderLanguage;
     teamPageBar.increment();
 
-    const twitterSection = await sectionElements[TWITTER].$eval('p a', (element) => {
-      const twitterLink = element.href;
-      return { twitterLink };
-    });
+    let twitterSection = {};
+    try {
+      twitterSection = await sectionElements[TWITTER].$eval('p a', (element) => {
+        const twitterLink = element.href;
+        return { twitterLink };
+      });
+    } catch (error) {
+      log('error', `Team ${teamName} has no twitter link`);
+      twitterSection.twitterLink = '';
+    }
     teamPageBar.increment();
     teamInfo.twitterLink = twitterSection.twitterLink;
     teamPageBar.increment();
 
-    const websiteSection = await sectionElements[WEBSITE].$eval('p a', (element) => {
-      const websiteLink = element.href;
-      return { websiteLink };
-    });
+    let websiteSection = {};
+    try {
+      websiteSection = await sectionElements[WEBSITE].$eval('p a', (element) => {
+        const websiteLink = element.href;
+        return { websiteLink };
+      });
+    } catch (error) {
+      log('error', `Team ${teamName} has no website link`);
+      websiteSection.websiteLink = '';
+    }
     teamPageBar.increment();
     teamInfo.websiteLink = websiteSection.websiteLink;
     teamPageBar.increment();
@@ -609,10 +622,16 @@ async function saveData() {
     teamInfo.concepts = conceptSection.concepts;
     teamPageBar.increment();
 
-    const worksSection = await sectionElements[WORKS].$eval('.counter', (element) => {
-      const works = Number(element.textContent.trim());
-      return { works };
-    });
+    let worksSection = {};
+    try {
+      worksSection = await sectionElements[WORKS].$eval('.counter', (element) => {
+        const works = Number(element.textContent.trim());
+        return { works };
+      });
+    } catch (error) {
+      log('error', `Team ${teamName} has no works`);
+      worksSection.works = 0;
+    }
     teamPageBar.increment();
     teamInfo.works = worksSection.works;
     teamPageBar.increment();
@@ -651,12 +670,12 @@ async function saveData() {
     teamInfo.reason = reasonSection.reason;
     teamPageBar.increment();
 
-    // TODO add logging to see if members processes = memberCount & update split accordingly
     const memberSection = await sectionElements[MEMBERS].$$eval('p', (elements) => {
       const membersRaw = elements[0].textContent.trim();
       const memberCount = Number(elements[1].textContent.trim().match(/[\d]+/));
       const membersProcessed = membersRaw.split(/[\n,/]/).map((member) => member.trim());
-      return { membersRaw, memberCount, membersProcessed };
+      const isProcessedCorrectly = membersProcessed.length === memberCount;
+      return { membersRaw, memberCount, membersProcessed, isProcessedCorrectly };
     });
     teamPageBar.increment();
     teamInfo.membersRaw = memberSection.membersRaw;
@@ -664,6 +683,8 @@ async function saveData() {
     teamInfo.memberCount = memberSection.memberCount;
     teamPageBar.increment();
     teamInfo.membersProcessed = memberSection.membersProcessed;
+    teamPageBar.increment();
+    teamInfo.isProcessedCorrectly = memberSection.isProcessedCorrectly;
     teamPageBar.increment();
 
     const commentSection = await sectionElements[COMMENT].$eval('p', (element) => {
@@ -763,7 +784,6 @@ async function saveData() {
           bpmLower = bpmMatches[1].split('～')[0].trim();
           bpmUpper = bpmMatches[1].split('～')[1].trim();
           bpmAverage = String((Number(bpmUpper) + Number(bpmLower)) / 2)
-          // TODO investigate bms file to see if i can evaluate the most common bpm
         } else {
           bpm = bpmMatches[1].trim();
         }
@@ -823,6 +843,11 @@ async function saveData() {
       songPageBar.increment();
       // // console.log('Link URLs:', linkUrls);
 
+      const rawHTML = await page.$eval('p[style="font-size:75%"]', (element) => {
+        const innerHTML = element.innerHTML;
+        return innerHTML;
+      });
+      songInfo.rawHTML = rawHTML;
       // Extract all text within the <p> element separated by <br> tags
       const paragraphTexts = await page.$eval('p[style="font-size:75%"]', (element) => {
         const textWithEntities = element.innerHTML.split('<br>').map((text) => text.trim());
@@ -1108,7 +1133,6 @@ async function saveData() {
       }
       songInfo.lastVoteDateTime = new Date(convertJpDate(lastVoteDateString));
       songPageBar.increment();
-      // TODO implement my own version of 投票者一覧 after scraping impressions. maybe a version where mouseover shows a short impression
 
       const shortImpressions = await page.$$eval('div.col_full div.col_full div.col_full div.spost.clearfix.nomarginbottom', (elements) => {
         let impressions = [];

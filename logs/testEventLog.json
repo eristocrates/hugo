@@ -3,1078 +3,1078 @@
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.289Z"
+    "timestamp": "2024-07-23T17:09:40.818Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.306Z"
+    "timestamp": "2024-07-23T17:09:40.854Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.324Z"
+    "timestamp": "2024-07-23T17:09:40.879Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[17]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.340Z"
+    "timestamp": "2024-07-23T17:09:40.901Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[22]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.357Z"
+    "timestamp": "2024-07-23T17:09:40.923Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[27]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.374Z"
+    "timestamp": "2024-07-23T17:09:40.946Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[34]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.404Z"
+    "timestamp": "2024-07-23T17:09:40.985Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[39]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.422Z"
+    "timestamp": "2024-07-23T17:09:41.008Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[44]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.437Z"
+    "timestamp": "2024-07-23T17:09:41.027Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[49]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.454Z"
+    "timestamp": "2024-07-23T17:09:41.048Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[54]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.470Z"
+    "timestamp": "2024-07-23T17:09:41.068Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[59]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.486Z"
+    "timestamp": "2024-07-23T17:09:41.088Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[68]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.531Z"
+    "timestamp": "2024-07-23T17:09:41.158Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[73]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.550Z"
+    "timestamp": "2024-07-23T17:09:41.182Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[78]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.566Z"
+    "timestamp": "2024-07-23T17:09:41.203Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[83]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.585Z"
+    "timestamp": "2024-07-23T17:09:41.224Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[88]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.605Z"
+    "timestamp": "2024-07-23T17:09:41.243Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[93]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.621Z"
+    "timestamp": "2024-07-23T17:09:41.271Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[98]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.637Z"
+    "timestamp": "2024-07-23T17:09:41.292Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[103]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.653Z"
+    "timestamp": "2024-07-23T17:09:41.312Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[108]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.669Z"
+    "timestamp": "2024-07-23T17:09:41.332Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[113]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.683Z"
+    "timestamp": "2024-07-23T17:09:41.353Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[118]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:23.701Z"
+    "timestamp": "2024-07-23T17:09:41.376Z"
   },
   {
     "level": "error",
     "message": "Header element not found or is undefined for XPath: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:166:7)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:167:7)"
     ],
-    "timestamp": "2024-07-22T02:50:25.968Z"
+    "timestamp": "2024-07-23T17:09:43.780Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:25.985Z"
+    "timestamp": "2024-07-23T17:09:43.799Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.001Z"
+    "timestamp": "2024-07-23T17:09:43.820Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.019Z"
+    "timestamp": "2024-07-23T17:09:43.839Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[17]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.034Z"
+    "timestamp": "2024-07-23T17:09:43.864Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[22]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.051Z"
+    "timestamp": "2024-07-23T17:09:43.887Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[27]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.070Z"
+    "timestamp": "2024-07-23T17:09:43.907Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[32]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.088Z"
+    "timestamp": "2024-07-23T17:09:43.926Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[37]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.107Z"
+    "timestamp": "2024-07-23T17:09:43.946Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[42]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.125Z"
+    "timestamp": "2024-07-23T17:09:43.965Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[47]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.144Z"
+    "timestamp": "2024-07-23T17:09:43.986Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[52]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.161Z"
+    "timestamp": "2024-07-23T17:09:44.013Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[57]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.179Z"
+    "timestamp": "2024-07-23T17:09:44.048Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[62]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.197Z"
+    "timestamp": "2024-07-23T17:09:44.068Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[67]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:26.215Z"
+    "timestamp": "2024-07-23T17:09:44.088Z"
   },
   {
     "level": "error",
     "message": "Header element not found or is undefined for XPath: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:166:7)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:167:7)"
     ],
-    "timestamp": "2024-07-22T02:50:28.414Z"
+    "timestamp": "2024-07-23T17:09:46.540Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.428Z"
+    "timestamp": "2024-07-23T17:09:46.583Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.444Z"
+    "timestamp": "2024-07-23T17:09:46.616Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.459Z"
+    "timestamp": "2024-07-23T17:09:46.644Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[17]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.474Z"
+    "timestamp": "2024-07-23T17:09:46.663Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[22]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.489Z"
+    "timestamp": "2024-07-23T17:09:46.684Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[27]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.506Z"
+    "timestamp": "2024-07-23T17:09:46.704Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[32]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.522Z"
+    "timestamp": "2024-07-23T17:09:46.723Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[37]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.542Z"
+    "timestamp": "2024-07-23T17:09:46.752Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[42]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.561Z"
+    "timestamp": "2024-07-23T17:09:46.774Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[47]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.579Z"
+    "timestamp": "2024-07-23T17:09:46.795Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[52]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.596Z"
+    "timestamp": "2024-07-23T17:09:46.818Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[57]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.614Z"
+    "timestamp": "2024-07-23T17:09:46.839Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[62]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.632Z"
+    "timestamp": "2024-07-23T17:09:46.858Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[69]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.665Z"
+    "timestamp": "2024-07-23T17:09:46.898Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[9]/div[25]/following-sibling::div[74]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:28.683Z"
+    "timestamp": "2024-07-23T17:09:46.920Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.415Z"
+    "timestamp": "2024-07-23T17:09:49.438Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.430Z"
+    "timestamp": "2024-07-23T17:09:49.461Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.446Z"
+    "timestamp": "2024-07-23T17:09:49.485Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[19]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.474Z"
+    "timestamp": "2024-07-23T17:09:49.526Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[24]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.490Z"
+    "timestamp": "2024-07-23T17:09:49.551Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[29]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.505Z"
+    "timestamp": "2024-07-23T17:09:49.570Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[34]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.521Z"
+    "timestamp": "2024-07-23T17:09:49.590Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[41]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.548Z"
+    "timestamp": "2024-07-23T17:09:49.636Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[46]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.565Z"
+    "timestamp": "2024-07-23T17:09:49.656Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[51]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.581Z"
+    "timestamp": "2024-07-23T17:09:49.675Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[56]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.596Z"
+    "timestamp": "2024-07-23T17:09:49.695Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[61]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.611Z"
+    "timestamp": "2024-07-23T17:09:49.715Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[68]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.638Z"
+    "timestamp": "2024-07-23T17:09:49.755Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[73]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.654Z"
+    "timestamp": "2024-07-23T17:09:49.775Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[78]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.670Z"
+    "timestamp": "2024-07-23T17:09:49.797Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[83]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.685Z"
+    "timestamp": "2024-07-23T17:09:49.821Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[88]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:30.700Z"
+    "timestamp": "2024-07-23T17:09:49.866Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.469Z"
+    "timestamp": "2024-07-23T17:09:53.156Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.486Z"
+    "timestamp": "2024-07-23T17:09:53.177Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.501Z"
+    "timestamp": "2024-07-23T17:09:53.198Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[17]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.518Z"
+    "timestamp": "2024-07-23T17:09:53.222Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[22]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.539Z"
+    "timestamp": "2024-07-23T17:09:53.243Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[27]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.555Z"
+    "timestamp": "2024-07-23T17:09:53.268Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[32]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.571Z"
+    "timestamp": "2024-07-23T17:09:53.291Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[37]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.586Z"
+    "timestamp": "2024-07-23T17:09:53.312Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[42]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.602Z"
+    "timestamp": "2024-07-23T17:09:53.332Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[47]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.620Z"
+    "timestamp": "2024-07-23T17:09:53.360Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[52]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:33.636Z"
+    "timestamp": "2024-07-23T17:09:53.384Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.339Z"
+    "timestamp": "2024-07-23T17:09:55.690Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.355Z"
+    "timestamp": "2024-07-23T17:09:55.718Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.372Z"
+    "timestamp": "2024-07-23T17:09:55.746Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[17]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.390Z"
+    "timestamp": "2024-07-23T17:09:55.772Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[22]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.406Z"
+    "timestamp": "2024-07-23T17:09:55.792Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[27]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.423Z"
+    "timestamp": "2024-07-23T17:09:55.815Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[32]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.439Z"
+    "timestamp": "2024-07-23T17:09:55.835Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[39]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.470Z"
+    "timestamp": "2024-07-23T17:09:55.880Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[44]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.488Z"
+    "timestamp": "2024-07-23T17:09:55.902Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[49]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.505Z"
+    "timestamp": "2024-07-23T17:09:55.921Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[54]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.523Z"
+    "timestamp": "2024-07-23T17:09:55.943Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[59]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.542Z"
+    "timestamp": "2024-07-23T17:09:55.963Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[64]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:35.560Z"
+    "timestamp": "2024-07-23T17:09:55.984Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[2]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.083Z"
+    "timestamp": "2024-07-23T17:09:58.406Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[7]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.103Z"
+    "timestamp": "2024-07-23T17:09:58.429Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[12]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.120Z"
+    "timestamp": "2024-07-23T17:09:58.457Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[17]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.138Z"
+    "timestamp": "2024-07-23T17:09:58.499Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[22]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.155Z"
+    "timestamp": "2024-07-23T17:09:58.524Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[27]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.172Z"
+    "timestamp": "2024-07-23T17:09:58.563Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[32]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.188Z"
+    "timestamp": "2024-07-23T17:09:58.584Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[37]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.204Z"
+    "timestamp": "2024-07-23T17:09:58.602Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[42]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.220Z"
+    "timestamp": "2024-07-23T17:09:58.622Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[47]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.235Z"
+    "timestamp": "2024-07-23T17:09:58.640Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[52]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.250Z"
+    "timestamp": "2024-07-23T17:09:58.659Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[57]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.266Z"
+    "timestamp": "2024-07-23T17:09:58.677Z"
   },
   {
     "level": "error",
     "message": "Header element's innerHTML does not contain any <div> tags: /html/body/div[1]/section/div[2]/div/div[4]/div[10]/div[25]/following-sibling::div[64]",
     "stack": [
-      "    at log (file:///I:/coding/neocities/puppeteer.js:64:15)",
-      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:136:5)",
-      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:245:9)"
+      "    at log (file:///I:/coding/neocities/puppeteer.js:65:15)",
+      "    at headerExists (file:///I:/coding/neocities/puppeteer.js:137:5)",
+      "    at async scrapeLongImpressions (file:///I:/coding/neocities/puppeteer.js:246:9)"
     ],
-    "timestamp": "2024-07-22T02:50:37.294Z"
+    "timestamp": "2024-07-23T17:09:58.714Z"
   }
 ]

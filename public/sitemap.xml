@@ -4,13 +4,28 @@
   <url>
     <loc>//localhost:1313/</loc>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team84/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team96/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team177/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team39/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team150/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team108/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team39/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team194/</loc>
@@ -19,27 +34,222 @@
     <loc>//localhost:1313/bof/event142/team16/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team34/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team2/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team178/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team36/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team91/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team139/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team115/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team129/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team174/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team155/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team9/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team28/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team77/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team97/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team86/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team8/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team93/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team24/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team101/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team46/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team125/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team12/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team39/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team137/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team58/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team73/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team51/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team48/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team43/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team161/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team118/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team23/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team67/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team21/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team81/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team144/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team162/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team21/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team125/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team73/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team177/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team184/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team41/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team133/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team161/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team100/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team58/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team11/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team132/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team17/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team175/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team115/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team48/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team178/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team18/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team33/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team17/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/authors/</loc>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team172/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team55/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team7/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team22/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team150/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team125/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team21/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team15/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team50/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team135/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team188/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team86/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team73/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team97/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team155/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team148/</loc>
@@ -48,7 +258,22 @@
     <loc>//localhost:1313/bof/event142/team57/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team43/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team79/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team142/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team51/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team163/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team40/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team44/</loc>
@@ -57,18 +282,126 @@
     <loc>//localhost:1313/bof/event142/team22/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team148/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team30/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team22/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team126/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team16/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team166/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team181/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team95/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team115/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team26/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team162/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team16/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team153/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team86/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team124/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team113/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team28/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team192/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team192/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team138/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team135/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team100/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team143/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team29/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team179/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team61/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team147/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team111/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team161/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team164/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team35/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team117/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team117/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team176/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team167/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team32/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team10/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team41/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team67/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team104/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team147/</loc>
@@ -77,10 +410,118 @@
     <loc>//localhost:1313/bof/event142/team116/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team159/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team165/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team140/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team113/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team7/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team10/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team44/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team11/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team159/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team151/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team146/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team28/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team153/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team32/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team137/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team78/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team128/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team114/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team55/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team56/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team147/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team60/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/</loc>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team13/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team176/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team36/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team7/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team44/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team99/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team95/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team23/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team63/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team6/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team134/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team181/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team70/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team105/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team141/song1/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team141/</loc>
     <priority>0</priority>
@@ -88,7 +529,40 @@
     <loc>//localhost:1313/bof/event142/team35/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team57/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team128/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team8/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team132/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team54/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team36/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team19/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team130/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team63/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team140/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team98/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team168/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team156/</loc>
@@ -103,10 +577,37 @@
     <loc>//localhost:1313/bof/event142/team127/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team167/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team104/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team64/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team185/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team122/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team2/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team87/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team123/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team77/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team43/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team85/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team187/</loc>
@@ -118,10 +619,130 @@
     <loc>//localhost:1313/bof/event142/team181/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team87/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team29/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team75/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team91/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team178/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team101/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team33/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team105/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team68/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team166/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team70/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team13/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team185/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team37/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team79/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team148/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team170/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team99/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team105/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team54/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team110/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team31/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team167/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team144/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team80/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team35/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team44/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team57/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team86/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team159/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team78/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team51/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team26/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team37/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team31/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team21/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team189/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team143/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team19/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team134/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team156/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team92/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team13/</loc>
@@ -130,31 +751,154 @@
     <loc>//localhost:1313/bof/event142/team190/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team168/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team6/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team19/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team27/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team178/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team25/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team127/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team142/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team6/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team18/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team27/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team189/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team12/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team56/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team23/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team66/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team8/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team156/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team60/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team23/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team22/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team60/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team77/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team6/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team174/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team80/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team188/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team67/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team175/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team18/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team75/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team167/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team101/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team4/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team191/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team62/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team14/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team63/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team165/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team147/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team97/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team105/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team13/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team3/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team140/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team32/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team30/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team186/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team66/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team27/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team60/</loc>
@@ -163,22 +907,94 @@
     <loc>//localhost:1313/bof/event142/team70/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team124/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team142/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team20/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team61/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team8/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team151/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team70/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team37/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team190/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team110/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team75/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team87/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team194/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team68/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team41/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team169/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team99/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team2/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team110/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team69/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team36/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team188/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team84/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team25/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team182/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team69/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team81/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team31/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team93/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team188/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team155/</loc>
@@ -187,48 +1003,273 @@
     <loc>//localhost:1313/bof/event142/team25/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team111/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team164/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team79/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team163/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team91/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team138/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team138/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team99/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team181/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team73/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team143/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team192/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team30/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team142/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team111/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team159/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team168/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team58/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team163/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team110/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team4/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team97/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team130/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team10/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team132/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team22/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team77/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team20/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team17/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team37/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team141/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team175/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team35/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team161/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team23/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team54/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team114/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team30/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team108/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team147/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team141/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team125/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team190/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team87/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team188/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team3/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team189/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team18/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team7/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team25/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team37/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team145/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team129/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team77/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team19/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team182/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team29/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team184/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team117/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team150/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/series/</loc>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team75/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team165/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team123/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team33/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team26/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team145/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team18/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team151/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team114/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team185/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team3/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team69/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team175/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team182/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team176/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team57/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team34/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team177/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team17/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team135/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team128/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team149/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team127/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team187/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team132/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team139/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team76/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team76/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team12/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team52/</loc>
@@ -237,10 +1278,40 @@
     <loc>//localhost:1313/bof/event142/team179/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team164/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team93/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team24/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team62/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team40/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team9/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team145/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team92/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team14/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team115/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team76/song1/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team167/</loc>
     <priority>0</priority>
@@ -257,13 +1328,82 @@
     <loc>//localhost:1313/bof/event142/team41/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team39/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team117/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team182/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team187/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team187/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team138/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team50/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team123/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team85/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team35/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team174/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team84/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team189/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team24/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team129/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team67/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team146/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team11/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team115/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team165/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team42/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team93/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team98/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team27/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team68/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team39/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team28/</loc>
@@ -272,25 +1412,115 @@
     <loc>//localhost:1313/bof/event142/team12/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team4/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team70/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team163/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team48/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team15/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team16/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team124/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team48/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team123/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team21/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team52/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team51/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team186/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team2/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team10/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team100/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team78/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team32/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team62/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team56/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team16/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team110/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team137/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team145/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team144/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team181/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team168/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team85/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team26/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team76/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team98/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team140/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team149/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team170/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team95/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team11/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team4/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team143/</loc>
@@ -299,19 +1529,79 @@
     <loc>//localhost:1313/bof/event142/team114/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team144/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team162/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team31/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team182/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team50/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team96/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team130/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team117/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team155/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team185/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team20/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team169/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team162/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team42/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team191/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team148/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team42/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team14/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team56/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team42/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team121/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team64/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team128/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team20/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team64/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team186/</loc>
@@ -320,7 +1610,13 @@
     <loc>//localhost:1313/bof/event142/team55/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team186/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team172/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team78/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team54/</loc>
@@ -335,6 +1631,9 @@
     <loc>//localhost:1313/bof/event142/team34/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team172/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team100/</loc>
     <priority>0</priority>
   </url><url>
@@ -347,7 +1646,19 @@
     <loc>//localhost:1313/bof/event142/team79/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team3/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team78/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team15/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team6/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team121/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team91/</loc>
@@ -356,10 +1667,22 @@
     <loc>//localhost:1313/bof/event142/team3/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team177/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team26/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team133/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team61/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team194/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team61/song1/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team81/</loc>
@@ -368,13 +1691,46 @@
     <loc>//localhost:1313/bof/event142/team133/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team19/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team161/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team105/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team121/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team165/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team33/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team38/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team128/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team121/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team38/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team85/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team38/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team92/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team156/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team130/</loc>
@@ -383,10 +1739,25 @@
     <loc>//localhost:1313/bof/event142/team122/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team91/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team172/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team104/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team9/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team124/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team52/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team81/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team48/</loc>
@@ -398,22 +1769,73 @@
     <loc>//localhost:1313/bof/event142/team10/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team172/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team46/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team34/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team99/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team140/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team104/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team116/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team139/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team153/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team126/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team108/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team176/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team31/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team95/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team113/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team92/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team40/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team149/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team146/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team191/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team122/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team118/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team50/song3/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team151/</loc>
@@ -422,7 +1844,19 @@
     <loc>//localhost:1313/bof/event142/team129/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team170/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team159/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team64/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team68/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team149/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team58/</loc>
@@ -443,7 +1877,34 @@
     <loc>//localhost:1313/bof/event142/team75/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team123/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team186/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team85/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team108/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team118/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team191/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team100/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team50/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team194/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team118/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team134/</loc>
@@ -452,13 +1913,52 @@
     <loc>//localhost:1313/bof/event142/team97/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team28/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team113/song1/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team137/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team134/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team12/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team44/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team24/song0/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team95/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team133/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team126/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team56/song3/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team139/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team38/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team96/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team32/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team122/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team164/</loc>
@@ -473,16 +1973,64 @@
     <loc>//localhost:1313/bof/event142/team150/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team176/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team126/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team79/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team58/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team80/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team190/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team127/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team104/song2/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team134/song0/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team40/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event142/team55/song2/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event142/team184/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team9/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team68/song1/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team60/song3/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team57/song0/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team43/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team96/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team170/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event142/team187/song2/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team153/</loc>

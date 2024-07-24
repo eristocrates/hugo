@@ -18,7 +18,7 @@ const config = {
 const commonConfig = {
   actions: {
     eventPage: 9,
-    teamPage: 32,
+    teamPage: 33,
     songPage: 31,
   },
   events: {

@@ -1,0 +1,88 @@
+{{ range $filename, $_ := site.Data }}
+	{{ range $eventKey, $eventProperties := . }}
+		{{ range $teamKey, $teamProperties := $eventProperties.teams}}
+			{{ range $songKey, $songProperties := $teamProperties.songs}}
+
+				{{ $songParams := dict
+			"paige.site_title" $eventProperties.fullName
+			"paige.site_description" $eventProperties.subTitle
+
+			"teamName" $teamProperties.teamName
+			"bannerImageSrc" $teamProperties.bannerImageSrc
+			"teamPageLink" $teamProperties.teamPageLink
+			"emblemImageSrc" $teamProperties.emblemImageSrc
+			"teamImpression" $teamProperties.teamImpression
+			"teamTotal" $teamProperties.teamTotal
+			"teamMedian" $teamProperties.teamMedian
+			"songs" $teamProperties.songs
+			"teamLeader" $teamProperties.teamLeader
+			"teamLeaderCountryCode" $teamProperties.teamLeaderCountryCode
+			"teamLeaderCountryFlag" $teamProperties.teamLeaderCountryFlag
+			"teamLeaderLanguage" $teamProperties.teamLeaderLanguage
+			"twitterLink" $teamProperties.twitterLink
+			"websiteLink" $teamProperties.websiteLink
+			"concepts" $teamProperties.concepts
+			"works" $teamProperties.works
+			"declaredWorks" $teamProperties.declaredWorks
+			"genres" $teamProperties.genres
+			"sharedd" $teamProperties.shared
+			"reasons" $teamProperties.reasons
+			"membersRaw" $teamProperties.membersRaw
+			"membersCount" $teamProperties.membersCount
+			"membersProcessed" $teamProperties.membersProcessed
+			"teamComment" $teamProperties.teamComment
+			"teamRegist" $teamProperties.teamRegist
+			"teamUpdate" $teamProperties.teamUpdate
+
+			"songName" $songProperties.songName
+			"genreName" $songProperties.genreName
+			"artistName" $songProperties.artistName
+			"songPageLink" $songProperties.songPageLink
+			"totalPoints" $songProperties.totalPoints
+			"medianPoints" $songProperties.medianPoints
+			"bmsLabels" $songProperties.bmsLabels
+			"entryNumber" $songProperties.entryNumber
+			"compositionType" $songProperties.compositionType
+			"updateDateTime" $songProperties.updateDateTime
+			"scrapedDateTime" $songProperties.scrapedDateTime
+			"jacketImageSrc" $songProperties.jacketImageSrc
+			"isSpecial" $songProperties.isSpecial
+			"specialTitle" $songProperties.specialTitle
+			"bpm" $songProperties.bpm
+			"bpmLower" $songProperties.bpmLower
+			"bpmUpper" $songProperties.bpmUpper
+			"bpmAverage" $songProperties.bpmAverage
+			"levelLower" $songProperties.levelLower
+			"levelUpper" $songProperties.levelUpper
+			"bgaStatus" $songProperties.bgaStatus
+			"youtubeLink" $songProperties.youtubeLink
+			"downloadSizeQuantity" $songProperties.downloadSizeQuantity
+			"downloadSizeUnit" $songProperties.downloadSizeUnit
+			"links" $songProperties.links
+		 }}
+
+				{{ $tagList := dict
+		 "testKey" "testValue"
+		  }}
+				{{ $content := dict
+			"mediaType" "text/markdown"
+			"value" "test content from /bof/event/team/_content.gotmpl"
+			}}
+
+				{{ $songPage := dict
+      "kind" "page"
+			"params" $songParams
+			"path" (printf "event%s/team%s/song%s" $songKey)
+			"url" (printf "/event%s/team%s/song%s" $eventKey $teamKey $songKey | urlize)
+      "title" $songProperties.songName
+			"description" $songProperties.artistName
+			"summary" $songProperties.genreName
+			"date" $songProperties.updateDateTime
+			"content" $content
+			}}
+				{{ $.AddPage $songPage }}
+
+			{{ end }}
+		{{ end }}
+	{{ end }}
+{{ end }}
