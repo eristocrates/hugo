@@ -12,3 +12,4 @@ $env:MODE='production'
 // TODO implement my own version of 投票者一覧 after scraping impressions. maybe a version where mouseover shows a short impression
 // TODO investigate bms file to see if i can evaluate the most common bpm
 // TODO rename repo to just hugo?
+// TODO take inspo from logo+video animations from bmsoffighters page

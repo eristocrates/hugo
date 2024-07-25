@@ -1,10 +1,38 @@
 +++
 title = "Event List"
 draft = true
+readingTime = ''
 [paige]
-site_title = "[THE BMS OF MIRRORS]"
-site_description = "-Website Dream Traveler-"
-+++
-why did you click this? well, just incase you're the type to wonder how this site was made, lemme go into a bit of detail
+site_title = "[THE BOW OF ERIS]"
+site_description = "-THE BE-MUSIC SOURCE OF FIGHTERS OF MIRRORS OF WEBSITES OF ERIS-"
 
-first i scraped pages from the manbow bof site, then i used hugo to create a static site from that json, then i used neocities to host it.
++++
+```goat
+     MANBOW.NOTHING.SH
+         .
+     .---+---.
+     |   |   |
+    THE BOW OF ERIS
+         .
+     .---+---.
+     |   |   |
+    THE BOM OF WEBSITES
+         .
+     .---+---.
+     |   |   |
+THE BOF OF MIRRORS
+     .
+ .---+---.
+ |   |   |
+THE BMS OF FIGHTERS
+     .
+ .---+---.
+ |   |   |
+BE-MUSIC SOURCE
+```
+................................................................................
+<div class="text-center">
+
+# EVENT LIST
+
+</div>

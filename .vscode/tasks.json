@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "${file}",
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": "^(.+):(\\d+):(\\d+):\\s+(.+)$",
+              "file": 1,
+              "line": 2,
+              "column": 3,
+              "message": 4
+            }
+          ]
+        }
+      ],
+      "group": "build",
+      "label": "Open file at line"
+    }
+  ]
+}

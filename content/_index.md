@@ -17,7 +17,7 @@ hide_page = true
 </div>
 
 
-There's a couple of ideas I always thought about, and eventually I figured it wouldn't hurt to try executing them on something simple and low commitment like [Neocities](https://neocities.org).
+There's a couple of ideas I always thought about, and eventually I figured it wouldn't hurt to try executing them on something simple and low commitment like Netlify
 
 The first project I wanted to tackle was creating a less cumbersome version of the BOF website **specifically for during impression period**. The best way I've been able to think of is to scrape links, and add those links to a download manager of your choice (I'm a fan of jdownloader). Afterwards, packages become available and it's simple enough to download a complete zip, but during the event it can be a real pain trying to keep up with everything with the way the manbow website is designed.
 
