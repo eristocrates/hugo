@@ -8,26 +8,29 @@ site_description = "-THE BE-MUSIC SOURCE OF FIGHTERS OF MIRRORS OF WEBSITES OF E
 
 +++
 ```goat
-     MANBOW.NOTHING.SH
-         .
-     .---+---.
-     |   |   |
-    THE BOW OF ERIS
-         .
-     .---+---.
-     |   |   |
-    THE BOM OF WEBSITES
-         .
-     .---+---.
-     |   |   |
-THE BOF OF MIRRORS
-     .
- .---+---.
- |   |   |
+            MANBOW.NOTHING.SH
+             .  .
+             +--|------.
+                |      |
+                |      |
+                |      |
+           THE BOW OF ERIS
+               /|\
+              / | \
+             /  |  \
+       THE BOM OF WEBSITES
+           /|\
+          / | \
+         /  |  \
+   THE BOF OF MIRRORS
+       /|\
+      / | \
+     /  |  \
 THE BMS OF FIGHTERS
-     .
- .---+---.
- |   |   |
+    /|\
+   / | \
+  /  |  \
+ /   |   \
 BE-MUSIC SOURCE
 ```
 ................................................................................

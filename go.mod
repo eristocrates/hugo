@@ -2,6 +2,8 @@ module github.com/eristocrates/hugo
 
 go 1.21.6
 
+require golang.org/x/sync v0.7.0
+
 require (
 	github.com/PuerkitoBio/goquery v1.5.1 // indirect
 	github.com/VividCortex/ewma v1.2.0 // indirect
