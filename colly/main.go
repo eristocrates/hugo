@@ -12,11 +12,13 @@ import (
 )
 
 var logger zerolog.Logger
-var bofEvents []Event
-var otherEvents []Event
+var bofEvents map[int]*Event
+var otherEvents map[int]*Event
 
 func main() {
 	start := time.Now()
+	bofEvents = make(map[int]*Event)
+	otherEvents = make(map[int]*Event)
 	// logger := InitializeLogger()
 
 	listLinkCollector := InitializeLLCollector()

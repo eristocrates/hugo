@@ -31,5 +31,6 @@
   "backJpg": "https://www.bmsoffighters.net/bof2008/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2008/img/back.png",
   "isModern": false,
+  "testOutput": null,
   "teams": null
 }

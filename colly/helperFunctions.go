@@ -21,7 +21,7 @@ func (w *CommaWriter) Write(p []byte) (n int, err error) {
 	return
 }
 
-func SaveEventsToFile(events []Event) {
+func SaveEventsToFile(events map[int]*Event) {
 	for _, event := range events {
 		var filePath string
 		if event.IsBof {
@@ -164,9 +164,11 @@ func AddEvent(event *Event) {
 
 	event.BannerType1 = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.Id)
 	if BofCheck(event) {
-		bofEvents = append(bofEvents, *event)
+		bofEvents[event.Id] = event
+		logger.Info().Msgf("Added BOF event: %s (ID: %d)", event.FullName, event.Id)
 	} else {
-		otherEvents = append(otherEvents, *event)
+		otherEvents[event.Id] = event
+		logger.Info().Msgf("Added other event: %s (ID: %d)", event.FullName, event.Id)
 	}
 }
 func ConversionErrorCheck(err error, eventName string) {

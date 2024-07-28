@@ -1,0 +1,1 @@
+map(select(.isModern == true) | {fullName, listLink, testOutput})

@@ -31,5 +31,6 @@
   "backJpg": "https://www.bmsoffighters.net/bofu_daikessen/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bofu_daikessen/img/back.png",
   "isModern": false,
+  "testOutput": null,
   "teams": null
 }

@@ -8,6 +8,7 @@ $env:MODE='production'
 
 [?contains(message, 'AbbrevName')].message
 
+jq -s -f query.jq ..\logs\bof\*.json > result.json
 
 
 ### general ideas i have

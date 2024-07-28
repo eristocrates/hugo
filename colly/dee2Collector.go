@@ -23,6 +23,17 @@ func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
 		Parallelism: 16,              // Number of threads
 		Delay:       1 * time.Second, // Delay between requests
 	})
+	/*
+		dee2Collector.WithTransport(&http.Transport{
+			MaxIdleConnsPerHost: 10,
+			Proxy:               http.ProxyFromEnvironment,
+			DialContext: (&net.Dialer{
+				Timeout:   30 * time.Second,
+				KeepAlive: 30 * time.Second,
+			}).DialContext,
+			TLSHandshakeTimeout: 10 * time.Second,
+		})
+	*/
 
 	// Set a timeout for requests
 	dee2Collector.SetRequestTimeout(60 * time.Second)
@@ -85,7 +96,7 @@ func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
 		AddEvent(&listEvent)
 		if listEvent.IsBof {
 			ctx := colly.NewContext()
-			ctx.Put("event", listEvent)
+			ctx.Put("event", &listEvent)
 			llCollector.Request("GET", listEvent.ListLink, nil, ctx, nil)
 
 			llCollector.Visit(listEvent.ListLink)

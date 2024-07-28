@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/gocolly/colly/v2"
 )
 
-var modernEvents []Event
+var selectors selectorSet
 
 func InitializeLLCollector() *colly.Collector {
 	llCollector := colly.NewCollector(
@@ -20,14 +21,27 @@ func InitializeLLCollector() *colly.Collector {
 		Parallelism: 16,              // Number of threads
 		Delay:       1 * time.Second, // Delay between requests
 	})
+	/*
+		llCollector.WithTransport(&http.Transport{
+			MaxIdleConnsPerHost: 10,
+			Proxy:               http.ProxyFromEnvironment,
+			DialContext: (&net.Dialer{
+				Timeout:   30 * time.Second,
+				KeepAlive: 30 * time.Second,
+			}).DialContext,
+			TLSHandshakeTimeout: 10 * time.Second,
+		})
+	*/
 
 	// Set a timeout for requests
 	llCollector.SetRequestTimeout(60 * time.Second)
 
 	llCollector.OnRequest(func(r *colly.Request) {
 		r.Headers.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36")
-		fmt.Println("linkListCollector Visiting", r.URL.String())
-		logger.Info().Msgf("linkListCollector Visiting %s", r.URL.String())
+		/*
+			fmt.Println("linkListCollector Visiting", r.URL.String())
+			logger.Info().Msgf("linkListCollector Visiting %s", r.URL.String())
+		*/
 	})
 
 	llCollector.OnError(func(r *colly.Response, err error) {
@@ -42,19 +56,30 @@ func InitializeLLCollector() *colly.Collector {
 		*/
 	})
 
-	llCollector.OnHTML("#modern_list", func(e *colly.HTMLElement) {
-
-		event, ok := e.Request.Ctx.GetAny("event").(Event)
+	llCollector.OnHTML(modernEventSelectors.TeamList, func(e *colly.HTMLElement) {
+		event, ok := e.Request.Ctx.GetAny("event").(*Event)
 		if ok {
 			event.IsModern = true
-			fmt.Printf("Modern Team List for event: %s\n", event.FullName)
-			logger.Info().Str("eventName", event.FullName).Msg("Modern Team List")
+			selectors = modernEventSelectors
+			str := e.ChildText(selectors.FancyTitle)
+			// Define a function to use as a delimiter
+			isDelimiter := func(c rune) bool {
+				return c == '\t' || c == '\n'
+			}
+
+			// Use strings.FieldsFunc with the custom delimiter function
+			parts := strings.FieldsFunc(str, isDelimiter)
+			event.TestOutput = parts
 		}
 	})
-
 	/*
-		listLinkCollector.OnXML("", func(e *colly.XMLElement) {
-			listLinkCollector.Visit(e.Attr("href"))
+		llCollector.OnXML(modernEventXpaths.TeamList, func(e *colly.XMLElement) {
+			event, ok := e.Request.Ctx.GetAny("event").(*Event)
+			if ok {
+				event.IsModern = true
+				selectors = modernEventXpaths
+				event.TestOutput = e.ChildText(selectors.TeamName)
+			}
 		})
 	*/
 	llCollector.OnScraped(func(r *colly.Response) {
