@@ -1,5 +1,5 @@
 {
-  "id": 37,
+  "eventId": 37,
   "fullName": "BOF III - THE BMS OF FIGHTERS 2006 - 後夜祭",
   "abbrevName": "BOF 2006",
   "shortName": "bof2006",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.planetoid.biz/bof2006ac/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=37",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=37",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=37",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2006/img/bof2006.png",
   "logoType2": "https://www.bmsoffighters.net/bof2006/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2006/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2006/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

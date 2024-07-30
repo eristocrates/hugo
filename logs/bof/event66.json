@@ -1,5 +1,5 @@
 {
-  "id": 66,
+  "eventId": 66,
   "fullName": "THE BMS OF FIGHTERS 2010 - 場外乱闘編 -",
   "abbrevName": "BOF 2010",
   "shortName": "bof2010",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=66",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=66",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=66",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2010/img/bof2010.png",
   "logoType2": "https://www.bmsoffighters.net/bof2010/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2010/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2010/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

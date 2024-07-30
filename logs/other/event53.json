@@ -1,5 +1,5 @@
 {
-  "id": 53,
+  "eventId": 53,
   "fullName": "24時間BMS ～愛はBMSを救う～",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://a-p.cside.ne.jp/ap2/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=53",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=53",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

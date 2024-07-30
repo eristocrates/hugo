@@ -1,5 +1,5 @@
 {
-  "id": 9,
+  "eventId": 9,
   "fullName": "第三回自称無名BMS作者が物申す！",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www1.kcn.ne.jp/~e-bird/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=9",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=9",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

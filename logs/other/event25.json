@@ -1,5 +1,5 @@
 {
-  "id": 25,
+  "eventId": 25,
   "fullName": "BMS OF FOON 2005",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://miku22.hp.infoseek.co.jp/bofoon2005.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=25",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=25",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

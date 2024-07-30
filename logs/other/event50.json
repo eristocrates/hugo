@@ -1,5 +1,5 @@
 {
-  "id": 50,
+  "eventId": 50,
   "fullName": "MAXBEAT",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www4.pf-x.net/~scytheleg/tempyou/event/maxbeat/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=50",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=50",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

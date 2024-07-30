@@ -1,5 +1,5 @@
 {
-  "id": 18,
+  "eventId": 18,
   "fullName": "ウラ・キューキービーツ",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://f34.aaacafe.ne.jp/~bofhall/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=18",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=18",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

@@ -1,5 +1,5 @@
 {
-  "id": 90,
+  "eventId": 90,
   "fullName": "RETRO BMS EVENT",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://bmsoffighters.net/retrobms/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=90",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=90",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

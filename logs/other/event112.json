@@ -1,5 +1,5 @@
 {
-  "id": 112,
+  "eventId": 112,
   "fullName": "Wire Puller IV",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://wirepullerorg.xxxxxxxx.jp/index.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=112",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=112",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

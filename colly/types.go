@@ -10,14 +10,18 @@ type Song struct {
 
 // Team struct
 type Team struct {
-	TeamID   string `json:"team_id"`
-	TeamName string `json:"team_name"`
-	Songs    []Song `json:"songs"`
+	TeamId          int      `json:"teamId"`
+	TeamName        string   `json:"teamName"`
+	TeamEmblemSrc   string   `json:"teamEmblemSrc"`
+	TeamProfileLink string   `json:"teamProfileLink"`
+	TestString      string   `json:"testString"`
+	TestStringArray []string `json:"testStringArray"`
+	Songs           []Song   `json:"songs"`
 }
 
 // Event struct
 type Event struct {
-	Id                int      `json:"id"`
+	EventId           int      `json:"eventId"`
 	FullName          string   `json:"fullName"`
 	AbbrevName        string   `json:"abbrevName"`
 	ShortName         string   `json:"shortName"`
@@ -35,6 +39,7 @@ type Event struct {
 	InfoLink          string   `json:"infoLink"`
 	DetailLink        string   `json:"detailLink"`
 	ListLink          string   `json:"listLink"`
+	TeamListLink      string   `json:"teamListLink"`
 	IsBof             bool     `json:"isBof"`
 	LogoType1         string   `json:"logoType1"`
 	LogoType2         string   `json:"logoType2"`
@@ -49,7 +54,10 @@ type Event struct {
 	BackJpg           string   `json:"backJpg"`
 	BackPng           string   `json:"backPng"`
 	IsModern          bool     `json:"isModern"`
-	TestOutput        []string `json:"testOutput"`
+	IsPreModern       bool     `json:"isPreModern"`
+	HasModernList     bool     `json:"hasModernList"`
+	TestString        string   `json:"testString"`
+	TestStringArray   []string `json:"testStringArray"`
 	Teams             []Team   `json:"teams"`
 }
 
@@ -59,8 +67,14 @@ type CommaWriter struct {
 }
 
 type selectorSet struct {
-	TeamList    string
-	FancyTitle  string
-	TeamElement string
-	TeamName    string
+	TeamList            string
+	FancyTitle          string
+	TeamElement         string
+	TeamName            string
+	FirstTeamName       string
+	TeamRow             string
+	TeamId              string
+	TeamEmblemSrc       string
+	TeamListProfileLink string
+	TeamListName        string
 }

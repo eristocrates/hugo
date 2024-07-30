@@ -1,5 +1,5 @@
 {
-  "id": 120,
+  "eventId": 120,
   "fullName": "OLDSKOOL VS FUTURE",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://scytheleg.sakura.ne.jp/tempyou/event/oldvsfuture/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=120",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=120",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

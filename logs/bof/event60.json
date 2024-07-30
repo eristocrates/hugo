@@ -1,5 +1,5 @@
 {
-  "id": 60,
+  "eventId": 60,
   "fullName": "THE BMS OF FIGHTERS 2009 - revolutionary battles -",
   "abbrevName": "BOF 2009",
   "shortName": "bof2009",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=60",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=60",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=60",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2009/img/bof2009.png",
   "logoType2": "https://www.bmsoffighters.net/bof2009/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2009/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2009/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

@@ -1,5 +1,5 @@
 {
-  "id": 70,
+  "eventId": 70,
   "fullName": "みにけび！ - 32KB制限 BMSイベント -",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/minikb/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=70",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=70",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

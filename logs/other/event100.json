@@ -1,5 +1,5 @@
 {
-  "id": 100,
+  "eventId": 100,
   "fullName": "WINTER 9KEYS SPARKLE 2015",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.yw-works.com/9keys2015/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=100",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=100",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

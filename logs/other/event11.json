@@ -1,5 +1,5 @@
 {
-  "id": 11,
+  "eventId": 11,
   "fullName": "仮装BMS舞踏会 ～中の人は誰だ!!～",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://spiral.cside.com/fdp/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=11",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=11",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

@@ -1,5 +1,5 @@
 {
-  "id": 38,
+  "eventId": 38,
   "fullName": "BMS活性化運動 [SIDE A]",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://a-p.cside.ne.jp/k/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=38",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=38",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

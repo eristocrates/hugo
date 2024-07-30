@@ -1,5 +1,5 @@
 {
-  "id": 75,
+  "eventId": 75,
   "fullName": "ULTRAEXTREMEBEAT",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://scytheleg.bms.ms/tempyou/event/uxt/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=75",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=75",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

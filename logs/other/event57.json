@@ -1,5 +1,5 @@
 {
-  "id": 57,
+  "eventId": 57,
   "fullName": "既存ジャンル禁止BMSイベント「experimentation」",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://vfpq.890m.com/event/ex/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=57",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=57",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

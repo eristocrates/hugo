@@ -12,7 +12,7 @@ import (
 
 var err error
 
-func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
+func InitializeDEE2Collector(llCollector *colly.Collector, tlCollector *colly.Collector) *colly.Collector {
 	dee2Collector := colly.NewCollector(
 		colly.Async(true),
 		colly.DetectCharset())
@@ -63,7 +63,7 @@ func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
 	dee2Collector.OnHTML(".col-8.carousel-stepstep", func(e *colly.HTMLElement) {
 		featureEvent := Event{}
 		idStr := e.ChildText("div.container-center > h2 > span.label-success")
-		featureEvent.Id, _ = strconv.Atoi(idStr)
+		featureEvent.EventId, _ = strconv.Atoi(idStr)
 		featureEvent.FullName = strings.TrimSpace(e.ChildText("div.container-center > h2"))[len(idStr):]
 		featureEvent.PeriodStart, featureEvent.PeriodEnd = SplitDateRange(e.ChildText("div.container-center > div.row > div:nth-of-type(4)"))
 		featureEvent.RegistrationStart, featureEvent.RegistrationEnd = SplitDateRange(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(2)"))
@@ -80,7 +80,7 @@ func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
 	dee2Collector.OnHTML("tr.event", func(e *colly.HTMLElement) {
 		listEvent := Event{}
 		listEvent.FullName = e.ChildText("td:nth-of-type(2) a")
-		listEvent.Id, err = strconv.Atoi(e.ChildText("td:nth-of-type(1)"))
+		listEvent.EventId, err = strconv.Atoi(e.ChildText("td:nth-of-type(1)"))
 		ConversionErrorCheck(err, listEvent.FullName)
 		listEvent.RegistrationStart, listEvent.RegistrationEnd = SplitDateRange(e.ChildText("td:nth-of-type(3)"))
 		listEvent.ImpressionStart, listEvent.ImpressionEnd = SplitDateRange(e.ChildText("td:nth-of-type(4)"))
@@ -97,9 +97,12 @@ func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
 		if listEvent.IsBof {
 			ctx := colly.NewContext()
 			ctx.Put("event", &listEvent)
-			llCollector.Request("GET", listEvent.ListLink, nil, ctx, nil)
 
+			llCollector.Request("GET", listEvent.ListLink, nil, ctx, nil)
 			llCollector.Visit(listEvent.ListLink)
+
+			tlCollector.Request("GET", listEvent.TeamListLink, nil, ctx, nil)
+			tlCollector.Visit(listEvent.TeamListLink)
 		}
 		// TODO Go to detailLink
 		// TODO come up with some form of categorization for ListLink, and make a distinct collector for each type
@@ -112,6 +115,25 @@ func InitializeDEE2Collector(llCollector *colly.Collector) *colly.Collector {
 		})
 	*/
 	dee2Collector.OnScraped(func(r *colly.Response) {
+		// TODO remove this once boftt is added to main event page
+		boftt := Event{
+			EventId:       146,
+			FullName:      "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
+			HasModernList: true,
+			ListLink:      "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
+		}
+
+		AddEvent(&boftt)
+		if boftt.IsBof {
+			ctx := colly.NewContext()
+			ctx.Put("event", &boftt)
+
+			llCollector.Request("GET", boftt.ListLink, nil, ctx, nil)
+			llCollector.Visit(boftt.ListLink)
+
+			tlCollector.Request("GET", boftt.TeamListLink, nil, ctx, nil)
+			tlCollector.Visit(boftt.TeamListLink)
+		}
 		/*
 			fmt.Println("digitalEmergenceExitCollector Scraped", r.Request.URL)
 			logger.Info().Msgf("digitalEmergenceExitCollector Scraped %s", r.Request.URL)

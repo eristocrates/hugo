@@ -1,5 +1,5 @@
 {
-  "id": 88,
+  "eventId": 88,
   "fullName": "konzertsaal - THE BMS OF FIGHTERS 2013 -",
   "abbrevName": "BOF 2013",
   "shortName": "bof2013",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=88",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=88",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=88",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2013/img/bof2013.png",
   "logoType2": "https://www.bmsoffighters.net/bof2013/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2013/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2013/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

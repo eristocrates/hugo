@@ -1,5 +1,5 @@
 {
-  "id": 84,
+  "eventId": 84,
   "fullName": "[COPY&ARRANGE ONLY BMS EVENT] Re:",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/re/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=84",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=84",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

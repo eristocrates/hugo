@@ -1,5 +1,5 @@
 {
-  "id": 138,
+  "eventId": 138,
   "fullName": "THE BMS OF FOON XVII -VISION THE RETRO FUTURE-",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "https://nasashiki.web.fc2.com/bofoonxvii.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=138",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=138",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

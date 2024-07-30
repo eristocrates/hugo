@@ -1,5 +1,5 @@
 {
-  "id": 72,
+  "eventId": 72,
   "fullName": "A-1 Climax 2nd",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://whirlwind.boy.jp/bms_event/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=72",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=72",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

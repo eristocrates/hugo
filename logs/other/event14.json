@@ -1,5 +1,5 @@
 {
-  "id": 14,
+  "eventId": 14,
   "fullName": "BGAparty ;revival featuring SpringPhase",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.geocities.jp/retrofuture_ag/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=14",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=14",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

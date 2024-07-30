@@ -1,5 +1,5 @@
 {
-  "id": 95,
+  "eventId": 95,
   "fullName": "第11回自称無名BMS作家が物申す！",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://mumei11bms.web.fc2.com/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=95",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=95",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

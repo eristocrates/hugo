@@ -1,5 +1,5 @@
 {
-  "id": 22,
+  "eventId": 22,
   "fullName": "BMS OF FIGHTERS 2005",
   "abbrevName": "BOF 2005",
   "shortName": "bof2005",
@@ -17,6 +17,7 @@
   "infoLink": "http://dee.manbow.org/event/page/bof2005/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=22",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=22",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=22",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2005/img/bof2005.png",
   "logoType2": "https://www.bmsoffighters.net/bof2005/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2005/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2005/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

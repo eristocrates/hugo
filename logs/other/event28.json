@@ -1,5 +1,5 @@
 {
-  "id": 28,
+  "eventId": 28,
   "fullName": "第二回・仮装BMS舞踏会",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://fdp2.bms.ms/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=28",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=28",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

@@ -1,5 +1,5 @@
 {
-  "id": 7,
+  "eventId": 7,
   "fullName": "5KB BMS Event [ごけび]",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://www9.ocn.ne.jp/~we-love/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=7",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=7",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

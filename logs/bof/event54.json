@@ -1,5 +1,5 @@
 {
-  "id": 54,
+  "eventId": 54,
   "fullName": "THE BMS OF FIGHTERS 2008 - Resurrection -",
   "abbrevName": "BOF 2008",
   "shortName": "bof2008",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=54",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=54",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=54",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2008/img/bof2008.png",
   "logoType2": "https://www.bmsoffighters.net/bof2008/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2008/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2008/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

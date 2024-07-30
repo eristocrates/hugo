@@ -1,5 +1,5 @@
 {
-  "id": 145,
+  "eventId": 145,
   "fullName": " 偽名BMS作家異世界転生バトル！",
   "abbrevName": "",
   "shortName": "",
@@ -13,10 +13,11 @@
   "periodStart": "2024-07-06T00:00:00+09:00",
   "periodEnd": "2024-08-11T00:00:00+09:00",
   "entryCount": 57,
-  "impressionCount": 388,
+  "impressionCount": 414,
   "infoLink": "",
   "detailLink": "",
   "listLink": "",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

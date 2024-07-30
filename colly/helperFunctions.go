@@ -25,14 +25,14 @@ func SaveEventsToFile(events map[int]*Event) {
 	for _, event := range events {
 		var filePath string
 		if event.IsBof {
-			filePath = fmt.Sprintf("../logs/bof/event%d.json", event.Id)
+			filePath = fmt.Sprintf("../logs/bof/event%d.json", event.EventId)
 		} else {
-			filePath = fmt.Sprintf("../logs/other/event%d.json", event.Id)
+			filePath = fmt.Sprintf("../logs/other/event%d.json", event.EventId)
 		}
 
 		file, err := os.Create(filePath)
 		if err != nil {
-			log.Fatal(err, fmt.Sprintf("Could not create file for event %d", event.Id))
+			log.Fatal(err, fmt.Sprintf("Could not create file for event %d", event.EventId))
 		}
 		defer file.Close()
 
@@ -41,7 +41,7 @@ func SaveEventsToFile(events map[int]*Event) {
 		encoder.SetIndent("", "  ")
 		err = encoder.Encode(event)
 		if err != nil {
-			log.Fatal(err, fmt.Sprintf("Could not encode event%d to JSON", event.Id))
+			log.Fatal(err, fmt.Sprintf("Could not encode event%d to JSON", event.EventId))
 		}
 	}
 }
@@ -111,16 +111,16 @@ func BofCheck(event *Event) bool {
 
 		// handle special cases not worth the effort of regexing
 		// TODO evaluade if these are maybe worth the effort
-		if event.Id == 88 {
+		if event.EventId == 88 {
 			event.Description = "konzertsaal"
 		}
-		if event.Id == 66 {
+		if event.EventId == 66 {
 			event.Title = "THE BMS OF FIGHTERS 2010"
 		}
 
 		event.ShortName = strings.ToLower(strings.ReplaceAll(strings.ReplaceAll(event.AbbrevName, ":", ""), " ", ""))
 
-		if event.Id == 104 {
+		if event.EventId == 104 {
 			event.FullName = "大血戦 -THE BMS OF FIGHTERS ULTIMATE-"
 			event.Title = "大血戦"
 			event.Description = "-THE BMS OF FIGHTERS ULTIMATE-"
@@ -152,6 +152,7 @@ func BofCheck(event *Event) bool {
 
 			event.InfoLink = fmt.Sprintf("https://www.bmsoffighters.net/%s/index.html", event.ShortName)
 		}
+		event.TeamListLink = fmt.Sprintf("https://manbow.nothing.sh/event/event_teamprofile.cgi?event=%d", event.EventId)
 		return true
 
 	}
@@ -162,13 +163,13 @@ func BofCheck(event *Event) bool {
 
 func AddEvent(event *Event) {
 
-	event.BannerType1 = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.Id)
+	event.BannerType1 = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.EventId)
 	if BofCheck(event) {
-		bofEvents[event.Id] = event
-		logger.Info().Msgf("Added BOF event: %s (ID: %d)", event.FullName, event.Id)
+		bofEvents[event.EventId] = event
+		logger.Info().Msgf("Added BOF event: %s (ID: %d)", event.FullName, event.EventId)
 	} else {
-		otherEvents[event.Id] = event
-		logger.Info().Msgf("Added other event: %s (ID: %d)", event.FullName, event.Id)
+		otherEvents[event.EventId] = event
+		logger.Info().Msgf("Added other event: %s (ID: %d)", event.FullName, event.EventId)
 	}
 }
 func ConversionErrorCheck(err error, eventName string) {

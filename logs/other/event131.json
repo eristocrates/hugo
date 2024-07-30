@@ -1,5 +1,5 @@
 {
-  "id": 131,
+  "eventId": 131,
   "fullName": "第17回自称無名BMS作家が物申す！ & A-1 ClimaX 10th - Like a shining Diamond -",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "https://to12lz.github.io/mumeisen17/index.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=131",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=131",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

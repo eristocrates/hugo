@@ -1,5 +1,5 @@
 {
-  "id": 65,
+  "eventId": 65,
   "fullName": "THE BMS OF FIGHTERS 2010 - The Evolution of War -",
   "abbrevName": "BOF 2010",
   "shortName": "bof2010",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=65",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=65",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=65",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2010/img/bof2010.png",
   "logoType2": "https://www.bmsoffighters.net/bof2010/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2010/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2010/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

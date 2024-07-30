@@ -1,5 +1,5 @@
 {
-  "id": 30,
+  "eventId": 30,
   "fullName": "東方音弾遊戯",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://mumei.nobody.jp/toho/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=30",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=30",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

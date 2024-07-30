@@ -1,5 +1,5 @@
 {
-  "id": 141,
+  "eventId": 141,
   "fullName": "MUMEI Academy 2023",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "https://mumeiacademy.com/2023/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=141",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=141",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

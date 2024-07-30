@@ -1,5 +1,5 @@
 {
-  "id": 77,
+  "eventId": 77,
   "fullName": "BMS OF FOON 2012",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://tbstk.main.jp/BOFoon/2012/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=77",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=77",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

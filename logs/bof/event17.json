@@ -1,5 +1,5 @@
 {
-  "id": 17,
+  "eventId": 17,
   "fullName": "BMS OF FIGHTERS 2004",
   "abbrevName": "BOF 2004",
   "shortName": "bof2004",
@@ -17,6 +17,7 @@
   "infoLink": "http://f34.aaacafe.ne.jp/~bofhall/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=17",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=17",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=17",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2004/img/bof2004.png",
   "logoType2": "https://www.bmsoffighters.net/bof2004/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2004/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2004/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

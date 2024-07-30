@@ -1,5 +1,5 @@
 {
-  "id": 36,
+  "eventId": 36,
   "fullName": "BMS OF FIGHTERS 2006 本戦",
   "abbrevName": "BOF 2006",
   "shortName": "bof2006",
@@ -17,6 +17,7 @@
   "infoLink": "http://dee.manbow.org/event/page/bof2006/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=36",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=36",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=36",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2006/img/bof2006.png",
   "logoType2": "https://www.bmsoffighters.net/bof2006/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2006/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2006/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

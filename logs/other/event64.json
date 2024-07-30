@@ -1,5 +1,5 @@
 {
-  "id": 64,
+  "eventId": 64,
   "fullName": "FIVE VS SEVEN",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://scytheleg.bms.ms/tempyou/event/5vs7/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=64",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=64",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

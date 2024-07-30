@@ -1,5 +1,5 @@
 {
-  "id": 40,
+  "eventId": 40,
   "fullName": "第六回自称無名BMS作家が物申す！[ビジネスクラス]",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://mumei.nobody.jp/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=40",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=40",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

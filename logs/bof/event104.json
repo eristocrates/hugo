@@ -1,5 +1,5 @@
 {
-  "id": 104,
+  "eventId": 104,
   "fullName": "大血戦 -THE BMS OF FIGHTERS ULTIMATE-",
   "abbrevName": "BOFU2015",
   "shortName": "bofu_daikessen",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=104",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=104",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=104",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bofu_daikessen/img/bofu_daikessen.png",
   "logoType2": "https://www.bmsoffighters.net/bofu_daikessen/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bofu_daikessen/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bofu_daikessen/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

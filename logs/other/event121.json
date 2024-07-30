@@ -1,5 +1,5 @@
 {
-  "id": 121,
+  "eventId": 121,
   "fullName": "第15回自称無名BMS作家が物申す！ & A-1 ClimaX 8th -Stand out shines-",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "https://mumeisen15.wixsite.com/event",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=121",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=121",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

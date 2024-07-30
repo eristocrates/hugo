@@ -1,5 +1,5 @@
 {
-  "id": 23,
+  "eventId": 23,
   "fullName": "BMS OF FIGHTERS 2005 前夜祭",
   "abbrevName": "BOF 2005",
   "shortName": "bof2005",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.yamajet.com/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=23",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=23",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=23",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2005/img/bof2005.png",
   "logoType2": "https://www.bmsoffighters.net/bof2005/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2005/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2005/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

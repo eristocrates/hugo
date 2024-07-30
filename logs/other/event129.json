@@ -1,5 +1,5 @@
 {
-  "id": 129,
+  "eventId": 129,
   "fullName": "東方音弾遊戯9",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://nekonotsuka.com/ondan9/index.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=129",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=129",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

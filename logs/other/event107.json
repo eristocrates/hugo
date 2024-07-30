@@ -1,5 +1,5 @@
 {
-  "id": 107,
+  "eventId": 107,
   "fullName": "Portable Memories March -BMS Edition-",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://sbfr.info/special/pmm_bms/index.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=107",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=107",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

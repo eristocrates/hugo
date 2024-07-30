@@ -1,5 +1,5 @@
 {
-  "id": 87,
+  "eventId": 87,
   "fullName": "BOF2013 preliminary skirmish",
   "abbrevName": "BOF2013",
   "shortName": "bof2013",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/bof2012/ruleps.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=87",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=87",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=87",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2013/img/bof2013.png",
   "logoType2": "https://www.bmsoffighters.net/bof2013/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2013/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2013/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

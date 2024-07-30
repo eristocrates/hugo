@@ -1,5 +1,5 @@
 {
-  "id": 85,
+  "eventId": 85,
   "fullName": "ノンジャンル2 - Unlimited Fighters -",
   "abbrevName": "",
   "shortName": "",
@@ -17,6 +17,7 @@
   "infoLink": "http://elecplcb.web.fc2.com/nongenre2/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=85",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=85",
+  "teamListLink": "",
   "isBof": false,
   "logoType1": "",
   "logoType2": "",
@@ -31,6 +32,9 @@
   "backJpg": "",
   "backPng": "",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

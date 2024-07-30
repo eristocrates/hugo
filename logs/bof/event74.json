@@ -1,5 +1,5 @@
 {
-  "id": 74,
+  "eventId": 74,
   "fullName": "THE BMS OF FIGHTERS 2011 - Intersection of conflict -",
   "abbrevName": "BOF 2011",
   "shortName": "bof2011",
@@ -17,6 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=74",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=74",
+  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=74",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2011/img/bof2011.png",
   "logoType2": "https://www.bmsoffighters.net/bof2011/img/logo.png",
@@ -31,6 +32,9 @@
   "backJpg": "https://www.bmsoffighters.net/bof2011/img/back.jpg",
   "backPng": "https://www.bmsoffighters.net/bof2011/img/back.png",
   "isModern": false,
-  "testOutput": null,
+  "isPreModern": false,
+  "hasModernList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }
