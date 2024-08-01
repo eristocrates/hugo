@@ -54,8 +54,9 @@ func InitializeLLCollector() *colly.Collector {
 	})
 
 	llCollector.OnHTML(modernListSelectors.TeamList, func(e *colly.HTMLElement) {
-		event, ok := e.Request.Ctx.GetAny("event").(*Event)
+		eventId, ok := e.Request.Ctx.GetAny("eventId").(int)
 		if ok {
+			event := bofEvents[eventId]
 			event.HasModernList = true
 			firstTeamName := e.ChildText(modernListSelectors.FirstTeamName)
 			if firstTeamName != "" {
@@ -65,7 +66,7 @@ func InitializeLLCollector() *colly.Collector {
 				event.IsPreModern = true
 			}
 
-			testArray := e.ChildTexts(selectors.TeamName)
+			// testArray := e.ChildTexts(selectors.TeamName)
 			/*
 				if len(testArray) > 0 {
 					var team Team
@@ -77,8 +78,8 @@ func InitializeLLCollector() *colly.Collector {
 					event.TestStringArray = testArray
 				}
 			*/
-			event.TestString = firstTeamName
-			event.TestStringArray = testArray
+			// event.TestString = firstTeamName
+			// event.TestStringArray = testArray
 			// TODO Further disambiguate between events with team_information and events without (modern vs premodern?)
 			/*
 				selectors = modernEventSelectors

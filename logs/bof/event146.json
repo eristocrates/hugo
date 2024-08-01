@@ -14,7 +14,7 @@
   "periodEnd": "",
   "entryCount": 0,
   "impressionCount": 0,
-  "infoLink": "",
+  "infoLink": "https://www.bmsoffighters.net/boftt/index.html",
   "detailLink": "",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
   "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=146",
@@ -34,6 +34,7 @@
   "isModern": false,
   "isPreModern": false,
   "hasModernList": true,
+  "hasModernTeamList": false,
   "testString": "",
   "testStringArray": null,
   "teams": [
@@ -85,7 +86,7 @@
     {
       "teamId": 97,
       "teamName": "FallacyEdgeRecords  チームメンバー募集中！",
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460097_20240731235002.png",
       "teamProfileLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=146&team=97",
       "testString": "",
       "testStringArray": null,

@@ -17,7 +17,7 @@
   "infoLink": "http://dee.manbow.org/event/page/bof2005/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=22",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=22",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=22",
+  "teamListLink": "",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2005/img/bof2005.png",
   "logoType2": "https://www.bmsoffighters.net/bof2005/img/logo.png",
@@ -34,6 +34,7 @@
   "isModern": false,
   "isPreModern": false,
   "hasModernList": false,
+  "hasModernTeamList": false,
   "testString": "",
   "testStringArray": null,
   "teams": null

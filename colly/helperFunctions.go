@@ -134,6 +134,7 @@ func BofCheck(event *Event) bool {
 			event.IsBof = true
 		}
 
+		// TODO consider replacing this blind logic ilCollector
 		event.LogoType1 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.png", event.ShortName, event.ShortName)
 		event.LogoType2 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/logo.png", event.ShortName)
 		event.LogoType3 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s_logo.png", event.ShortName, event.ShortName)
@@ -148,11 +149,11 @@ func BofCheck(event *Event) bool {
 		event.BackJpg = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/back.jpg", event.ShortName)
 		event.BackPng = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/back.png", event.ShortName)
 
-		if event.InfoLink == "www.bmsoffighters.net" {
+		if event.InfoLink == "http://www.bmsoffighters.net/" && !strings.Contains(event.FullName, "preliminary") {
 
 			event.InfoLink = fmt.Sprintf("https://www.bmsoffighters.net/%s/index.html", event.ShortName)
 		}
-		event.TeamListLink = fmt.Sprintf("https://manbow.nothing.sh/event/event_teamprofile.cgi?event=%d", event.EventId)
+		// event.TeamListLink = fmt.Sprintf("https://manbow.nothing.sh/event/event_teamprofile.cgi?event=%d", event.EventId)
 		return true
 
 	}

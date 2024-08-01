@@ -17,7 +17,7 @@
   "infoLink": "http://iimode-do.jp/event/bof2008a.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=55",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=55",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=55",
+  "teamListLink": "",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2008/img/bof2008.png",
   "logoType2": "https://www.bmsoffighters.net/bof2008/img/logo.png",
@@ -34,6 +34,7 @@
   "isModern": false,
   "isPreModern": false,
   "hasModernList": false,
+  "hasModernTeamList": false,
   "testString": "",
   "testStringArray": null,
   "teams": null

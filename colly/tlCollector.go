@@ -56,8 +56,10 @@ func InitializeTLCollector() *colly.Collector {
 	})
 
 	tlCollector.OnHTML("#teamlist", func(e *colly.HTMLElement) {
-		event, ok := e.Request.Ctx.GetAny("event").(*Event)
+
+		eventId, ok := e.Request.Ctx.GetAny("eventId").(int)
 		if ok {
+			event := bofEvents[eventId]
 			selectors = modernTeamlistSelectors
 
 			team := Team{}

@@ -10,13 +10,19 @@ type Song struct {
 
 // Team struct
 type Team struct {
-	TeamId          int      `json:"teamId"`
-	TeamName        string   `json:"teamName"`
-	TeamEmblemSrc   string   `json:"teamEmblemSrc"`
-	TeamProfileLink string   `json:"teamProfileLink"`
-	TestString      string   `json:"testString"`
-	TestStringArray []string `json:"testStringArray"`
-	Songs           []Song   `json:"songs"`
+	TeamId                int      `json:"teamId"`
+	TeamEmblemSrc         string   `json:"teamEmblemSrc"`
+	TeamName              string   `json:"teamName"`
+	TeamProfileLink       string   `json:"teamProfileLink"`
+	TeamLeaderName        string   `json:"teamLeaderName"`
+	TeamMemberCount       int      `json:"teamMemberCount"`
+	TeamReleasedWorkCount int      `json:"teamReleasedWorkCount"`
+	TeamDeclaredWorkCount int      `json:"teamDeclaredWorkCount"`
+	TeamMemberListRaw     string   `json:"teamMemberListRaw"`
+	TeamUpdate            string   `json:"teamUpdate"`
+	TestString            string   `json:"testString"`
+	TestStringArray       []string `json:"testStringArray"`
+	Songs                 []Song   `json:"songs"`
 }
 
 // Event struct
@@ -56,6 +62,7 @@ type Event struct {
 	IsModern          bool     `json:"isModern"`
 	IsPreModern       bool     `json:"isPreModern"`
 	HasModernList     bool     `json:"hasModernList"`
+	HasModernTeamList bool     `json:"hasModernTeamList"`
 	TestString        string   `json:"testString"`
 	TestStringArray   []string `json:"testStringArray"`
 	Teams             []Team   `json:"teams"`
@@ -67,6 +74,8 @@ type CommaWriter struct {
 }
 
 type selectorSet struct {
+	PrimaryMenu         string
+	MenuButtons         string
 	TeamList            string
 	FancyTitle          string
 	TeamElement         string

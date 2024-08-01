@@ -17,7 +17,7 @@
   "infoLink": "http://www.bmsoffighters.net/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=111",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=111",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=111",
+  "teamListLink": "",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bofu2016/img/bofu2016.png",
   "logoType2": "https://www.bmsoffighters.net/bofu2016/img/logo.png",
@@ -34,21 +34,8 @@
   "isModern": true,
   "isPreModern": false,
   "hasModernList": true,
-  "testString": "CINDERELLA PROJECT",
-  "testStringArray": [
-    "CINDERELLA PROJECT",
-    "Team EXiT",
-    "Super Collab Bros",
-    "InnoXent",
-    "カオスな曲を作る人がチームを作ろうと思ったらいろんな人が集まってきてカオスなチームになってしまった件について。",
-    "Xenopus",
-    "TEAM \"HYPER\" ELEPRO",
-    "Eternal resonance",
-    "ブリブリブリリ",
-    "チーム提督業",
-    "TEAM-BMSON",
-    "AMAZING!!",
-    "NAME"
-  ],
+  "hasModernTeamList": false,
+  "testString": "",
+  "testStringArray": null,
   "teams": null
 }

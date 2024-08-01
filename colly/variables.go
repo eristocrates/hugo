@@ -46,6 +46,11 @@ var modernTeamlistSelectors = selectorSet{
 	TeamListName:        teamlistName,
 }
 
+var modernInfoListSelectors = selectorSet{
+	PrimaryMenu: "div.container.clearfix > nav#primary-menu",
+	MenuButtons: "li", //:nth-child(2)", // > a:nth-child(1)",
+}
+
 /*
 var modernEventXpaths = selectorSet{
 	TeamList:    "//*[@id=\"modern_list\"]",

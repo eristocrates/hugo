@@ -13,7 +13,7 @@
   "periodStart": "2024-07-06T00:00:00+09:00",
   "periodEnd": "2024-08-11T00:00:00+09:00",
   "entryCount": 57,
-  "impressionCount": 414,
+  "impressionCount": 486,
   "infoLink": "",
   "detailLink": "",
   "listLink": "",
@@ -34,6 +34,7 @@
   "isModern": false,
   "isPreModern": false,
   "hasModernList": false,
+  "hasModernTeamList": false,
   "testString": "",
   "testStringArray": null,
   "teams": null

@@ -14,10 +14,10 @@
   "periodEnd": "2017-11-19T00:00:00+09:00",
   "entryCount": 493,
   "impressionCount": 15885,
-  "infoLink": "http://www.bmsoffighters.net/",
+  "infoLink": "https://www.bmsoffighters.net/bofu2017/index.html",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=116",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=116",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=116",
+  "teamListLink": "http://manbow.nothing.sh/event/page/bofu2017/teamlist17/kprof.cgi",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bofu2017/img/bofu2017.png",
   "logoType2": "https://www.bmsoffighters.net/bofu2017/img/logo.png",
@@ -34,132 +34,1692 @@
   "isModern": true,
   "isPreModern": false,
   "hasModernList": true,
-  "testString": "Prima Materia",
-  "testStringArray": [
-    "Prima Materia",
-    "KUROSHIRO",
-    "おさしみりょーり!",
-    "AMAZING!!!!",
-    "現代≒無題",
-    "13/VIS",
-    "BIG IMPACT",
-    "Sound souler",
-    "13lue-Cave",
-    "Lonely Orbit",
-    "Red Velvet",
-    "1文字",
-    "龍龍ノ鸞",
-    "TRANCE INNOVATION",
-    "endless music -",
-    "消滅エブリデイ",
-    "Ignition Sounds",
-    "Alpha Phase 2017",
-    "BOFU鎮守府海響艦隊",
-    "まだ中学生",
-    "ゆびさきテクニシャン",
-    "ままにまに。",
-    "Team X encount＋",
-    "マキシマム盛り",
-    "にゃーん(っ´ω`c)",
-    "すごいンゴねぇ～",
-    "Aspera Verba",
-    "Team Masterpiece",
-    "SymphonicCyber",
-    "まさいたちの夜",
-    "Laboratory [HES]",
-    "BMS Idol Project",
-    "座禅",
-    "chaos colors",
-    "Starlight☆Fairies",
-    "はるかぜのメモリアル ～25th anniversary～",
-    "EUROBEATERS",
-    "S.S.I.works",
-    "EME",
-    "ガバガバ拍子フレンズ",
-    "関東三毛猫隊.",
-    "黒船ユナイテッド",
-    "Chronologia",
-    "海苔食ってノリノリハイテックチーム",
-    "silk parasol",
-    "BYZANTiUM★RENAiSSANCE",
-    "誤字ツーリスト",
-    "fourtfolio",
-    "孤高クローバー",
-    "ArlequinZ????",
-    "未定",
-    "HARSH NOISES N ROUGH ANIMATIONS",
-    "チームゆずソフト",
-    "Starlight Emotion",
-    "Team Panzer Force",
-    "青い世界への道",
-    "like the Wind",
-    "NEW MUSIC!!",
-    "家電寿司711 BOFU支店",
-    "semicolon",
-    "Errata Chord",
-    "SilveRdew oF TiMe",
-    "input-instrument",
-    "#三笠公園アメージンウンバボーズ",
-    "otheroutes",
-    "無名戦14 30人31脚",
-    "ポテトタワー",
-    "「LAZY-ESC」",
-    "「はやくひき金をひけよ。」",
-    "#ガバガバ管理",
-    "Ultimate Ravers",
-    "GOODMEN",
-    "Bloomin'",
-    "OZnation Records",
-    "プナイプナイ",
-    "Team White Canvas",
-    "Here's the Deal",
-    "The 3rd TRIAL",
-    "ぷちこめ族",
-    "無名戦13イレブン",
-    "Hesperia",
-    "代打三兄弟",
-    "日本ドラムンベース協会",
-    "光の中に、闇。",
-    "土下座.mp4",
-    "UrbanAngle",
-    "!play",
-    "都会大岡山",
-    "HPS+",
-    "MapleA",
-    "CARRY YOU FLY",
-    "sweez / fluffy / 滅茶PIPE",
-    "sniped",
-    "SILENTROOM",
-    "君の名は。",
-    "viatores luminum ventorum et lympharum",
-    "TEAM優勝会",
-    "Employ \"Zero-Origin\"",
-    "ハイパーキネティックポジションリバーサーズ",
-    "大人げない人たち",
-    "Tetralinear",
-    "よかろうなのだ！",
-    "紅蓮月影 VS 魔界都市ニイガタ",
-    "邊緣人",
-    "COLORTRONICS 2017",
-    "Armillary sphere",
-    "Aerial Lines",
-    "龍皇社",
-    "まとも",
-    "eicateve",
-    "BM-SCP Foundation",
-    "Autism Rose",
-    "パワー",
-    "straight colors",
-    "叩いて消して顔面トランザム",
-    "明日一限ブラザーズ",
-    "俺の名は。",
-    "チャラ男",
-    "ANIMAL WARRIORS",
-    "Part of AeroRavers",
-    "EVER BURST",
-    "ZOAS",
-    "Make Of Mess!! for BOFU2017",
-    "ゼルダの伝説 ムジュラの仮面"
-  ],
-  "teams": null
+  "hasModernTeamList": false,
+  "testString": "",
+  "testStringArray": null,
+  "teams": [
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/71teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/154teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/4teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/121teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/193teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/188teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/68teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/41teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/136teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/149teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/28teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/58teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/32teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/85teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/117teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/69teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/155teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/128teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/91teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/73teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/99teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/64teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/79teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/93teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/6teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/65teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/40teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/142teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/47teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/74teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/122teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/11teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/16teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/15teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/163teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/143teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/35teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/62teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/33teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/37teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/102teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/96teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/86teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/60teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/105teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/46teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/106teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/66teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/126teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/21teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/29teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/88teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/61teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/26teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/84teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/76teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/75teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/148teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/18teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/72teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/50teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/101teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/116teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/195teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/20teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/181teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/77teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/103teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/156teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/22teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/48teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/14teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/194teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/10teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/185teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/161teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/23teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/189teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/70teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/129teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/190teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/44teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/97teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/151teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/175teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/12teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/110teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/111teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/184teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/7teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/166teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/176teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/174teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/172teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/5teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/162teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/147teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/145teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/141teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/140teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/133teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/137teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/134teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/113teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/115teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/127teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/120teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/43teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/87teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/107teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/19teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/98teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/81teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/83teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/82teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/78teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/30teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/67teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/59teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/2teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/17teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/56teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/53teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/52teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/45teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/42teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/36teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/34teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/27teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/25teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/13teambanner.jpg",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/9teambanner.gif",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    },
+    {
+      "teamId": 0,
+      "teamName": "",
+      "teamEmblemSrc": "",
+      "teamProfileLink": "https://manbow.nothing.sh/event/upload/1teambanner.png",
+      "testString": "",
+      "testStringArray": null,
+      "songs": null
+    }
+  ]
 }

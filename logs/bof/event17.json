@@ -17,7 +17,7 @@
   "infoLink": "http://f34.aaacafe.ne.jp/~bofhall/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=17",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=17",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=17",
+  "teamListLink": "",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2004/img/bof2004.png",
   "logoType2": "https://www.bmsoffighters.net/bof2004/img/logo.png",
@@ -34,6 +34,7 @@
   "isModern": false,
   "isPreModern": false,
   "hasModernList": false,
+  "hasModernTeamList": false,
   "testString": "",
   "testStringArray": null,
   "teams": null

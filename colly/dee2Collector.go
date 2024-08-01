@@ -12,7 +12,7 @@ import (
 
 var err error
 
-func InitializeDEE2Collector(llCollector *colly.Collector, tlCollector *colly.Collector) *colly.Collector {
+func InitializeDEE2Collector() *colly.Collector {
 	dee2Collector := colly.NewCollector(
 		colly.Async(true),
 		colly.DetectCharset())
@@ -94,16 +94,19 @@ func InitializeDEE2Collector(llCollector *colly.Collector, tlCollector *colly.Co
 		listEvent.DetailLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("td:nth-of-type(7) a:nth-of-type(2)", "href"))
 		listEvent.ListLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("td:nth-of-type(7) a:nth-of-type(3)", "href"))
 		AddEvent(&listEvent)
-		if listEvent.IsBof {
-			ctx := colly.NewContext()
-			ctx.Put("event", &listEvent)
+		/*
+			if listEvent.IsBof {
+				dee2Ctx := colly.NewContext()
+				dee2Ctx.Put("listEvent", &listEvent)
 
-			llCollector.Request("GET", listEvent.ListLink, nil, ctx, nil)
-			llCollector.Visit(listEvent.ListLink)
+				ilCollector.Request("GET", listEvent.InfoLink, nil, dee2Ctx, nil)
+				ilCollector.Visit(listEvent.InfoLink)
 
-			tlCollector.Request("GET", listEvent.TeamListLink, nil, ctx, nil)
-			tlCollector.Visit(listEvent.TeamListLink)
-		}
+				llCollector.Request("GET", listEvent.ListLink, nil, dee2Ctx, nil)
+				llCollector.Visit(listEvent.ListLink)
+
+			}
+		*/
 		// TODO Go to detailLink
 		// TODO come up with some form of categorization for ListLink, and make a distinct collector for each type
 		// TODO make functions for performaing specific tasks
@@ -115,25 +118,18 @@ func InitializeDEE2Collector(llCollector *colly.Collector, tlCollector *colly.Co
 		})
 	*/
 	dee2Collector.OnScraped(func(r *colly.Response) {
-		// TODO remove this once boftt is added to main event page
-		boftt := Event{
-			EventId:       146,
-			FullName:      "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
-			HasModernList: true,
-			ListLink:      "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
-		}
+		/*
+			if boftt.IsBof {
+				dee2Ctx := colly.NewContext()
+				dee2Ctx.Put("listEvent", &boftt)
 
-		AddEvent(&boftt)
-		if boftt.IsBof {
-			ctx := colly.NewContext()
-			ctx.Put("event", &boftt)
+				ilCollector.Request("GET", boftt.InfoLink, nil, dee2Ctx, nil)
+				ilCollector.Visit(boftt.ListLink)
 
-			llCollector.Request("GET", boftt.ListLink, nil, ctx, nil)
-			llCollector.Visit(boftt.ListLink)
-
-			tlCollector.Request("GET", boftt.TeamListLink, nil, ctx, nil)
-			tlCollector.Visit(boftt.TeamListLink)
-		}
+				llCollector.Request("GET", boftt.ListLink, nil, dee2Ctx, nil)
+				llCollector.Visit(boftt.ListLink)
+			}
+		*/
 		/*
 			fmt.Println("digitalEmergenceExitCollector Scraped", r.Request.URL)
 			logger.Info().Msgf("digitalEmergenceExitCollector Scraped %s", r.Request.URL)

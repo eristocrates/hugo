@@ -17,7 +17,7 @@
   "infoLink": "http://www.planetoid.biz/bof2006ac/",
   "detailLink": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=37",
   "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=37",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=37",
+  "teamListLink": "",
   "isBof": true,
   "logoType1": "https://www.bmsoffighters.net/bof2006/img/bof2006.png",
   "logoType2": "https://www.bmsoffighters.net/bof2006/img/logo.png",
@@ -34,6 +34,7 @@
   "isModern": false,
   "isPreModern": false,
   "hasModernList": false,
+  "hasModernTeamList": false,
   "testString": "",
   "testStringArray": null,
   "teams": null
