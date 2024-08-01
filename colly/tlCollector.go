@@ -66,10 +66,13 @@ func InitializeTLCollector() *colly.Collector {
 			e.ForEach(selectors.TeamRow, func(i int, s *colly.HTMLElement) {
 
 				team.TeamId, err = strconv.Atoi(s.ChildText(selectors.TeamId))
+				ConversionErrorCheck(err, event.ShortName)
 				team.TeamEmblemSrc = strings.Replace((s.ChildAttr(selectors.TeamEmblemSrc, "src")), "./", manbowEventUrlPrefix, 1)
 				team.TeamName = s.ChildText(selectors.TeamListName)
 				team.TeamProfileLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, s.ChildAttr(selectors.TeamListProfileLink, "href"))
-				ConversionErrorCheck(err, event.ShortName)
+				team.TeamLeaderName = s.ChildText(selectors.TeamListLeaderName)
+				team.TeamLeaderCountryCode = s.ChildAttr(selectors.TeamListLeaderCountry, "title")
+				team.TeamLeaderCountryFlag = strings.Replace(s.ChildAttr(selectors.TeamListLeaderCountry, "src"), "./", manbowEventUrlPrefix, 1)
 
 				event.Teams = append(event.Teams, team)
 			})

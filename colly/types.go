@@ -15,6 +15,8 @@ type Team struct {
 	TeamName              string   `json:"teamName"`
 	TeamProfileLink       string   `json:"teamProfileLink"`
 	TeamLeaderName        string   `json:"teamLeaderName"`
+	TeamLeaderCountryCode string   `json:"teamLeaderCountryCode"`
+	TeamLeaderCountryFlag string   `json:"teamLeaderCountryFlag"`
 	TeamMemberCount       int      `json:"teamMemberCount"`
 	TeamReleasedWorkCount int      `json:"teamReleasedWorkCount"`
 	TeamDeclaredWorkCount int      `json:"teamDeclaredWorkCount"`
@@ -74,16 +76,18 @@ type CommaWriter struct {
 }
 
 type selectorSet struct {
-	PrimaryMenu         string
-	MenuButtons         string
-	TeamList            string
-	FancyTitle          string
-	TeamElement         string
-	TeamName            string
-	FirstTeamName       string
-	TeamRow             string
-	TeamId              string
-	TeamEmblemSrc       string
-	TeamListProfileLink string
-	TeamListName        string
+	PrimaryMenu           string
+	MenuButtons           string
+	TeamList              string
+	FancyTitle            string
+	TeamElement           string
+	TeamName              string
+	FirstTeamName         string
+	TeamRow               string
+	TeamId                string
+	TeamEmblemSrc         string
+	TeamListProfileLink   string
+	TeamListName          string
+	TeamListLeaderName    string
+	TeamListLeaderCountry string
 }

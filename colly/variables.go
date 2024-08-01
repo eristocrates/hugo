@@ -29,6 +29,8 @@ var teamlistId = "td:nth-child(1) > a"
 var teamlistEmblemSrc = "td:nth-child(2) > a > img"
 var teamlistName = "td:nth-child(4)"
 var teamlistProfileLink = "td:nth-child(3) > a"
+var teamlistLeaderName = "td:nth-child(5)"
+var teamlistLeaderCountry = "td:nth-child(5) > img.flag"
 
 var modernListSelectors = selectorSet{
 	TeamList:      "#modern_list",
@@ -39,11 +41,13 @@ var modernListSelectors = selectorSet{
 }
 
 var modernTeamlistSelectors = selectorSet{
-	TeamRow:             teamlistRow,
-	TeamId:              teamlistId,
-	TeamEmblemSrc:       teamlistEmblemSrc,
-	TeamListProfileLink: teamlistProfileLink,
-	TeamListName:        teamlistName,
+	TeamRow:               teamlistRow,
+	TeamId:                teamlistId,
+	TeamEmblemSrc:         teamlistEmblemSrc,
+	TeamListProfileLink:   teamlistProfileLink,
+	TeamListName:          teamlistName,
+	TeamListLeaderName:    teamlistLeaderName,
+	TeamListLeaderCountry: teamlistLeaderCountry,
 }
 
 var modernInfoListSelectors = selectorSet{
