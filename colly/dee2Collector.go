@@ -65,9 +65,12 @@ func InitializeDEE2Collector() *colly.Collector {
 		idStr := e.ChildText("div.container-center > h2 > span.label-success")
 		featureEvent.EventId, _ = strconv.Atoi(idStr)
 		featureEvent.FullName = strings.TrimSpace(e.ChildText("div.container-center > h2"))[len(idStr):]
-		featureEvent.PeriodStart, featureEvent.PeriodEnd = SplitDateRange(e.ChildText("div.container-center > div.row > div:nth-of-type(4)"))
-		featureEvent.RegistrationStart, featureEvent.RegistrationEnd = SplitDateRange(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(2)"))
-		featureEvent.ImpressionStart, featureEvent.ImpressionEnd = SplitDateRange(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(4)"))
+		featureEvent.PeriodStart, featureEvent.PeriodEnd, err = SplitDateRange(e.ChildText("div.container-center > div.row > div:nth-of-type(4)"))
+		HugoDateHerrorCheck(err, featureEvent.FullName)
+		featureEvent.RegistrationStart, featureEvent.RegistrationEnd, err = SplitDateRange(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(2)"))
+		HugoDateHerrorCheck(err, featureEvent.FullName)
+		featureEvent.ImpressionStart, featureEvent.ImpressionEnd, err = SplitDateRange(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(4)"))
+		HugoDateHerrorCheck(err, featureEvent.FullName)
 		featureEvent.EntryCount, err = strconv.Atoi(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(6)"))
 		ConversionErrorCheck(err, featureEvent.FullName)
 		featureEvent.ImpressionCount, err = strconv.Atoi(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(8)"))
@@ -82,8 +85,10 @@ func InitializeDEE2Collector() *colly.Collector {
 		listEvent.FullName = e.ChildText("td:nth-of-type(2) a")
 		listEvent.EventId, err = strconv.Atoi(e.ChildText("td:nth-of-type(1)"))
 		ConversionErrorCheck(err, listEvent.FullName)
-		listEvent.RegistrationStart, listEvent.RegistrationEnd = SplitDateRange(e.ChildText("td:nth-of-type(3)"))
-		listEvent.ImpressionStart, listEvent.ImpressionEnd = SplitDateRange(e.ChildText("td:nth-of-type(4)"))
+		listEvent.RegistrationStart, listEvent.RegistrationEnd, err = SplitDateRange(e.ChildText("td:nth-of-type(3)"))
+		HugoDateHerrorCheck(err, listEvent.FullName)
+		listEvent.ImpressionStart, listEvent.ImpressionEnd, err = SplitDateRange(e.ChildText("td:nth-of-type(4)"))
+		HugoDateHerrorCheck(err, listEvent.FullName)
 		listEvent.PeriodStart = listEvent.RegistrationStart
 		listEvent.PeriodEnd = listEvent.ImpressionEnd
 		listEvent.EntryCount, err = strconv.Atoi(e.ChildText("td:nth-of-type(5)"))

@@ -60,6 +60,7 @@ func InitializeTLCollector() *colly.Collector {
 		eventId, ok := e.Request.Ctx.GetAny("eventId").(int)
 		if ok {
 			event := bofEvents[eventId]
+			// TODO seperate modernTeamlist with premodern, like even bofet is too old to count as modern
 			selectors = modernTeamlistSelectors
 
 			team := Team{}
@@ -71,8 +72,48 @@ func InitializeTLCollector() *colly.Collector {
 				team.TeamName = s.ChildText(selectors.TeamListName)
 				team.TeamProfileLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, s.ChildAttr(selectors.TeamListProfileLink, "href"))
 				team.TeamLeaderName = s.ChildText(selectors.TeamListLeaderName)
+
+				team.TeamNameLabelRaw = s.ChildTexts(selectors.TeamListNameLabel)
+				ProcessTeamNameLabel(&team)
+
 				team.TeamLeaderCountryCode = s.ChildAttr(selectors.TeamListLeaderCountry, "title")
 				team.TeamLeaderCountryFlag = strings.Replace(s.ChildAttr(selectors.TeamListLeaderCountry, "src"), "./", manbowEventUrlPrefix, 1)
+				team.TeamMemberCount, err = strconv.Atoi(strings.TrimRight(s.ChildText(selectors.TeamListMemberCount), "人"))
+				ConversionErrorCheck(err, event.ShortName)
+				worksString := s.ChildText(selectors.TeamListWorks)
+				parts := strings.Split(worksString, " / ")
+				// TODO handle team pages that do not have the works string format "x / y作品"
+				if len(parts) == 2 {
+					team.TeamReleasedWorksCount, err = strconv.Atoi(parts[0])
+					ConversionErrorCheck(err, event.ShortName)
+					team.TeamDeclaredWorksCount, err = strconv.Atoi(strings.Replace(parts[1], "作品", "", 1))
+					ConversionErrorCheck(err, event.ShortName)
+				}
+
+				team.TeamMemberListRaw = s.ChildText(selectors.TeamListMembers)
+				// TODO check these cases regularly to see if they've properly updated their team
+				if team.TeamName == "Green Team" {
+					team.TeamMemberCount = 7
+				}
+				if team.TeamName == "再会/Saikai  チームメンバー募集中！" {
+					team.TeamMemberCount = 15
+				}
+				if team.TeamName == "Team" {
+					team.TeamMemberCount = 10
+				}
+				/*
+					if team.TeamId == 48 {
+						team.TeamMemberListProcessed, team.TeamMemberListIsCorrect = splitMembers(team.TeamMemberListRaw, team.TeamMemberCount)
+					}
+				*/
+
+				// TODO worry about proper member splitting later
+				team.TeamMemberListProcessed, team.TeamMemberListIsCorrect = splitMembers(team.TeamMemberListRaw, team.TeamMemberCount)
+
+				team.TeamLastUpdate, err = GetHugoDateTime(s.ChildText(selectors.TeamListUpdate))
+				if err != nil {
+					HugoDateHerrorCheck(err, event.ShortName)
+				}
 
 				event.Teams = append(event.Teams, team)
 			})

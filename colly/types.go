@@ -10,21 +10,28 @@ type Song struct {
 
 // Team struct
 type Team struct {
-	TeamId                int      `json:"teamId"`
-	TeamEmblemSrc         string   `json:"teamEmblemSrc"`
-	TeamName              string   `json:"teamName"`
-	TeamProfileLink       string   `json:"teamProfileLink"`
-	TeamLeaderName        string   `json:"teamLeaderName"`
-	TeamLeaderCountryCode string   `json:"teamLeaderCountryCode"`
-	TeamLeaderCountryFlag string   `json:"teamLeaderCountryFlag"`
-	TeamMemberCount       int      `json:"teamMemberCount"`
-	TeamReleasedWorkCount int      `json:"teamReleasedWorkCount"`
-	TeamDeclaredWorkCount int      `json:"teamDeclaredWorkCount"`
-	TeamMemberListRaw     string   `json:"teamMemberListRaw"`
-	TeamUpdate            string   `json:"teamUpdate"`
-	TestString            string   `json:"testString"`
-	TestStringArray       []string `json:"testStringArray"`
-	Songs                 []Song   `json:"songs"`
+	TeamId                  int      `json:"teamId"`
+	TeamEmblemSrc           string   `json:"teamEmblemSrc"`
+	TeamName                string   `json:"teamName"`
+	TeamNameLabelRaw        []string `json:"teamNameLabelRaw"`
+	TeamIsRecruiting        bool     `json:"teamIsRecruiting"`
+	TeamIsWithdrawn         bool     `json:"teamIsWithdrawn"`
+	TeamIsDisqualified      bool     `json:"teamIsDisqualified"`
+	TeamIsWarned            bool     `json:"teamIsWarned"`
+	TeamProfileLink         string   `json:"teamProfileLink"`
+	TeamLeaderName          string   `json:"teamLeaderName"`
+	TeamLeaderCountryCode   string   `json:"teamLeaderCountryCode"`
+	TeamLeaderCountryFlag   string   `json:"teamLeaderCountryFlag"`
+	TeamMemberCount         int      `json:"teamMemberCount"`
+	TeamReleasedWorksCount  int      `json:"teamReleasedWorksCount"`
+	TeamDeclaredWorksCount  int      `json:"teamDeclaredWorksCount"`
+	TeamMemberListRaw       string   `json:"teamMemberListRaw"`
+	TeamMemberListProcessed []string `json:"teamMemberListProcessed"`
+	TeamMemberListIsCorrect bool     `json:"teamMemberListIsCorrect"`
+	TeamLastUpdate          string   `json:"teamLastUpdate"`
+	TestString              string   `json:"testString"`
+	TestStringArray         []string `json:"testStringArray"`
+	Songs                   []Song   `json:"songs"`
 }
 
 // Event struct
@@ -82,12 +89,18 @@ type selectorSet struct {
 	FancyTitle            string
 	TeamElement           string
 	TeamName              string
+	TeamNameLabel         string
 	FirstTeamName         string
 	TeamRow               string
 	TeamId                string
 	TeamEmblemSrc         string
 	TeamListProfileLink   string
 	TeamListName          string
+	TeamListNameLabel     string
 	TeamListLeaderName    string
 	TeamListLeaderCountry string
+	TeamListMemberCount   string
+	TeamListWorks         string
+	TeamListMembers       string
+	TeamListUpdate        string
 }

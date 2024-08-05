@@ -58,6 +58,9 @@ func main() {
 	}
 	teamListLinkCollector.Wait()
 
+	// TODO teamProfileCollector next
+	// TODO teamSongsCollector next
+
 	for id, event := range bofEvents {
 		ctx := colly.NewContext()
 		ctx.Put("eventId", id)

@@ -27,10 +27,15 @@ var modernListName_h3 = "#modern_list > div > div:nth-child(1) > div:nth-child(1
 var teamlistRow = "table > tbody > tr"
 var teamlistId = "td:nth-child(1) > a"
 var teamlistEmblemSrc = "td:nth-child(2) > a > img"
-var teamlistName = "td:nth-child(4)"
+var teamlistName = "td:nth-child(4) > a"
+var teamlistNameLabel = "td:nth-child(4) > strong"
 var teamlistProfileLink = "td:nth-child(3) > a"
 var teamlistLeaderName = "td:nth-child(5)"
 var teamlistLeaderCountry = "td:nth-child(5) > img.flag"
+var teamlistMemberCount = "td:nth-child(6)"
+var teamlistWorks = "td:nth-child(7)"
+var teamlistMembers = "td:nth-child(8)"
+var teamlistUpdate = "td:nth-child(9)"
 
 var modernListSelectors = selectorSet{
 	TeamList:      "#modern_list",
@@ -46,8 +51,13 @@ var modernTeamlistSelectors = selectorSet{
 	TeamEmblemSrc:         teamlistEmblemSrc,
 	TeamListProfileLink:   teamlistProfileLink,
 	TeamListName:          teamlistName,
+	TeamListNameLabel:     teamlistNameLabel,
 	TeamListLeaderName:    teamlistLeaderName,
 	TeamListLeaderCountry: teamlistLeaderCountry,
+	TeamListMemberCount:   teamlistMemberCount,
+	TeamListWorks:         teamlistWorks,
+	TeamListMembers:       teamlistMembers,
+	TeamListUpdate:        teamlistUpdate,
 }
 
 var modernInfoListSelectors = selectorSet{
