@@ -4,8 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"net/url"
 	"os"
 	"regexp"
+	"strconv"
 	"strings"
 	"time"
 	"unicode"
@@ -188,6 +190,7 @@ func HugoDateHerrorCheck(err error, eventName string) {
 func GetHugoDateTime(dateStr string) (string, error) {
 	dateLayouts := []string{
 		"2006/01/02",
+		"2006/01/02 15:04",
 		"2006/01/02 15:04:05",
 	}
 	isoLayout := "2006-01-02T15:04:05+09:00"
@@ -434,4 +437,30 @@ func ProcessTeamNameLabel(team *Team) {
 		}
 	}
 
+}
+
+func GetLanguage(str string) string {
+	matches := languageRegex.FindStringSubmatch(str)
+	if len(matches) > 1 {
+		return matches[1]
+	}
+	return ""
+
+}
+
+func GetPrefixUrl(url string) string {
+	return strings.Replace(url, "./", manbowEventUrlPrefix, 1)
+}
+func GetIdFromURL(urlStr string, param string) (int, error) {
+	var idString string
+	parsedURL, err := url.Parse(urlStr)
+	if err != nil {
+		return 0, err
+	}
+
+	// Extract the "num" query parameter
+	if param == "song" {
+		idString = parsedURL.Query().Get("num")
+	}
+	return strconv.Atoi(idString)
 }

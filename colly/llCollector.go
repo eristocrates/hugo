@@ -74,12 +74,8 @@ func InitializeLLCollector() *colly.Collector {
 						team.TeamName = h.Text
 						event.Teams = append(event.Teams, team)
 					})
-					event.TestString = firstTeamName
-					event.TestStringArray = testArray
 				}
 			*/
-			// event.TestString = firstTeamName
-			// event.TestStringArray = testArray
 			// TODO Further disambiguate between events with team_information and events without (modern vs premodern?)
 			/*
 				selectors = modernEventSelectors
@@ -92,7 +88,6 @@ func InitializeLLCollector() *colly.Collector {
 
 				// Use strings.FieldsFunc with the custom delimiter function
 				parts := strings.FieldsFunc(str, isDelimiter)
-				event.TestStringArray = parts
 			*/
 		}
 	})

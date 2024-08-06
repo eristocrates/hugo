@@ -24,10 +24,12 @@ func main() {
 
 	// logger := InitializeLogger()
 
-	teamListLinkCollector := InitializeTLCollector()
-	infoLinkCollector := InitializeILCollector()
-	listLinkCollector := InitializeLLCollector()
 	digitalEmergencyExitCollector := InitializeDEE2Collector()
+	infoLinkCollector := InitializeILCollector()
+	teamListLinkCollector := InitializeTLCollector()
+	teamProfileCollector := InitializeTPCollector()
+	songPageCollector := InitializeSPCollector()
+	// listLinkCollector := InitializeLLCollector()
 
 	// Start scraping on DEE2 EVENT LIST Digital Emergency Exit 2 Event System
 	digitalEmergencyExitCollector.Visit("https://manbow.nothing.sh/event/event.cgi/")
@@ -58,15 +60,46 @@ func main() {
 	}
 	teamListLinkCollector.Wait()
 
-	// TODO teamProfileCollector next
-	// TODO teamSongsCollector next
+	for eventId, event := range bofEvents {
+		for teamId, team := range event.Teams {
 
-	for id, event := range bofEvents {
-		ctx := colly.NewContext()
-		ctx.Put("eventId", id)
-		listLinkCollector.Request("GET", event.ListLink, nil, ctx, nil)
+			ctx := colly.NewContext()
+			ids := CtxIds{
+				EventId: eventId,
+				TeamId:  teamId,
+			}
+			ctx.Put("eventTeamIds", ids)
+			teamProfileCollector.Request("GET", team.TeamProfileLink, nil, ctx, nil)
+		}
 	}
-	listLinkCollector.Wait()
+	teamProfileCollector.Wait()
+
+	for eventId, event := range bofEvents {
+		for teamId, team := range event.Teams {
+			for songId, song := range team.Songs {
+
+				ctx := colly.NewContext()
+				ids := CtxIds{
+					EventId: eventId,
+					TeamId:  teamId,
+					SongId:  songId,
+				}
+
+				ctx.Put("eventTeamIds", ids)
+				teamProfileCollector.Request("GET", song.SongPageLink, nil, ctx, nil)
+			}
+		}
+	}
+	songPageCollector.Wait()
+
+	/*
+		for id, event := range bofEvents {
+			ctx := colly.NewContext()
+			ctx.Put("eventId", id)
+			listLinkCollector.Request("GET", event.ListLink, nil, ctx, nil)
+		}
+		listLinkCollector.Wait()
+	*/
 
 	logFile.Write([]byte("\n]"))     // Close the JSON array
 	jsonLogFile.Write([]byte("\n]")) // Close the JSON array

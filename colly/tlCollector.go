@@ -60,15 +60,19 @@ func InitializeTLCollector() *colly.Collector {
 		eventId, ok := e.Request.Ctx.GetAny("eventId").(int)
 		if ok {
 			event := bofEvents[eventId]
+			if event.Teams == nil {
+				event.Teams = make(map[int]*Team)
+			}
+
 			// TODO seperate modernTeamlist with premodern, like even bofet is too old to count as modern
 			selectors = modernTeamlistSelectors
 
-			team := Team{}
 			e.ForEach(selectors.TeamRow, func(i int, s *colly.HTMLElement) {
+				team := Team{}
 
 				team.TeamId, err = strconv.Atoi(s.ChildText(selectors.TeamId))
 				ConversionErrorCheck(err, event.ShortName)
-				team.TeamEmblemSrc = strings.Replace((s.ChildAttr(selectors.TeamEmblemSrc, "src")), "./", manbowEventUrlPrefix, 1)
+				team.TeamEmblemSrc = GetPrefixUrl(s.ChildAttr(selectors.TeamEmblemSrc, "src"))
 				team.TeamName = s.ChildText(selectors.TeamListName)
 				team.TeamProfileLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, s.ChildAttr(selectors.TeamListProfileLink, "href"))
 				team.TeamLeaderName = s.ChildText(selectors.TeamListLeaderName)
@@ -77,7 +81,7 @@ func InitializeTLCollector() *colly.Collector {
 				ProcessTeamNameLabel(&team)
 
 				team.TeamLeaderCountryCode = s.ChildAttr(selectors.TeamListLeaderCountry, "title")
-				team.TeamLeaderCountryFlag = strings.Replace(s.ChildAttr(selectors.TeamListLeaderCountry, "src"), "./", manbowEventUrlPrefix, 1)
+				team.TeamLeaderCountryFlag = GetPrefixUrl(s.ChildAttr(selectors.TeamListLeaderCountry, "src"))
 				team.TeamMemberCount, err = strconv.Atoi(strings.TrimRight(s.ChildText(selectors.TeamListMemberCount), "人"))
 				ConversionErrorCheck(err, event.ShortName)
 				worksString := s.ChildText(selectors.TeamListWorks)
@@ -91,20 +95,20 @@ func InitializeTLCollector() *colly.Collector {
 				}
 
 				team.TeamMemberListRaw = s.ChildText(selectors.TeamListMembers)
-				// TODO check these cases regularly to see if they've properly updated their team
-				if team.TeamName == "Green Team" {
-					team.TeamMemberCount = 7
-				}
-				if team.TeamName == "再会/Saikai  チームメンバー募集中！" {
-					team.TeamMemberCount = 15
-				}
-				if team.TeamName == "Team" {
-					team.TeamMemberCount = 10
-				}
 				/*
-					if team.TeamId == 48 {
-						team.TeamMemberListProcessed, team.TeamMemberListIsCorrect = splitMembers(team.TeamMemberListRaw, team.TeamMemberCount)
+					// TODO check these cases manually & regularly to see if they've properly updated their team
+					if team.TeamName == "Green Team" {
+						team.TeamMemberCount = 7
 					}
+					if team.TeamName == "再会/Saikai  チームメンバー募集中！" {
+						team.TeamMemberCount = 15
+					}
+					if team.TeamName == "Team" {
+						team.TeamMemberCount = 10
+					}
+						if team.TeamId == 48 {
+							team.TeamMemberListProcessed, team.TeamMemberListIsCorrect = splitMembers(team.TeamMemberListRaw, team.TeamMemberCount)
+						}
 				*/
 
 				// TODO worry about proper member splitting later
@@ -115,7 +119,7 @@ func InitializeTLCollector() *colly.Collector {
 					HugoDateHerrorCheck(err, event.ShortName)
 				}
 
-				event.Teams = append(event.Teams, team)
+				event.Teams[team.TeamId] = &team
 			})
 
 		}

@@ -42,7 +42,7 @@ func InitializeILCollector() *colly.Collector {
 	})
 
 	ilColector.OnError(func(r *colly.Response, err error) {
-		fmt.Println("infoLinkCollector Error:\t\t", err, r.StatusCode)
+		fmt.Println("infoLinkCollector Error:\t\t", err, r.StatusCode, r.Request.URL.String())
 		logger.Error().Msgf("infoLinkCollector Error: %s, %d", err, r.StatusCode)
 	})
 
@@ -57,7 +57,6 @@ func InitializeILCollector() *colly.Collector {
 		eventId, ok := e.Request.Ctx.GetAny("eventId").(int)
 		if ok {
 			event := bofEvents[eventId]
-			// event.TestStringArray = e.ChildTexts(modernInfoListSelectors.MenuButtons)
 			e.ForEachWithBreak(modernInfoListSelectors.MenuButtons, func(i int, h *colly.HTMLElement) bool {
 				if h.Text == "Team" {
 					event.TeamListLink = h.ChildAttr("a", "href")
