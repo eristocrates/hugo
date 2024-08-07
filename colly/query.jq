@@ -5,8 +5,6 @@ map(
     listLink,
     infoLink,
     teamListLink,
-    testString,
-    testStringArray,
     teams: (
       .teams
       | select(. != null)

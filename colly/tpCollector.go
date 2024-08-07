@@ -63,15 +63,23 @@ func InitializeTPCollector() *colly.Collector {
 		if ok {
 			team := bofEvents[ids.EventId].Teams[ids.TeamId]
 			// TODO consider scraping warning message box
-			team.TeamTwitter = e.ChildAttr(selectors.TwitterButton, "href")
-			team.TeamWebsite = e.ChildAttr(selectors.WebsiteButton, "href")
+			team.Twitter = e.ChildAttr(selectors.TwitterButton, "href")
+			team.Website = e.ChildAttr(selectors.WebsiteButton, "href")
 
 			e.ForEach(selectors.FancyTitle, func(_ int, el *colly.HTMLElement) {
 				section := strings.TrimSpace(el.Text)
 				// TODO flag sections not tracked in teamProfileSectionHeaders
 
+				if section == teamProfileSectionHeaders.TeamProfile {
+					teamProfileSection := el.DOM.Next().Next()
+					bannerSrc, exists := teamProfileSection.Find("img").Attr("src")
+					if exists && strings.Contains(bannerSrc, "banner") {
+						team.Banner = GetPrefixUrl(bannerSrc)
+					}
+				}
+
 				if section == teamProfileSectionHeaders.TeamLeader {
-					team.TeamLeaderLanguage = GetLanguage(el.DOM.Next().Text())
+					team.LeaderLanguage = GetLanguage(el.DOM.Next().Text())
 				}
 
 				if section == teamProfileSectionHeaders.Concept {
@@ -83,7 +91,7 @@ func InitializeTPCollector() *colly.Collector {
 						if exists {
 							concept.ConceptImage = GetPrefixUrl(imgSrc)
 						}
-						team.TeamConcepts = append(team.TeamConcepts, concept)
+						team.Concepts = append(team.Concepts, concept)
 					})
 				}
 
@@ -91,7 +99,7 @@ func InitializeTPCollector() *colly.Collector {
 					// Traverse up to the parent element
 					parent := el.DOM.Parent()
 
-					ratioPoint := pointValues{}
+					ratioPoint := pointValue{}
 					// Iterate over the sibling elements at the same level
 					parent.NextAll().Each(func(i int, s *goquery.Selection) {
 
@@ -102,10 +110,10 @@ func InitializeTPCollector() *colly.Collector {
 							if strings.Contains(counterValue, "x") {
 								ratioPoint.Value, _ = strconv.ParseFloat(strings.Split(counterValue, "x")[1], 64)
 								ratioPoint.Value = math.Round(ratioPoint.Value*10) / 10
-								ratioPoint.Type = "multiplier"
+								ratioPoint.Desc = "multiplier"
 							} else {
 								ratioPoint.Value, _ = strconv.ParseFloat(counterValue, 32)
-								ratioPoint.Type = "value"
+								ratioPoint.Desc = "value"
 							}
 							team.RatioPoints = append(team.RatioPoints, ratioPoint)
 							// Check if the sibling has the class "col_last"
@@ -127,51 +135,59 @@ func InitializeTPCollector() *colly.Collector {
 						genres[i] = strings.TrimSpace(genre)
 					}
 
-					team.TeamGenres = genres
+					team.Genres = genres
 
 				}
 
 				if section == teamProfileSectionHeaders.TeamCommonality {
-					team.TeamCommonality = strings.TrimSpace(el.DOM.Next().Text())
+					team.Commonality = strings.TrimSpace(el.DOM.Next().Text())
 				}
 
 				if section == teamProfileSectionHeaders.TeamRaisonDetre {
-					team.TeamRaisonDetre = strings.TrimSpace(el.DOM.Next().Text())
+					team.RaisonDetre = strings.TrimSpace(el.DOM.Next().Text())
 				}
 
 				if section == teamProfileSectionHeaders.Comment {
-					team.TeamComment = strings.TrimSpace(el.DOM.Next().Text())
+					team.Comment = strings.TrimSpace(el.DOM.Next().Text())
 				}
 
 				if section == teamProfileSectionHeaders.RegistTime {
-					team.TeamRegistDate, err = GetHugoDateTime(strings.TrimSpace(el.DOM.Next().Text()))
-					HugoDateHerrorCheck(err, team.TeamName)
+					team.RegistDate, err = GetHugoDateTime(strings.TrimSpace(el.DOM.Next().Text()))
+					HugoDateHerrorCheck(err, team.Name)
 				}
 
 			})
 
+			/*
+				maybeBannerSrc := GetPrefixUrl(e.ChildAttr("div.col_full:nth-child(1) > p:nth-child(3) > img:nth-child(1)", "src"))
+				if strings.Contains(maybeBannerSrc, "banner") {
+					team.TeamBannerSrc = GetPrefixUrl(maybeBannerSrc)
+				}
+			*/
+
 			team.Songs = make(map[int]*Song)
 			e.ForEach(selectors.SongEntries, func(_ int, el *colly.HTMLElement) {
 				song := Song{}
-				song.SongPageLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, el.ChildAttr("a", "href"))
-				song.SongId, err = GetIdFromURL(song.SongPageLink, "song")
+				song.PageLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, el.ChildAttr("a", "href"))
+				song.Id, err = GetIdFromURL(song.PageLink, "song")
 				if err != nil {
-					logger.Error().Err(err).Msgf("Error extracting song id from url: %s", song.SongPageLink)
+					logger.Error().Err(err).Msgf("Error extracting song id from url: %s", song.PageLink)
 				}
-				song.SongSpecialTitle = strings.TrimSpace(el.ChildText("div.sale-flash"))
-				song.SongIsSpecial = song.SongSpecialTitle != ""
-				song.SongJacket = GetPrefixUrl(el.ChildAttr("img", "src"))
-				song.SongGenre = strings.TrimSpace(el.ChildText("div.entry-title > small"))
-				song.SongTitle = strings.TrimSpace(el.ChildText("div.entry-title > h2 > a"))
-				song.SongArtist = strings.TrimSpace(el.ChildText("div.entry-title > h5"))
-				song.SongRegistDate, err = GetHugoDateTime(strings.TrimSpace(el.ChildText("ul.entry-meta > li:nth-child(2)")))
-				HugoDateHerrorCheck(err, song.SongTitle)
-				song.SongLastUpdate, err = GetHugoDateTime(strings.TrimSpace(el.ChildText("ul.entry-meta > li:nth-child(3)")))
-				HugoDateHerrorCheck(err, song.SongTitle)
-				song.SongCommentCount, err = strconv.Atoi(strings.TrimSpace(el.ChildText("ul.entry-meta > li:nth-child(4)")))
-				ConversionErrorCheck(err, song.SongTitle)
+				song.SpecialTitle = strings.TrimSpace(el.ChildText("div.sale-flash"))
+				song.IsSpecial = song.SpecialTitle != ""
+				song.Genre = strings.TrimSpace(el.ChildText("div.entry-title > small"))
+				song.Title = strings.TrimSpace(el.ChildText("div.entry-title > h2 > a"))
+				song.Artist = strings.TrimSpace(el.ChildText("div.entry-title > h5"))
+				song.RegistDate, err = GetHugoDateTime(strings.TrimSpace(el.ChildText("ul.entry-meta > li:nth-child(2)")))
+				HugoDateHerrorCheck(err, song.Title)
+				song.LastUpdate, err = GetHugoDateTime(strings.TrimSpace(el.ChildText("ul.entry-meta > li:nth-child(3)")))
+				HugoDateHerrorCheck(err, song.Title)
+				song.CommentCount, err = strconv.Atoi(strings.TrimSpace(el.ChildText("ul.entry-meta > li:nth-child(4)")))
+				ConversionErrorCheck(err, song.Title)
 
-				team.Songs[song.SongId] = &song
+				team.Songs[song.Id] = &song
+				team.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006-01-02 15:04:05"))
+				HugoDateHerrorCheck(err, song.Title)
 			})
 
 		}

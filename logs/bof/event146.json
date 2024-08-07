@@ -1,46 +1,48 @@
 {
   "eventId": 146,
-  "fullName": "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
-  "abbrevName": "BOF:TT",
-  "shortName": "boftt",
-  "title": "THE BMS OF FIGHTERS : TT",
-  "description": "-Sonata for the 20th Ceremony-",
-  "bannerType1": "https://manbow.nothing.sh/event/images/146.jpg",
-  "registrationStart": "",
-  "registrationEnd": "",
-  "impressionStart": "",
-  "impressionEnd": "",
-  "periodStart": "",
-  "periodEnd": "",
-  "entryCount": 0,
-  "impressionCount": 0,
-  "infoLink": "https://www.bmsoffighters.net/boftt/index.html",
-  "detailLink": "",
-  "listLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
-  "teamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=146",
-  "isBof": true,
-  "logoType1": "https://www.bmsoffighters.net/boftt/img/boftt.png",
-  "logoType2": "https://www.bmsoffighters.net/boftt/img/logo.png",
-  "logoType3": "https://www.bmsoffighters.net/boftt/img/boftt_logo.png",
-  "logoType4": "https://www.bmsoffighters.net/boftt/img/BOFTT.png",
-  "logoType5": "https://www.bmsoffighters.net/boftt/index_files/boftt_2.png",
-  "titleJpg": "https://www.bmsoffighters.net/boftt/img/title.jpg",
-  "bannerType2": "https://www.bmsoffighters.net/boftt/img/banner.jpg",
-  "video": "https://www.bmsoffighters.net/boftt/img/boftt.mp4",
-  "headerJpg": "https://www.bmsoffighters.net/boftt/img/header.jpg",
-  "headerPng": "https://www.bmsoffighters.net/boftt/img/header.png",
-  "backJpg": "https://www.bmsoffighters.net/boftt/img/back.jpg",
-  "backPng": "https://www.bmsoffighters.net/boftt/img/back.png",
-  "isModern": false,
-  "isPreModern": false,
-  "hasModernList": true,
-  "hasModernTeamList": false,
-  "testString": "",
-  "testStringArray": null,
+  "eventFullName": "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
+  "eventAbbrevName": "BOF:TT",
+  "eventShortName": "boftt",
+  "eventTitle": "THE BMS OF FIGHTERS : TT",
+  "eventDescription": "-Sonata for the 20th Ceremony-",
+  "eventBannerType1": "https://manbow.nothing.sh/event/images/146.jpg",
+  "eventRegistrationStart": "",
+  "eventRegistrationEnd": "",
+  "eventImpressionStart": "",
+  "eventImpressionEnd": "",
+  "eventPeriodStart": "",
+  "eventPeriodEnd": "",
+  "eventEntryCount": 0,
+  "eventImpressionCount": 0,
+  "eventInfoLink": "https://www.bmsoffighters.net/boftt/index.html",
+  "eventDetailLink": "",
+  "eventListLink": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
+  "eventTeamListLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=146",
+  "eventIsBof": true,
+  "eventLogoType1": "https://www.bmsoffighters.net/boftt/img/boftt.png",
+  "eventLogoType2": "https://www.bmsoffighters.net/boftt/img/logo.png",
+  "eventLogoType3": "https://www.bmsoffighters.net/boftt/img/boftt_logo.png",
+  "eventLogoType4": "https://www.bmsoffighters.net/boftt/img/BOFTT.png",
+  "eventLogoType5": "https://www.bmsoffighters.net/boftt/index_files/boftt_2.png",
+  "eventTitleJpg": "https://www.bmsoffighters.net/boftt/img/title.jpg",
+  "eventBannerType2": "https://www.bmsoffighters.net/boftt/img/banner.jpg",
+  "eventVideo": "https://www.bmsoffighters.net/boftt/img/boftt.mp4",
+  "eventHeaderJpg": "https://www.bmsoffighters.net/boftt/img/header.jpg",
+  "eventHeaderPng": "https://www.bmsoffighters.net/boftt/img/header.png",
+  "eventBackJpg": "https://www.bmsoffighters.net/boftt/img/back.jpg",
+  "eventBackPng": "https://www.bmsoffighters.net/boftt/img/back.png",
+  "eventIsModern": false,
+  "eventIsPreModern": false,
+  "eventHasModernList": true,
+  "eventHasModernTeamList": false,
+  "eventLastScrapeTime": "",
+  "eventTestString": "",
+  "eventTestStringArray": null,
   "teams": {
     "1": {
       "teamId": 1,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "11月28日",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -73,22 +75,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -99,13 +101,18 @@
       "teamRaisonDetre": "11月28日生まれ",
       "teamComment": "11月28日生まれ",
       "teamRegistDate": "2024-07-06T10:31:47+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "10": {
       "teamId": 10,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460010_20240706114833.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460010_20240706114833.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460010_20240706114833.gif",
       "teamName": "#TimeTraveler",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -163,22 +170,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -189,13 +196,18 @@
       "teamRaisonDetre": "時を超えて来るため",
       "teamComment": "時を越えて来たぜ 昨日から時を越えて来たぜ 明日へ夢抱いて 愛を込めて時を越えて行くから",
       "teamRegistDate": "2024-07-06T11:38:02+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "100": {
       "teamId": 100,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "一回生",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -232,13 +244,18 @@
       "teamRaisonDetre": "",
       "teamComment": "第一次参赛，多指教",
       "teamRegistDate": "2024-07-28T22:34:29+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "101": {
       "teamId": 101,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "alarky kiikurute!! Nekop-Osakana",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -272,13 +289,18 @@
       "teamRaisonDetre": "",
       "teamComment": "近畿圏でDJ/トラックメイカー/マシンライブなどで活動してる人達なんやかんやあって初参加してみることに",
       "teamRegistDate": "2024-07-29T12:53:04+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "102": {
       "teamId": 102,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460102_20240729161249.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460102_20240729161249.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460102_20240729161249.png",
       "teamName": "火光と瀛と埜",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -328,22 +350,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -354,13 +376,18 @@
       "teamRaisonDetre": "楽しくロック＆ポップスをやりたかったので",
       "teamComment": "かぎろいとうみとのと読みます去年に引き続き漢字が読めない名前で参戦です参加は楽しく、作品は本気で　がんばります",
       "teamRegistDate": "2024-07-29T16:12:49+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "103": {
       "teamId": 103,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "StoryTeller",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -392,22 +419,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -417,13 +444,18 @@
       "teamRaisonDetre": "Friends",
       "teamComment": "Nakuya:https://x.com/doraenackPooh5821:https://x.com/Pooh5821MusicHoshiko Hanabi:https://www.youtube.com/@somaoniwa2026/videosDivergo:https://x.com/DivergentDracoTawan Sunflower:https://x.com/himawari_hito",
       "teamRegistDate": "2024-08-02T03:31:48+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "104": {
       "teamId": 104,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Green Team",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -457,22 +489,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 18,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -482,13 +514,18 @@
       "teamRaisonDetre": "",
       "teamComment": "While red BMS are nice, we much prefer green BMS. Let's enjoy some green BMS this year!",
       "teamRegistDate": "2024-08-02T07:56:55+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "105": {
       "teamId": 105,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460105_20240802180622.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460105_20240802180622.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460105_20240802180622.jpg",
       "teamName": "クソデカビッグファイヤ",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -539,13 +576,18 @@
       "teamRaisonDetre": "ビッグファイヤになるため",
       "teamComment": "強火で調理。",
       "teamRegistDate": "2024-08-02T18:06:22+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "106": {
       "teamId": 106,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460106_20240803205100.png",
       "teamName": "73KB",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -597,22 +639,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -623,13 +665,18 @@
       "teamRaisonDetre": "#73KB_Forever",
       "teamComment": "BOFXVから5年...？？？？？？",
       "teamRegistDate": "2024-08-03T20:51:00+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "107": {
       "teamId": 107,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460107_20240804183228.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460107_20240804183228.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460107_20240804183228.jpg",
       "teamName": "ゲーセンが実家",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -685,22 +732,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -710,13 +757,18 @@
       "teamRaisonDetre": "ゲーセンが実家",
       "teamComment": "なんやかんや３年目でございます",
       "teamRegistDate": "2024-08-04T18:32:28+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "108": {
       "teamId": 108,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460108_20240805205441.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460108_20240805205441.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460108_20240805205441.jpg",
       "teamName": "提A・璃月車",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -770,13 +822,18 @@
       "teamRaisonDetre": "",
       "teamComment": "可以试试把队名唱出来参赛吗？",
       "teamRegistDate": "2024-08-05T20:29:12+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "109": {
       "teamId": 109,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Troll Party",
       "teamNameLabelRaw": [
         "チーム規定違反警告"
@@ -810,13 +867,18 @@
       "teamRaisonDetre": "",
       "teamComment": "none",
       "teamRegistDate": "2024-08-05T23:58:26+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "11": {
       "teamId": 11,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460011_20240706115320.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460011_20240706115320.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460011_20240706115320.png",
       "teamName": "Team Toasters",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -867,13 +929,18 @@
       "teamRaisonDetre": "A small friend group created in middle school focused on video games turned into a slightly larger group that focuses on BMS.",
       "teamComment": "The toasters have an unbreakable bond regardless of size, height, and everyone's unique flavors portrayed as bread.",
       "teamRegistDate": "2024-07-06T11:38:50+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "12": {
       "teamId": 12,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460012_20240707225057.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460012_20240707225057.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460012_20240707225057.jpg",
       "teamName": "D-illusionA1Z",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -926,13 +993,18 @@
       "teamRaisonDetre": "",
       "teamComment": "Hello. We are D-illusionA1Z.We form to bring our characters into the public.Half the members here are participating BMS of Fighters for the first time.We hope you enjoy the shows.Feel free to follow us here:千の声 / ILuvGemz: https://x.com/gemz_luvTHE BEAT WIZARD: https://x.com/THE_BEAT_WIZARDNew Mortal Enemy: https://x.com/NMEMUSICBOXすずはら: https://x.com/Suzuhara_OCsSethica: https://x.com/Sethica_NASA: https://x.com/73_4k神宮要: https://x.com/zinguukanameTiv: https://x.com/tivmusic_chp",
       "teamRegistDate": "2024-07-06T11:59:35+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "13": {
       "teamId": 13,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460013_20240706123708.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460013_20240706123708.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460013_20240706123708.png",
       "teamName": "imPRechoes",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -973,22 +1045,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 10,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 12,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -998,13 +1070,18 @@
       "teamRaisonDetre": "前回のリベンジ！",
       "teamComment": "仮想空間の音ゲーマーが集まったサークル。",
       "teamRegistDate": "2024-07-06T12:34:19+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "14": {
       "teamId": 14,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460014_20240706124903.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460014_20240706124903.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460014_20240706124903.png",
       "teamName": "仄か姫閑言楽団（仮）",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1054,22 +1131,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 2,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 21,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 21,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1081,13 +1158,18 @@
       "teamRaisonDetre": "が好き",
       "teamComment": "仄暗い百合の話と言えば、思い浮かぶのは？ ようこそ、仄か姫閑言楽団（仮）の演奏会へ。",
       "teamRegistDate": "2024-07-06T12:49:03+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "15": {
       "teamId": 15,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460015_20240706130821.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460015_20240706130821.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460015_20240706130821.png",
       "teamName": "POSITIVE ENERGY",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1123,22 +1205,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 0,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 29,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1150,13 +1232,18 @@
       "teamRaisonDetre": "",
       "teamComment": "The theme for our team in the 5th attendance of the BMS of Fighters is \"dedication from superfans\". All works of ours will be dedicated to the one(s) we loved as a fan art (non-commissioning). Also, starting from this year, all composer in the team will also make BMS charts for all entries.",
       "teamRegistDate": "2024-07-06T13:08:21+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "16": {
       "teamId": 16,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460016_20240717015219.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460016_20240717015219.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460016_20240710143921.gif",
       "teamName": "平日午前ゲーセンの夢を見る者たち",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1210,22 +1297,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 13,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 17,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1236,13 +1323,18 @@
       "teamRaisonDetre": "",
       "teamComment": "あ",
       "teamRegistDate": "2024-07-06T13:10:30+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "17": {
       "teamId": 17,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460017_20240706134033.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460017_20240706134033.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460017_20240706134033.png",
       "teamName": "謎のパエリア2",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1286,13 +1378,18 @@
       "teamRaisonDetre": "パエリア",
       "teamComment": "あの\"謎のパエリア\"がおいしくなって新登場！！！",
       "teamRegistDate": "2024-07-06T13:40:33+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "18": {
       "teamId": 18,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460018_20240706145217.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460018_20240706145217.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460018_20240706145217.png",
       "teamName": "6K BiBimBap",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1347,22 +1444,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 17,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1372,13 +1469,18 @@
       "teamRaisonDetre": "",
       "teamComment": "6Key BMS",
       "teamRegistDate": "2024-07-06T14:08:10+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "19": {
       "teamId": 19,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460019_20240706175651.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460019_20240706175651.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460019_20240706181943.png",
       "teamName": "Destruction of Flowers",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1412,22 +1514,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1437,13 +1539,18 @@
       "teamRaisonDetre": "",
       "teamComment": "Destruction of Flowers 3年目よろしくお願いします",
       "teamRegistDate": "2024-07-06T14:32:28+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "2": {
       "teamId": 2,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "悠久笈歌",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1484,13 +1591,18 @@
       "teamRaisonDetre": "がんばる",
       "teamComment": "悠久笈歌の申請に参りました。久々にレシオポイントを振ることが出来て感極まっています。",
       "teamRegistDate": "2024-07-06T10:36:34+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "20": {
       "teamId": 20,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460020_20240706161009.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460020_20240706161009.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460020_20240706161009.png",
       "teamName": "呑み屋ハルガスミ",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1540,13 +1652,18 @@
       "teamRaisonDetre": "ハルガスミさんがテーマのBMSを作りたい!!",
       "teamComment": "呑み屋ハルガスミ、ここに開店！！お手ごろな価格と絶品の味で皆様をおもてなしいたします。チーム結成記念で現在全品割引中！------------------------真面目なプロフィールハルガスミさんがテーマのBMSを作ろうということ結成。…と思ったら既にいくつか作られていたっぽいです。でも頑張るぞ～",
       "teamRegistDate": "2024-07-06T16:08:34+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "21": {
       "teamId": 21,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Yobimo Team",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1581,22 +1698,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1607,13 +1724,18 @@
       "teamRaisonDetre": "Yobimo takes over BMS",
       "teamComment": "your entertainment is our suffering",
       "teamRegistDate": "2024-07-06T16:40:46+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "22": {
       "teamId": 22,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460022_20240708024309.png",
       "teamName": "Dilettante",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1667,22 +1789,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1692,13 +1814,18 @@
       "teamRaisonDetre": "Friends",
       "teamComment": "「Dilettante」です！よろしくお願いします！",
       "teamRegistDate": "2024-07-06T16:45:05+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "23": {
       "teamId": 23,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460023_20240706174918.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460023_20240706174918.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460023_20240706174918.png",
       "teamName": "- Grand Finale -",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1767,22 +1894,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 10,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 20,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1793,13 +1920,18 @@
       "teamRaisonDetre": "Commemorate BOF all together.",
       "teamComment": "BMS is home to many songs that many people are not even aware of their origins.It's time we give back what we have received and show appreciation for BMS.Let's celebrate an amazing 20 years of BOF and 26 years of BMS!42SoL：「A reality like a mirage. Disturb.」DawMii：「I need money kudasai」Dazuko：「You Literally Use Fucking Bitwig」eili：「I can sing pretty fast in English seeing as how I am just generic white bread.」L216：「I, L216, the Beatific Meme Scaler, descend upon this team of the so-called Be-Music Source format of structured play by the call of fate an— Oh, you are also a Be-Music Source aficionado from another world? Very well, I grant you permission to play with me.」Len：「The meaning of life, one is not meant to searched but realized」LuvTek：「KBSP2009가 15년이나 되었다니 믿을 수가 없읍니다.」Medium：「Falling, yet floating. Dragged away, yet continuing forward. Life is ironic, yet it’s Schrödinger-like state is still enjoyable through music. Now, reach and grip the star…」Melone：「underway at the edge of the cosmos」NASA：「PATTERNER'S DELIGHT」nor：「」Nos：「」OfficialAz3：「i want iidx controller」Phrygia：「BMS (Be-Music Script) is 1998年にやねうらおに 의해 개발된 file format for 리ゲー。 ...wait this is completely unrelated to my role (dies)」rime：「あっ」RipLeEpic：「imagine taking time to type a quote. wait...」Small Meeks：「my secret ingredient in bolognese is arsenic」Tiv：「譜面を作るのだ」tkqn14：「cocoa.」Warlock：「This is a quote」WIC：「8年ぶりに帰ってきました」エシャ：「this exists」七海：「I'm BMS Noob...」",
       "teamRegistDate": "2024-07-06T17:49:18+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "24": {
       "teamId": 24,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "NEO sample FACTORY(仮)",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -1834,13 +1966,18 @@
       "teamRaisonDetre": "",
       "teamComment": "NEO sample FACTORY",
       "teamRegistDate": "2024-07-06T18:01:58+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "25": {
       "teamId": 25,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460025_20240706193637.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460025_20240706193637.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460025_20240706193637.png",
       "teamName": "BMS Video",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1891,22 +2028,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -1917,13 +2054,18 @@
       "teamRaisonDetre": "Everlasting Nostalgia.",
       "teamComment": "The following is a BMS Video presentation.That's right. My team BMS Video is returning yet again in BOF:TT! this time with a curious gimmick that i'm sure you'll really like!Hope you enjoy whatever we have in store for you. ;DAlex Turell (music, BMS, team leader) (https://twitter.com/cocoloco3412 )OfficialAz3 (music, BMS) (https://twitter.com/officialaz3_m )Lollipop (music, BMS) (https://twitter.com/lollipop_314 )DJ Adrichii (music, BMS) (https://twitter.com/djadrichii05)rime (movie, BGA) (https://twitter.com/halorime )",
       "teamRegistDate": "2024-07-06T19:36:37+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "26": {
       "teamId": 26,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460026_20240706200020.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460026_20240706200020.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460026_20240706200020.jpg",
       "teamName": "スクワッシュ",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -1975,13 +2117,18 @@
       "teamRaisonDetre": "",
       "teamComment": "窝瓜",
       "teamRegistDate": "2024-07-06T19:58:35+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "27": {
       "teamId": 27,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460027_20240706204409.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460027_20240706204409.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460027_20240706204409.jpg",
       "teamName": "-20",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -2036,22 +2183,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 13,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2062,13 +2209,18 @@
       "teamRaisonDetre": "Modernity isn't always better",
       "teamComment": "We're aiming to not just recreate the music but also to capture feelings when playing it.Let's not moving on.(Recruitments are in our team's HP)",
       "teamRegistDate": "2024-07-06T20:44:09+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "28": {
       "teamId": 28,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460028_20240706204909.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460028_20240706204909.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460028_20240706204909.png",
       "teamName": "Diphragment",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2103,13 +2255,18 @@
       "teamRaisonDetre": "パッとイベントの内容見た時繊細で儚げな曲が作りたかったので綺麗な曲を作らせたら天才なBMS作家と手を組ませていただきました",
       "teamComment": "「涙に濡れ、現わるは透明で、繊細すぎる感傷」チーム名はディフラグメントと読みます。Diphylleia(サンカヨウ属)＋Fragment(破片)の造語で、砕け散ったガラスの破片とサンカヨウの花を足したような意味がありますちなみに、サンカヨウの花は水に濡れると透明になるという唯一無二の特徴を持つ花です　透明な姿はヒビ割れたガラスみたいでキレイだったりそんな感じで、サンカヨウの花のような繊細で儚げな楽曲を作っていけたらなぁと思います",
       "teamRegistDate": "2024-07-06T20:49:09+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "29": {
       "teamId": 29,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460029_20240706212949.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460029_20240706212949.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460029_20240706212949.png",
       "teamName": "V For Vivace",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2163,22 +2320,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2189,13 +2346,18 @@
       "teamRaisonDetre": "We want to spread the musical works of overseas!",
       "teamComment": "V for Vivace!",
       "teamRegistDate": "2024-07-06T21:29:05+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "3": {
       "teamId": 3,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460003_20240706105307.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460003_20240706105307.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460003_20240706105307.png",
       "teamName": "チームとびうお",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -2248,22 +2410,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 17,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 5,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2273,13 +2435,18 @@
       "teamRaisonDetre": "",
       "teamComment": "かわいい曲を作ります！はりきってまいりましょー！",
       "teamRegistDate": "2024-07-06T10:53:07+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "30": {
       "teamId": 30,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460030_20240706214730.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460030_20240706214730.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460030_20240706214343.jpg",
       "teamName": "ちんもち",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2333,22 +2500,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2359,13 +2526,18 @@
       "teamRaisonDetre": "もちもちだからです",
       "teamComment": "夏は～！？ちんもち～！！",
       "teamRegistDate": "2024-07-06T21:43:43+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "31": {
       "teamId": 31,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460031_20240706220343.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460031_20240706220343.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460031_20240706220343.jpg",
       "teamName": "Team Awesome People",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2418,13 +2590,18 @@
       "teamRaisonDetre": "For fun",
       "teamComment": "AWESOME BMS!!!!!!!!! I like burger. I also like pigeon. - asdf TacoMasterasdf TacoMaster: https://www.youtube.com/channel/UCJg0C--XRX5KBMzcuLetm3gdogmaNN: https://www.youtube.com/@dogmaNN_MusicHolfpath: https://www.youtube.com/@pathhof9064",
       "teamRegistDate": "2024-07-06T22:03:43+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "32": {
       "teamId": 32,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460032_20240707194421.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460032_20240707194421.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460032_20240707194421.png",
       "teamName": "ez2dalは大変なものを盗んでいきました",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -2441,14 +2618,14 @@
       "teamMemberCount": 12,
       "teamReleasedWorksCount": 0,
       "teamDeclaredWorksCount": 4,
-      "teamMemberListRaw": "[ Team Informations ]      Members  ==============  Leader  ez2dal (Composer)    Music  ez2dal (Composer)  XH (Composer)  ank⟐ (Composer)  ytsejaM (Composer)    Illustration  gongju  toerito99    BMS Editor  Remilia (bms)  Jakads (bms)    BGA Editor  khyun_  Apostrophe  R=DY    Support Staff  sjk (a.k.a Phrygia) (Translator)",
+      "teamMemberListRaw": "[ Team Informations ]      Members  ==============  Leader  ez2dal (Composer)    Music  ez2dal (Composer)  XH (Composer)  ank⟐ (Composer)  VALiANT (Composer)    Illustration  gongju  toerito99    BMS Editor  Remilia (bms)  Jakads (bms)    BGA Editor  khyun_  Apostrophe  R=DY    Support Staff  sjk (a.k.a Phrygia) (Translator)",
       "teamMemberListProcessed": [
         "[ Team Informations ]",
         "Members  ==============  Leader  ez2dal (Composer)",
         "Music  ez2dal (Composer)",
         "XH (Composer)",
         "ank⟐ (Composer)",
-        "ytsejaM (Composer)",
+        "VALiANT (Composer)",
         "Illustration  gongju  toerito99    BMS Editor  Remilia (bms)",
         "Jakads (bms)",
         "BGA Editor  khyun_  Apostrophe  R=DY    Support Staff  sjk (a.k.a Phrygia) (Translator)"
@@ -2462,22 +2639,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2488,13 +2665,18 @@
       "teamRaisonDetre": "BOF20周年を迎えて支援",
       "teamComment": "「ez2dalは大変なものを盗んでいきました」です。BOF 20周年を迎えて参加することになりました。今年もよろしくお願いします。\"ez2dalは大変なものを盗んでいきました\" 입니다.BOF 20주년을 맞아 참여하게 되었습니다.올해도 잘 부탁 드립니다.",
       "teamRegistDate": "2024-07-06T22:13:50+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "33": {
       "teamId": 33,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "コバコノカクレガ",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2525,22 +2707,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2553,13 +2735,18 @@
       "teamRaisonDetre": "",
       "teamComment": "広がれ、ゆったり・まったり・しっとりの輪。",
       "teamRegistDate": "2024-07-06T22:22:00+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "34": {
       "teamId": 34,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "名称未定(仮)",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2601,22 +2788,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2626,13 +2813,18 @@
       "teamRaisonDetre": "",
       "teamComment": "詳細は後日更新します！",
       "teamRegistDate": "2024-07-06T22:52:08+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "35": {
       "teamId": 35,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460035_20240728225439.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460035_20240728225439.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460035_20240728225439.jpg",
       "teamName": "箱作者は世界旅行の夢を見るか？",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -2674,13 +2866,18 @@
       "teamRaisonDetre": "",
       "teamComment": "箱作者は世界旅行の夢を見てる。",
       "teamRegistDate": "2024-07-06T23:07:51+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "36": {
       "teamId": 36,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460036_20240706232326.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460036_20240706232326.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460036_20240706232326.png",
       "teamName": "Club ~N",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -2730,13 +2927,18 @@
       "teamRaisonDetre": "Let's have fun and appreciate the beauty of music!!!",
       "teamComment": "Hope our works could be your piece!!!加入团队请添加QQ:2023118954If you want to join us, please send message to X:@EmpKirin",
       "teamRegistDate": "2024-07-06T23:23:26+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "37": {
       "teamId": 37,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460037_20240713191205.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460037_20240713191205.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460037_20240708210917.png",
       "teamName": "夏休み最終日",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2771,13 +2973,18 @@
       "teamRaisonDetre": "やりたい事やる！！",
       "teamComment": "このチーム7/6にメンバー揃ったらしい、凄いね。最初UtukaがBOF参加したいって言ってた所をメに拾われなんやかんやメンバーが足りない所にほぼ初対面なのに椿さんが来てくれました、ありがたい。きっと皆夏休みに余裕をもって宿題終わらせてくれるタイプなのできっと上手くいくでしょう多分。色々急造なのでバナーなどは後々更新します。",
       "teamRegistDate": "2024-07-06T23:43:46+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "38": {
       "teamId": 38,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460038_20240729002246.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460038_20240729002246.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460038_20240729002246.jpg",
       "teamName": "牡鹿",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2827,22 +3034,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 0,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2854,13 +3061,18 @@
       "teamRaisonDetre": "Xibaのチーム運営につき合ってくれる",
       "teamComment": "今日はこんな私につき合ってくれて、どうもありがとう……次が、最後の曲です　聴いてください────「『牡鹿』は今回に限り『オスジカ』って読んでほしい」(歓声)",
       "teamRegistDate": "2024-07-06T23:46:53+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "39": {
       "teamId": 39,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460039_20240706235623.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460039_20240706235623.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460039_20240706234833.png",
       "teamName": "わいとおと（もも）だち",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -2902,22 +3114,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -2928,13 +3140,18 @@
       "teamRaisonDetre": "同じ志をもつから（？）",
       "teamComment": "もるさん新卒社会人ももさん熟練社会人もるもる meats ももやま",
       "teamRegistDate": "2024-07-06T23:48:33+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "4": {
       "teamId": 4,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460004_20240706110102.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460004_20240706110102.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460004_20240706112447.gif",
       "teamName": "そろそろ老兵",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -2987,13 +3204,18 @@
       "teamRaisonDetre": "そろそろ老兵としての自覚が芽生えつつあるので",
       "teamComment": "音ゲーマー歴も、BMS作者歴も、きっとそろそろ老兵になるんだよね…",
       "teamRegistDate": "2024-07-06T11:01:02+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "40": {
       "teamId": 40,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460040_20240707001845.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460040_20240707001845.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460040_20240707001845.png",
       "teamName": "ShotaFumoJanPterodactylFatLiverOpenBigBoomCryLeech",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3042,22 +3264,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -3067,13 +3289,18 @@
       "teamRaisonDetre": "i forgor",
       "teamComment": "我也在改变啊😫谁不在改变啊😓改变就得应该😀就得改变😆而不是不改变😡♿♿♿♿♿♿♿",
       "teamRegistDate": "2024-07-07T00:18:45+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "41": {
       "teamId": 41,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460041_20240710114246.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460041_20240710114246.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460041_20240710120200.png",
       "teamName": "元気もりもりティーンズ",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -3109,22 +3336,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -3135,13 +3362,18 @@
       "teamRaisonDetre": "たくさん食べて元気もりもりになったので、結成しました。",
       "teamComment": "こんにちは、夏ですね！あっち～～～けど元気もりもりなので、大丈夫だと思います！よろしくお願いします！～元気もりもりティーンズとは～たくさん食べて元気もりもりな若人が結託して、ビジネスライクな関係を築き上げた自称音楽家集団です！！！※メンバーの大半は残念ながら20代です。予めご了承下さい。",
       "teamRegistDate": "2024-07-07T01:04:14+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "42": {
       "teamId": 42,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Hash Browns N Fries",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3186,13 +3418,18 @@
       "teamRaisonDetre": "Gathered to make BMS after a long time.",
       "teamComment": "Is it right to dip your fries in ketchup? Or should we just eat them?",
       "teamRegistDate": "2024-07-07T01:38:16+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "43": {
       "teamId": 43,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460043_20240708181123.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460043_20240708181123.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460043_20240708181123.jpg",
       "teamName": "FUN Fighter",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3229,22 +3466,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 18,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -3254,13 +3491,18 @@
       "teamRaisonDetre": "",
       "teamComment": "The end of one story may be the beginning of another.",
       "teamRegistDate": "2024-07-07T15:13:21+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "44": {
       "teamId": 44,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460044_20240720133821.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460044_20240720133821.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460044_20240720133821.jpg",
       "teamName": "Memories of Her...",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3294,22 +3536,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -3319,13 +3561,18 @@
       "teamRaisonDetre": "",
       "teamComment": "Is she still here? I don't remember her face anymore...",
       "teamRegistDate": "2024-07-07T15:13:46+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "45": {
       "teamId": 45,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Diversity.",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3389,22 +3636,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -3415,13 +3662,18 @@
       "teamRaisonDetre": "Lalot.が必死に寄せ集めた個性豊かなメンバーたち。",
       "teamComment": "Now is the time for \"Diversity\".Team Hashtag...#BOFTT_Diversity",
       "teamRegistDate": "2024-07-07T15:31:28+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "46": {
       "teamId": 46,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460046_20240803204050.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460046_20240803204050.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460046_20240710214141.png",
       "teamName": "EUROBEAT NIGHT! EUROBEAT FIRE!",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3460,13 +3712,18 @@
       "teamRaisonDetre": "",
       "teamComment": "2024年はユーロビートが来る！！！！思い思いのユーロビートで大会を盛り上げます！対戦よろしくお願いします！！",
       "teamRegistDate": "2024-07-07T16:51:02+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "47": {
       "teamId": 47,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460047_20240722203832.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460047_20240722203832.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460047_20240722203832.png",
       "teamName": "Fluffy Composers",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3506,13 +3763,18 @@
       "teamRaisonDetre": "",
       "teamComment": "メンバーは狐１匹ドラゴン２匹。各々の個性を発揮しBOF:TTをエンジョイします！！",
       "teamRegistDate": "2024-07-07T17:22:17+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "48": {
       "teamId": 48,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "デソレーション魔法学院",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -3567,22 +3829,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 18,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 13,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 13,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -3593,13 +3855,18 @@
       "teamRaisonDetre": "デソレーション",
       "teamComment": "fyder_anran：https://space.bilibili.com/1019459086/https://twitter.com/FAnran1190/Rei Kiyosi：https://space.bilibili.com/420394948/Adventurerbo：https://space.bilibili.com/1340823401/dodobird1：https://space.bilibili.com/333869643/Wazhantong：https://space.bilibili.com/348970788/Kista：https://space.bilibili.com/621003366/東北焼肉：https://space.bilibili.com/1390547829/https://twitter.com/Daybreakerrr_/Konsa_U：しばらくありません",
       "teamRegistDate": "2024-07-07T17:45:15+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "49": {
       "teamId": 49,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460049_20240709144031.jpeg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460049_20240709144031.jpeg",
+      "teamBanner": "",
       "teamName": "反芻ユータラス",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3633,13 +3900,18 @@
       "teamRaisonDetre": "",
       "teamComment": "よろしくお願いいたします",
       "teamRegistDate": "2024-07-07T19:28:42+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "5": {
       "teamId": 5,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460005_20240706115643.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460005_20240706115643.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460005_20240706115643.png",
       "teamName": "ルミナスラウンジ",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3674,13 +3946,18 @@
       "teamRaisonDetre": "",
       "teamComment": "また1人で3曲やりますVGMサウンドを、いつも以上にがんばりますので、よろしくおねがいします",
       "teamRegistDate": "2024-07-06T11:02:16+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "50": {
       "teamId": 50,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "ITJW2",
       "teamNameLabelRaw": [
         "チーム辞退"
@@ -3716,13 +3993,18 @@
       "teamRaisonDetre": "not have brain",
       "teamComment": "又是被dq的一届呢(",
       "teamRegistDate": "2024-07-07T21:31:48+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "51": {
       "teamId": 51,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460051_20240707213522.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460051_20240707213522.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460051_20240707213522.png",
       "teamName": "Silicon Poet",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3761,13 +4043,18 @@
       "teamRaisonDetre": "",
       "teamComment": "一群热爱Future Bounce的音乐制作人因为缘分组到了一起，抱着重在参与的心态参与了",
       "teamRegistDate": "2024-07-07T21:35:22+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "52": {
       "teamId": 52,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460052_20240707214855.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460052_20240707214855.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460052_20240707215141.png",
       "teamName": "SOUND GARAGE",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3820,13 +4107,18 @@
       "teamRaisonDetre": "やる気元気",
       "teamComment": "サウンドガレージ、今年も常に最大火力で頑張ります。自分やれます。やらせてください。",
       "teamRegistDate": "2024-07-07T21:48:55+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "53": {
       "teamId": 53,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460053_20240708005015.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460053_20240708005015.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460053_20240708005015.jpg",
       "teamName": "BlueManiacSailors",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -3881,13 +4173,18 @@
       "teamRaisonDetre": "そこにBOFがあったから",
       "teamComment": "学生によるBOFチーム。音ゲーは青春-。",
       "teamRegistDate": "2024-07-08T00:50:15+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "54": {
       "teamId": 54,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460054_20240708062914.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460054_20240708062914.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460054_20240708063503.gif",
       "teamName": "Recht Gesagt",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -3929,13 +4226,18 @@
       "teamRaisonDetre": "ḥammūd? ḥammūd",
       "teamComment": "(Recht Gesagt = 言う道理）If you are interested plz contact through the Twitter/X button above, thx!興味がある方はTwitter/Xでご連絡ください、よろしくお願いします！",
       "teamRegistDate": "2024-07-08T05:13:29+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "55": {
       "teamId": 55,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "ISOTOPIC STRANGE GIRL CLUB -音楽的同位体位相観測記録-",
       "teamNameLabelRaw": [
         "チームメンバー募集中！",
@@ -3975,13 +4277,18 @@
       "teamRaisonDetre": "裏命",
       "teamComment": "モチベが欲しかった…",
       "teamRegistDate": "2024-07-08T05:45:54+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "56": {
       "teamId": 56,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460056_20240708120312.jpeg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460056_20240708120312.jpeg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460056_20240708120312.jpeg",
       "teamName": "THE 3 REJOICERS",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4021,13 +4328,18 @@
       "teamRaisonDetre": "俺達はbeatmania IIDXの生誕25周年だけでなく、BMSのBOFシリーズにおける開催20周年を祝う為に結成しました。",
       "teamComment": "1999年にて現在のBMSにおける元ネタとも言える、KONAMIのbeatmania IIDXが誕生しました。2004年にて現在のBMSを支える、BMS OF FIGHTERSシリーズというBMSイベントが誕生しました。今年はそのbeatmania IIDXの25周年であり、かつBOFシリーズの20周年でもあります。なので俺ことDJ ANDREAはMister.HimiさんとYAN*TSさんと共に、上記のアニバーサリーを祝う「THE 3 REJOICERS」というBOFチームとして団結しました。よろしくお願いします！",
       "teamRegistDate": "2024-07-08T12:03:12+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "57": {
       "teamId": 57,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460057_20240708195646.png",
       "teamName": "骨伝導式Jアラート",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4076,22 +4388,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4102,13 +4414,18 @@
       "teamRaisonDetre": "突然外に駆け出したくなる衝動に駆られ、家を飛び出したら交差点で全員とばったり会った事から結成",
       "teamComment": "あの狂気のチーム「骨伝導式Jアラート」が大型新人を連れて帰ってきた！！！",
       "teamRegistDate": "2024-07-08T19:56:46+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "58": {
       "teamId": 58,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460058_20240708202522.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460058_20240708202522.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460058_20240708202522.jpg",
       "teamName": "鍵盤をシバいた猫",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4157,22 +4474,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 18,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 12,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4183,13 +4500,18 @@
       "teamRaisonDetre": "鍵盤シバく！",
       "teamComment": "全員違うジャンルの曲作る三者三様のチームです！3年目もよろしくお願いします！",
       "teamRegistDate": "2024-07-08T20:25:22+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "59": {
       "teamId": 59,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "チーム名思いつかないーズ2024",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4231,22 +4553,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4256,13 +4578,18 @@
       "teamRaisonDetre": "",
       "teamComment": "程よく全力で行きます！",
       "teamRegistDate": "2024-07-08T21:53:14+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "6": {
       "teamId": 6,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460006_20240706110601.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460006_20240706110601.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460006_20240706110601.jpg",
       "teamName": "逆いきいきすこやかクラブ",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4310,13 +4637,18 @@
       "teamRaisonDetre": "",
       "teamComment": "様々な疾患　BMSにするぜ裸一貫",
       "teamRegistDate": "2024-07-06T11:06:01+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "60": {
       "teamId": 60,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Gothic / Lolita",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4352,13 +4684,18 @@
       "teamRaisonDetre": "",
       "teamComment": "𝕲𝖔𝖙𝖍𝖎𝖈 𝕷𝖔𝖑𝖎𝖙𝖆",
       "teamRegistDate": "2024-07-08T22:40:56+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "61": {
       "teamId": 61,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460061_20240709001143.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460061_20240709001143.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460061_20240709001143.gif",
       "teamName": "T.A.R.O.T.",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4398,22 +4735,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 20,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 10,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4423,13 +4760,18 @@
       "teamRaisonDetre": "We yearn to share tales of the cosmos.",
       "teamComment": "我らは、星の海を横断して、新しい宇宙へ飛躍していく。その中に、もう一人の自分の姿を見つけられるんだろうか？聞け、宇宙の漣の音を！さて、波紋に潜んだ秘密を、一緒に解読しよう。We traversed the vast ocean of stars, leaping into a new universe.In this new realm, could we find traces of our other selves?Listen, that's the sound of the cosmic ripples!Together, let us decode the mysterious information wrapped in the vibrations.我们穿过浩瀚星海，跃迁到了新的宇宙。在那里，是否能觅得另一个自己的踪迹？听，那是宇宙涟漪的声音！让我们一同解码，波幅里蕴含的神秘信息。",
       "teamRegistDate": "2024-07-09T00:11:43+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "62": {
       "teamId": 62,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460062_20240709011138.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460062_20240709011138.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460062_20240709011138.png",
       "teamName": "おさかなりょーり！",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4477,22 +4819,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4503,13 +4845,18 @@
       "teamRaisonDetre": "ベヒゴン",
       "teamComment": "レオ・ウィザード",
       "teamRegistDate": "2024-07-09T01:11:38+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "63": {
       "teamId": 63,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460063_20240709123552.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460063_20240709123552.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460063_20240709123552.gif",
       "teamName": "わいだぼ★ちゃんねる",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4556,13 +4903,18 @@
       "teamRaisonDetre": "かわいいすきーズ",
       "teamComment": "よろしくお願いします！",
       "teamRegistDate": "2024-07-09T12:35:52+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "64": {
       "teamId": 64,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460064_20240709212505.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460064_20240709212505.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460064_20240709212505.jpg",
       "teamName": "Ford Forest Foreigner",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -4611,13 +4963,18 @@
       "teamRaisonDetre": "あさり親衛隊",
       "teamComment": "昨年の「Ford Forest Foreigner」がまたまた、またまたパワーアップしました。よろしくお願いします！",
       "teamRegistDate": "2024-07-09T21:25:05+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "65": {
       "teamId": 65,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460065_20240709223239.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460065_20240709223239.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460065_20240709223239.jpg",
       "teamName": "Team",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -4671,22 +5028,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4697,13 +5054,18 @@
       "teamRaisonDetre": "Team Team",
       "teamComment": "what can i say",
       "teamRegistDate": "2024-07-09T22:32:39+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "66": {
       "teamId": 66,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460066_20240710011914.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460066_20240710011914.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460066_20240710011914.jpg",
       "teamName": "PLANETARY ANNIHILATION",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -4756,22 +5118,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4781,13 +5143,18 @@
       "teamRaisonDetre": "",
       "teamComment": "This time I made a story about the team's work.You will see it after all work is released.",
       "teamRegistDate": "2024-07-10T01:19:14+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "67": {
       "teamId": 67,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "1",
       "teamNameLabelRaw": [
         "失格"
@@ -4821,13 +5188,18 @@
       "teamRaisonDetre": "",
       "teamComment": "1",
       "teamRegistDate": "2024-07-10T22:42:54+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "68": {
       "teamId": 68,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "飛行機雲と戦闘マシン Mk.II",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -4865,22 +5237,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 0,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -4890,13 +5262,18 @@
       "teamRaisonDetre": "",
       "teamComment": "メンバーも増えてパワーアップしました。",
       "teamRegistDate": "2024-07-10T23:13:21+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "69": {
       "teamId": 69,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460069_20240710234000.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460069_20240710234000.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460069_20240710234000.png",
       "teamName": "PHOTON STRiKE",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -4951,13 +5328,18 @@
       "teamRaisonDetre": "去年のPHOTON STRiKE活動よかったよな。…今年もやろうゼ！",
       "teamComment": "楽しく遊べるBMS作品を提供できるように、全力でぶつかります。#光撃  で色々情報発信していきます。うあぁあああああ光属性…!!　光属性ｨｨｨｯ…!!!. ﾊ,,ﾊ( ﾟωﾟ) |つ つ|  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  ||  |Ｕ”Ｕ",
       "teamRegistDate": "2024-07-10T23:40:00+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "7": {
       "teamId": 7,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460007_20240706111007.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460007_20240706111007.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460007_20240706113846.gif",
       "teamName": "Chaotic Dark Blue",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5008,22 +5390,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -5034,13 +5416,18 @@
       "teamRaisonDetre": "Team Lemonade's Return",
       "teamComment": "OfficialAz3: https://x.com/OfficialAz3_mLThirty6: https://x.com/LThirty6Altair: https://x.com/AltairLuminaDJ Adrichii: https://x.com/djadrichii05Rose Quartz: https://x.com/melatonin_01From Latitude of Darkness(2021) -> Hyperia(2022) -> Lemonade(2023)...LThirty6 and OfficialAz3 has returned for the 4th time to participate in BOF under-Chaotic Dark Blue!Last year, the name of our team referenced the team leader, hence Lemonade. But since the leadership has been transferred to OfficialAz3, we figured out to name ourselves after him instead!In addition, DJ Adrichii returns in our team!And, we have a new guest! Altair!We will provide works that can give unique experiences to the players. Considering our last works to be on 153rd and 155th last year, I'm sure we can provide very strong works!",
       "teamRegistDate": "2024-07-06T11:10:07+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "70": {
       "teamId": 70,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460070_20240711020540.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460070_20240711020540.png",
+      "teamBanner": "",
       "teamName": "LUMiNOZ",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5082,13 +5469,18 @@
       "teamRaisonDetre": "",
       "teamComment": "Brighter than the sky, yet darker than the abyss",
       "teamRegistDate": "2024-07-11T02:05:40+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "71": {
       "teamId": 71,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460071_20240713221936.JPG",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460071_20240713221936.JPG",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460071_20240713221936.JPG",
       "teamName": "家に帰りたい",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5139,22 +5531,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -5165,13 +5557,18 @@
       "teamRaisonDetre": "家に帰るため",
       "teamComment": "まだ家には帰れそうにない、道のりは長そうだ。(前々回まで代表を務めてくださった霜さんが都合によりリーダーとして活動できないため、私\"みをつくし\"が代理でリーダーをやらせていただきます。よろしくお願いします)",
       "teamRegistDate": "2024-07-11T22:21:26+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "72": {
       "teamId": 72,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "立志プロジェクトを許さない",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5207,13 +5604,18 @@
       "teamRaisonDetre": "",
       "teamComment": "大岡山から令和最新BMSをお届けします",
       "teamRegistDate": "2024-07-11T23:41:29+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "73": {
       "teamId": 73,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460073_20240712233412.jpeg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460073_20240712233412.jpeg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460073_20240712233412.jpeg",
       "teamName": "The DREAM OF HOPE",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5269,13 +5671,18 @@
       "teamRaisonDetre": "我们热爱音乐",
       "teamComment": "由热爱音乐的人组成",
       "teamRegistDate": "2024-07-12T23:34:12+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "74": {
       "teamId": 74,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460074_20240713165626.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460074_20240713165626.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460074_20240713165626.png",
       "teamName": "クレージー木曜日の最強爆発！",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5320,22 +5727,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -5345,13 +5752,18 @@
       "teamRaisonDetre": "吃K○C吃的",
       "teamComment": "每个星期四的到来，使各地炸鸡狂热爱好者狂欢，在这样的日子里，一群志（爱）同（吃）道（炸）合（鸡）的青年齐聚一堂，诉说着关于那个夏天、炸鸡与音乐的故事......-------在这个BOF的20周年里，我们诚挚的邀请你加入我们队伍，在一起同享这份炸鸡的快乐的同时，能一起互帮互助，开心的度过这次BOF！若你对我们的队伍感兴趣，欢迎通过X联系我，我们期待你的到来。目前正在招募：BGA动画师/BGI插画师。Ciallo～(∠・ω< )⌒☆",
       "teamRegistDate": "2024-07-13T16:23:51+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "75": {
       "teamId": 75,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460075_20240713235913.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460075_20240713235913.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460075_20240713235913.png",
       "teamName": "&雲の中のクジラが落ちる&",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5407,22 +5819,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 12,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 10,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -5433,13 +5845,18 @@
       "teamRaisonDetre": "想要好成绩！！！",
       "teamComment": "大家好呀，这里是 &雲の中のクジラが落ちる&团队，我身为队长是第一次参加Bof呢，希望大家多多关照，队伍有四首工作要做，还有一首合作曲呢，请大家敬请期待哦",
       "teamRegistDate": "2024-07-13T23:59:13+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "76": {
       "teamId": 76,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Plan B ~Bail If Necessary~",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5478,22 +5895,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 16,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -5503,13 +5920,18 @@
       "teamRaisonDetre": "",
       "teamComment": "やるぜ！！！",
       "teamRegistDate": "2024-07-14T01:04:24+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "77": {
       "teamId": 77,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460077_20240714190458.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460077_20240714190458.png",
+      "teamBanner": "",
       "teamName": "distorted emoji",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5563,13 +5985,18 @@
       "teamRaisonDetre": "",
       "teamComment": "`````````````````````````````````````````````````````````` `` `` ```````````` ``````` ``````````````````````` ```````````````````` ` ```` ` ` ` `````````````````` ```````    `    ```````````````` ` `````````````````` .-((+z+>++1z+---.`````` ``` ``` `````````````` .(++=z<<~____~<<11?+-- ``` ````````````````  `` -(zv<<<_..........._~<11<_ ````` `` ``````````` -(<<<~_................._<<+(-``` ```` `````````.(z<<(+z1+-__........__((++<_~1+- `````````````` _<<<__+1+-(:<<<_....._(<?<<<1<_~1z_`  `````````` .<<<~~(zwWMNHmAs<_..._+z&+JJ++<_~(1z_.```````````.(<<~~~~~<?OVWH90>...._+XHMMMBC<~~~_+z-``` ``````.+z<~~~..~~~~~~~~~.~~~~~~_~<<<<~~~~~~(1z_`` ````` (+<~~..~~~~~~~~~~.~~~.~.~~~~~~~~~~~~~~(?<_```` ` (?<~...~.~.~~~~~.~~~~~~~~~~~~~~~~~~~~~~_<<_.````_<<~.~...~~~~~~~~~.~~.~~~~~~~~~~~~~~~~~~~(+<_```` (<<......~~~~~~~~~~~_______~~~~~~.~~~~~~~~<?<-```.+<_.......~~~_((++zywwwwwwOz+(((___~~~~~~~_1z_`` (><.......~_(+uwu0VC<<<<<<<?1Owwwwz+_~~~~~~~+z_`` _;<......~(+wVCz<<~~~~~~~~~::<?zOUWkO<_~~~~~(?< ` _<<_....._<<<<_..~~~~~:~~~~~~~~::<?zO1<:~~~~_?<_`` _:<_.~.....~.~~~~~:::::~::~:::~~~~~~<<~~~~~(>< ``` _~~__________((+++11?1zzzzz+<_:~~:~~:~~~~_<<~`````` __<<<>>><<<<<<<~~____~~<??1z1++(_:::(_(+<~````````````    ``````````````` ``` _~<<<?1<<<<~` ` ``````````````````````````` ``````.```._....```````",
       "teamRegistDate": "2024-07-14T19:04:58+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "78": {
       "teamId": 78,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460078_20240714220050.png",
       "teamName": "反逆行為手当は廃止されました。",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5603,13 +6030,18 @@
       "teamRaisonDetre": "",
       "teamComment": "今日における様々な時勢の変化により、反逆行為手当は廃止されました。",
       "teamRegistDate": "2024-07-14T22:00:50+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "79": {
       "teamId": 79,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460079_20240715145642.png",
       "teamName": "Team T[J]mkn ~ the BAKaBaka Sonata of GodGold",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5647,13 +6079,18 @@
       "teamRaisonDetre": "Just have fun",
       "teamComment": "WE ARE GODG0LD",
       "teamRegistDate": "2024-07-15T14:33:58+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "8": {
       "teamId": 8,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460008_20240804004014.gif",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460008_20240804004014.gif",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460008_20240804012522.gif",
       "teamName": "Imperfect Blue",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5709,13 +6146,18 @@
       "teamRaisonDetre": "Fun",
       "teamComment": "Blue colors everywhere, and always with different meanings for each color tone. Are there any that are imperfect? We won't know until we hear it, because seeing it won't be enough.",
       "teamRegistDate": "2024-07-06T11:14:12+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "80": {
       "teamId": 80,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "the team of LTD",
       "teamNameLabelRaw": [
         "チーム辞退"
@@ -5751,13 +6193,18 @@
       "teamRaisonDetre": "因为热爱",
       "teamComment": "这是第一次我们参加这个比赛，所以我们可能会做的比较不好。",
       "teamRegistDate": "2024-07-15T17:08:18+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "81": {
       "teamId": 81,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460081_20240723181645.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460081_20240723181645.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460081_20240723181645.png",
       "teamName": "Speakerlism",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5804,13 +6251,18 @@
       "teamRaisonDetre": "我们喜欢BOF。",
       "teamComment": "因為熱愛，我們相聚在這裡，我們愛BOF。愛しているから、私たちはここに集まって、私たちはBOFを愛しています。사랑하기 때문에, 우리는 여기에 모였고, 우리는 BOF를 사랑했다.Because of our love, we gather here and we love BOF.Wegen unserer Liebe versammeln wir uns hier und lieben BOF.Потому что любовь, мы собрались здесь, мы любим БОФ.Por amor, nos reunimos aquí, amamos bof.Por causa do nosso amor, nós nos reunimos aqui e amamos BOF.Vì tình yêu, chúng ta gặp nhau ở đây, chúng ta yêu BOF.Karena cinta kita, kita berkumpul di sini dan kita mencintai BOF.Z powodu naszej miłości, zbieramy się tutaj i kochamy BOF.Pro nia amo ni kolektas ĉi tie kaj amas BOF.Par amour, nous nous réunissons ici et nous aimons bof.因为热爱，我们相聚在这里，我们爱BOF。",
       "teamRegistDate": "2024-07-16T17:42:19+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "82": {
       "teamId": 82,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "S1NAD95",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5846,13 +6298,18 @@
       "teamRaisonDetre": "",
       "teamComment": "last dance",
       "teamRegistDate": "2024-07-16T20:49:26+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "83": {
       "teamId": 83,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460083_20240717231837.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460083_20240717231837.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460083_20240717231837.png",
       "teamName": "Vector Tech",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -5901,13 +6358,18 @@
       "teamRaisonDetre": "彁",
       "teamComment": "冬は～！べくてく～！！",
       "teamRegistDate": "2024-07-16T21:48:04+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "84": {
       "teamId": 84,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460084_20240716221533.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460084_20240716221533.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460084_20240716221226.png",
       "teamName": "PanicSoundEmpire[GreatPSE]",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -5941,22 +6403,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 11,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 22,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -5967,13 +6429,18 @@
       "teamRaisonDetre": "0",
       "teamComment": "We are coming All PanicAndWe are WinterEmpire",
       "teamRegistDate": "2024-07-16T22:12:26+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "85": {
       "teamId": 85,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460085_20240716233415.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460085_20240716233415.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460085_20240716233415.png",
       "teamName": "bruh",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6009,13 +6476,18 @@
       "teamRaisonDetre": "bruh",
       "teamComment": "bruh and it's the サメ but there's three モレ songs ソ it's not",
       "teamRegistDate": "2024-07-16T23:34:15+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "86": {
       "teamId": 86,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460086_20240718043244.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460086_20240718043244.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460086_20240719004855.png",
       "teamName": "half Ronely",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6061,13 +6533,18 @@
       "teamRaisonDetre": "",
       "teamComment": "｢괴물 신인 등장｣",
       "teamRegistDate": "2024-07-18T04:32:44+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "87": {
       "teamId": 87,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "i dont have talent",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6104,13 +6581,18 @@
       "teamRaisonDetre": "",
       "teamComment": "TEAR:I hate the drums.Cxx:(tentative nothing)Taiowth:(tentative nothing)Moonryn:I hate mathwelcome bms or movie maker.address:2949584166@qq.com",
       "teamRegistDate": "2024-07-19T14:43:45+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "88": {
       "teamId": 88,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460088_20240720174904.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460088_20240720174904.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460088_20240720174904.png",
       "teamName": "Landscape",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6145,13 +6627,18 @@
       "teamRaisonDetre": "",
       "teamComment": "よろしくお願いします。",
       "teamRegistDate": "2024-07-20T17:49:04+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "89": {
       "teamId": 89,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460089_20240803105837.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460089_20240803105837.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460089_20240804082835.png",
       "teamName": "Pork Rib",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6192,13 +6679,18 @@
       "teamRaisonDetre": "For amazing fun times",
       "teamComment": "We are born of the pork, made men by the pork, undone by the pork; Fear the pork rib...The unifying power of the pork rib shall carry us to victory!",
       "teamRegistDate": "2024-07-22T18:19:16+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "9": {
       "teamId": 9,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460009_20240706113200.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460009_20240706113200.png",
+      "teamBanner": "",
       "teamName": "4 of a Kind",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6252,22 +6744,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -6277,13 +6769,18 @@
       "teamRaisonDetre": "",
       "teamComment": "(^w^)a.k.a. Team 助けて我入力法キラキラ退だ、、、(是不是触发了什么隐藏设定？）——————————————————We still need BGA and 14K/9K charters!If you are fond of us, contact me by twitter (if you are not Chinese) or the website (if you are Chinese)!",
       "teamRegistDate": "2024-07-06T11:24:44+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "90": {
       "teamId": 90,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460090_20240723125830.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460090_20240723125830.png",
+      "teamBanner": "",
       "teamName": "Cerebrum TEAM",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6317,13 +6814,18 @@
       "teamRaisonDetre": "",
       "teamComment": "We are a team to make your brain(?) to get sone new feeling.Our team will make some Artcore music or Drum and Bass.This will be our first competition希望我们的作品可以给大家带来好的印象",
       "teamRegistDate": "2024-07-23T12:25:49+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "91": {
       "teamId": 91,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "omgitsboftt",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6360,13 +6862,18 @@
       "teamRaisonDetre": "Fantasies always have a way of being told",
       "teamComment": "今年初めてBOFに参加した新人チームです素晴らしい夢をここで表現できればと思っていますよろしくお願いします",
       "teamRegistDate": "2024-07-24T00:26:34+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "92": {
       "teamId": 92,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460092_20240724143949.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460092_20240724143949.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460092_20240724143949.jpg",
       "teamName": "MUMEI Academy bms 研究会",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6414,22 +6921,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -6439,13 +6946,18 @@
       "teamRaisonDetre": "みんなぼっちだったから",
       "teamComment": "MA2023同期チーム今年もやります！よろしくお願いします！",
       "teamRegistDate": "2024-07-24T14:39:49+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "93": {
       "teamId": 93,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460093_20240724174730.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460093_20240724174730.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460093_20240724174730.png",
       "teamName": "再会/Saikai",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6510,13 +7022,18 @@
       "teamRaisonDetre": "",
       "teamComment": "注册队伍送星穹吗？",
       "teamRegistDate": "2024-07-24T17:47:30+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "94": {
       "teamId": 94,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460094_20240724181009.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460094_20240724181009.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460094_20240724181009.png",
       "teamName": "電脳遊戯団はるかぜ組",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6565,13 +7082,18 @@
       "teamRaisonDetre": "BOFのルールにも姫を助けようが世界を救おうが何してもいいって書いてたので",
       "teamComment": "ゲームは1日1F時間！",
       "teamRegistDate": "2024-07-24T18:10:09+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "95": {
       "teamId": 95,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460095_20240726181834.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460095_20240726181834.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460095_20240728014047.png",
       "teamName": "BMS制作RTA",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6615,13 +7137,18 @@
       "teamRaisonDetre": "楽しそうだったから",
       "teamComment": "BMS制作RTAをするチームです。",
       "teamRegistDate": "2024-07-24T23:20:25+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "96": {
       "teamId": 96,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460096_20240725102642.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460096_20240725102642.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460096_20240725102642.png",
       "teamName": "APOLLYON",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6669,13 +7196,18 @@
       "teamRaisonDetre": "We wanted to make bms",
       "teamComment": "We are people who came together to make bms under the name APOLLYON (definitely not SCP related) Team comments:エシャ - \"1x1 lego piece\"Warlock - \"私は和六です\"z u y a - \"life is a road that can life so live it like its ur life\"Diamo - \"I thought we were making a girls kissing bms team what happened to that\"dxsbond - \"しかのこのこのここしたんたん\"",
       "teamRegistDate": "2024-07-25T10:26:42+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "97": {
       "teamId": 97,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460097_20240731235002.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460097_20240731235002.png",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460097_20240731235002.png",
       "teamName": "FallacyEdgeRecords",
       "teamNameLabelRaw": [
         "チームメンバー募集中！"
@@ -6728,22 +7260,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -6753,13 +7285,18 @@
       "teamRaisonDetre": "We Are FallacyEdgeRecords",
       "teamComment": "我们是FallacyEdgeRecords，我们秉承着：Pursuit of individuality Adhere to self",
       "teamRegistDate": "2024-07-26T23:07:20+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "98": {
       "teamId": 98,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
       "teamName": "Funny Zone",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6807,22 +7344,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -6833,13 +7370,18 @@
       "teamRaisonDetre": "lol",
       "teamComment": "KINO ARBYS",
       "teamRegistDate": "2024-07-28T02:58:27+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}
     },
     "99": {
       "teamId": 99,
-      "teamEmblemSrc": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460099_20240728174137.jpg",
+      "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460099_20240728174137.jpg",
+      "teamBanner": "https://manbow.nothing.sh/event/images_boftt/upload/img_teambanner_1460099_20240728174137.jpg",
       "teamName": "同人同人、同じ人々 Powered by 本群",
       "teamNameLabelRaw": null,
       "teamIsRecruiting": false,
@@ -6875,22 +7417,22 @@
         {
           "Name": "Ratio Point 1",
           "Value": 14,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 2",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "Ratio Point 3",
           "Value": 15,
-          "Type": "value"
+          "Desc": "value"
         },
         {
           "Name": "FINAL STRIKER",
           "Value": 1.8,
-          "Type": "multiplier"
+          "Desc": "multiplier"
         }
       ],
       "teamGenres": [
@@ -6900,6 +7442,10 @@
       "teamRaisonDetre": "同じ人々",
       "teamComment": "同じ人たちじゃないか！！？？",
       "teamRegistDate": "2024-07-28T17:41:37+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
       "testString": "",
       "testStringArray": null,
       "songs": {}

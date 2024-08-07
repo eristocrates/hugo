@@ -63,7 +63,7 @@ func InitializeDEE2Collector() *colly.Collector {
 	dee2Collector.OnHTML(".col-8.carousel-stepstep", func(e *colly.HTMLElement) {
 		featureEvent := Event{}
 		idStr := e.ChildText("div.container-center > h2 > span.label-success")
-		featureEvent.EventId, _ = strconv.Atoi(idStr)
+		featureEvent.Id, _ = strconv.Atoi(idStr)
 		featureEvent.FullName = strings.TrimSpace(e.ChildText("div.container-center > h2"))[len(idStr):]
 		featureEvent.PeriodStart, featureEvent.PeriodEnd, err = SplitDateRange(e.ChildText("div.container-center > div.row > div:nth-of-type(4)"))
 		HugoDateHerrorCheck(err, featureEvent.FullName)
@@ -75,7 +75,8 @@ func InitializeDEE2Collector() *colly.Collector {
 		ConversionErrorCheck(err, featureEvent.FullName)
 		featureEvent.ImpressionCount, err = strconv.Atoi(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(8)"))
 		ConversionErrorCheck(err, featureEvent.FullName)
-
+		featureEvent.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006-01-02 15:04:05"))
+		HugoDateHerrorCheck(err, featureEvent.FullName)
 		AddEvent(&featureEvent)
 	})
 
@@ -83,7 +84,7 @@ func InitializeDEE2Collector() *colly.Collector {
 	dee2Collector.OnHTML("tr.event", func(e *colly.HTMLElement) {
 		listEvent := Event{}
 		listEvent.FullName = e.ChildText("td:nth-of-type(2) a")
-		listEvent.EventId, err = strconv.Atoi(e.ChildText("td:nth-of-type(1)"))
+		listEvent.Id, err = strconv.Atoi(e.ChildText("td:nth-of-type(1)"))
 		ConversionErrorCheck(err, listEvent.FullName)
 		listEvent.RegistrationStart, listEvent.RegistrationEnd, err = SplitDateRange(e.ChildText("td:nth-of-type(3)"))
 		HugoDateHerrorCheck(err, listEvent.FullName)
@@ -98,43 +99,15 @@ func InitializeDEE2Collector() *colly.Collector {
 		listEvent.InfoLink = html.UnescapeString(e.ChildAttr("td:nth-of-type(7) a", "href"))
 		listEvent.DetailLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("td:nth-of-type(7) a:nth-of-type(2)", "href"))
 		listEvent.ListLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("td:nth-of-type(7) a:nth-of-type(3)", "href"))
+		listEvent.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006-01-02 15:04:05"))
+		HugoDateHerrorCheck(err, listEvent.FullName)
 		AddEvent(&listEvent)
-		/*
-			if listEvent.IsBof {
-				dee2Ctx := colly.NewContext()
-				dee2Ctx.Put("listEvent", &listEvent)
-
-				ilCollector.Request("GET", listEvent.InfoLink, nil, dee2Ctx, nil)
-				ilCollector.Visit(listEvent.InfoLink)
-
-				llCollector.Request("GET", listEvent.ListLink, nil, dee2Ctx, nil)
-				llCollector.Visit(listEvent.ListLink)
-
-			}
-		*/
-		// TODO Go to detailLink
-		// TODO come up with some form of categorization for ListLink, and make a distinct collector for each type
-		// TODO make functions for performaing specific tasks
-		// TODO have each collector pass their category to the function as a branching flag for which elements to target
-		// TODO selectorSet variables based on category flag
 	})
 	/*
 		digitalEmergencyExitCollector.OnXML("", func(e *colly.XMLElement) {
 		})
 	*/
 	dee2Collector.OnScraped(func(r *colly.Response) {
-		/*
-			if boftt.IsBof {
-				dee2Ctx := colly.NewContext()
-				dee2Ctx.Put("listEvent", &boftt)
-
-				ilCollector.Request("GET", boftt.InfoLink, nil, dee2Ctx, nil)
-				ilCollector.Visit(boftt.ListLink)
-
-				llCollector.Request("GET", boftt.ListLink, nil, dee2Ctx, nil)
-				llCollector.Visit(boftt.ListLink)
-			}
-		*/
 		/*
 			fmt.Println("digitalEmergenceExitCollector Scraped", r.Request.URL)
 			logger.Info().Msgf("digitalEmergenceExitCollector Scraped %s", r.Request.URL)

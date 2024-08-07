@@ -28,14 +28,14 @@ func SaveEventsToFile(events map[int]*Event) {
 	for _, event := range events {
 		var filePath string
 		if event.IsBof {
-			filePath = fmt.Sprintf("../logs/bof/event%d.json", event.EventId)
+			filePath = fmt.Sprintf("../logs/bof/event%d.json", event.Id)
 		} else {
-			filePath = fmt.Sprintf("../logs/other/event%d.json", event.EventId)
+			filePath = fmt.Sprintf("../logs/other/event%d.json", event.Id)
 		}
 
 		file, err := os.Create(filePath)
 		if err != nil {
-			log.Fatal(err, fmt.Sprintf("Could not create file for event %d", event.EventId))
+			log.Fatal(err, fmt.Sprintf("Could not create file for event %d", event.Id))
 		}
 		defer file.Close()
 
@@ -44,7 +44,7 @@ func SaveEventsToFile(events map[int]*Event) {
 		encoder.SetIndent("", "  ")
 		err = encoder.Encode(event)
 		if err != nil {
-			log.Fatal(err, fmt.Sprintf("Could not encode event%d to JSON", event.EventId))
+			log.Fatal(err, fmt.Sprintf("Could not encode event%d to JSON", event.Id))
 		}
 	}
 }
@@ -114,16 +114,16 @@ func BofCheck(event *Event) bool {
 
 		// handle special cases not worth the effort of regexing
 		// TODO evaluade if these are maybe worth the effort
-		if event.EventId == 88 {
+		if event.Id == 88 {
 			event.Description = "konzertsaal"
 		}
-		if event.EventId == 66 {
+		if event.Id == 66 {
 			event.Title = "THE BMS OF FIGHTERS 2010"
 		}
 
 		event.ShortName = strings.ToLower(strings.ReplaceAll(strings.ReplaceAll(event.AbbrevName, ":", ""), " ", ""))
 
-		if event.EventId == 104 {
+		if event.Id == 104 {
 			event.FullName = "大血戦 -THE BMS OF FIGHTERS ULTIMATE-"
 			event.Title = "大血戦"
 			event.Description = "-THE BMS OF FIGHTERS ULTIMATE-"
@@ -167,13 +167,13 @@ func BofCheck(event *Event) bool {
 
 func AddEvent(event *Event) {
 
-	event.BannerType1 = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.EventId)
+	event.BannerType1 = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.Id)
 	if BofCheck(event) {
-		bofEvents[event.EventId] = event
-		logger.Info().Msgf("Added BOF event: %s (ID: %d)", event.FullName, event.EventId)
+		bofEvents[event.Id] = event
+		logger.Info().Msgf("Added BOF event: %s (ID: %d)", event.FullName, event.Id)
 	} else {
-		otherEvents[event.EventId] = event
-		logger.Info().Msgf("Added other event: %s (ID: %d)", event.FullName, event.EventId)
+		otherEvents[event.Id] = event
+		logger.Info().Msgf("Added other event: %s (ID: %d)", event.FullName, event.Id)
 	}
 }
 func ConversionErrorCheck(err error, eventName string) {
@@ -414,26 +414,26 @@ func cleanPrefix(r rune) bool {
 }
 
 func ProcessTeamNameLabel(team *Team) {
-	team.TeamIsRecruiting = false
-	team.TeamIsWithdrawn = false
-	team.TeamIsDisqualified = false
-	team.TeamIsWarned = false
-	for _, label := range team.TeamNameLabelRaw {
+	team.IsRecruiting = false
+	team.IsWithdrawn = false
+	team.IsDisqualified = false
+	team.IsWarned = false
+	for _, label := range team.NameLabelRaw {
 		recruiting := "チームメンバー募集中！"
 		withdrawn := "チーム辞退"
 		disqualified := "失格"
 		warned := "チーム規定違反警告"
 		if label == recruiting {
-			team.TeamIsRecruiting = true
+			team.IsRecruiting = true
 		}
 		if label == withdrawn {
-			team.TeamIsWithdrawn = true
+			team.IsWithdrawn = true
 		}
 		if label == disqualified {
-			team.TeamIsDisqualified = true
+			team.IsDisqualified = true
 		}
 		if label == warned {
-			team.TeamIsWarned = true
+			team.IsWarned = true
 		}
 	}
 
@@ -463,4 +463,12 @@ func GetIdFromURL(urlStr string, param string) (int, error) {
 		idString = parsedURL.Query().Get("num")
 	}
 	return strconv.Atoi(idString)
+}
+func GetUploadPath(input string) (string, error) {
+	match := uploadUrlRegex.FindString(input)
+	if match == "" {
+		return "", fmt.Errorf("no match found")
+	}
+
+	return match, nil
 }

@@ -37,7 +37,7 @@ func main() {
 
 	// TODO remove this once boftt is added to main event page
 	boftt := Event{
-		EventId:       146,
+		Id:            146,
 		FullName:      "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
 		HasModernList: true,
 		InfoLink:      "https://www.bmsoffighters.net/boftt/index.html",
@@ -69,7 +69,7 @@ func main() {
 				TeamId:  teamId,
 			}
 			ctx.Put("eventTeamIds", ids)
-			teamProfileCollector.Request("GET", team.TeamProfileLink, nil, ctx, nil)
+			teamProfileCollector.Request("GET", team.ProfileLink, nil, ctx, nil)
 		}
 	}
 	teamProfileCollector.Wait()
@@ -85,8 +85,8 @@ func main() {
 					SongId:  songId,
 				}
 
-				ctx.Put("eventTeamIds", ids)
-				teamProfileCollector.Request("GET", song.SongPageLink, nil, ctx, nil)
+				ctx.Put("eventTeamSongIds", ids)
+				songPageCollector.Request("GET", song.PageLink, nil, ctx, nil)
 			}
 		}
 	}

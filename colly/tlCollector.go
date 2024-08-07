@@ -70,31 +70,31 @@ func InitializeTLCollector() *colly.Collector {
 			e.ForEach(selectors.TeamRow, func(i int, s *colly.HTMLElement) {
 				team := Team{}
 
-				team.TeamId, err = strconv.Atoi(s.ChildText(selectors.TeamId))
+				team.Id, err = strconv.Atoi(s.ChildText(selectors.TeamId))
 				ConversionErrorCheck(err, event.ShortName)
-				team.TeamEmblemSrc = GetPrefixUrl(s.ChildAttr(selectors.TeamEmblemSrc, "src"))
-				team.TeamName = s.ChildText(selectors.TeamListName)
-				team.TeamProfileLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, s.ChildAttr(selectors.TeamListProfileLink, "href"))
-				team.TeamLeaderName = s.ChildText(selectors.TeamListLeaderName)
+				team.Emblem = GetPrefixUrl(s.ChildAttr(selectors.TeamEmblemSrc, "src"))
+				team.Name = s.ChildText(selectors.TeamListName)
+				team.ProfileLink = fmt.Sprintf("%s%s", manbowEventUrlPrefix, s.ChildAttr(selectors.TeamListProfileLink, "href"))
+				team.LeaderName = s.ChildText(selectors.TeamListLeaderName)
 
-				team.TeamNameLabelRaw = s.ChildTexts(selectors.TeamListNameLabel)
+				team.NameLabelRaw = s.ChildTexts(selectors.TeamListNameLabel)
 				ProcessTeamNameLabel(&team)
 
-				team.TeamLeaderCountryCode = s.ChildAttr(selectors.TeamListLeaderCountry, "title")
-				team.TeamLeaderCountryFlag = GetPrefixUrl(s.ChildAttr(selectors.TeamListLeaderCountry, "src"))
-				team.TeamMemberCount, err = strconv.Atoi(strings.TrimRight(s.ChildText(selectors.TeamListMemberCount), "人"))
+				team.LeaderCountryCode = s.ChildAttr(selectors.TeamListLeaderCountry, "title")
+				team.LeaderCountryFlag = GetPrefixUrl(s.ChildAttr(selectors.TeamListLeaderCountry, "src"))
+				team.MemberCount, err = strconv.Atoi(strings.TrimRight(s.ChildText(selectors.TeamListMemberCount), "人"))
 				ConversionErrorCheck(err, event.ShortName)
 				worksString := s.ChildText(selectors.TeamListWorks)
 				parts := strings.Split(worksString, " / ")
 				// TODO handle team pages that do not have the works string format "x / y作品"
 				if len(parts) == 2 {
-					team.TeamReleasedWorksCount, err = strconv.Atoi(parts[0])
+					team.ReleasedWorksCount, err = strconv.Atoi(parts[0])
 					ConversionErrorCheck(err, event.ShortName)
-					team.TeamDeclaredWorksCount, err = strconv.Atoi(strings.Replace(parts[1], "作品", "", 1))
+					team.DeclaredWorksCount, err = strconv.Atoi(strings.Replace(parts[1], "作品", "", 1))
 					ConversionErrorCheck(err, event.ShortName)
 				}
 
-				team.TeamMemberListRaw = s.ChildText(selectors.TeamListMembers)
+				team.MemberListRaw = s.ChildText(selectors.TeamListMembers)
 				/*
 					// TODO check these cases manually & regularly to see if they've properly updated their team
 					if team.TeamName == "Green Team" {
@@ -112,14 +112,14 @@ func InitializeTLCollector() *colly.Collector {
 				*/
 
 				// TODO worry about proper member splitting later
-				team.TeamMemberListProcessed, team.TeamMemberListIsCorrect = splitMembers(team.TeamMemberListRaw, team.TeamMemberCount)
+				team.MemberListProcessed, team.MemberListIsCorrect = splitMembers(team.MemberListRaw, team.MemberCount)
 
-				team.TeamLastUpdate, err = GetHugoDateTime(s.ChildText(selectors.TeamListUpdate))
+				team.LastUpdate, err = GetHugoDateTime(s.ChildText(selectors.TeamListUpdate))
 				if err != nil {
 					HugoDateHerrorCheck(err, event.ShortName)
 				}
 
-				event.Teams[team.TeamId] = &team
+				event.Teams[team.Id] = &team
 			})
 
 		}

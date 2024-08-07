@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/gocolly/colly/v2"
@@ -53,10 +54,22 @@ func InitializeSPCollector() *colly.Collector {
 		*/
 	})
 
-	spCollector.OnHTML("", func(e *colly.HTMLElement) {
-		ids, ok := e.Request.Ctx.GetAny("eventTeamIds").(CtxIds)
+	spCollector.OnHTML(teamProfileSelectors.SectionContent, func(e *colly.HTMLElement) {
+		ids, ok := e.Request.Ctx.GetAny("eventTeamSongIds").(CtxIds)
 		if ok {
 			song := bofEvents[ids.EventId].Teams[ids.TeamId].Songs[ids.SongId]
+			uploadUrl, err := GetUploadPath(e.ChildAttr("div.section", "style"))
+			if err == nil {
+				song.Header = GetPrefixUrl(uploadUrl)
+			}
+			song.Jacket = GetPrefixUrl(e.ChildAttr(".moreinfo-header > img:nth-child(1)", "src"))
+			bmsInfos := e.ChildTexts(".bmsinfo")
+			if len(bmsInfos) > 0 {
+				song.Keys = strings.Split(bmsInfos[0], " ")
+			}
+
+			song.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006-01-02 15:04:05"))
+			HugoDateHerrorCheck(err, song.Title)
 		}
 	})
 
