@@ -137,7 +137,7 @@ func BofCheck(event *Event) bool {
 			event.IsBof = true
 		}
 
-		// TODO consider replacing this blind logic ilCollector
+		// TODO consider replacing this blind grab with logic in ilCollector
 		event.LogoType1 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.png", event.ShortName, event.ShortName)
 		event.LogoType2 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/logo.png", event.ShortName)
 		event.LogoType3 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s_logo.png", event.ShortName, event.ShortName)

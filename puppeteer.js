@@ -10,16 +10,6 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// TODO rehaul program for main event list entry point, and scraping of all data for each event
-// TODO seperate scraping strategies by various types of pages associated with an event, including larger event vs smaller event page types
-// TODO rehaul progress bar to track every await, loop, and assignment
-// TODO establish variable assignment convention to happen as late as possible and grouped together
-// TODO revamp try-catches for error handling that will assist me in make the scraper event agnostic
-// TODO xpath rewrite?
-// TODO use logging module to log errors to a file
-// TODO scrape in parallel for better performance
-// TODO collect regex matches for reusability
-// TODO properly use StringJpDate on other arrays
 
 // Determine if we are in test mode
 const isTest = process.env.MODE === 'test';
@@ -287,7 +277,6 @@ async function saveData() {
     teamsObject[key] = teamDetailsObject;
   });
   const latestEventObject = {
-    // TODO add logo and video
     [config.latestEvent.eventKey]: {
       fullName: config.latestEvent.fullName,
       shortName: config.latestEvent.shortName,
@@ -317,7 +306,6 @@ async function saveData() {
 (async () => {
   console.time('programExecution');
 
-  // TODO toggle in config
   // Create a new progress bar instance and use shades_classic theme
   const multibar = new cliProgress.MultiBar({
     clearOnComplete: false,
@@ -337,7 +325,6 @@ async function saveData() {
 
   page.setDefaultTimeout(config.navigationTimeout);
 
-  // TODO scrape media from event information page
   await page.goto(`https://manbow.nothing.sh/event/event.cgi?action=List_def&event=${config.latestEvent.eventKey}`);
 
 
@@ -537,7 +524,6 @@ async function saveData() {
     teamPageBar.update({ filename: `Teams: ${teamInfo.teamName}` });
     teamPageBar.increment();
 
-    // TODO redo this with the ability to select section by name
     const sectionElements = await page.$$('div.col_full.center.bottommargin-lg, div.col_half.center, div.col_half.col_last.center, div.col_full.center.bottommargin-lg, div.col_full.center.bottommargin-lg, div.col_half.center.nobottommargin, div.col_half.col_last.center.nobottommargin, div.post-grid.grid-container.post-masonry.clearfix, div.col_full.center.bottommargin-lg, div.col_one_third.bottommargin-lg.center, div.col_one_third.col_last.bottommargin-lg.center, div.col_full.bottommargin-lg, div.col_full.bottommargin-lg, div.col_half.bottommargin-lg, div.col_half.col_last.bottommargin-lg');
     teamPageBar.increment();
 

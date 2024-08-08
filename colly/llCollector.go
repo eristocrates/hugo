@@ -79,7 +79,6 @@ func InitializeLLCollector() *colly.Collector {
 			// TODO Further disambiguate between events with team_information and events without (modern vs premodern?)
 			/*
 				selectors = modernEventSelectors
-				// TODO move to helperFunctions
 				str := e.ChildText(selectors.FancyTitle)
 				// Define a function to use as a delimiter
 				isDelimiter := func(c rune) bool {

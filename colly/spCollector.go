@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 	"time"
 
@@ -67,8 +68,67 @@ func InitializeSPCollector() *colly.Collector {
 			if len(bmsInfos) > 0 {
 				song.Keys = strings.Split(bmsInfos[0], " ")
 			}
+			bpmString := e.ChildText(".table > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(4)")
+			if strings.Contains(bpmString, "～") {
+				song.BpmLower, err = strconv.Atoi(strings.Split(bpmString, "～")[0])
+				ConversionErrorCheck(err, song.Title)
+				song.BpmUpper, err = strconv.Atoi(strings.Split(bpmString, "～")[1])
+				ConversionErrorCheck(err, song.Title)
+				song.BpmAverage = (song.BpmLower + song.BpmUpper) / 2
+			} else {
+				song.Bpm, err = strconv.Atoi(bpmString)
+				ConversionErrorCheck(err, song.Title)
+			}
+			levelString := e.ChildText(".table > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(2)")
+			if strings.Contains(levelString, "～") {
+				song.LevelLower, err = strconv.Atoi(strings.TrimLeft(strings.Split(levelString, "～")[0], "★x"))
+				ConversionErrorCheck(err, song.Title)
+				song.LevelUpper, err = strconv.Atoi(strings.TrimLeft(strings.Split(levelString, "～")[1], "★x"))
+				ConversionErrorCheck(err, song.Title)
+			}
 
-			song.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006-01-02 15:04:05"))
+			song.BgaStatus = strings.Split(e.ChildText(".table > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(4)"), "・")
+			song.Youtube = e.ChildAttr("div.col_one_third > iframe", "src")
+			downloadHtml, err := e.DOM.Find("blockquote").Html()
+			if err == nil {
+				lines := newlineTabsRegex.Split(downloadHtml, -1)
+				for _, line := range lines {
+					if len(line) > 0 {
+						song.DownloadRaw = append(song.DownloadRaw, line)
+					}
+				}
+			}
+
+			tags := e.ChildTexts("div.col_full div.bmsinfo2")
+			if len(tags) > 0 {
+				tagsRaw := strings.Replace(tags[0], "TAG : ", "", 1)
+				song.TagsRaw = strings.Split(tagsRaw, " ")
+				for _, tag := range song.TagsRaw {
+					var processedTag = Tag{}
+					if strings.Contains(tag, "-") {
+						splitTag := strings.Split(tag, "-")
+						processedTag.Category = splitTag[0]
+						processedTag.Name = splitTag[1]
+					}
+					song.TagsProcessed = append(song.TagsProcessed, processedTag)
+				}
+			}
+
+			song.Soundcloud = e.ChildText("div.m_audition")
+			song.Bemuse = e.ChildAttr("div.bmson-iframe-content > iframe", "src")
+			// TODO get comment
+			// TODO get size
+			// TODO get composition
+			// TODO get prodEnv
+			// TODO get long impression button
+			// TODO get short impression button
+			// TODO get points
+			// TODO get vote
+			// TODO get short impressions
+			// TODO get long impressions
+
+			// TODO process download links
+			song.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006/01/02 15:04:05"))
 			HugoDateHerrorCheck(err, song.Title)
 		}
 	})

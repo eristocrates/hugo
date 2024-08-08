@@ -13,6 +13,7 @@ var titleType2Regex = regexp.MustCompile(`(BOF[^-]+)`)
 var titleType3Regex = regexp.MustCompile(`(BMS OF FIGHTERS[^-]+)`)
 var languageRegex = regexp.MustCompile(`Language\s*:\s*([^)]*)`)
 var uploadUrlRegex = regexp.MustCompile(`\./upload/[^']*`)
+var newlineTabsRegex = regexp.MustCompile(`\n\t*|<br/>`)
 
 var manbowEventUrlPrefix = "https://manbow.nothing.sh/event/"
 

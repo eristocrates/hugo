@@ -2,8 +2,6 @@ package main
 
 import "os"
 
-// TODO add scraped time to event, team and song
-
 type Event struct {
 	Id                int           `json:"eventId"`
 	FullName          string        `json:"eventFullName"`
@@ -88,44 +86,47 @@ type Team struct {
 }
 
 type Song struct {
-	Id                int            `json:"songId"`
-	PageLink          string         `json:"songPageLink"`
-	IsSpecial         bool           `json:"songIsSpecial"`
-	SpecialTitle      string         `json:"songSpecialTitle"`
-	Jacket            string         `json:"songJacket"`
-	Header            string         `json:"songHeader"`
-	Genre             string         `json:"songGenre"`
-	Title             string         `json:"songTitle"`
-	Artist            string         `json:"songArtist"`
-	RegistDate        string         `json:"songRegistDate"`
-	LastUpdate        string         `json:"songLastUpdate"`
-	Keys              []string       `json:"songKeys"`
-	CommentCount      int            `json:"songCommentCount"`
-	Total             int            `json:"songTotal"`
-	Median            int            `json:"songMedian"`
-	Composition       string         `json:"songComposition"`
-	LastScrapeTime    string         `json:"songLastScrapeTime"`
-	Bpm               int            `json:"songBpm"`
-	BpmLower          int            `json:"songBpmLower"`
-	BpmUpper          int            `json:"songBpmUpper"`
-	BpmAverage        int            `json:"songBpmAverage"`
-	LevelLower        int            `json:"songLevelLower"`
-	LevelUpper        int            `json:"songLevelUpper"`
-	BgaStatus         string         `json:"songBgaStatus"`
-	Youtube           string         `json:"songYoutube"`
-	Size              int            `json:"songSize"`
-	DownloadRaw       string         `json:"songDownloadRaw"`
-	DownloadProcessed []downloadLink `json:"songDownloadProcessed"`
-	TagsRaw           []string       `json:"songTagsRaw"`
-	TagsProcessed     []tag          `json:"songTagsProcessed"`
-	Soundcloud        string         `json:"songSoundcloud"`
-	Bemuse            string         `json:"songBemuse"`
-	Comment           string         `json:"songComment"`
-	Points            []pointValue   `json:"songPoints"`
-	Votes             []pointValue   `json:"songVotes"`
-	LastVoteTime      string         `json:"songLastVoteTime"`
-	TestString        string         `json:"songTestString"`
-	TestStringArray   []string       `json:"songTestStringArray"`
+	Id                    int            `json:"songId"`
+	PageLink              string         `json:"songPageLink"`
+	IsSpecial             bool           `json:"songIsSpecial"`
+	SpecialTitle          string         `json:"songSpecialTitle"`
+	Jacket                string         `json:"songJacket"`
+	Header                string         `json:"songHeader"`
+	Genre                 string         `json:"songGenre"`
+	Title                 string         `json:"songTitle"`
+	Artist                string         `json:"songArtist"`
+	RegistDate            string         `json:"songRegistDate"`
+	LastUpdate            string         `json:"songLastUpdate"`
+	Keys                  []string       `json:"songKeys"`
+	CommentCount          int            `json:"songCommentCount"`
+	Total                 int            `json:"songTotal"`
+	Median                int            `json:"songMedian"`
+	Composition           string         `json:"songComposition"`
+	LastScrapeTime        string         `json:"songLastScrapeTime"`
+	Bpm                   int            `json:"songBpm"`
+	BpmLower              int            `json:"songBpmLower"`
+	BpmUpper              int            `json:"songBpmUpper"`
+	BpmAverage            int            `json:"songBpmAverage"`
+	LevelLower            int            `json:"songLevelLower"`
+	LevelUpper            int            `json:"songLevelUpper"`
+	BgaStatus             []string       `json:"songBgaStatus"`
+	Youtube               string         `json:"songYoutube"`
+	Size                  int            `json:"songSize"`
+	DownloadRaw           []string       `json:"songDownloadRaw"`
+	DownloadProcessed     []downloadLink `json:"songDownloadProcessed"`
+	TagsRaw               []string       `json:"songTagsRaw"`
+	TagsProcessed         []Tag          `json:"songTagsProcessed"`
+	Soundcloud            string         `json:"songSoundcloud"`
+	Bemuse                string         `json:"songBemuse"`
+	Comment               string         `json:"songComment"`
+	Points                []pointValue   `json:"songPoints"`
+	Votes                 []pointValue   `json:"songVotes"`
+	LastVoteTime          string         `json:"songLastVoteTime"`
+	ProdEnv               string         `json:"songProdEnv"`
+	ShortImpressionButton string         `json:"songShortImpressionButton"`
+	LongImpressionButton  string         `json:"songLongImpressionButton"`
+	TestString            string         `json:"songTestString"`
+	TestStringArray       []string       `json:"songTestStringArray"`
 }
 
 type Concept struct {
@@ -198,10 +199,9 @@ type downloadLink struct {
 	Desc string
 }
 
-type tag struct {
-	Name        string
-	Translation string
-	Category    string
+type Tag struct {
+	Name     string
+	Category string
 }
 
 type shortImpression struct {

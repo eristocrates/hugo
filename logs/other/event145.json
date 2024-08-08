@@ -13,7 +13,7 @@
   "eventPeriodStart": "2024-07-06T00:00:00+09:00",
   "eventPeriodEnd": "2024-08-11T00:00:00+09:00",
   "eventEntryCount": 57,
-  "eventImpressionCount": 654,
+  "eventImpressionCount": 684,
   "eventInfoLink": "",
   "eventDetailLink": "",
   "eventListLink": "",
@@ -35,7 +35,7 @@
   "eventIsPreModern": false,
   "eventHasModernList": false,
   "eventHasModernTeamList": false,
-  "eventLastScrapeTime": "",
+  "eventLastScrapeTime": "2024-08-08T02:18:35+09:00",
   "eventTestString": "",
   "eventTestStringArray": null,
   "teams": null

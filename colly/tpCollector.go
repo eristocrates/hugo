@@ -186,7 +186,7 @@ func InitializeTPCollector() *colly.Collector {
 				ConversionErrorCheck(err, song.Title)
 
 				team.Songs[song.Id] = &song
-				team.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006-01-02 15:04:05"))
+				team.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006/01/02 15:04:05"))
 				HugoDateHerrorCheck(err, song.Title)
 			})
 

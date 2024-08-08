@@ -12,6 +12,8 @@ import (
 	// "github.com/vbauerster/mpb/v8/decor"
 )
 
+// TODO reorder type properties to match the order seen on the website, and reorder the functions in the collectors in the same order
+
 var logger zerolog.Logger
 var bofEvents map[int]*Event
 var otherEvents map[int]*Event
@@ -100,6 +102,13 @@ func main() {
 		}
 		listLinkCollector.Wait()
 	*/
+	// TODO download files
+	// TODO automate extraction per every download link type (i assume classic player pack (LR2, ruv-it) vs modern player pack (Beatoraja, qwilight))
+	// TODO parse bms files for difficulty levels, average bpm, bpm per song type, maybe notes per second?
+	// TODO automate repackaging into a single zip file for classic and modern
+	// TODO automate upload to mega/google drive/pixeldrain/etc
+	// TODO feature that link prominently to hugo event page
+	// TODO run mock test on bofnt based on song RegistDates
 
 	logFile.Write([]byte("\n]"))     // Close the JSON array
 	jsonLogFile.Write([]byte("\n]")) // Close the JSON array

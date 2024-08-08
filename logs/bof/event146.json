@@ -937,6 +937,53 @@
       "testStringArray": null,
       "songs": {}
     },
+    "110": {
+      "teamId": 110,
+      "teamEmblem": "https://manbow.nothing.sh/event/images/emblem_noimage.png",
+      "teamBanner": "",
+      "teamName": "doll4",
+      "teamNameLabelRaw": [
+        "チームメンバー募集中！"
+      ],
+      "teamIsRecruiting": true,
+      "teamIsWithdrawn": false,
+      "teamIsDisqualified": false,
+      "teamIsWarned": false,
+      "teamProfileLink": "https://manbow.nothing.sh/event/event_teamprofile.cgi?event=146&team=110",
+      "teamLeaderName": "Corlirile",
+      "teamLeaderCountryCode": "CN",
+      "teamLeaderCountryFlag": "https://manbow.nothing.sh/event/images/flags/CN.png",
+      "teamLeaderLanguage": "簡体字中国語",
+      "teamMemberCount": 3,
+      "teamReleasedWorksCount": 0,
+      "teamDeclaredWorksCount": 3,
+      "teamMemberListRaw": "Corlirile(Music/BGA)  Soseiseki (Music/BMS/譜面)  Satoru Asaba(BGA)",
+      "teamMemberListProcessed": [
+        "Corlirile(Music/BGA)",
+        "Soseiseki (Music/BMS/譜面)",
+        "Satoru Asaba(BGA)"
+      ],
+      "teamMemberListIsCorrect": true,
+      "teamLastUpdate": "2024-08-08T12:25:02+09:00",
+      "teamTwitter": "https://x.com/Corlirile",
+      "teamWebsite": "",
+      "teamConcepts": null,
+      "ratioPoints": null,
+      "teamGenres": [
+        "オリジナル"
+      ],
+      "teamCommonality": "",
+      "teamRaisonDetre": "",
+      "teamComment": "一切的开始，但不会就此结束",
+      "teamRegistDate": "2024-08-08T12:25:02+09:00",
+      "teamImpression": 0,
+      "teamTotal": 0,
+      "teamMedian": 0,
+      "teamLastScrapeTime": "",
+      "testString": "",
+      "testStringArray": null,
+      "songs": {}
+    },
     "12": {
       "teamId": 12,
       "teamEmblem": "https://manbow.nothing.sh/event/images_boftt/upload/img_emblem_1460012_20240707225057.jpg",
@@ -3441,10 +3488,10 @@
       "teamLeaderCountryCode": "CN",
       "teamLeaderCountryFlag": "https://manbow.nothing.sh/event/images/flags/CN.png",
       "teamLeaderLanguage": "簡体字中国語",
-      "teamMemberCount": 10,
+      "teamMemberCount": 12,
       "teamReleasedWorksCount": 0,
       "teamDeclaredWorksCount": 4,
-      "teamMemberListRaw": "Funchen(Leader/Music/Movie?)   彼方蘭(Music)   ShooTinGStaR(Music/Movie)   AASwordmans(Music)   NonNam(Music)   果丸(Vocal)   Constellation(BMS)   涙訣(BMS)  DJAZVW2(BMS)   zipper girlfriends(Movie)",
+      "teamMemberListRaw": "Funchen(Leader/Music/Movie?)   彼方蘭(Music)   ShooTinGStaR(Music/Movie)   AASwordmans(Music)   NonNam(Music)  果丸(Vocal)   Mai(Vocal)  Constellation(BMS)   涙訣(BMS)  DJAZVW2(BMS)  Zipper Girlfriends(Movie)  YimonDC(Illust)",
       "teamMemberListProcessed": [
         "Funchen(Leader/Music/Movie?)",
         "彼方蘭(Music)",
@@ -3452,10 +3499,12 @@
         "AASwordmans(Music)",
         "NonNam(Music)",
         "果丸(Vocal)",
+        "Mai(Vocal)",
         "Constellation(BMS)",
         "涙訣(BMS)",
         "DJAZVW2(BMS)",
-        "zipper girlfriends(Movie)"
+        "Zipper Girlfriends(Movie)",
+        "YimonDC(Illust)"
       ],
       "teamMemberListIsCorrect": true,
       "teamLastUpdate": "2024-07-07T15:13:21+09:00",
