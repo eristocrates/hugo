@@ -116,12 +116,23 @@ func InitializeSPCollector() *colly.Collector {
 
 			song.Soundcloud = e.ChildText("div.m_audition")
 			song.Bemuse = e.ChildAttr("div.bmson-iframe-content > iframe", "src")
-			// TODO get comment
-			// TODO get size
-			// TODO get composition
-			// TODO get prodEnv
-			// TODO get long impression button
-			// TODO get short impression button
+			song.Comment = e.ChildText("div.col_full:nth-child(4) > div:nth-child(9) > p:nth-child(2)")
+			sizeString := e.ChildText(".table > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(2)")
+			if strings.HasSuffix(sizeString, "KB") {
+				sizeString = strings.TrimSuffix(sizeString, "KB")
+				sizeInt, err := strconv.Atoi(sizeString)
+				if err != nil {
+					ConversionErrorCheck(err, song.Title)
+				}
+				song.Size = sizeInt
+			}
+			// TODO maybe make this an array by splitting at the dot?
+			song.Composition = e.ChildText(".table > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(3)")
+			song.ProdEnv = e.ChildText(".seisakukankyo")
+			longImpressionButtonString := e.ChildAttr(".button-aqua", "href")
+			song.LongImpressionButton = fmt.Sprintf("%s%s", manbowEventUrlPrefix, longImpressionButtonString)
+			shortImpressionButtonString := e.ChildAttr(".button-blue", "href")
+			song.ShortImpressionButton = fmt.Sprintf("%s%s", song.PageLink, shortImpressionButtonString)
 			// TODO get points
 			// TODO get vote
 			// TODO get short impressions
