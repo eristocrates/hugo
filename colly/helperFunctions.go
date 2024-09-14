@@ -472,3 +472,33 @@ func GetUploadPath(input string) (string, error) {
 
 	return match, nil
 }
+
+func ProcessJpDateString(input string) (string, error) {
+	// Regular expression to extract the date and time part
+	re := regexp.MustCompile(`(\d{4})年(\d{1,2})月(\d{1,2})日\s(\d{1,2}):(\d{2})`)
+	match := re.FindStringSubmatch(input)
+
+	if len(match) == 0 {
+		return "", fmt.Errorf("no date found in input string")
+	}
+
+	// Extract and format the date and time parts
+	year := match[1]
+	month := fmt.Sprintf("%02d", parseToInt(match[2]))
+	day := fmt.Sprintf("%02d", parseToInt(match[3]))
+	hour := fmt.Sprintf("%02d", parseToInt(match[4]))
+	minute := fmt.Sprintf("%02d", parseToInt(match[5]))
+
+	// Create the formatted date string
+	return fmt.Sprintf("%s/%s/%s %s:%s", year, month, day, hour, minute), nil
+
+}
+
+// Helper function to parse string to int
+func parseToInt(input string) int {
+	result, err := strconv.Atoi(input)
+	if err != nil {
+		return 0
+	}
+	return result
+}

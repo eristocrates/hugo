@@ -6,6 +6,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/PuerkitoBio/goquery"
 	"github.com/gocolly/colly/v2"
 )
 
@@ -56,6 +57,8 @@ func InitializeSPCollector() *colly.Collector {
 	})
 
 	spCollector.OnHTML(teamProfileSelectors.SectionContent, func(e *colly.HTMLElement) {
+
+		selectors = teamProfileSelectors
 		ids, ok := e.Request.Ctx.GetAny("eventTeamSongIds").(CtxIds)
 		if ok {
 			song := bofEvents[ids.EventId].Teams[ids.TeamId].Songs[ids.SongId]
@@ -133,7 +136,197 @@ func InitializeSPCollector() *colly.Collector {
 			song.LongImpressionButton = fmt.Sprintf("%s%s", manbowEventUrlPrefix, longImpressionButtonString)
 			shortImpressionButtonString := e.ChildAttr(".button-blue", "href")
 			song.ShortImpressionButton = fmt.Sprintf("%s%s", song.PageLink, shortImpressionButtonString)
-			// TODO get points
+
+			sections := []string{}
+			e.ForEach(selectors.FancyTitle, func(_ int, el *colly.HTMLElement) {
+
+				section := strings.TrimSpace(el.Text)
+				sections = append(sections, section)
+				// TODO flag sections not tracked in teamProfileSectionHeaders
+
+				if section == "Points" {
+					parent := el.DOM.Parent()
+
+					songPoint := PointValue{}
+					// Iterate over the sibling elements at the same level
+					parent.NextAll().Each(func(i int, s *goquery.Selection) {
+
+						if s.HasClass("col-md-3") {
+							songPoint.Name = s.Find("h5").Text()
+
+							counterValue := s.Find(".counter").Text()
+							songPoint.Value, _ = strconv.ParseFloat(counterValue, 32)
+							songPoint.Desc = "value"
+							song.Points = append(song.Points, songPoint)
+							// Check if the sibling has the class "col_full"
+							if s.HasClass("col_full") {
+								return
+							}
+						}
+
+					})
+				}
+				if section == "VOTE" {
+					parent := el.DOM.Parent()
+
+					votePoint := PointValue{}
+					// Iterate over the sibling elements at the same level
+					parent.NextAll().Each(func(i int, s *goquery.Selection) {
+
+						if s.HasClass("col_half") {
+							votePoint.Name = s.Find("h5").Text()
+
+							counterValue := s.Find(".counter").Text()
+							votePoint.Value, _ = strconv.ParseFloat(counterValue, 32)
+							votePoint.Desc = "value"
+							song.Votes = append(song.Votes, votePoint)
+							// Check if the sibling has the class "col_full"
+							if s.HasClass("col_full") {
+								return
+							}
+						}
+					})
+				}
+				if section == "Short Impression" {
+					parent := el.DOM.Parent()
+
+					// Iterate over the sibling elements at the same level
+					parent.NextAll().Each(func(i int, s *goquery.Selection) {
+						// fmt.Printf("parent text: '%s'\n", s.Text())
+
+						if s.HasClass("col_full") {
+							hasChildSpost := s.Find("div.spost").Length() > 0
+							if hasChildSpost {
+								shortImpression := ShortImpression{}
+								s.Find("div.spost").Each(func(i int, t *goquery.Selection) {
+									shortImpression.Points = parseToInt(t.Find("div.points_oneline").Text())
+									shortImpression.UserName = strings.TrimSpace(t.Find("div.entry-title strong").Text())
+									matches := inParensRegex.FindStringSubmatch(t.Find("div.entry-title small").Text())
+									if len(matches) > 1 {
+										shortImpression.UserId = matches[1]
+									}
+									shortImpression.CountryCode = t.Find("img.flag").AttrOr("title", "")
+									shortImpression.CountryFlag = GetPrefixUrl(t.Find("img.flag").AttrOr("src", " "))
+									// Assuming the string is stored in a variable called dateString
+									dateString := t.Find("small").Text()
+
+									// Find the match
+									match := jpDateRegex.FindString(dateString)
+
+									if len(match) > 1 {
+										song.TestString = match
+										jpDate, err := ProcessJpDateString(match)
+										if err == nil {
+											shortImpression.Time, _ = GetHugoDateTime(jpDate)
+										}
+									}
+									shortImpression.Content = strings.TrimSpace(t.Find("div.entry-title").Eq(1).Text())
+
+									song.ShortImpressions = append(song.ShortImpressions, shortImpression)
+								})
+								return
+							}
+						}
+					})
+
+				}
+				if section == "Long Impression" {
+					parent := el.DOM.Parent()
+
+					// Collect all the next sibling elements into an array
+					var nextSiblings []*goquery.Selection
+					// Iterate over the sibling elements at the same level
+					parent.NextAll().Each(func(i int, s *goquery.Selection) {
+						nextSiblings = append(nextSiblings, s)
+					})
+					// TODO figure out conditional arithmetic for tracking impressions, empty divs, the div for the button, and the response impressions for each div
+					longImpression := LongImpression{}
+					pointBreakdown := PointValue{}
+					for i := 0; i < len(nextSiblings); i++ {
+						if nextSiblings[i].HasClass("spost") && (nextSiblings[i].Find("div.entry-c")).Length() > 0 { // should be a header
+							song.TestStringArray = append(song.TestStringArray, nextSiblings[i].Text())
+							//	song.TestString = nextSiblings[i].Find("nobr").Text()
+							longImpression.PointsOverall = parseToInt(nextSiblings[i].Find("nobr").Text())
+							longImpression.UserName = strings.TrimSpace(nextSiblings[i].Find("div.entry-title strong").Text())
+							nextSiblings[i].Find("span").Each(func(_ int, span *goquery.Selection) {
+
+								// Extract the text before ':' as pointBreakdown.Name
+								fullText := span.Text()
+								parts := strings.Split(fullText, ":")
+								if len(parts) >= 2 {
+									pointBreakdown.Name = strings.TrimSpace(parts[0])
+
+									// Extract the number after ':' as pointBreakdown.Value
+									valueText := strings.TrimSpace(parts[1])
+									valueParts := strings.Split(valueText, " ")
+									if len(valueParts) >= 2 {
+										pointBreakdown.Value, err = strconv.ParseFloat(strings.TrimSpace(valueParts[0]), 64)
+										if err != nil {
+											fmt.Println("Error parsing point value:", err)
+										}
+									}
+									pointBreakdown.Desc = "value"
+								}
+
+								// Add the pointBreakdown to the song's list of point breakdowns
+								if pointBreakdown.Value != 0 {
+									longImpression.PointBreakdown = append(longImpression.PointBreakdown, pointBreakdown)
+								}
+							})
+
+							longImpression.CountryCode = nextSiblings[i].Find("img.flag").AttrOr("title", "")
+							longImpression.CountryFlag = GetPrefixUrl(nextSiblings[i].Find("img.flag").AttrOr("src", " "))
+							jpDate, err := ProcessJpDateString(nextSiblings[i].Find("ul.entry-meta li").Text())
+							if err == nil {
+								longImpression.Time, _ = GetHugoDateTime(jpDate)
+							}
+
+							matches := inParensRegex.FindStringSubmatch(nextSiblings[i].Find("small span").Text())
+							if len(matches) > 1 {
+								longImpression.UserId = matches[1]
+							}
+							i += 1 // should be content
+							longImpression.Comment = strings.TrimSpace(nextSiblings[i].Find("p.event-desc-detail").Text())
+							if strings.Contains(longImpression.Comment, "Impression is invalidity") {
+								song.LongImpressions = append(song.LongImpressions, longImpression)
+								continue
+							}
+							for nextSiblings[i+1].Find("div.entry-image").Length() > 0 { // check for reply header
+								replyImpression := LongImpression{}
+								i += 1 // should be reply header
+								replyImpression.UserName = strings.TrimSpace(nextSiblings[i].Find("div.entry-title strong").Text())
+								replyImpression.CountryCode = nextSiblings[i].Find("img.flag").AttrOr("title", "")
+								replyImpression.CountryFlag = GetPrefixUrl(nextSiblings[i].Find("img.flag").AttrOr("src", " "))
+								jpDate, err := ProcessJpDateString(nextSiblings[i].Find("ul.entry-meta li").Text())
+								if err == nil {
+									replyImpression.Time, _ = GetHugoDateTime(jpDate)
+								}
+
+								matches := inParensRegex.FindStringSubmatch(nextSiblings[i].Find("small span").Text())
+								if len(matches) > 1 {
+									replyImpression.UserId = matches[1]
+								}
+								i += 1 // should be content
+								replyImpression.Comment = strings.TrimSpace(nextSiblings[i].Find("p.event-desc-detail").Text())
+								longImpression.ResponseImpressions = append(longImpression.ResponseImpressions, replyImpression)
+
+							}
+							if nextSiblings[i+2].HasClass("center") {
+								i += 2 // should be response button
+								longImpression.ResponseButton = manbowEventUrlPrefix + strings.TrimSpace(nextSiblings[i].Find("a").AttrOr("href", " "))
+
+								song.LongImpressions = append(song.LongImpressions, longImpression)
+								i += 1
+							}
+						}
+					}
+				}
+			})
+			jpDate, err := ProcessJpDateString(e.ChildText("div.col_full:nth-child(16) > small:nth-child(1)"))
+			if err == nil {
+				song.LastVoteTime, _ = GetHugoDateTime(jpDate)
+			}
+			// song.TestStringArray = sections
 			// TODO get vote
 			// TODO get short impressions
 			// TODO get long impressions

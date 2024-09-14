@@ -70,7 +70,7 @@ type Team struct {
 	Twitter             string        `json:"teamTwitter"`
 	Website             string        `json:"teamWebsite"`
 	Concepts            []Concept     `json:"teamConcepts"`
-	RatioPoints         []pointValue  `json:"ratioPoints"`
+	RatioPoints         []PointValue  `json:"ratioPoints"`
 	Genres              []string      `json:"teamGenres"`
 	Commonality         string        `json:"teamCommonality"`
 	RaisonDetre         string        `json:"teamRaisonDetre"`
@@ -86,47 +86,49 @@ type Team struct {
 }
 
 type Song struct {
-	Id                    int            `json:"songId"`
-	PageLink              string         `json:"songPageLink"`
-	IsSpecial             bool           `json:"songIsSpecial"`
-	SpecialTitle          string         `json:"songSpecialTitle"`
-	Jacket                string         `json:"songJacket"`
-	Header                string         `json:"songHeader"`
-	Genre                 string         `json:"songGenre"`
-	Title                 string         `json:"songTitle"`
-	Artist                string         `json:"songArtist"`
-	RegistDate            string         `json:"songRegistDate"`
-	LastUpdate            string         `json:"songLastUpdate"`
-	Keys                  []string       `json:"songKeys"`
-	CommentCount          int            `json:"songCommentCount"`
-	Total                 int            `json:"songTotal"`
-	Median                int            `json:"songMedian"`
-	Composition           string         `json:"songComposition"`
-	LastScrapeTime        string         `json:"songLastScrapeTime"`
-	Bpm                   int            `json:"songBpm"`
-	BpmLower              int            `json:"songBpmLower"`
-	BpmUpper              int            `json:"songBpmUpper"`
-	BpmAverage            int            `json:"songBpmAverage"`
-	LevelLower            int            `json:"songLevelLower"`
-	LevelUpper            int            `json:"songLevelUpper"`
-	BgaStatus             []string       `json:"songBgaStatus"`
-	Youtube               string         `json:"songYoutube"`
-	Size                  int            `json:"songSize"`
-	DownloadRaw           []string       `json:"songDownloadRaw"`
-	DownloadProcessed     []downloadLink `json:"songDownloadProcessed"`
-	TagsRaw               []string       `json:"songTagsRaw"`
-	TagsProcessed         []Tag          `json:"songTagsProcessed"`
-	Soundcloud            string         `json:"songSoundcloud"`
-	Bemuse                string         `json:"songBemuse"`
-	Comment               string         `json:"songComment"`
-	Points                []pointValue   `json:"songPoints"`
-	Votes                 []pointValue   `json:"songVotes"`
-	LastVoteTime          string         `json:"songLastVoteTime"`
-	ProdEnv               string         `json:"songProdEnv"`
-	ShortImpressionButton string         `json:"songShortImpressionButton"`
-	LongImpressionButton  string         `json:"songLongImpressionButton"`
-	TestString            string         `json:"songTestString"`
-	TestStringArray       []string       `json:"songTestStringArray"`
+	Id                    int               `json:"songId"`
+	PageLink              string            `json:"songPageLink"`
+	IsSpecial             bool              `json:"songIsSpecial"`
+	SpecialTitle          string            `json:"songSpecialTitle"`
+	Jacket                string            `json:"songJacket"`
+	Header                string            `json:"songHeader"`
+	Genre                 string            `json:"songGenre"`
+	Title                 string            `json:"songTitle"`
+	Artist                string            `json:"songArtist"`
+	RegistDate            string            `json:"songRegistDate"`
+	LastUpdate            string            `json:"songLastUpdate"`
+	Keys                  []string          `json:"songKeys"`
+	CommentCount          int               `json:"songCommentCount"`
+	Total                 int               `json:"songTotal"`
+	Median                int               `json:"songMedian"`
+	Composition           string            `json:"songComposition"`
+	LastScrapeTime        string            `json:"songLastScrapeTime"`
+	Bpm                   int               `json:"songBpm"`
+	BpmLower              int               `json:"songBpmLower"`
+	BpmUpper              int               `json:"songBpmUpper"`
+	BpmAverage            int               `json:"songBpmAverage"`
+	LevelLower            int               `json:"songLevelLower"`
+	LevelUpper            int               `json:"songLevelUpper"`
+	BgaStatus             []string          `json:"songBgaStatus"`
+	Youtube               string            `json:"songYoutube"`
+	Size                  int               `json:"songSize"`
+	DownloadRaw           []string          `json:"songDownloadRaw"`
+	DownloadProcessed     []downloadLink    `json:"songDownloadProcessed"`
+	TagsRaw               []string          `json:"songTagsRaw"`
+	TagsProcessed         []Tag             `json:"songTagsProcessed"`
+	Soundcloud            string            `json:"songSoundcloud"`
+	Bemuse                string            `json:"songBemuse"`
+	Comment               string            `json:"songComment"`
+	Points                []PointValue      `json:"songPoints"`
+	Votes                 []PointValue      `json:"songVotes"`
+	LastVoteTime          string            `json:"songLastVoteTime"`
+	ProdEnv               string            `json:"songProdEnv"`
+	ShortImpressionButton string            `json:"songShortImpressionButton"`
+	LongImpressionButton  string            `json:"songLongImpressionButton"`
+	ShortImpressions      []ShortImpression `json:"songShortImpressions"`
+	LongImpressions       []LongImpression  `json:"songLongImpressions"`
+	TestString            string            `json:"songTestString"`
+	TestStringArray       []string          `json:"songTestStringArray"`
 }
 
 type Concept struct {
@@ -188,7 +190,7 @@ type sectionHeaders struct {
 	TeamProfileEdit string
 }
 
-type pointValue struct {
+type PointValue struct {
 	Name  string
 	Value float64
 	Desc  string
@@ -204,7 +206,7 @@ type Tag struct {
 	Category string
 }
 
-type shortImpression struct {
+type ShortImpression struct {
 	Points      int
 	UserName    string
 	UserId      string
@@ -214,15 +216,15 @@ type shortImpression struct {
 	Content     string
 }
 
-type longImpression struct {
-	PointsOverall  int
-	UserName       string
-	CountryCode    string
-	CountryFlag    string
-	PointBreakdown []pointValue
-	Time           string
-	Comment        string
-	ResponseButton string
-	IsReply        bool
-	Content        string
+type LongImpression struct {
+	PointsOverall       int
+	UserName            string
+	CountryCode         string
+	CountryFlag         string
+	UserId              string
+	PointBreakdown      []PointValue
+	Time                string
+	ResponseButton      string
+	Comment             string
+	ResponseImpressions []LongImpression
 }

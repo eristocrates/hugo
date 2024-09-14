@@ -99,7 +99,7 @@ func InitializeTPCollector() *colly.Collector {
 					// Traverse up to the parent element
 					parent := el.DOM.Parent()
 
-					ratioPoint := pointValue{}
+					ratioPoint := PointValue{}
 					// Iterate over the sibling elements at the same level
 					parent.NextAll().Each(func(i int, s *goquery.Selection) {
 
