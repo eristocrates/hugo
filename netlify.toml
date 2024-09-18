@@ -13,3 +13,6 @@
 
 [context.next.environment]
   HUGO_VERSION = "0.128.2"
+
+[build.environment]
+  GIT_SUBMODULE_STRATEGY = "recursive"

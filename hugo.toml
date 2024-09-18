@@ -1,10 +1,11 @@
-baseURL = "eristocrates.neocities.org"
+#baseURL = "eristocrates.dev"
 copyright = "made with hugo by eristocrates"
 enablerobotstxt = true
 languagecode = "en-US"
 paginate = 50
 timezone = "America/New_York"
 titlecasestyle = "Go"
+
 
 [languages.en]
 title = "the eristocracy"
@@ -76,11 +77,11 @@ style = "" # CSS included at the end of the stylesheet, before style-last.css
 [[params.paige.feed.atom.authors]]
 email = "eristocrates@gmail.com"
 name = "eristocrates"
-url = "ttps://github.com/eristocrates/neocities"
+url = "eristocrates.dev"
 
 [params.paige.feed.rss]
-managing_editor = "example@example.com (John Doe)"
-web_master = "example@example.com (John Doe)"
+managing_editor = "eristocrates@gmail.com"
+web_master = "eristocrates@gmail.com"
 
 [taxonomies]
 author = "authors"
