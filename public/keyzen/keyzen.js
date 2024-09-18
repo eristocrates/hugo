@@ -282,7 +282,7 @@ function play_audio_sample(name) {
 
 
 function add_layout() {
-    var layout_name = stringDivide(document.getElementById('new_layout_name').value);
+    var layout_name = document.getElementById('new_layout_name').value;
     var manual_entry_input = stringDivide(document.getElementById('manual_entry_input').value);
     var number_row_input = stringDivide(document.getElementById('number_row_input').value);
     var home_row_input = stringDivide(document.getElementById('home_row_input').value);
