@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
+    <lastmod>2024-09-18T00:34:55-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/keeb/</loc>
+    <lastmod>2024-09-18T00:34:55-04:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/keeb/keyzen/</loc>
+    <lastmod>2024-09-18T00:34:55-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/bof/event142/team84/song0/</loc>
     <priority>0</priority>

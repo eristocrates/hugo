@@ -29,6 +29,19 @@ parent = "bof"
 url = "/bof/event142"
 weight = 10
 
+[[languages.en.menu.main]]
+identifier = "keeb"
+name = "Keyboards"
+url = "/keeb/"
+weight = 30
+
+[[languages.en.menu.main]]
+identifier = "keyzen"
+name = "keyzen"
+parent = "keeb"
+url = "/keeb/keyzen"
+weight = 10
+
 [markup.goldmark.renderer]
 unsafe = true
 
