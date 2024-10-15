@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"net/http"
 	"net/url"
 	"os"
 	"regexp"
@@ -28,9 +29,9 @@ func SaveEventsToFile(events map[int]*Event) {
 	for _, event := range events {
 		var filePath string
 		if event.IsBof {
-			filePath = fmt.Sprintf("../logs/bof/event%d.json", event.Id)
+			filePath = fmt.Sprintf("../data/bms/bof/event%d.json", event.Id)
 		} else {
-			filePath = fmt.Sprintf("../logs/other/event%d.json", event.Id)
+			filePath = fmt.Sprintf("../data/bms/other/event%d.json", event.Id)
 		}
 
 		file, err := os.Create(filePath)
@@ -136,17 +137,37 @@ func BofCheck(event *Event) bool {
 		} else {
 			event.IsBof = true
 		}
+		logoUrlTypes := [5]string{
+			fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.png", event.ShortName, event.ShortName),
+			fmt.Sprintf("https://www.bmsoffighters.net/%s/img/logo.png", event.ShortName),
+			fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s_logo.png", event.ShortName, event.ShortName),
+			fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.png", event.ShortName, strings.ToUpper(event.ShortName)),
+			fmt.Sprintf("https://www.bmsoffighters.net/%s/index_files/%s_2.png", event.ShortName, event.ShortName),
+		}
+		proposedUrl := logoUrlTypes[0]
+		if checkUrlExists(proposedUrl) {
+			event.Logo = proposedUrl
+		} else {
+			// Handle the case where the URL is not valid, e.g., use a default or log an error
+			for i, proposedUrlType := range logoUrlTypes {
+				if checkUrlExists(proposedUrlType) {
+					event.Logo = proposedUrlType
+					break
+				}
+				if i == len(logoUrlTypes)-1 {
+					event.Logo = ""
+					fmt.Printf("Warning: URL does not exist for event %s: %d\n", event.ShortName, event.Id)
+				}
+			}
+		}
 
 		// TODO consider replacing this blind grab with logic in ilCollector
-		event.LogoType1 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.png", event.ShortName, event.ShortName)
-		event.LogoType2 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/logo.png", event.ShortName)
-		event.LogoType3 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s_logo.png", event.ShortName, event.ShortName)
-		event.LogoType4 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.png", event.ShortName, strings.ToUpper(event.ShortName))
-		event.LogoType5 = fmt.Sprintf("https://www.bmsoffighters.net/%s/index_files/%s_2.png", event.ShortName, event.ShortName)
-		event.BannerType2 = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/banner.jpg", event.ShortName)
 		event.TitleJpg = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/title.jpg", event.ShortName)
 
 		event.Video = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/%s.mp4", event.ShortName, event.ShortName)
+		if event.Id == 146 {
+			event.Video = "https://www.bmsoffighters.net/boftt/img/boftt_back.mp4"
+		}
 		event.HeaderJpg = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/header.jpg", event.ShortName)
 		event.HeaderPng = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/header.png", event.ShortName)
 		event.BackJpg = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/back.jpg", event.ShortName)
@@ -167,7 +188,11 @@ func BofCheck(event *Event) bool {
 
 func AddEvent(event *Event) {
 
-	event.BannerType1 = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.Id)
+	event.Banner = fmt.Sprintf("%simages/%d.jpg", manbowEventUrlPrefix, event.Id)
+	if !checkUrlExists(event.Banner) {
+		event.Banner = fmt.Sprintf("https://www.bmsoffighters.net/%s/img/banner.jpg", event.ShortName)
+	}
+
 	if BofCheck(event) {
 		bofEvents[event.Id] = event
 		logger.Info().Msgf("Added BOF event: %s (ID: %d)", event.FullName, event.Id)
@@ -501,4 +526,122 @@ func parseToInt(input string) int {
 		return 0
 	}
 	return result
+}
+
+// checkURLExists performs an HTTP HEAD request to check if the URL exists
+func checkUrlExists(url string) bool {
+	client := http.Client{
+		Timeout: 5 * time.Second, // Set a timeout to avoid waiting too long
+	}
+	resp, err := client.Head(url)
+	if err != nil {
+		fmt.Printf("Error checking URL: %s\n", err)
+		return false
+	}
+	defer resp.Body.Close()
+	return resp.StatusCode == http.StatusOK
+}
+
+func splitByURLs(text string) []string {
+	// Define the regex for matching URLs
+	urlRegex := regexp.MustCompile(`https?://[^\s]+`)
+
+	// Split the text first by newlines
+	lines := strings.Split(text, "\n")
+	var result []string
+
+	// Process each line to further split by URLs
+	for _, line := range lines {
+		lastIndex := 0
+		urls := urlRegex.FindAllStringIndex(line, -1)
+
+		for _, loc := range urls {
+			start, end := loc[0], loc[1]
+
+			// Add text before the URL
+			if lastIndex < start {
+				result = append(result, line[lastIndex:start])
+			}
+
+			// Add the URL itself
+			result = append(result, line[start:end])
+
+			// Update lastIndex
+			lastIndex = end
+		}
+
+		// Add any remaining text after the last URL
+		if lastIndex < len(line) {
+			result = append(result, line[lastIndex:])
+		}
+	}
+
+	return result
+}
+
+func setTags(line string) []LinkTag {
+	var category LinkCategory
+	var tags []LinkTag
+
+	if strings.Contains(strings.ToLower(line), "wav") {
+		category = Larger
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "ogg") {
+		category = Smaller
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "dp") {
+		category = DP
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "pms") {
+		category = PMS
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "最新") {
+		category = Latest
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "以前") || strings.Contains(strings.ToLower(line), "before") {
+		category = Prior
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "beatoraja") {
+		category = Beatoraja
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "lr2") {
+		category = LR2
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "高画質") {
+		category = HQ
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "低画質") {
+		category = LQ
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "bga") {
+		category = BGA
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "google") {
+		category = Google
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "onedrive") {
+		category = OneDrive
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if strings.Contains(strings.ToLower(line), "cn") {
+		category = Chinese
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	if len(tags) < 1 {
+		category = Untracked
+		tags = append(tags, LinkTag{Id: category, String: LinkCategory(category).String()})
+	}
+	return tags
 }

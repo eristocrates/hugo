@@ -9,7 +9,7 @@ type Event struct {
 	ShortName         string        `json:"eventShortName"`
 	Title             string        `json:"eventTitle"`
 	Description       string        `json:"eventDescription"`
-	BannerType1       string        `json:"eventBannerType1"`
+	Banner            string        `json:"eventBanner"`
 	RegistrationStart string        `json:"eventRegistrationStart"`
 	RegistrationEnd   string        `json:"eventRegistrationEnd"`
 	ImpressionStart   string        `json:"eventImpressionStart"`
@@ -23,13 +23,8 @@ type Event struct {
 	ListLink          string        `json:"eventListLink"`
 	TeamListLink      string        `json:"eventTeamListLink"`
 	IsBof             bool          `json:"eventIsBof"`
-	LogoType1         string        `json:"eventLogoType1"`
-	LogoType2         string        `json:"eventLogoType2"`
-	LogoType3         string        `json:"eventLogoType3"`
-	LogoType4         string        `json:"eventLogoType4"`
-	LogoType5         string        `json:"eventLogoType5"`
+	Logo              string        `json:"eventLogo"`
 	TitleJpg          string        `json:"eventTitleJpg"`
-	BannerType2       string        `json:"eventBannerType2"`
 	Video             string        `json:"eventVideo"`
 	HeaderJpg         string        `json:"eventHeaderJpg"`
 	HeaderPng         string        `json:"eventHeaderPng"`
@@ -113,7 +108,7 @@ type Song struct {
 	Youtube               string            `json:"songYoutube"`
 	Size                  int               `json:"songSize"`
 	DownloadRaw           []string          `json:"songDownloadRaw"`
-	DownloadProcessed     []downloadLink    `json:"songDownloadProcessed"`
+	DownloadProcessed     []DownloadLink    `json:"songDownloadProcessed"`
 	TagsRaw               []string          `json:"songTagsRaw"`
 	TagsProcessed         []Tag             `json:"songTagsProcessed"`
 	Soundcloud            string            `json:"songSoundcloud"`
@@ -196,9 +191,10 @@ type PointValue struct {
 	Desc  string
 }
 
-type downloadLink struct {
+type DownloadLink struct {
 	Url  string
 	Desc string
+	Tags []LinkTag
 }
 
 type Tag struct {
@@ -227,4 +223,73 @@ type LongImpression struct {
 	ResponseButton      string
 	Comment             string
 	ResponseImpressions []LongImpression
+}
+
+type LinkCategory int
+
+const (
+	Unlabeled LinkCategory = iota
+	Larger
+	Smaller
+	DP
+	PMS
+	Latest
+	Prior
+	Beatoraja
+	LR2
+	HQ
+	LQ
+	BGA
+	Google
+	OneDrive
+	Chinese
+	Unlinked
+	Untracked
+)
+
+// String method returns the name of the Status
+func (s LinkCategory) String() string {
+	switch s {
+	case Unlabeled:
+		return "Unlabeled"
+	case Larger:
+		return "Larger"
+	case Smaller:
+		return "Smaller"
+	case DP:
+		return "DP"
+	case PMS:
+		return "PMS"
+	case Untracked:
+		return "Untracked"
+	case Latest:
+		return "Latest"
+	case Prior:
+		return "Prior"
+	case Beatoraja:
+		return "Beatoraja"
+	case LR2:
+		return "LR2"
+	case HQ:
+		return "HQ"
+	case LQ:
+		return "LQ"
+	case BGA:
+		return "BGA"
+	case Google:
+		return "Google"
+	case OneDrive:
+		return "OneDrive"
+	case Chinese:
+		return "Chinese"
+	case Unlinked:
+		return "Unlinked"
+	default:
+		return "Not a category"
+	}
+}
+
+type LinkTag struct {
+	Id     LinkCategory
+	String string
 }

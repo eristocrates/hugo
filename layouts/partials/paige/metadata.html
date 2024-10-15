@@ -6,7 +6,11 @@
 {{ $dateformat := $page.Param "paige.date_format" | default ":date_long" }}
 {{ $description := $page.Description | markdownify }}
 {{ $link := $page.Params.link }}
-{{ $readingtime := $page.ReadingTime }}
+{{ $showReadingTime := .Params.showReadingTime }}
+{{ $readingtime := "" }}
+{{ if not (or (eq $showReadingTime false) (not $showReadingTime)) }}
+	{{ $readingtime = $page.ReadingTime }}
+{{ end }}
 {{ $series := $page.GetTerms "series" }}
 {{ $tags := $page.GetTerms "tags" }}
 {{ $textkeywords := eq ($page.Param "paige.keyword_style" | default "text") "text" }}

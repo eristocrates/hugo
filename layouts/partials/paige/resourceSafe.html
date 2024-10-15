@@ -1,0 +1,67 @@
+{{ $params := . }}
+{{ $page := $params.page }}
+{{ $url := $params.url }}
+
+{{ $result := "" }}
+{{ $fallbackImage := "images/transcendium/[120328065] tandem ruins/120328065_p0.png" }}
+<!-- Set your fallback image path -->
+
+<!-- Initialize resource status -->
+{{ $resourceValid := false }}
+
+<!-- Function to check file extension for valid image types -->
+{{ $isValidExtension := (in (slice ".jpeg" ".jpg" ".png" ".gif" ".webp") (path.Ext $url)) }}
+
+<!-- Check if URL is a remote resource -->
+	{{ if and (urls.Parse $url).Scheme $isValidExtension }}
+	{{ $remoteResource := resources.GetRemote $url }}
+		{{ with $remoteResource }}
+			{{ if .Err }}
+			<!-- Log the error but do not fail the build -->
+			{{ warnf "Cannot get remote resource %q: %v" $url .Err }}
+		{{ else }}
+			{{ $result = $remoteResource }}
+			{{ $resourceValid = true }}
+		{{ end }}
+	{{ end }}
+{{ end }}
+
+<!-- Try getting the resource locally -->
+{{ if and (not $resourceValid) $isValidExtension }}
+	<!-- Check Match from page resources -->
+	{{ if $page }}
+		{{ with $page.Resources.GetMatch $url }}
+			{{ $result = . }}
+			{{ $resourceValid = true }}
+		{{ end }}
+
+		{{ if not $resourceValid }}
+			{{ with $page.Resources.Get $url }}
+				{{ $result = . }}
+				{{ $resourceValid = true }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+
+	<!-- Check the main resources for a local asset -->
+	{{ if not $resourceValid }}
+		{{ with $localResource := resources.Get $url }}
+			{{ $result = $localResource }}
+			{{ $resourceValid = true }}
+		{{ else }}
+			{{ warnf "Local resource %q not found" $url }}
+		{{ end }}
+	{{ end }}
+{{ end }}
+
+<!-- Use the fallback image if no valid result -->
+{{ if not $resourceValid }}
+	{{ with resources.Get $fallbackImage }}
+		{{ $result = . }}
+	{{ else }}
+		<!-- Log error if the fallback image is also not available -->
+		{{ warnf "Could not get resource for URL %q and fallback image %q is not available" $url $fallbackImage }}
+	{{ end }}
+{{ end }}
+
+{{ return $result }}

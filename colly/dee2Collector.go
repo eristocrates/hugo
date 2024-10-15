@@ -75,7 +75,16 @@ func InitializeDEE2Collector() *colly.Collector {
 		ConversionErrorCheck(err, featureEvent.FullName)
 		featureEvent.ImpressionCount, err = strconv.Atoi(e.ChildText("div.container-center > div.row > div.row > div:nth-of-type(8)"))
 		ConversionErrorCheck(err, featureEvent.FullName)
-		featureEvent.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006/01/02 15:04:05"))
+		featureEvent.InfoLink = e.ChildAttr("a.btn-large:nth-child(1)", "href")
+		featureEvent.DetailLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("a.btn:nth-child(2)", "href"))
+		featureEvent.ListLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("a.btn:nth-child(3)", "href"))
+
+		/*
+			featureEvent.InfoLink = html.UnescapeString(e.ChildAttr("a.btn-large:nth-child(1)" , "href"))
+			featureEvent.DetailLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("td:nth-of-type(7) a:nth-of-type(2)", "href"))
+			featureEvent.ListLink = html.UnescapeString(manbowEventUrlPrefix + e.ChildAttr("td:nth-of-type(7) a:nth-of-type(3)", "href"))
+			featureEvent.LastScrapeTime, err = GetHugoDateTime(time.Now().Format("2006/01/02 15:04:05"))
+		*/
 		HugoDateHerrorCheck(err, featureEvent.FullName)
 		AddEvent(&featureEvent)
 	})
@@ -86,6 +95,9 @@ func InitializeDEE2Collector() *colly.Collector {
 		listEvent.FullName = e.ChildText("td:nth-of-type(2) a")
 		listEvent.Id, err = strconv.Atoi(e.ChildText("td:nth-of-type(1)"))
 		ConversionErrorCheck(err, listEvent.FullName)
+		if listEvent.Id != 142 {
+			return
+		}
 		listEvent.RegistrationStart, listEvent.RegistrationEnd, err = SplitDateRange(e.ChildText("td:nth-of-type(3)"))
 		HugoDateHerrorCheck(err, listEvent.FullName)
 		listEvent.ImpressionStart, listEvent.ImpressionEnd, err = SplitDateRange(e.ChildText("td:nth-of-type(4)"))
@@ -103,6 +115,7 @@ func InitializeDEE2Collector() *colly.Collector {
 		HugoDateHerrorCheck(err, listEvent.FullName)
 		AddEvent(&listEvent)
 	})
+
 	/*
 		digitalEmergencyExitCollector.OnXML("", func(e *colly.XMLElement) {
 		})

@@ -38,20 +38,30 @@ func main() {
 	digitalEmergencyExitCollector.Wait()
 
 	// TODO remove this once boftt is added to main event page
-	boftt := Event{
-		Id:            146,
-		FullName:      "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
-		HasModernList: true,
-		InfoLink:      "https://www.bmsoffighters.net/boftt/index.html",
-		ListLink:      "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
-	}
+	/*
+		boftt := Event{
+			Id:                146,
+			FullName:          "BOF:TT [THE BMS OF FIGHTERS : TT -Sonata for the 20th Ceremony-]",
+			HasModernList:     true,
+			InfoLink:          "https://www.bmsoffighters.net/boftt/index.html",
+			ListLink:          "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=146",
+			RegistrationStart: "2024-07-01 00:00:00",
+			RegistrationEnd:   "2024-09-07 00:00:00",
+			ImpressionStart:   "2024-09-01 00:00:00",
+			ImpressionEnd:     "2024-10-04 00:00:00",
+			PeriodStart:       "2024-07-01 00:00:00",
+			PeriodEnd:         "2024-10-04 00:00:00",
+		}
 
-	AddEvent(&boftt)
+		AddEvent(&boftt)
+	*/
 
 	for id, event := range bofEvents {
-		ctx := colly.NewContext()
-		ctx.Put("eventId", id)
-		infoLinkCollector.Request("GET", event.InfoLink, nil, ctx, nil)
+		if id == 142 || id == 146 {
+			ctx := colly.NewContext()
+			ctx.Put("eventId", id)
+			infoLinkCollector.Request("GET", event.InfoLink, nil, ctx, nil)
+		}
 	}
 	infoLinkCollector.Wait()
 

@@ -1,0 +1,7 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $class := .Get "class" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+
+{{- partial "paige/localImage.html" (dict "src" $src "alt" $alt "class" $class "width" $width "height" $height) -}}

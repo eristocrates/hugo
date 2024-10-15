@@ -7,3 +7,6 @@ body {
   color: black;
   font-family: Verdana;
 }
+.small-text {
+    font-size: 0.8em; /* Adjust the size as needed */
+}

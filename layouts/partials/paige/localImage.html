@@ -1,0 +1,18 @@
+{{ $params := . }}
+
+{{ $alt := $params.alt }}
+{{ $class := $params.class }}
+{{ $height := $params.height }}
+{{ $width := $params.width }}
+{{ $src := $params.src }}
+<!-- Expected to be relative to 'assets/' -->
+
+{{ $resource := resources.Get $src }}
+
+{{ if $resource }}
+	{{ $resource = $resource.Resize (print $width "x" $height) | fingerprint }}
+	<img src="{{ $resource.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" width="{{ $width }}" height="{{ $height }}"/>
+{{ else }}
+	<p>Image not found:
+		{{ $src }}</p>
+{{ end }}

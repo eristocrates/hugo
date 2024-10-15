@@ -24,10 +24,10 @@ url = "/bof/"
 weight = 20
 
 [[languages.en.menu.main]]
-identifier = "bofnt"
-name = "BOF:NT"
+identifier = "boftt"
+name = "BOF:TT"
 parent = "bof"
-url = "/bof/event142"
+url = "/bof/event146"
 weight = 10
 
 [[languages.en.menu.main]]

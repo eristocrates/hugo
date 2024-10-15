@@ -1,0 +1,6 @@
+{{ define "main" }}
+	{{ $page := . }}
+
+	{{ partial "paige/bof/links/article.html" $page }}
+	{{ partial "paige/comments.html" $page }}
+{{ end }}

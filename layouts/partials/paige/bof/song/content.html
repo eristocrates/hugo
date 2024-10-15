@@ -1,7 +1,7 @@
 {{ $page := . }}
 
 <div class="video-container">
-	<video src="{{ .Params.videoUrl }}" width="100%" height="100%" autoplay loop muted playsinline>
+	<video src="{{ .Params.Video }}" width="100%" height="100%" autoplay loop muted playsinline>
 		Your browser does not support the video tag.
 	</video>
 	<div class="image-overlay">
@@ -12,7 +12,7 @@
         "fetchpriority" "high"
         "loading" "eager"
         "process" "webp"
-        "src" .Params.logoUrl
+        "src" .Params.Logo
         "width" "100%") }}
 	</div>
 </div>

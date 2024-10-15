@@ -1,17 +1,24 @@
-map(
-  select(.shortName == "bofnt")
-  | {
-    fullName,
-    listLink,
-    infoLink,
-    teamListLink,
+map({
     teams: (
-      .teams
-      | select(. != null)
+        .teams
+        | select(. != null)
+        | map({
+            #teamProfileLink,
+            songs: (
+                .songs
+                | select(. != null)
+                #| map(select(.songDownloadProcessed == null) | {
+				| map({
+                    songPageLink,
+                    #songDownloadRaw: .songDownloadRaw,
+					songTestStringArray: .songTestStringArray,
+					songDownloadProcessed: .songDownloadProcessed,
+                    #songTestString: .songTestString,
+                })
+            )
+        })
     )
-    #| map ({teamProfileLink, teamCommonality, testString, testStringArray})
-  }
-)
+})
 
 
 # map(select(.shortName == "boftt") | {fullName, listLink, infoLink, teamListLink, testString, testStringArray, teams: (.teams | select(. != null) | map({teamName, teamProfileLink, teamLeaderName, teamLeaderCountryCode, teamLeaderCountryFlag, teamMemberCount, teamReleasedWorksCount, teamDeclaredWorksCount, teamIsRecruiting, teamIsWithdrawn, teamIsDisqualified, teamIsWarned, teamUpdate, testString, testStringArray}))})

@@ -92,13 +92,101 @@ func InitializeSPCollector() *colly.Collector {
 
 			song.BgaStatus = strings.Split(e.ChildText(".table > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(4)"), "・")
 			song.Youtube = e.ChildAttr("div.col_one_third > iframe", "src")
-			downloadHtml, err := e.DOM.Find("blockquote").Html()
+			downloadHtml, err := e.DOM.Find("blockquote p").Html()
 			if err == nil {
 				lines := newlineTabsRegex.Split(downloadHtml, -1)
 				for _, line := range lines {
 					if len(line) > 0 {
 						song.DownloadRaw = append(song.DownloadRaw, line)
 					}
+				}
+			}
+			// downloadSection := e.DOM.Find("blockquote a").Text()
+			// lines := newlineTabsRegex.Split(downloadSection, -1)
+			var downloadSection []string
+
+			// Find the <p> element within blockquote and get each line of text
+			e.DOM.Find("blockquote p").Each(func(i int, selection *goquery.Selection) {
+				selection.Contents().Each(func(j int, s *goquery.Selection) {
+					// Check if we have an element node that is an <a> tag
+					if goquery.NodeName(s) == "a" {
+						href, exists := s.Attr("href")
+						if exists {
+							downloadSection = append(downloadSection, href)
+							song.TestStringArray = append(song.TestStringArray, href)
+						}
+					} else {
+						// For regular text nodes, just append the text
+						text := strings.TrimSpace(s.Text())
+						if text != "" {
+							downloadSection = append(downloadSection, text)
+							song.TestStringArray = append(song.TestStringArray, text)
+						}
+					}
+				})
+			})
+			if len(downloadSection) == 1 && urlRegex.MatchString(downloadSection[0]) { // single line link
+				song.DownloadProcessed = append(song.DownloadProcessed, DownloadLink{
+					Url:  downloadSection[0],
+					Desc: "",
+					Tags: []LinkTag{{Id: Unlabeled, String: LinkCategory(Unlabeled).String()}},
+				},
+				)
+			} else if len(downloadSection) > 1 {
+				newLink := DownloadLink{Desc: "", Url: "", Tags: []LinkTag{}}
+				var firstLineIsLink bool
+				var checkEven bool
+
+				if urlRegex.MatchString(downloadSection[0]) {
+					firstLineIsLink = true
+					checkEven = false
+				} else {
+					firstLineIsLink = false
+					checkEven = true
+				}
+				for index, line := range downloadSection {
+					if firstLineIsLink { // first line is a link
+						if index == 0 {
+							song.DownloadProcessed = append(song.DownloadProcessed, DownloadLink{
+								Url:  downloadSection[0],
+								Desc: "",
+								Tags: []LinkTag{{Id: Unlabeled, String: LinkCategory(Unlabeled).String()}},
+							})
+							continue
+						}
+					}
+
+					if (checkEven && index%2 == 0) || (!checkEven && index%2 != 0) {
+						newLink.Tags = append(newLink.Tags, setTags(line)...)
+
+						newLink.Desc = line
+						if index != len(downloadSection)-1 {
+							if !urlRegex.MatchString(downloadSection[index+1]) {
+								newLink.Url = ""
+								newLink.Tags = []LinkTag{{Id: Unlinked, String: LinkCategory(Unlinked).String()}}
+								song.DownloadProcessed = append(song.DownloadProcessed, newLink)
+
+								newLink.Tags = []LinkTag{}
+								checkEven = !checkEven
+							}
+						} else if index == len(downloadSection)-1 {
+							if !urlRegex.MatchString(downloadSection[index]) {
+								newLink.Url = ""
+								newLink.Tags = []LinkTag{{Id: Unlinked, String: LinkCategory(Unlinked).String()}}
+								song.DownloadProcessed = append(song.DownloadProcessed, newLink)
+
+								newLink.Tags = []LinkTag{}
+								checkEven = !checkEven
+							}
+						}
+					} else {
+						// TODO check if line is a link
+						newLink.Url = line
+						song.DownloadProcessed = append(song.DownloadProcessed, newLink)
+
+						newLink.Tags = []LinkTag{}
+					}
+
 				}
 			}
 
@@ -214,7 +302,7 @@ func InitializeSPCollector() *colly.Collector {
 									match := jpDateRegex.FindString(dateString)
 
 									if len(match) > 1 {
-										song.TestString = match
+										// song.TestString = match
 										jpDate, err := ProcessJpDateString(match)
 										if err == nil {
 											shortImpression.Time, _ = GetHugoDateTime(jpDate)
@@ -244,7 +332,7 @@ func InitializeSPCollector() *colly.Collector {
 					pointBreakdown := PointValue{}
 					for i := 0; i < len(nextSiblings); i++ {
 						if nextSiblings[i].HasClass("spost") && (nextSiblings[i].Find("div.entry-c")).Length() > 0 { // should be a header
-							song.TestStringArray = append(song.TestStringArray, nextSiblings[i].Text())
+							// song.TestStringArray = append(song.TestStringArray, nextSiblings[i].Text())
 							//	song.TestString = nextSiblings[i].Find("nobr").Text()
 							longImpression.PointsOverall = parseToInt(nextSiblings[i].Find("nobr").Text())
 							longImpression.UserName = strings.TrimSpace(nextSiblings[i].Find("div.entry-title strong").Text())

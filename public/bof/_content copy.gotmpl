@@ -1,0 +1,161 @@
+{{ range $filename, $eventProperties := site.Data.bms.bof }}
+  {{ $eventNumber := (replace $filename "event" "") | int }}
+		{{ $eventKey := (replace $filename "event" "")}}
+  {{ if ge $eventNumber 142 }}
+
+    {{ $teams := slice }}
+    {{ range $teamKey, $teamProperties := $eventProperties.teams }}
+      {{ $songs := slice }}
+      {{ range $songKey, $songProperties := $teamProperties.songs }}
+ 				{{ $songParams := dict
+			"paige.site_title" $eventProperties.eventTitle
+			"paige.site_description" $eventProperties.eventDescription
+			"showReadingTime" false
+
+	"Id" $songProperties.songId
+	"PageLink" $songProperties.songPageLink
+	"IsSpecial" $songProperties.songIsSpecial
+	"SpecialTitle" $songProperties.songSpecialTitle
+	"Jacket" $songProperties.songJacket
+	"Header" $songProperties.songHeader
+	"Genre" $songProperties.songGenre
+	"Title" $songProperties.songTitle
+	"Artist" $songProperties.songArtist
+	"RegistDate" $songProperties.songRegistDate
+	"LastUpdate" $songProperties.songLastUpdate
+	"Keys" $songProperties.songKeys
+	"CommentCount" $songProperties.songCommentCount
+	"Total" $songProperties.songTotal
+	"Median" $songProperties.songMedian
+	"Composition" $songProperties.songComposition
+	"LastScrapeTime" $songProperties.songLastScrapeTime
+	"Bpm" $songProperties.songBpm
+	"BpmLower" $songProperties.songBpmLower
+	"BpmUpper" $songProperties.songBpmUpper
+	"BpmAverage" $songProperties.songBpmAverage
+	"LevelLower" $songProperties.songLevelLower
+	"LevelUpper" $songProperties.songLevelUpper
+	"BgaStatus" $songProperties.songBgaStatus
+	"Youtube" $songProperties.songYoutube
+	"Size" $songProperties.songSize
+	"DownloadRaw" $songProperties.songDownloadRaw
+	"DownloadProcessed" $songProperties.songDownloadProcessed
+	"TagsRaw" $songProperties.songTagsRaw
+	"TagsProcessed" $songProperties.songTagsProcessed
+	"Soundcloud" $songProperties.songSoundcloud
+	"Bemuse" $songProperties.songBemuse
+	"Comment" $songProperties.songComment
+	"Points" $songProperties.songPoints
+	"Votes" $songProperties.songVotes
+	"LastVoteTime" $songProperties.songLastVoteTime
+	"ProdEnv" $songProperties.songProdEnv
+	"ShortImpressionButton" $songProperties.songShortImpressionButton
+	"LongImpressionButton" $songProperties.songLongImpressionButton
+	"ShortImpressions" $songProperties.songShortImpressions
+	"LongImpressions" $songProperties.songLongImpressions
+	"TestString" $songProperties.songTestString
+	"TestStringArray" $songProperties.songTestStringArray
+		 }}
+
+        {{ $songs = $songs | append $songParams }}
+
+        {{ $songPage := dict
+          "kind" "page"
+          "type" "bof/song"
+          "params" $songParams
+          "path" (printf "bof/event%s/team%s/song%d/" $eventKey $teamKey $songKey)
+          "url" (printf "/bof/event%s/team%s/song%d/" $eventKey $teamKey $songKey | urlize)
+          "title" $songProperties.songTitle
+          "description" $songProperties.songArtist
+								"summary" $songProperties.songGenre
+			"date" $songProperties.songLastUpdate
+          "content" dict "mediaType" "text/markdown" "value" "Sample song content"
+        }}
+        {{ $.AddPage $songPage }}
+      {{ end }}
+
+      {{ $teamParams := dict
+			"paige.site_title" $teamProperties.teamName
+			"paige.site_description" $eventProperties.FullName
+			"showReadingTime" false
+
+		  "Id" $teamProperties.teamId
+			"Emblem" $teamProperties.teamEmblem
+			"Banner" $teamProperties.teamBanner
+			"Name" $teamProperties.teamName
+			"NameLabelRaw" $teamProperties.teamNameLabelRaw
+			"IsRecruiting" $teamProperties.teamIsRecruiting
+			"IsWithdrawn" $teamProperties.teamIsWithdrawn
+			"IsDisqualified" $teamProperties.teamIsDisqualified
+			"IsWarned" $teamProperties.teamIsWarned
+			"ProfileLink" $teamProperties.teamProfileLink
+			"LeaderName" $teamProperties.teamLeaderName
+			"LeaderCountryCode" $teamProperties.teamLeaderCountryCode
+			"LeaderCountryFlag" $teamProperties.teamLeaderCountryFlag
+			"LeaderLanguage" $teamProperties.teamLeaderLanguage
+			"MemberCount" $teamProperties.teamMemberCount
+			"ReleasedWorksCount" $teamProperties.teamReleasedWorksCount
+			"DeclaredWorksCount" $teamProperties.teamDeclaredWorksCount
+			"MemberListRaw" $teamProperties.teamMemberListRaw
+			"MemberListProcessed" $teamProperties.teamMemberListProcessed
+			"MemberListIsCorrect" $teamProperties.teamMemberListIsCorrect
+			"LastUpdate" $teamProperties.teamLastUpdate
+			"Twitter" $teamProperties.teamTwitter
+			"Website" $teamProperties.teamWebsite
+			"Concepts" $teamProperties.teamConcepts
+			"RatioPoints" $teamProperties.ratioPoints
+			"Genres" $teamProperties.teamGenres
+			"Commonality" $teamProperties.teamCommonality
+			"RaisonDetre" $teamProperties.teamRaisonDetre
+			"Comment" $teamProperties.teamComment
+			"RegistDate" $teamProperties.teamRegistDate
+			"Impression" $teamProperties.teamImpression
+			"Total" $teamProperties.teamTotal
+			"Median" $teamProperties.teamMedian
+			"LastScrapeTime" $teamProperties.teamLastScrapeTime
+			"TestString" $teamProperties.testString
+			"TestStringArray" $teamProperties.testStringArray
+
+        "Songs" $songs
+      }}
+      {{ $teams = $teams | append $teamParams }}
+			{{ $tagList := dict
+		 "testKey" "testValue"
+		  }}
+      {{ $teamPage := dict
+        "kind" "section"
+        "type" "bof/team"
+        "params" $teamParams
+        "path" (printf "bof/event%s/team%s/" $eventKey $teamKey)
+        "url" (printf "/bof/event%s/team%s/" $eventKey $teamKey | urlize)
+        "title" $teamProperties.teamName
+        "description" (printf "Team Leader: %s" $teamProperties.teamLeaderName)
+		"summary" $teamProperties.teamComment
+			"date" $teamProperties.teamLastUpdate
+			"tags" $tagList
+        "content" dict "mediaType" "text/markdown" "value" "Sample team content"
+      }}
+      {{ $.AddPage $teamPage }}
+    {{ end }}
+
+    {{ $eventParams := dict
+      "Id" $eventProperties.eventId
+      "Title" $eventProperties.eventTitle
+      "Teams" $teams
+      // Add further event-specific parameters here...
+    }}
+
+    {{ $eventPage := dict
+      "kind" "section"
+      "type" "bof/event"
+      "params" $eventParams
+      "path" (printf "bof/event%s/" $eventKey)
+      "url" (printf "bof/event%s/" $eventKey)
+      "title" $eventProperties.eventTitle
+      "description" $eventProperties.eventDescription
+      "content" dict "mediaType" "text/markdown" "value" "Sample event content"
+    }}
+    {{ $.AddPage $eventPage }}
+
+  {{ end }}
+{{ end }}

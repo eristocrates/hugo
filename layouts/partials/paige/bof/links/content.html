@@ -1,0 +1,84 @@
+{{ $page := . }}
+
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.1.7/css/buttons.dataTables.min.css"/>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css"/>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+ <script src="https://cdn.datatables.net/buttons/2.1.7/js/dataTables.buttons.min.js"></script>
+ <script src="https://cdn.datatables.net/buttons/2.1.7/js/buttons.colVis.min.js"></script>
+
+	<div>
+		<p>
+		{{ .Params.FullName }}
+		<br>
+			{{ range .Params.Teams }}
+		{{ .Params.Teams.Name }}
+	{{ end }}
+</p>
+</div>
+
+	<table id="linkTable" class="display"> <thead>
+		<tr>
+			<th>Team Name</th>
+			<th>Song Name</th>
+		</tr>
+		<tr>
+			<th><input type="text" placeholder="Search Team Name" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Song Name" style="width:100%"/></th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range $key, $team := .Params.Teams }}
+			<tr>
+				<td>{{ $team.Name }}</td>
+				<td>
+					{{ if $team.Songs }}
+						{{ range $songKey, $song := $team.Songs }}
+							{{ $song.Title }}<br>
+						{{ end }}
+					{{ else }}
+						No Songs Available
+					{{ end }}
+				</td>
+			</tr>
+		{{ else }}
+			<tr>
+				<td colspan="2">No Teams Available</td>
+			</tr>
+		{{ end }}
+	</tbody>
+</table>
+
+ <script>
+  $(document).ready(function () {
+    var table = $('#linkTable').DataTable({
+      dom: 'Bfrtip', // This includes the buttons in the DataTables control
+      buttons: [
+        {
+          extend: 'colvis',
+          postfixButtons: [ 'colvisRestore' ],
+          collectionLayout: 'fixed two-column'
+        }
+      ]
+    });
+
+    // Setup - add a text input to each header cell for column-specific searching
+    $('#linkTable thead tr:eq(1) th').each(function (i) {
+      $('input', this).on('keyup change', function () {
+        if (table.column(i).search() !== this.value) {
+          table
+            .column(i)
+            .search(this.value)
+            .draw();
+        }
+      });
+    });
+  });
+</script>
+
+
+{{ $content := $page.Content | replaceRE `(<h[1-6] id="([^"]+)".+)(</h[1-6]+>)` (printf `${1}<a aria-label="%s" class="paige-header-link" href="#${2}"></a>${3}` (i18n "paige_aria_section_link")) }}
+
+{{ with $content }}
+    <div class="mw-100" id="paige-content">{{ . | safeHTML }}</div>
+{{ end }}

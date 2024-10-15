@@ -1,6 +1,7 @@
 {{ $page := . }}
+
 <div class="video-container">
-	<video src="{{ .Params.videoUrl }}" width="100%" height="100%" autoplay loop muted playsinline>
+	<video src="{{ .Params.Video }}" width="100%" height="100%" autoplay loop muted playsinline>
 		Your browser does not support the video tag.
 	</video>
 	<div class="image-overlay">
@@ -11,12 +12,16 @@
         "fetchpriority" "high"
         "loading" "eager"
         "process" "webp"
-        "src" .Params.logoUrl
+        "src" .Params.Logo
         "width" "100%") }}
 	</div>
 </div>
-
-{{ $content := $page.Content | replaceRE `(<h[1-6] id="([^"]+)".+)(</h[1-6]+>)` (printf `${1}<a aria-label="%s" class="paige-header-link" href="#${2}"></a>${3}` (i18n "paige_aria_section_link")) }}
+<a href={{printf "links"}}>test links</a>
+{{ with .Params.Banner }}
+	<div class="image-banner">
+		<img alt="Banner" class="mx-auto" src="{{ $.Params.Banner | safeURL }}" fetchpriority="high" loading="eager">
+	</div>
+</div>{{ end }}{{ $content := $page.Content | replaceRE `(<h[1-6] id="([^"]+)".+)(</h[1-6]+>)` (printf `${1}<a aria-label="%s" class="paige-header-link" href="#${2}"></a>${3}` (i18n "paige_aria_section_link")) }}
 
 {{ with $content }}
     <div class="mw-100" id="paige-content">{{ . | safeHTML }}</div>

@@ -8,7 +8,17 @@ hide_page = true
 
 +++
 
-{{% paige/image alt="Landscape" breakpoints=true class="object-fit-cover rounded-4 shadow-lg" fetchpriority="high" height="20rem" loading="eager" process="webp" src="https://images.unsplash.com/photo-1490604001847-b712b0c2f967?w=1296" width="100%" %}}
+{{% paige/image alt="tandem ruins" breakpoints=true class="object-fit-cover rounded-4 shadow-lg" fetchpriority="high" height="20rem" loading="eager" process="webp" src="transcendium/[120328065] tandem ruins/120328065_p0.png" width="100%" %}}
+<p style="font-size: 0.8em;">
+  <a href="https://www.pixiv.net/en/artworks/120328065" target="_blank" rel="noopener noreferrer">tandem ruins</a>
+  by
+  <a href="https://pixiv.net/en/users/88643785" target="_blank" rel="noopener noreferrer">ardent minus</a>
+  aka
+  <a href="https://transendium.carrd.co/" target="_blank" rel="noopener noreferrer">Transendium</a>
+<img src="https://transendium.carrd.co/assets/images/image01.jpg?v=664617ed" alt="hat" style="width:80px; height:auto; vertical-align:middle; border-radius:50%;" loading="eager" />
+
+</p>
+
 
 <div align="center">
 
