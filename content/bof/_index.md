@@ -1,6 +1,6 @@
 +++
 title = "What is THE BOW OF ERIS?"
-draft = true
+draft = false
 readingTime = ''
 [paige]
 site_title = "[THE BOW OF ERIS]"

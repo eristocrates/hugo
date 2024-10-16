@@ -1,82 +1,109 @@
 {{ $page := . }}
 
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.1.7/css/buttons.dataTables.min.css"/>
-<link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css"/>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
- <script src="https://cdn.datatables.net/buttons/2.1.7/js/dataTables.buttons.min.js"></script>
- <script src="https://cdn.datatables.net/buttons/2.1.7/js/buttons.colVis.min.js"></script>
 
-	<div>
-		<p>
-		{{ .Params.FullName }}
-		<br>
-			{{ range .Params.Teams }}
-		{{ .Params.Teams.Name }}
-	{{ end }}
-</p>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link
+href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b-html5-3.1.2/cr-2.0.4/date-1.5.4/fh-4.0.1/r-3.0.3/rg-1.5.0/sc-2.4.3/sb-1.8.1/sp-2.3.3/sl-2.1.0/sr-1.4.1/datatables.min.css" rel="stylesheet">
+
+ <script src="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b-html5-3.1.2/cr-2.0.4/date-1.5.4/fh-4.0.1/r-3.0.3/rg-1.5.0/sc-2.4.3/sb-1.8.1/sp-2.3.3/sl-2.1.0/sr-1.4.1/datatables.min.js"></script>
+
+
+<div>
+	<p>
+		Below is my attempt at a powerful and configurable link list. It is a work in progress, so i ask that you be patient with me. If you have any suggestions, please let me know on my discord server
+	</p>
 </div>
 
-	<table id="linkTable" class="display"> <thead>
+<table id="linkTable" class="display">
+	<thead>
 		<tr>
 			<th>Team Name</th>
 			<th>Song Name</th>
+			<th>Song Links</th>
+			<th>Link Description</th>
+			<th>Description Tags</th>
 		</tr>
 		<tr>
 			<th><input type="text" placeholder="Search Team Name" style="width:100%"/></th>
 			<th><input type="text" placeholder="Search Song Name" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Song Links" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Link Description" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Description Tags" style="width:100%"/></th>
 		</tr>
 	</thead>
 	<tbody>
 		{{ range $key, $team := .Params.Teams }}
-			<tr>
-				<td>{{ $team.Name }}</td>
-				<td>
-					{{ if $team.Songs }}
-						{{ range $songKey, $song := $team.Songs }}
-							{{ $song.Title }}<br>
-						{{ end }}
-					{{ else }}
-						No Songs Available
-					{{ end }}
-				</td>
-			</tr>
-		{{ else }}
-			<tr>
-				<td colspan="2">No Teams Available</td>
-			</tr>
+			{{ range $songKey, $song := $team.Songs }}
+				{{ range $linkKey, $link := $song.DownloadProcessed }}
+					<tr>
+						<td>{{ $team.Name }}</td>
+
+						<td>
+							{{ if $team.Songs }}
+								{{ $song.Title }}<br>
+							{{ else }}
+								No Songs Available
+							{{ end }}
+						</td>
+
+						<td>
+							{{ if $link.Url }}
+								{{ $link.Url }}<br>
+							{{ else }}
+								No Links Available
+							{{ end }}
+						</td>
+
+						<td>
+							{{ if $link.Desc  }}
+								{{ $link.Desc }}<br>
+							{{ else }}
+								No Description Available
+							{{ end }}
+						</td>
+
+						<td>
+							{{ if $link.Tags }}
+								{{ range $tagKey, $tag := $link.Tags }}
+									{{ $tag.String }}<br>
+								{{ end }}
+							{{ else }}
+								No Description Available
+							{{ end }}
+						</td>
+
+					</tr>
+				{{ end }}
+			{{ end }}
 		{{ end }}
 	</tbody>
 </table>
-
  <script>
-  $(document).ready(function () {
-    var table = $('#linkTable').DataTable({
-      dom: 'Bfrtip', // This includes the buttons in the DataTables control
-      buttons: [
-        {
-          extend: 'colvis',
-          postfixButtons: [ 'colvisRestore' ],
-          collectionLayout: 'fixed two-column'
-        }
-      ]
-    });
+												  $(document).ready(function () {
+												    var table = $('#linkTable').DataTable({
+												      dom: 'Bfrtip', // This includes the buttons in the DataTables control
+												      buttons: [
+												        {
+												          extend: 'colvis',
+												          postfixButtons: [ 'colvisRestore' ],
+												          collectionLayout: 'fixed two-column'
+												        }
+												      ]
+												    });
 
-    // Setup - add a text input to each header cell for column-specific searching
-    $('#linkTable thead tr:eq(1) th').each(function (i) {
-      $('input', this).on('keyup change', function () {
-        if (table.column(i).search() !== this.value) {
-          table
-            .column(i)
-            .search(this.value)
-            .draw();
-        }
-      });
-    });
-  });
-</script>
-
-
+												    // Setup - add a text input to each header cell for column-specific searching
+												    $('#linkTable thead tr:eq(1) th').each(function (i) {
+												      $('input', this).on('keyup change', function () {
+												        if (table.column(i).search() !== this.value) {
+												          table
+												            .column(i)
+												            .search(this.value)
+												            .draw();
+												        }
+												      });
+												    });
+												  });
+												</script>
 {{ $content := $page.Content | replaceRE `(<h[1-6] id="([^"]+)".+)(</h[1-6]+>)` (printf `${1}<a aria-label="%s" class="paige-header-link" href="#${2}"></a>${3}` (i18n "paige_aria_section_link")) }}
 
 {{ with $content }}
