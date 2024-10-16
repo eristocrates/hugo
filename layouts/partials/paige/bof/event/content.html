@@ -16,7 +16,10 @@
         "width" "100%") }}
 	</div>
 </div>
-<a href={{printf "links"}}>test links</a>
+<h1>
+	<a href={{printf "links"}} class="large-text">LINK TABLE HERE</a>
+</h1>
+site still in progress
 {{ with .Params.Banner }}
 	<div class="image-banner">
 		<img alt="Banner" class="mx-auto" src="{{ $.Params.Banner | safeURL }}" fetchpriority="high" loading="eager">
