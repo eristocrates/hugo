@@ -93,7 +93,7 @@ rel="stylesheet" href="/DataTables/custom-styles.css">
 						</td>
 						<td>
 							{{ if $link.Url }}
-								{{ $link.Url }}<br>
+								<a href="{{ $link.Url }}" target="_blank" rel="noopener noreferrer">{{ $link.Url }}</a><br>
 							{{ else }}
 								No Links Available
 							{{ end }}
