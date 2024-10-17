@@ -1,0 +1,4 @@
+/* Override the DataTables button collection background */
+div.dt-button-collection {
+    background-color: #212529 !important; /* Use the desired background color */
+}

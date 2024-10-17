@@ -1,12 +1,11 @@
 {{ $page := . }}
 
-
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="/DataTables/datatables.min.css" rel="stylesheet">
 <link
-href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b-html5-3.1.2/cr-2.0.4/date-1.5.4/fh-4.0.1/r-3.0.3/rg-1.5.0/sc-2.4.3/sb-1.8.1/sp-2.3.3/sl-2.1.0/sr-1.4.1/datatables.min.css" rel="stylesheet">
+rel="stylesheet" href="/DataTables/custom-styles.css">
 
- <script src="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b-html5-3.1.2/cr-2.0.4/date-1.5.4/fh-4.0.1/r-3.0.3/rg-1.5.0/sc-2.4.3/sb-1.8.1/sp-2.3.3/sl-2.1.0/sr-1.4.1/datatables.min.js"></script>
-
+ <script src="/DataTables/datatables.min.js"></script>
 
 <div>
 	<p>
@@ -21,6 +20,10 @@ href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b
 		<tr>
 			<th>Team Name</th>
 			<th>Song Name</th>
+			<th>Song Artist</th>
+			<th>Song Genre</th>
+			<th>Song Keys</th>
+			<th>Song Tags</th>
 			<th>Song Links</th>
 			<th>Link Description</th>
 			<th>Description Tags</th>
@@ -28,6 +31,10 @@ href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b
 		<tr>
 			<th><input type="text" placeholder="Search Team Name" style="width:100%"/></th>
 			<th><input type="text" placeholder="Search Song Name" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Song Artist" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Song Genre" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Song Keys" style="width:100%"/></th>
+			<th><input type="text" placeholder="Search Song Tags" style="width:100%"/></th>
 			<th><input type="text" placeholder="Search Song Links" style="width:100%"/></th>
 			<th><input type="text" placeholder="Search Link Description" style="width:100%"/></th>
 			<th><input type="text" placeholder="Search Description Tags" style="width:100%"/></th>
@@ -38,8 +45,12 @@ href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b
 			{{ range $songKey, $song := $team.Songs }}
 				{{ range $linkKey, $link := $song.DownloadProcessed }}
 					<tr>
-						<td>{{ $team.Name }}</td>
-
+						<td style="position: relative; background-image: url('{{ $team.Emblem }}'); background-size: cover; background-position: center;">
+							<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.5); z-index: 0;"></div>
+							<!-- Light overlay -->
+							<span style="position: relative; z-index: 1; color: #333; font-weight: bold;">{{ $team.Name }}</span>
+							<img src="{{ $team.LeaderCountryFlag }}" alt="Country Flag" style="width: 20px; height: auto; position: absolute; bottom: 5px; right: 5px; z-index: 1;">
+						</td>
 						<td>
 							{{ if $team.Songs }}
 								{{ $song.Title }}<br>
@@ -47,7 +58,39 @@ href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b
 								No Songs Available
 							{{ end }}
 						</td>
+						<td>
+							{{ if $team.Songs }}
+								{{ $song.Artist }}<br>
+							{{ else }}
+								No Artist Available
+							{{ end }}
+						</td>
+						<td>
+							{{ if $team.Songs }}
+								{{ $song.Genre }}<br>
+							{{ else }}
+								No Genre Available
+							{{ end }}
+						</td>
+						<td>
+							{{ if $team.Songs }}
+								{{ range $tagKey, $tag := $song.Keys }}
+									{{ $tag}}<br>
+								{{ end }}
+							{{ else }}
+								No Genre Available
+							{{ end }}
+						</td>
+						<td>
+							{{ if $team.Songs }}
+								{{ range $tagKey, $tag := $song.TagsProcessed }}
+									{{ $tag.Name }}<br>
+								{{ end }}
+							{{ else }}
+								No Tag Available
+							{{ end }}
 
+						</td>
 						<td>
 							{{ if $link.Url }}
 								{{ $link.Url }}<br>
@@ -82,39 +125,75 @@ href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b
 </table>
  <script>
   $(document).ready(function () {
-    var table = $('#linkTable').DataTable({
-      layout: {
-        topstart: 'pageLength',
-        search: {
-          input: {
-            attributes: {
-              placeholder: 'Search all'
-            }
-          }
-        }
-      },
-      buttons: [
-        {
-          extend: 'colvis',
-          postfixButtons: ['colvisRestore'],
-          collectionLayout: 'fixed two-column'
-        }
-      ]
+    $('#yourTableId thead tr:first-child th').each(function() {
+        var placeholderText = $(this).text();
+        $('<input>', {
+            type: 'text',
+            placeholder: 'Search ' + placeholderText,
+            style: 'width:100%'
+        }).appendTo($(this));
     });
+const table = document.getElementById('linkTable');
+const headerCells = table.querySelectorAll('th');
+let songLinksColumnIndex;
 
-    // Setup - add a text input to each header cell for column-specific searching
+headerCells.forEach((th, index) => {
+  if (th.textContent.trim() === 'Song Links') {
+    songLinksColumnIndex = index;
+  }
+});
+
+
+    var datatable = $('#linkTable').DataTable({
+	order: [],
+orderCellsTop: true, // Use the top row of header cells for ordering
+layout: {
+        topStart: 'pageLength',
+	top1Start: 'buttons',
+        topEnd: {
+            search: {
+                placeholder: 'Search all'
+            }
+        }
+    },
+			      buttons: [ { extend: 'copy', text: 'Copy table to clipboard' },
+						{
+        extend: 'copy',
+        text: 'Copy Song Links',
+        exportOptions: {
+          columns: [songLinksColumnIndex]
+        }
+        },
+
+					        {
+
+						          extend: 'colvis',
+columnText: function (dt, idx, title) {
+                        return title;
+                    },
+          postfixButtons: ['colvisRestore'],
+						          // collectionLayout: 'fixed two-column'
+						        }
+    ],
+ });
+
+		    // Setup - add a text input to each header cell for column-specific searching
     $('#linkTable thead tr:eq(1) th').each(function (i) {
       $('input', this).on('keyup change', function () {
-        if (table.column(i).search() !== this.value) {
-          table
+        // Check if an actual change occurred in the search box to trigger filtering, but prevent sorting change.
+        if (datatable.settings()[0].oPreviousSearch.sSearch !== this.value) {
+          datatable
             .column(i)
             .search(this.value)
-            .draw();
+            .draw(false);  // Use draw(false) to apply changes without resetting the sort
         }
       });
     });
-  });
+
+		});
 </script>
+
+
 {{ $content := $page.Content | replaceRE `(<h[1-6] id="([^"]+)".+)(</h[1-6]+>)` (printf `${1}<a aria-label="%s" class="paige-header-link" href="#${2}"></a>${3}` (i18n "paige_aria_section_link")) }}
 
 {{ with $content }}

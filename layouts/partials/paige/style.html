@@ -1,147 +1,150 @@
 {{ $page := . }}
 
 <style>
-{{ if templates.Exists "partials/paige/style-first.css" }}
-    {{ partial "paige/style-first.css" $page | safeCSS }}
-{{ end }}
+	{{if templates.Exists "partials/paige/style-first.css"}}
+		{{partial "paige/style-first.css" $page | safeCSS}}{{end}}
 
-.paige-figure-numbered {
-    counter-increment: paige-figure-numbered;
+	.paige-figure-numbered {
+		counter-increment: paige-figure-numbered;
+	}
+
+	.paige-figure-numbered > div > figure > figcaption::before {
+		content: "{{ i18n `paige_figure` | safeCSS }} " counter(paige-figure-numbered) ": ";
+	}
+
+	.paige-figure-numbered > div > figure > figcaption:empty::before {
+		content: "{{ i18n `paige_figure` | safeCSS }} " counter(paige-figure-numbered);
+	}
+
+	.paige-header-link {
+		opacity: 0;
+		margin-left: 0.5rem;
+		position: absolute;
+		transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+	}
+
+	.paige-header-link::after {
+		content: "#";
+	}
+
+	.paige-quote .blockquote-footer {
+		margin-top: 0;
+	}
+
+	.paige-quote blockquote {
+		border-left: 0;
+		border-right: 0;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	#paige-content > * {
+		margin-bottom: 1rem;
+	}
+
+	blockquote {
+		padding: 0.5rem 1rem;
+		border-left: 0.25rem solid var(--bs-border-color);
+		border-right: 0.25rem solid var(--bs-body-bg);
+	}
+
+	td,
+	th {
+		padding: 0.25rem;
+	}
+
+	.highlight .chroma .hl,
+	.highlight .chroma .lnt {
+		display: flex;
+	}
+
+	.paige-figure .paige-quote,
+	.paige-figure .paige-video,
+	.paige-figure .highlight pre.chroma,
+	.paige-figure .highlight .chroma pre,
+	.paige-figure .paige-quote blockquote,
+	.paige-figure figure > div >:last-child,
+	.paige-gallery .paige-figure,
+	.paige-gallery .paige-image,
+	blockquote > p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.paige-figure,
+	.paige-gallery,
+	.paige-image,
+	.paige-quote,
+	.paige-video,
+	table {
+		margin-bottom: 1rem;
+	}
+
+	.paige-header-link:focus,
+	.paige-header-link:hover,:hover > .paige-header-link,:target > .paige-header-link {
+		opacity: 1;
+	}
+
+	{{$colorscheme := $page.Param "paige.color_scheme"}}
+
+	{{if eq $colorscheme "dark"}}
+		{{partial "paige/dark.css" $page | safeCSS}}
+	{{else if eq $colorscheme "light"}}
+		{{partial "paige/light.css" $page | safeCSS}}
+	{{else}}
+	@media(prefers-color-scheme: dark) {
+		{{partial "paige/dark.css" $page | safeCSS}}
+	}
+
+	@media(prefers-color-scheme: light) {
+		{{partial "paige/light.css" $page | safeCSS}}
+	}
+	.video-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%; /* 1:1 aspect ratio */
+		height: 0;
+		overflow: hidden;
+	}
+
+	.video-container iframe,
+	.video-container video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.image-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%; /* Adjust as needed */
+		z-index: 1; /* Ensure the image is on top of the video */
+	}
+	.small-text {
+		font-size: 0.8em; /* Adjust the size as needed */
+	}
+	.large-text {
+		font-size: 4em; /* Adjust the size as needed */
+	}
+	/* Adjust the background color of the ColVis popup */
+	.dt-button-collection {
+		background-color: #c9d1d9; /* Light grey background */
+		border: 1px solid #ccc; /* Light grey border */
+	}
+{{end}}
+
+@media(prefers-reduced-motion: reduce) {
+	.paige-header-link {
+		transition: none;
+	}
 }
 
-.paige-figure-numbered > div > figure > figcaption::before {
-    content: "{{ i18n `paige_figure` | safeCSS }} " counter(paige-figure-numbered) ": ";
-}
+{{with $page.Param "paige.style"}}
+		{{. | safeCSS}}{{end}}
 
-.paige-figure-numbered > div > figure > figcaption:empty::before {
-    content: "{{ i18n `paige_figure` | safeCSS }} " counter(paige-figure-numbered);
-}
-
-.paige-header-link {
-    opacity: 0;
-    margin-left: 0.5rem;
-    position: absolute;
-    transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
-}
-
-.paige-header-link::after {
-    content: "#";
-}
-
-.paige-quote .blockquote-footer {
-    margin-top: 0;
-}
-
-.paige-quote blockquote {
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-#paige-content > * {
-    margin-bottom: 1rem;
-}
-
-blockquote {
-    padding: 0.5rem 1rem;
-    border-left: 0.25rem solid var(--bs-border-color);
-    border-right: 0.25rem solid var(--bs-body-bg);
-}
-
-td, th {
-    padding: 0.25rem;
-}
-
-.highlight .chroma .hl,
-.highlight .chroma .lnt {
-    display: flex;
-}
-
-.paige-figure .paige-quote,
-.paige-figure .paige-video,
-.paige-figure .highlight pre.chroma,
-.paige-figure .highlight .chroma pre,
-.paige-figure .paige-quote blockquote,
-.paige-figure figure > div > :last-child,
-.paige-gallery .paige-figure,
-.paige-gallery .paige-image,
-blockquote > p:last-of-type {
-    margin-bottom: 0;
-}
-
-.paige-figure,
-.paige-gallery,
-.paige-image,
-.paige-quote,
-.paige-video,
-table {
-    margin-bottom: 1rem;
-}
-
-.paige-header-link:focus,
-.paige-header-link:hover,
-:hover > .paige-header-link,
-:target > .paige-header-link {
-    opacity: 1;
-}
-
-{{ $colorscheme := $page.Param "paige.color_scheme" }}
-
-{{ if eq $colorscheme "dark" }}
-    {{ partial "paige/dark.css" $page | safeCSS }}
-{{ else if eq $colorscheme "light" }}
-    {{ partial "paige/light.css" $page | safeCSS }}
-{{ else }}
-    @media (prefers-color-scheme: dark) {
-        {{ partial "paige/dark.css" $page | safeCSS }}
-    }
-
-    @media (prefers-color-scheme: light) {
-        {{ partial "paige/light.css" $page | safeCSS }}
-    }
-{{ end }}
-
-@media (prefers-reduced-motion: reduce) {
-    .paige-header-link {
-        transition: none;
-    }
-}
-
-{{ with $page.Param "paige.style" }}
-    {{ . | safeCSS }}
-{{ end }}
-
-{{ if templates.Exists "partials/paige/style-last.css" }}
-    {{ partial "paige/style-last.css" $page | safeCSS }}
-{{ end }}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* 1:1 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe,
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* Adjust as needed */
-    z-index: 1; /* Ensure the image is on top of the video */
-}
-
-
-
+{{if templates.Exists "partials/paige/style-last.css"}}
+		{{partial "paige/style-last.css" $page | safeCSS}}{{end}}
 </style>

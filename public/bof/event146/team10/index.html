@@ -200,94 +200,93 @@
 	
 
 <style>
+	
 
+	.paige-figure-numbered {
+		counter-increment: paige-figure-numbered;
+	}
 
-.paige-figure-numbered {
-    counter-increment: paige-figure-numbered;
-}
+	.paige-figure-numbered > div > figure > figcaption::before {
+		content: "Figure " counter(paige-figure-numbered) ": ";
+	}
 
-.paige-figure-numbered > div > figure > figcaption::before {
-    content: "Figure " counter(paige-figure-numbered) ": ";
-}
+	.paige-figure-numbered > div > figure > figcaption:empty::before {
+		content: "Figure " counter(paige-figure-numbered);
+	}
 
-.paige-figure-numbered > div > figure > figcaption:empty::before {
-    content: "Figure " counter(paige-figure-numbered);
-}
+	.paige-header-link {
+		opacity: 0;
+		margin-left: 0.5rem;
+		position: absolute;
+		transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+	}
 
-.paige-header-link {
-    opacity: 0;
-    margin-left: 0.5rem;
-    position: absolute;
-    transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
-}
+	.paige-header-link::after {
+		content: "#";
+	}
 
-.paige-header-link::after {
-    content: "#";
-}
+	.paige-quote .blockquote-footer {
+		margin-top: 0;
+	}
 
-.paige-quote .blockquote-footer {
-    margin-top: 0;
-}
+	.paige-quote blockquote {
+		border-left: 0;
+		border-right: 0;
+		margin-bottom: 0;
+		padding: 0;
+	}
 
-.paige-quote blockquote {
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
+	#paige-content > * {
+		margin-bottom: 1rem;
+	}
 
-#paige-content > * {
-    margin-bottom: 1rem;
-}
+	blockquote {
+		padding: 0.5rem 1rem;
+		border-left: 0.25rem solid var(--bs-border-color);
+		border-right: 0.25rem solid var(--bs-body-bg);
+	}
 
-blockquote {
-    padding: 0.5rem 1rem;
-    border-left: 0.25rem solid var(--bs-border-color);
-    border-right: 0.25rem solid var(--bs-body-bg);
-}
+	td,
+	th {
+		padding: 0.25rem;
+	}
 
-td, th {
-    padding: 0.25rem;
-}
+	.highlight .chroma .hl,
+	.highlight .chroma .lnt {
+		display: flex;
+	}
 
-.highlight .chroma .hl,
-.highlight .chroma .lnt {
-    display: flex;
-}
+	.paige-figure .paige-quote,
+	.paige-figure .paige-video,
+	.paige-figure .highlight pre.chroma,
+	.paige-figure .highlight .chroma pre,
+	.paige-figure .paige-quote blockquote,
+	.paige-figure figure > div >:last-child,
+	.paige-gallery .paige-figure,
+	.paige-gallery .paige-image,
+	blockquote > p:last-of-type {
+		margin-bottom: 0;
+	}
 
-.paige-figure .paige-quote,
-.paige-figure .paige-video,
-.paige-figure .highlight pre.chroma,
-.paige-figure .highlight .chroma pre,
-.paige-figure .paige-quote blockquote,
-.paige-figure figure > div > :last-child,
-.paige-gallery .paige-figure,
-.paige-gallery .paige-image,
-blockquote > p:last-of-type {
-    margin-bottom: 0;
-}
+	.paige-figure,
+	.paige-gallery,
+	.paige-image,
+	.paige-quote,
+	.paige-video,
+	table {
+		margin-bottom: 1rem;
+	}
 
-.paige-figure,
-.paige-gallery,
-.paige-image,
-.paige-quote,
-.paige-video,
-table {
-    margin-bottom: 1rem;
-}
+	.paige-header-link:focus,
+	.paige-header-link:hover,:hover > .paige-header-link,:target > .paige-header-link {
+		opacity: 1;
+	}
 
-.paige-header-link:focus,
-.paige-header-link:hover,
-:hover > .paige-header-link,
-:target > .paige-header-link {
-    opacity: 1;
-}
+	
 
-
-
-
-    @media (prefers-color-scheme: dark) {
-        /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
+	
+	@media(prefers-color-scheme: dark) {
+		/* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* PreWrapper */ .chroma { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #f85149 }
@@ -374,10 +373,10 @@ table {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #6e7681 }
 
-    }
+	}
 
-    @media (prefers-color-scheme: light) {
-        /* Background */ .bg { background-color: #ffffff; }
+	@media(prefers-color-scheme: light) {
+		/* Background */ .bg { background-color: #ffffff; }
 /* PreWrapper */ .chroma { background-color: #ffffff; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
@@ -464,44 +463,51 @@ table {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #bbbbbb }
 
-    }
+	}
+	.video-container {
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%;  
+		height: 0;
+		overflow: hidden;
+	}
+
+	.video-container iframe,
+	.video-container video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.image-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;  
+		z-index: 1;  
+	}
+	.small-text {
+		font-size: 0.8em;  
+	}
+	.large-text {
+		font-size: 4em;  
+	}
+	 
+	.dt-button-collection {
+		background-color: #c9d1d9;  
+		border: 1px solid #ccc;  
+	}
 
 
-@media (prefers-reduced-motion: reduce) {
-    .paige-header-link {
-        transition: none;
-    }
+@media(prefers-reduced-motion: reduce) {
+	.paige-header-link {
+		transition: none;
+	}
 }
 
-
-
-
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;  
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe,
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;  
-    z-index: 1;  
-}
 
 
 
@@ -860,6 +866,8 @@ table {
 			
 				
 			
+				
+			
 		
 	
 
@@ -979,6 +987,68 @@ table {
 
 	
 		<p class="fst-italic mb-0 paige-summary text-center">BLOOM CORE</p>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+</div>
+
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<div class="mb-3 paige-page paige-published w-100">
+	
+		<p class="mb-0 paige-title text-center">
+			<a href="/bof/event146/team10/songdstring264/">Volcanic August</a>
+		</p>
+	
+
+	
+		<p class="mb-0 paige-description text-center">Ice respect for RJ</p>
+	
+
+	
+		<p class="fst-italic mb-0 paige-summary text-center">VACATION DANCE</p>
 	
 
 	
