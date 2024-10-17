@@ -81,31 +81,40 @@ href="https://cdn.datatables.net/v/dt/dt-2.1.8/af-2.7.0/b-3.1.2/b-colvis-3.1.2/b
 	</tbody>
 </table>
  <script>
-												  $(document).ready(function () {
-												    var table = $('#linkTable').DataTable({
-												      dom: 'Bfrtip', // This includes the buttons in the DataTables control
-												      buttons: [
-												        {
-												          extend: 'colvis',
-												          postfixButtons: [ 'colvisRestore' ],
-												          collectionLayout: 'fixed two-column'
-												        }
-												      ]
-												    });
+  $(document).ready(function () {
+    var table = $('#linkTable').DataTable({
+      layout: {
+        topstart: 'pageLength',
+        search: {
+          input: {
+            attributes: {
+              placeholder: 'Search all'
+            }
+          }
+        }
+      },
+      buttons: [
+        {
+          extend: 'colvis',
+          postfixButtons: ['colvisRestore'],
+          collectionLayout: 'fixed two-column'
+        }
+      ]
+    });
 
-												    // Setup - add a text input to each header cell for column-specific searching
-												    $('#linkTable thead tr:eq(1) th').each(function (i) {
-												      $('input', this).on('keyup change', function () {
-												        if (table.column(i).search() !== this.value) {
-												          table
-												            .column(i)
-												            .search(this.value)
-												            .draw();
-												        }
-												      });
-												    });
-												  });
-												</script>
+    // Setup - add a text input to each header cell for column-specific searching
+    $('#linkTable thead tr:eq(1) th').each(function (i) {
+      $('input', this).on('keyup change', function () {
+        if (table.column(i).search() !== this.value) {
+          table
+            .column(i)
+            .search(this.value)
+            .draw();
+        }
+      });
+    });
+  });
+</script>
 {{ $content := $page.Content | replaceRE `(<h[1-6] id="([^"]+)".+)(</h[1-6]+>)` (printf `${1}<a aria-label="%s" class="paige-header-link" href="#${2}"></a>${3}` (i18n "paige_aria_section_link")) }}
 
 {{ with $content }}
