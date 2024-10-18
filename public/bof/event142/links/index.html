@@ -759,12 +759,12 @@ rel="stylesheet" href="/DataTables/custom-styles.css">
 		<a href="https://jdownloader.org/download/index" target="_blank" rel="noopener noreferrer">Jdownloader</a>
 		to mass download links and
 		<a href="https://www.bandisoft.com/bandizip/" target="_blank" rel="noopener noreferrer">Bandizip</a>'s
-						    smart extract to actually try playing everything.
+																																				    smart extract to actually try playing everything.
 	</p>
 
 </div>
 
-<table id="linkTable" class="display">
+<table id="linkTable" class="display responsive">
 	<thead>
 		<tr>
 			<th>Team Name</th>
@@ -74599,9 +74599,18 @@ headerCells.forEach((th, index) => {
 
 
     var datatable = $('#linkTable').DataTable({
+responsive: {
+        details: {
+            display: DataTable.Responsive.display.childRowImmediate,
+            target: '',
+            type: 'column'
+        }
+    },
+
+scrollX: true,
+ scrollCollapse: true,
 	order: [],
 orderCellsTop: true, 
-responsive: true,
 layout: {
         topStart: 'pageLength',
 	top1Start: 'buttons',
