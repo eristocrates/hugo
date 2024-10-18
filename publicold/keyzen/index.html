@@ -1,0 +1,237 @@
+<!doctype html5>
+
+<!--<html manifest="keyzen.manifest">-->
+<html>
+
+	<head>
+		<title>keyzen shoshin</title>
+		 <script src="jquery.js"></script>
+		 <script src="keyzen.js"></script>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+		<style>
+
+			@font-face {
+				font-family: 'Ubuntu Monokz';
+				font-style: normal;
+				font-weight: normal;
+				src: local('Ubuntu Monokz'), local('UbuntuMono-Regular'), url('ubuntu-mono.woff') format('woff');
+			}
+
+			body {
+				background-image: url('brushed_alu.png');
+				font-family: 'Ubuntu Monokz', sans-serif;
+				padding: 0;
+				margin: 0;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			#container {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+
+			#word {
+				color: #AAA;
+				position: absolute;
+				top: 50%;
+				margin-top: -64px;
+				height: 128px;
+				font-size: 128px;
+				width: 100%;
+				padding: 0;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				word-wrap: break-word;
+				text-shadow: 0 2px 3px #000;
+			}
+
+			.keys-hit {
+				color: #CCC;
+				font-size: 128px;
+				text-shadow: none;
+			}
+
+			#next-level {
+				height: 2px;
+				background-color: #f78d1d;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#level-chars,
+			#layout {
+				font-size: 16px;
+				width: 95%;
+				text-align: center;
+				padding-bottom: 16px;
+				margin-left: auto;
+				margin-right: auto;
+				word-wrap: break-word;
+				font-weight: bold;
+				cursor: hand;
+				color: #AAAAAA;
+			}
+
+			#rigor {
+				font-size: 16px;
+				position: absolute;
+				right: 16px;
+				bottom: 16px;
+				color: #AAA;
+				font-weight: bold;
+				text-align: right;
+			}
+
+			#stats {
+				font-size: 16px;
+				position: absolute;
+				left: 16px;
+				bottom: 16px;
+				color: #AAA;
+				font-weight: bold;
+				text-align: right;
+			}
+
+			#rigor-number {
+				color: #000;
+				cursor: hand;
+			}
+
+			.currentChar {
+				border-bottom: 4px solid #f78d1d;
+			}
+
+			.errorChar {
+				color: #FF0000;
+			}
+
+			.goodChar {
+				color: #AAAAAA;
+				text-shadow: 0 1px 1px #FFF, 0 2px 2px #FFF;
+			}
+			/* Modal styles */
+			.modal {
+				display: none;
+				position: fixed;
+				z-index: 1;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgb(0, 0, 0);
+				background-color: rgba(0, 0, 0, 0.4);
+				padding-top: 60px;
+			}
+
+			.modal-content {
+				background-color: #fefefe;
+				margin: 5% auto;
+				padding: 20px;
+				border: 1px solid #888;
+				width: 80%;
+			}
+
+			.close {
+				color: #aaa;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+				color: black;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<!-- The Modal -->
+		<div id="addLayoutModal" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<h2>Add Raw Layout</h2>
+				<h5>Learn letters in the exact order entered</h5>
+				<p></p>
+				<ul>
+					<li>
+						<p>Manual Entry: If any text is in this field, it will be used as the layout string.</p>
+						<input type="text" id="manual_entry_input" placeholder="Manual Entry">
+					</li>
+				</ul>
+				<h2>Add Zen Layout</h2>
+				<h5>Learn letters roughly in the way of the
+					<a href="https://wwwtyro.github.io/keyzen/">og keyzen</a>
+				</h5>
+				<ul>
+					<h4>Letters</h4>
+					<li>
+						<p>Home Row Keys: Enter the keys from the home row, starting from the left pinky to the right pinky.</p>
+						<input type="text" id="home_row_input" placeholder="Home Row Keys">
+					</li>
+					<li>
+						<p>Top Row Keys: Enter the keys from the top row, starting from the left pinky to the right pinky.</p>
+						<input type="text" id="top_row_input" placeholder="Top Row Keys">
+					</li>
+					<li>
+						<p>Bottom Row Keys: Enter the keys from the bottom row, starting from the left pinky to the right pinky.</p>
+						<input type="text" id="bottom_row_input" placeholder="Bottom Row Keys">
+					</li>
+					<li>
+						<p>Thumb Row Keys(if you have em): Enter the keys from your thumb row/cluster, starting from left thumb to the right thumb.</p>
+						<input type="text" id="thumbs_input" placeholder="Thumb Row Keys">
+					</li>
+					<li>
+						<p>Uppercase Letters: Check this box if you want to include uppercase letters generated from the keys in their rows.</p>
+						<input type="checkbox" id="uppercase_letters_checkbox">
+					</li>
+
+					<h4>Numbers</h4>
+					<li>
+						<p>Number Row Keys: Enter the numbers in the order they appear on the keyboard, starting from the left to the right.</p>
+						<input type="text" id="number_row_input" placeholder="Number Row Keys">
+					</li>
+
+					<h4>Symbols</h4>
+					<li>
+						<p>Special Characters: Enter the special characters in the order they appear on the keyboard, starting from the left to the right.</p>
+						<input type="text" id="special_chars_input" placeholder="Special Characters">
+					</li>
+					<li>
+						<p>Shifted Special Characters: Enter the shifted special characters in the order they appear on the keyboard, starting from the left to the right.</p>
+						<input type="text" id="shifted_special_chars_input" placeholder="Shifted Special Characters">
+					</li>
+				</ul>
+				<input type="text" id="new_layout_name" placeholder="Layout Name">
+				<button onclick="add_layout()">Add Layout</button>
+			</div>
+
+		</body>
+	</body>
+</html></div><div id='container'>
+
+<div id='layout'></div>
+
+<div id='level-chars'></div>
+
+<div id='next-level'></div>
+
+<div id='word'></div>
+
+<div id='rigor'></div>
+
+<div id="stats"></div></div></body></html>
