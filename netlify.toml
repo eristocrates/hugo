@@ -3,16 +3,16 @@
   command = "hugo"
 
 [context.production.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.136.1"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.136.1"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.136.1"
 
 [context.next.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.136.1"
 
 [build.environment]
   GIT_SUBMODULE_STRATEGY = "recursive"
