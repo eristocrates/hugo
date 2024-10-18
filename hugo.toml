@@ -61,7 +61,7 @@ taxonomy = ["html"]
 term = ["html"]
 
 [params.paige]
-color = "#fd0d0d" # Bootstrap primary color and theme color for Safari and Windows
+color = "#adc6ff" # Bootstrap primary color and theme color for Safari and Windows
 color_scheme = "auto" # Must be "auto", "dark", or "light"
 date_format = ":date_long" # Hugo date format
 external_link_new_tab = false # Open external links in new tabs

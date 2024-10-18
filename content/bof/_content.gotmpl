@@ -63,8 +63,8 @@
           "kind" "page"
           "type" "bof/song"
           "params" $songParams
-          "path" (printf "bof/event%s/team%s/song%d/" $eventKey $teamKey $songKey)
-          "url" (printf "/bof/event%s/team%s/song%d/" $eventKey $teamKey $songKey | urlize)
+          "path" (printf "bof/event%s/team%s/song%s/" $eventKey $teamKey $songKey)
+          "url" (printf "/bof/event%s/team%s/song%s/" $eventKey $teamKey $songKey | urlize)
           "title" $songProperties.songTitle
           "description" $songProperties.songArtist
 								"summary" $songProperties.songGenre

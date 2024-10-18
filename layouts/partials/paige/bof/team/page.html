@@ -43,26 +43,19 @@
 
 <div class="{{ $class }}">
 	{{ with .Params.Banner }}
-		<div class="image-banner">
+		<div class="image-banner align-items-center d-flex flex-column mb-0">
 			<img alt="Banner" class="mx-auto" src="{{ $.Params.Banner | safeURL }}" fetchpriority="high" loading="eager">
 		</div>
 	</div>
 {{ end }}
 
-{{ with .Params.Emblem }}
-	{{ if not (findRE "emblem_noimage" .)}}
-		<div class="image-emblem">
-			<img alt="Emblem" class="img-thumbnail" src="{{ $.Params.Emblem | safeURL }}" fetchpriority="high" loading="eager" width="32" height="32">
-		</div>
-	{{ end }}
-{{ end }}
 
-{{ with $title }}
-	<p class="mb-0 paige-title text-center">
+<p class="mb-0 paige-title text-center">
+	{{ with $title }}
 		<a href="{{ $titlelink }}">{{ . }}</a>
-	</p>
-{{ end }}
+	{{ end }}
 
+</p>
 {{ with $description }}
 	<p class="mb-0 paige-description text-center">{{ . }}</p>
 {{ end }}
