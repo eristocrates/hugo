@@ -1,3 +1,4 @@
+Set-Location "I:\coding\hugo\colly"
 # Run the Go program and wait for it to finish
 Start-Process -FilePath "go" -ArgumentList "run ." -Wait
 
