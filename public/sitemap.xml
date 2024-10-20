@@ -2841,6 +2841,9 @@
     <loc>//localhost:1313/bof/event142/team20/song319/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>//localhost:1313/bof/event146/team147/song324/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>//localhost:1313/bof/event146/team114/</loc>
     <priority>0</priority>
   </url><url>
@@ -3037,6 +3040,9 @@
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event146/team14/song147/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>//localhost:1313/bof/event146/team54/song325/</loc>
     <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/bof/event142/team105/</loc>
