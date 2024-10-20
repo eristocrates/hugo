@@ -50776,4 +50776,219 @@ columnText: function (dt, idx, title) {
                         return title;
                     },
           postfixButtons: ['colvisRestore'],
-						         
+						          
+						        }
+    ],
+ });
+
+		    
+    $('#linkTable thead tr:eq(1) th').each(function (i) {
+      $('input', this).on('keyup change', function () {
+        
+        if (datatable.settings()[0].oPreviousSearch.sSearch !== this.value) {
+          datatable
+            .column(i)
+            .search(this.value)
+            .draw(false);  
+        }
+      });
+    });
+
+		});
+</script>
+
+
+
+
+
+
+	</div>
+</article>
+
+	
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+                        
+                    </main>
+
+                    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+<footer class="mb-3" id="paige-footer">
+    
+
+    
+
+    
+
+    
+        <p class="mb-0 text-center text-secondary" id="paige-copyright">made with hugo by eristocrates</p>
+    
+
+    <p class="mb-0 text-center" id="paige-credit">
+        <a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige" >Paige Theme By Will Faught</a>
+    </p>
+
+    
+</footer>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+<script  crossorigin="anonymous"   defer  integrity="sha256-gfPiYYSP&#43;RNtNeRBt45mJombFJmNf0V0Ipu785Obi0M="   referrerpolicy="no-referrer"  src="/js/paige/bootstrap/bootstrap.bundle.min.81f3e261848ff9136d35e441b78e6626899b14998d7f4574229bbbf3939b8b43.js" ></script>
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+<noscript>JavaScript is required</noscript>
+
+
+        
+    </body>
+</html>
