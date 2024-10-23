@@ -17,6 +17,7 @@
 {{ $textkeywords := eq ($page.Param "paige.keyword_style" | default "text") "text" }}
 {{ $title := $page.Title | markdownify | plainify | htmlUnescape }}
 {{ $titlelink := $page.RelPermalink }}
+{{ $header := $.Params.Header }}
 
 {{ if $draft }}
 	{{ $flags = $flags | append "paige-draft" "paige-unpublished" }}
@@ -42,6 +43,10 @@
 {{ $class := delimit (slice "mb-3" "paige-page" "w-100" | append $flags | uniq | sort) " " }}
 
 <div class="{{ $class }}">
+	{{ with $header }}
+		<img alt="header" class="mx-auto image-header" src="{{ $.Params.Header | safeURL }}" fetchpriority="high" loading="eager">
+	{{ end }}
+
 	{{ with $title }}
 		<p class="mb-0 paige-title text-center">
 			<a href="{{ $titlelink }}">{{ . }}</a>
